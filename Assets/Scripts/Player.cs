@@ -1,20 +1,31 @@
 using UnityEngine;
+using System.Collections;
 
-public class TopDownCharacterController : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;  // Movement speed of the character
 
     private Rigidbody2D rb;  // Reference to the Rigidbody2D component
     private Vector2 movement;  // Variable to store movement direction
     private SpriteRenderer spriteRenderer;  // Reference to the SpriteRenderer component
-
-    void Start()
+    private Animator animator;
+    private bool isAttacking;
+    [SerializeField]
+    private float attackSpeed;
+    void Awake()
     {
         // Get the Rigidbody2D component attached to the GameObject
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         // Get the SpriteRenderer component attached to the GameObject
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    void Start()
+    {
+        // Start the automatic attack coroutine
+       // StartCoroutine(AutoAttackRoutine());
     }
 
     void Update()
@@ -30,17 +41,42 @@ public class TopDownCharacterController : MonoBehaviour
         if (movement.x > 0)
         {
             spriteRenderer.flipX = false;  // Facing right
+            
+
         }
         else if (movement.x < 0)
         {
             spriteRenderer.flipX = true;   // Facing left
         }
+        
+        if (animator != null)
+        {
+            if(movement != Vector2.zero)
+            {
+                animator.SetBool("isRunning", true);
+            }
+            else
+            {
+                animator.SetBool("isRunning", false);
+            }
+        }
+        rb.linearVelocity = movement * moveSpeed;
     }
 
-    [System.Obsolete]
-    void FixedUpdate()
+
+    private IEnumerator AutoAttackRoutine()
     {
-        // Move the character by setting its velocity
-        rb.velocity = movement * moveSpeed;
+        while (true)
+        {
+            yield return new WaitForSeconds(attackSpeed); // Wait 5 seconds before each attack
+            TriggerAttack();
+        }
     }
+
+    private void TriggerAttack()
+    {
+        // Trigger the attack animation
+        animator.SetTrigger("isAttacking");
+    }
+    
 }
