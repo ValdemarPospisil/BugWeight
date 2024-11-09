@@ -2195,10 +2195,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 10
   field of view: 60
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2258,6 +2258,7 @@ GameObject:
   - component: {fileID: 2019453106}
   - component: {fileID: 2019453108}
   - component: {fileID: 2019453109}
+  - component: {fileID: 2019453110}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2309,7 +2310,7 @@ SpriteRenderer:
   m_SortingLayerID: -855916345
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6763867217689602333, guid: 1f3dea8a9db3de94c94faec64dee4850, type: 3}
+  m_Sprite: {fileID: -5783185165838227867, guid: 96be8a63dcaa5ef4e9aa97c52b2c25dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2349,6 +2350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   attackSpeed: 5
+  maxHP: 100
 --- !u!50 &2019453107
 Rigidbody2D:
   serializedVersion: 5
@@ -2435,6 +2437,28 @@ MonoBehaviour:
   spawnRadiusMax: 20
   minEnemies: 5
   maxEnemies: 10
+--- !u!95 &2019453110
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019453103}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 53069a408cfd66c49a6e6923ae874945, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &3056298942631023927
 PrefabInstance:
   m_ObjectHideFlags: 0

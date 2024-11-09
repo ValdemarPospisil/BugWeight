@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8141542615931843526}
   - component: {fileID: 6312563544047421422}
   - component: {fileID: 423653343045648705}
+  - component: {fileID: 2606927766651823800}
   m_Layer: 0
   m_Name: Phanaeus vindex
   m_TagString: Untagged
@@ -153,3 +154,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0.036108494, y: -0.15346023}
   m_Size: {x: 0.6718302, y: 0.97765404}
   m_Direction: 0
+--- !u!114 &2606927766651823800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4089813131763767470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b317fcc86f238f94c863c517a31e6771, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3686117821139220672}
   - component: {fileID: 4933068417286329721}
   - component: {fileID: 5143275977380535572}
+  - component: {fileID: 4715566175344177069}
   m_Layer: 0
   m_Name: Mallodon dasystomum
   m_TagString: Untagged
@@ -153,3 +154,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0.04513538, y: -0.08726168}
   m_Size: {x: 0.50934196, y: 1.230412}
   m_Direction: 0
+--- !u!114 &4715566175344177069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4731992749744344730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b317fcc86f238f94c863c517a31e6771, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

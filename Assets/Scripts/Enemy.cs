@@ -9,6 +9,11 @@ public class Enemy : MonoBehaviour
      
      private GameObject visualChild; // Reference to the instantiated prefab
     private Rigidbody2D rb;     // Reference to the Rigidbody2D component
+    private float attackCooldown;
+
+    private void  Start() {
+         attackCooldown = 0f;
+    }
 
     public void Initialize(EnemyType type, Vector3 spawnPosition)
     {
@@ -36,6 +41,10 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         // Move towards the player or implement other behaviors
+         if (attackCooldown > 0)
+        {
+            attackCooldown -= Time.deltaTime;
+        }
     }
 
     void FixedUpdate()
@@ -56,4 +65,21 @@ public class Enemy : MonoBehaviour
         rb.rotation = angle - 90f;  // Subtract 90 to align the "head" (assuming it starts pointing up)
     }
     }
+
+
+   public void HandlePlayerCollision(GameObject playerObject)
+    {
+        // Only damage if cooldown allows
+        if (attackCooldown <= 0)
+        {
+            Player player = playerObject.GetComponent<Player>();
+            if (player != null)
+            {
+                player.DamagePlayer(enemyType.data.attackSpeed);
+                attackCooldown = 1f / enemyType.data.attackSpeed;
+            }
+        }
+    }
+
+    
 }
