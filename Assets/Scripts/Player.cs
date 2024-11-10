@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
-using System;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class Player : MonoBehaviour
     private float attackSpeed;
     [SerializeField]
     private float maxHP = 100f;
+     [Header("UI Elements")]
+     [SerializeField]
+    private Image healthBar;       // Reference to the Health Bar Image
+    [SerializeField]
+    private TextMeshProUGUI healthText;     // Reference to the Health Text UI
+    [SerializeField]
+    private TextMeshProUGUI deathText;     // Reference to the Health Text UI
     private float currentHP;
     void Awake()
     {
@@ -28,6 +36,7 @@ public class Player : MonoBehaviour
         // Start the automatic attack coroutine
        // StartCoroutine(AutoAttackRoutine());
        currentHP = maxHP;
+       deathText.gameObject.SetActive(false);
     }
 
     void Update()
@@ -102,11 +111,29 @@ public class Player : MonoBehaviour
     {
         currentHP -= amount;
         Debug.Log("Player damaged! Current HP: " + currentHP);
+        UpdateHealthUI();
+    }
+
+
+    private void UpdateHealthUI()
+    {
+        // Update the health bar fill amount (assuming healthBar is set to Fill type)
+        if (healthBar != null)
+        {
+            healthBar.fillAmount = currentHP / maxHP;
+        }
+
+        // Update the health text to show the current HP
+        if (healthText != null)
+        {
+            healthText.text = Mathf.Ceil(currentHP).ToString();
+        }
     }
 
     private void Death () {
         Debug.Log("The Player is dead!");
         gameObject.SetActive(false);
+        deathText.gameObject.SetActive(true);
     }
 
 
