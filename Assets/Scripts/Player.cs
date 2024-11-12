@@ -5,10 +5,10 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
-    public float moveSpeed = 5f;  // Movement speed of the character
+    public float moveSpeed = 5f; 
 
-    private Rigidbody2D rb;  // Reference to the Rigidbody2D component
-    private Vector2 movement;  // Variable to store movement direction
+    private Rigidbody2D rb;  
+    private Vector2 movement;  
     private Animator animator;
     private bool isMoving;
     [SerializeField]
@@ -17,12 +17,27 @@ public class Player : MonoBehaviour
     private float maxHP = 100f;
      [Header("UI Elements")]
      [SerializeField]
-    private Image healthBar;       // Reference to the Health Bar Image
+    private Image healthBar;      
     [SerializeField]
-    private TextMeshProUGUI healthText;     // Reference to the Health Text UI
+    private TextMeshProUGUI healthText;    
     [SerializeField]
-    private TextMeshProUGUI deathText;     // Reference to the Health Text UI
+    private TextMeshProUGUI deathText;    
     private float currentHP;
+
+     [SerializeField]
+    private Image xpBar;      
+    [SerializeField]
+    private TextMeshProUGUI levelText;     
+    [SerializeField]
+    private TextMeshProUGUI xpText;    
+    [SerializeField]
+    private TextMeshProUGUI toNextLevelText;    
+
+    private int level;
+    private float toNextLevel;
+    public float currentXP;
+
+
     void Awake()
     {
         // Get the Rigidbody2D component attached to the GameObject
@@ -33,22 +48,62 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        // Start the automatic attack coroutine
-       // StartCoroutine(AutoAttackRoutine());
        currentHP = maxHP;
        deathText.gameObject.SetActive(false);
+       level = 1;
+       toNextLevel = 100;
+       currentXP = 0;
+       UpdateLevelUI();
+       UpdateHealthUI();
     }
 
     void Update()
     {
         CheckInput();
 
+        
+    }
+
+    private void FixedUpdate() {
         if (currentHP <= 0)
         {
             Death();
         }
+        if (currentXP >= toNextLevel)
+        {
+            LevelUp();
+        }
     }
 
+    private void LevelUp () {
+        level =+ 1;
+        currentXP = 0;
+        toNextLevel = toNextLevel + (toNextLevel * 0.3f); 
+        UpdateLevelUI();
+    }
+
+
+    private void UpdateLevelUI()
+    {
+       
+        if (xpBar != null)
+        {
+            xpBar.fillAmount = currentXP / toNextLevel;
+        }
+
+        if (levelText != null)
+        {
+            levelText.text = Mathf.Ceil(level).ToString();
+        }
+        if (xpText != null)
+        {
+            xpText.text = Mathf.Ceil(currentXP).ToString();
+        }
+        if (toNextLevelText != null)
+        {
+            toNextLevelText.text = Mathf.Ceil(toNextLevel).ToString();
+        }
+    }
 
     private void CheckInput()
     {
@@ -117,13 +172,13 @@ public class Player : MonoBehaviour
 
     private void UpdateHealthUI()
     {
-        // Update the health bar fill amount (assuming healthBar is set to Fill type)
+       
         if (healthBar != null)
         {
             healthBar.fillAmount = currentHP / maxHP;
         }
 
-        // Update the health text to show the current HP
+        
         if (healthText != null)
         {
             healthText.text = Mathf.Ceil(currentHP).ToString();
