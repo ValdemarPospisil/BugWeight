@@ -1,37 +1,41 @@
-using System.Data.Common;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
-    public EnemyType enemyType;  // Shared type data
-
-     private Transform player;  // Reference to the player's transform
-     
-     private GameObject visualChild; // Reference to the instantiated prefab
-    private Rigidbody2D rb;     // Reference to the Rigidbody2D component
+    public EnemyType enemyType;
+    private EnemyCollisionHandler enemyCollisionHandler;
+    private Transform playerTransform;
+    private Player player;
+    private GameObject visualChild;
+    private Rigidbody2D rb;
     private float attackCooldown;
+    private int enemyCurentHP;
 
-    private void  Start() {
-         attackCooldown = 0f;
+    private void Start() 
+    {
+        attackCooldown = 0f;
+        enemyCollisionHandler = GetComponentInChildren<EnemyCollisionHandler>();
+        enemyCurentHP = enemyType.data.enemyMaxHP;
+        UpdateHealthUI();
     }
 
     public void Initialize(EnemyType type, Vector3 spawnPosition)
     {
         enemyType = type;
         transform.position = spawnPosition;
+        enemyCurentHP = type.data.enemyMaxHP;
 
-        // Find the player by tag
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
         if (visualChild == null)
         {
-            // Instantiate the prefab as a child of this GameObject and store the reference
             visualChild = Instantiate(type.data.prefab, transform);
         }
 
-        // Access Rigidbody2D and other components from the child
         rb = visualChild.GetComponent<Rigidbody2D>();
-
         if (rb == null)
         {
             Debug.LogError($"Rigidbody2D component not found on prefab '{type.data.prefab.name}'. Make sure it is attached.");
@@ -40,8 +44,7 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        // Move towards the player or implement other behaviors
-         if (attackCooldown > 0)
+        if (attackCooldown > 0)
         {
             attackCooldown -= Time.deltaTime;
         }
@@ -49,37 +52,52 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        
+        if (playerTransform != null && rb != null)
+        {
+            Vector2 direction = (playerTransform.position - visualChild.transform.position).normalized;
+            rb.linearVelocity = direction * enemyType.data.moveSpeed;
 
-        if (player != null && rb != null)
-    {
-
-        // Calculate the direction vector from the enemy's actual position to the player
-        Vector2 direction = (player.position - visualChild.transform.position).normalized;
-
-        // Move the enemy towards the player using linearVelocity
-        rb.linearVelocity = direction * enemyType.data.moveSpeed;
-
-        // Rotate the enemy to face the player
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rb.rotation = angle - 90f;  // Subtract 90 to align the "head" (assuming it starts pointing up)
-    }
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            rb.rotation = angle - 90f;
+        }
     }
 
-
-   public void HandlePlayerCollision(GameObject playerObject)
+    public void DamageEnemy(int amount) 
     {
-        // Only damage if cooldown allows
+        enemyCurentHP -= amount;
+        UpdateHealthUI();
+
+        if (enemyCurentHP <= 0)
+        {
+            player.currentXP += enemyType.data.xpDrop;
+            player.UpdateLevelUI();
+            Destroy(gameObject);
+        } 
+    }
+
+    private void UpdateHealthUI()
+    {
+        if (enemyCollisionHandler.enemyHealthBar != null)
+        {
+            enemyCollisionHandler.enemyHealthBar.fillAmount = (float)enemyCurentHP / enemyType.data.enemyMaxHP;
+        }
+
+        if (enemyCollisionHandler.enemyHealthText != null)
+        {
+            enemyCollisionHandler.enemyHealthText.text = Mathf.CeilToInt(enemyCurentHP).ToString();
+        }
+    }
+
+    public void HandlePlayerCollision(GameObject playerObject)
+    {
         if (attackCooldown <= 0)
         {
             Player player = playerObject.GetComponent<Player>();
             if (player != null)
             {
-                player.DamagePlayer(enemyType.data.attackSpeed);
+                player.DamagePlayer(enemyType.data.attackDamage);
                 attackCooldown = 1f / enemyType.data.attackSpeed;
             }
         }
     }
-
-    
 }

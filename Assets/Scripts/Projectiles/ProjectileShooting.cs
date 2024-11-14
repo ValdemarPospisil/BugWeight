@@ -20,7 +20,7 @@ public class PlayerShooting : MonoBehaviour
         fireCooldown -= Time.deltaTime;
         if (fireCooldown <= 0f)
         {
-            ShootProjectiles();
+           // ShootProjectiles();
             fireCooldown = fireRate;
         }
     }
@@ -34,8 +34,8 @@ public class PlayerShooting : MonoBehaviour
         // Define 8 directions for shooting (4 orthogonal + 4 diagonal)
         Vector2[] directions = {
             Vector2.up, Vector2.down, Vector2.left, Vector2.right,
-            new Vector2(1, 1).normalized, new Vector2(1, -1).normalized,
-            new Vector2(-1, 1).normalized, new Vector2(-1, -1).normalized
+        //    new Vector2(1, 1).normalized, new Vector2(1, -1).normalized,
+        //    new Vector2(-1, 1).normalized, new Vector2(-1, -1).normalized
         };
 
         // Spawn a projectile in each direction

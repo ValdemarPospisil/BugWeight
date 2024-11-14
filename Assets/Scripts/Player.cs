@@ -11,39 +11,53 @@ public class Player : MonoBehaviour
     private Vector2 movement;  
     private Animator animator;
     private bool isMoving;
+    private int level;
+    private float toNextLevel;
+    public float currentXP;
+    private float currentHP;
+    private Animator activeAnimator;
+    private SpriteRenderer spriteRenderer;
+
+
+
+    [Header("Player Stats")]
     [SerializeField]
     private float attackSpeed;
     [SerializeField]
     private float maxHP = 100f;
-     [Header("UI Elements")]
-     [SerializeField]
-    private Image healthBar;      
     [SerializeField]
-    private TextMeshProUGUI healthText;    
-    [SerializeField]
-    private TextMeshProUGUI deathText;    
-    private float currentHP;
+    private string activeClass = "Wizard"; 
 
-     [SerializeField]
-    private Image xpBar;      
-    [SerializeField]
-    private TextMeshProUGUI levelText;     
-    [SerializeField]
-    private TextMeshProUGUI xpText;    
-    [SerializeField]
-    private TextMeshProUGUI toNextLevelText;    
 
-    private int level;
-    private float toNextLevel;
-    public float currentXP;
+    [Header("Animators")]
+    [SerializeField]
+    private Animator meleeAnimator;
+    [SerializeField]
+    private Animator rangedAnimator;
+    [SerializeField]
+    private Animator magicAnimator;
+    
+
+    
+    
+    [Header("UI Elements")]
+    [SerializeField] private Image healthBar;
+    [SerializeField] private TextMeshProUGUI healthText;
+    [SerializeField] private TextMeshProUGUI deathText;
+
+    [SerializeField] private Image xpBar;
+    [SerializeField] private TextMeshProUGUI levelText;
+    [SerializeField] private TextMeshProUGUI xpText;
+    [SerializeField] private TextMeshProUGUI toNextLevelText;
+
 
 
     void Awake()
     {
-        // Get the Rigidbody2D component attached to the GameObject
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        UpdateActiveAnimator();
     }
 
     void Start()
@@ -57,22 +71,33 @@ public class Player : MonoBehaviour
        UpdateHealthUI();
     }
 
-    void Update()
+    private void Update()
     {
         CheckInput();
+        HandleCombatInput();
+        UpdateHealthUI();
 
-        
-    }
-
-    private void FixedUpdate() {
         if (currentHP <= 0)
         {
             Death();
         }
+
         if (currentXP >= toNextLevel)
         {
             LevelUp();
         }
+    }
+
+    private void UpdateActiveAnimator()
+    {
+        // Set activeAnimator based on class
+        meleeAnimator.gameObject.SetActive(activeClass == "Warrior");
+        rangedAnimator.gameObject.SetActive(activeClass == "Hunter");
+        magicAnimator.gameObject.SetActive(activeClass == "Wizard");
+
+        activeAnimator = activeClass == "Warrior" ? meleeAnimator :
+                         activeClass == "Hunter" ? rangedAnimator :
+                         magicAnimator;
     }
 
     private void LevelUp () {
@@ -83,7 +108,7 @@ public class Player : MonoBehaviour
     }
 
 
-    private void UpdateLevelUI()
+    public void UpdateLevelUI()
     {
        
         if (xpBar != null)
@@ -106,60 +131,53 @@ public class Player : MonoBehaviour
     }
 
     private void CheckInput()
+{
+    movement.x = Input.GetAxisRaw("Horizontal");
+    movement.y = Input.GetAxisRaw("Vertical");
+
+    // Normalize movement to avoid faster diagonal movement
+    movement = movement.normalized;
+
+    // Set base animator parameters for movement and idle states
+    isMoving = movement != Vector2.zero;
+    /*
+    animator.SetBool("Idle", !isMoving);
+
+    if (isMoving)
     {
-        // Get input from horizontal (A/D or Left/Right arrow) and vertical (W/S or Up/Down arrow) axes
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
-        // Normalize the movement vector to prevent faster diagonal movement
-        movement = movement.normalized;
-        if(movement != Vector2.zero)
-        {
-            isMoving = true;
-            animator.SetBool("Idle", false);
-        }
-        else
-        {
-            animator.SetBool("Idle", true);
-        }
-        
-
-        if(isMoving == true)
-        {
-            
-            
-            if (movement.x > 0)
-            {
-                animator.SetFloat("MovementX", 1);
-            }
-            else if (movement.x < 0)
-            {
-                animator.SetFloat("MovementX", -1);
-            }
-            else
-            {
-                animator.SetFloat("MovementX", 0);
-            }
-            
-            if (movement.y > 0)
-            {
-                animator.SetFloat("MovementY", 1);
-            }
-            else if (movement.y < 0)
-            {
-                animator.SetFloat("MovementY", -1);
-            }
-            else
-            {
-                animator.SetFloat("MovementY", 0);
-            }
-            
-            
-            
-        }
-
-        rb.linearVelocity = movement * moveSpeed;
+        animator.SetFloat("MovementX", movement.x);
+        animator.SetFloat("MovementY", movement.y);
     }
+    */
+    // Set active weapon animator parameters, if applicable
+    if (activeAnimator != null)
+    {
+        activeAnimator.SetBool("Idle", !isMoving);
+
+        if (isMoving)
+        {
+            activeAnimator.SetFloat("MovementX", movement.x);
+            activeAnimator.SetFloat("MovementY", movement.y);
+        }
+    }
+ 
+    // Move the player by updating the rigidbody's velocity
+    rb.linearVelocity = movement * moveSpeed;
+}
+
+    private void HandleCombatInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && activeAnimator != null)
+        {
+            if (activeClass == "Warrior")
+                activeAnimator.SetTrigger("Melee");
+            else if (activeClass == "Hunter")
+                activeAnimator.SetTrigger("Ranged");
+            else if (activeClass == "Wizard")
+                activeAnimator.SetTrigger("Magic");
+        }
+    }
+
 
 
       public void DamagePlayer(float amount)
@@ -192,19 +210,5 @@ public class Player : MonoBehaviour
     }
 
 
-    private IEnumerator AutoAttackRoutine()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(attackSpeed); // Wait 5 seconds before each attack
-            TriggerAttack();
-        }
-    }
-
-    private void TriggerAttack()
-    {
-        // Trigger the attack animation
-        animator.SetTrigger("isAttacking");
-    }
     
 }

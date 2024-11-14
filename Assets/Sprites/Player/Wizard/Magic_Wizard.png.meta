@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 64aba8151f734494aa91c7bb3535927a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6054524344627281787
+    second: Magic_Wizard_0
+  - first:
+      213: 5067297474245317237
+    second: Magic_Wizard_1
+  - first:
+      213: 5430658128785063078
+    second: Magic_Wizard_2
+  - first:
+      213: 7453169805123417559
+    second: Magic_Wizard_3
+  - first:
+      213: -8141300215223030702
+    second: Magic_Wizard_4
+  - first:
+      213: 4027664980689465700
+    second: Magic_Wizard_5
+  - first:
+      213: 8225262190475633149
+    second: Magic_Wizard_6
+  - first:
+      213: 81473587830862784
+    second: Magic_Wizard_7
+  - first:
+      213: 1283871848497423031
+    second: Magic_Wizard_8
+  - first:
+      213: 8708019843015930678
+    second: Magic_Wizard_9
+  - first:
+      213: -3319607737024626366
+    second: Magic_Wizard_10
+  - first:
+      213: -8162784757603429984
+    second: Magic_Wizard_11
+  - first:
+      213: 3054637379897543591
+    second: Magic_Wizard_12
+  - first:
+      213: -5307978717818463771
+    second: Magic_Wizard_13
+  - first:
+      213: -8873051589421042637
+    second: Magic_Wizard_14
+  - first:
+      213: -4182028551017077794
+    second: Magic_Wizard_15
+  - first:
+      213: -8423538715319261196
+    second: Magic_Wizard_16
+  - first:
+      213: 7445282967122869292
+    second: Magic_Wizard_17
+  - first:
+      213: -3641758274923690086
+    second: Magic_Wizard_18
+  - first:
+      213: 7275270834302315054
+    second: Magic_Wizard_19
+  - first:
+      213: 5299797065012384541
+    second: Magic_Wizard_20
+  - first:
+      213: -8370978411512007045
+    second: Magic_Wizard_21
+  - first:
+      213: -2087749114193044076
+    second: Magic_Wizard_22
+  - first:
+      213: -6514193411690664096
+    second: Magic_Wizard_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Magic_Wizard_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 431
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7fb67d20ddf50450800000000000000
+      internalID: 6054524344627281787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 431
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57250a38438a25640800000000000000
+      internalID: 5067297474245317237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 431
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac32d69bc29d5b40800000000000000
+      internalID: 5430658128785063078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_3
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 431
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d57c0df27afe6760800000000000000
+      internalID: 7453169805123417559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_4
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 431
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ce1d5b69a440f80800000000000000
+      internalID: -8141300215223030702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_5
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 431
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461b640e5f325e730800000000000000
+      internalID: 4027664980689465700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_6
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 303
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df160c70260062270800000000000000
+      internalID: 8225262190475633149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 303
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c33c35ebc3712100800000000000000
+      internalID: 81473587830862784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 303
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b220dad4aa31d110800000000000000
+      internalID: 1283871848497423031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 303
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633740009e919d870800000000000000
+      internalID: 8708019843015930678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_10
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 303
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2414209e9526ee1d0800000000000000
+      internalID: -3319607737024626366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_11
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 303
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a11311e286f7be80800000000000000
+      internalID: -8162784757603429984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 175
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab4c6a4380446a20800000000000000
+      internalID: 3054637379897543591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_13
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 175
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9d811aa754656b0800000000000000
+      internalID: -5307978717818463771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_14
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 175
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334f7d247969cd480800000000000000
+      internalID: -8873051589421042637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_15
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 175
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3e510b03376f5c0800000000000000
+      internalID: -4182028551017077794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_16
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 175
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f725a11b24991b80800000000000000
+      internalID: -8423538715319261196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_17
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 175
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2cff9b6965f25760800000000000000
+      internalID: 7445282967122869292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_18
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a978551d420e57dc0800000000000000
+      internalID: -3641758274923690086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_19
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a695b1744f6f460800000000000000
+      internalID: 7275270834302315054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_20
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 47
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1398b1e959ac8940800000000000000
+      internalID: 5299797065012384541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_21
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 47
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76fc5f6c7f44db80800000000000000
+      internalID: -8370978411512007045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_22
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 47
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d1364fd33d603e0800000000000000
+      internalID: -2087749114193044076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wizard_23
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 47
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06fecf11b9fe895a0800000000000000
+      internalID: -6514193411690664096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Magic_Wizard_0: 6054524344627281787
+      Magic_Wizard_1: 5067297474245317237
+      Magic_Wizard_10: -3319607737024626366
+      Magic_Wizard_11: -8162784757603429984
+      Magic_Wizard_12: 3054637379897543591
+      Magic_Wizard_13: -5307978717818463771
+      Magic_Wizard_14: -8873051589421042637
+      Magic_Wizard_15: -4182028551017077794
+      Magic_Wizard_16: -8423538715319261196
+      Magic_Wizard_17: 7445282967122869292
+      Magic_Wizard_18: -3641758274923690086
+      Magic_Wizard_19: 7275270834302315054
+      Magic_Wizard_2: 5430658128785063078
+      Magic_Wizard_20: 5299797065012384541
+      Magic_Wizard_21: -8370978411512007045
+      Magic_Wizard_22: -2087749114193044076
+      Magic_Wizard_23: -6514193411690664096
+      Magic_Wizard_3: 7453169805123417559
+      Magic_Wizard_4: -8141300215223030702
+      Magic_Wizard_5: 4027664980689465700
+      Magic_Wizard_6: 8225262190475633149
+      Magic_Wizard_7: 81473587830862784
+      Magic_Wizard_8: 1283871848497423031
+      Magic_Wizard_9: 8708019843015930678
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

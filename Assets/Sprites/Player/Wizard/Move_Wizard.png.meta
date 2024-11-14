@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 78d89cb489734084b8099f29257acb39
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1166696677063150589
+    second: Move_Wizard_0
+  - first:
+      213: 3272592914882160910
+    second: Move_Wizard_1
+  - first:
+      213: -7682480461756743118
+    second: Move_Wizard_2
+  - first:
+      213: -5701083958604440994
+    second: Move_Wizard_3
+  - first:
+      213: -2628193078534477894
+    second: Move_Wizard_4
+  - first:
+      213: 5373655274178199654
+    second: Move_Wizard_5
+  - first:
+      213: 559949884193613736
+    second: Move_Wizard_6
+  - first:
+      213: 7874770709854803037
+    second: Move_Wizard_7
+  - first:
+      213: 559397777459800256
+    second: Move_Wizard_8
+  - first:
+      213: -8308666325417431321
+    second: Move_Wizard_9
+  - first:
+      213: 4978056296467735781
+    second: Move_Wizard_10
+  - first:
+      213: -8252729075198733089
+    second: Move_Wizard_11
+  - first:
+      213: -1646244356241057768
+    second: Move_Wizard_12
+  - first:
+      213: -1367103503672878622
+    second: Move_Wizard_13
+  - first:
+      213: -7217739049637119463
+    second: Move_Wizard_14
+  - first:
+      213: -3678360560835418
+    second: Move_Wizard_15
+  - first:
+      213: 8625911443785701826
+    second: Move_Wizard_16
+  - first:
+      213: -3815058018384683363
+    second: Move_Wizard_17
+  - first:
+      213: -6841698201790993895
+    second: Move_Wizard_18
+  - first:
+      213: -6922597022307350765
+    second: Move_Wizard_19
+  - first:
+      213: 5622212999913611155
+    second: Move_Wizard_20
+  - first:
+      213: -3351230831853091147
+    second: Move_Wizard_21
+  - first:
+      213: -9214133469882594883
+    second: Move_Wizard_22
+  - first:
+      213: -3940830839604234490
+    second: Move_Wizard_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Move_Wizard_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 431
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304b50bbd8f0fcfe0800000000000000
+      internalID: -1166696677063150589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 431
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09e20acae59a6d20800000000000000
+      internalID: 3272592914882160910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 431
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2324c1b39b8526590800000000000000
+      internalID: -7682480461756743118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_3
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 431
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a54b4685ea1e0b0800000000000000
+      internalID: -5701083958604440994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_4
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 431
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7efc0e158c68bd0800000000000000
+      internalID: -2628193078534477894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_5
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 431
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660cbc2400f039a40800000000000000
+      internalID: 5373655274178199654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 303
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7a163f37755c700800000000000000
+      internalID: 559949884193613736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_7
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 303
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54db800d3ec84d60800000000000000
+      internalID: 7874770709854803037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_8
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 303
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c862a5905163c700800000000000000
+      internalID: 559397777459800256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_9
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 303
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee6e3c8fffa1bc80800000000000000
+      internalID: -8308666325417431321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_10
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 303
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e42bd6a3db951540800000000000000
+      internalID: 4978056296467735781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_11
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 303
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4dd3581aa687d80800000000000000
+      internalID: -8252729075198733089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 175
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81892ccea7d5729e0800000000000000
+      internalID: -1646244356241057768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_13
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 175
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9d26c4b92170de0800000000000000
+      internalID: -1367103503672878622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_14
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 175
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91af9e8539075db90800000000000000
+      internalID: -7217739049637119463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_15
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 175
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a46a61fc8ee2fff0800000000000000
+      internalID: -3678360560835418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_16
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 175
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9d2de81c465b770800000000000000
+      internalID: 8625911443785701826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_17
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 175
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9edca002f03e0bc0800000000000000
+      internalID: -3815058018384683363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_18
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91aa1ddfbb76d01a0800000000000000
+      internalID: -6841698201790993895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_19
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317813a8faefdef90800000000000000
+      internalID: -6922597022307350765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_20
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 47
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f1f678fec160e40800000000000000
+      internalID: 5622212999913611155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_21
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 47
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b64f0360590e71d0800000000000000
+      internalID: -3351230831853091147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_22
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 47
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db94c9e7d62d02080800000000000000
+      internalID: -9214133469882594883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Wizard_23
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 47
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6073c751b3b5f49c0800000000000000
+      internalID: -3940830839604234490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Move_Wizard_0: -1166696677063150589
+      Move_Wizard_1: 3272592914882160910
+      Move_Wizard_10: 4978056296467735781
+      Move_Wizard_11: -8252729075198733089
+      Move_Wizard_12: -1646244356241057768
+      Move_Wizard_13: -1367103503672878622
+      Move_Wizard_14: -7217739049637119463
+      Move_Wizard_15: -3678360560835418
+      Move_Wizard_16: 8625911443785701826
+      Move_Wizard_17: -3815058018384683363
+      Move_Wizard_18: -6841698201790993895
+      Move_Wizard_19: -6922597022307350765
+      Move_Wizard_2: -7682480461756743118
+      Move_Wizard_20: 5622212999913611155
+      Move_Wizard_21: -3351230831853091147
+      Move_Wizard_22: -9214133469882594883
+      Move_Wizard_23: -3940830839604234490
+      Move_Wizard_3: -5701083958604440994
+      Move_Wizard_4: -2628193078534477894
+      Move_Wizard_5: 5373655274178199654
+      Move_Wizard_6: 559949884193613736
+      Move_Wizard_7: 7874770709854803037
+      Move_Wizard_8: 559397777459800256
+      Move_Wizard_9: -8308666325417431321
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
