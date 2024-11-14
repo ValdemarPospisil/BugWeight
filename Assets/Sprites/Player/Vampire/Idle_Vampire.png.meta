@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: a350f13efcad0824abebca79f5da2d7a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4802932735834756597
+    second: Idle_Vampire_0
+  - first:
+      213: -4124821846675777314
+    second: Idle_Vampire_1
+  - first:
+      213: -5882530008207802544
+    second: Idle_Vampire_2
+  - first:
+      213: -1938902664240937162
+    second: Idle_Vampire_3
+  - first:
+      213: -7178761868162058055
+    second: Idle_Vampire_4
+  - first:
+      213: 8234709018306808366
+    second: Idle_Vampire_5
+  - first:
+      213: 5716920485947417401
+    second: Idle_Vampire_6
+  - first:
+      213: -3876148509343877868
+    second: Idle_Vampire_7
+  - first:
+      213: 1608748443526916412
+    second: Idle_Vampire_8
+  - first:
+      213: -6328015141845670506
+    second: Idle_Vampire_9
+  - first:
+      213: 1977223829979206875
+    second: Idle_Vampire_10
+  - first:
+      213: 8906330337700827928
+    second: Idle_Vampire_11
+  - first:
+      213: 6441114473285852254
+    second: Idle_Vampire_12
+  - first:
+      213: 3644515853419469618
+    second: Idle_Vampire_13
+  - first:
+      213: -6194199592585038191
+    second: Idle_Vampire_14
+  - first:
+      213: 6810869660915500110
+    second: Idle_Vampire_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle_Vampire_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 431
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5968f40e177a240800000000000000
+      internalID: 4802932735834756597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 431
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed89e1b7260b1c6c0800000000000000
+      internalID: -4124821846675777314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 431
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05fb230ef1e0d5ea0800000000000000
+      internalID: -5882530008207802544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_3
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 431
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6374cd3bc42a715e0800000000000000
+      internalID: -1938902664240937162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 303
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8b4199d1aef5c90800000000000000
+      internalID: -7178761868162058055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 303
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a02e80930974270800000000000000
+      internalID: 8234709018306808366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_6
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 303
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933ac0674e4965f40800000000000000
+      internalID: 5716920485947417401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_7
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 303
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415f5eba777253ac0800000000000000
+      internalID: -3876148509343877868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 175
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3962659f2c635610800000000000000
+      internalID: 1608748443526916412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_9
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 175
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695eef871cf5e28a0800000000000000
+      internalID: -6328015141845670506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_10
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 175
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd4195bf892807b10800000000000000
+      internalID: 1977223829979206875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_11
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 175
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81351fe1144a99b70800000000000000
+      internalID: 8906330337700827928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_12
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 47
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c94d9ac7f636950800000000000000
+      internalID: 6441114473285852254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_13
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 47
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23bd855fbdbe39230800000000000000
+      internalID: 3644515853419469618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_14
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 47
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1967910f948c90aa0800000000000000
+      internalID: -6194199592585038191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Vampire_15
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 47
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e448a5efed1158e50800000000000000
+      internalID: 6810869660915500110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Idle_Vampire_0: 4802932735834756597
+      Idle_Vampire_1: -4124821846675777314
+      Idle_Vampire_10: 1977223829979206875
+      Idle_Vampire_11: 8906330337700827928
+      Idle_Vampire_12: 6441114473285852254
+      Idle_Vampire_13: 3644515853419469618
+      Idle_Vampire_14: -6194199592585038191
+      Idle_Vampire_15: 6810869660915500110
+      Idle_Vampire_2: -5882530008207802544
+      Idle_Vampire_3: -1938902664240937162
+      Idle_Vampire_4: -7178761868162058055
+      Idle_Vampire_5: 8234709018306808366
+      Idle_Vampire_6: 5716920485947417401
+      Idle_Vampire_7: -3876148509343877868
+      Idle_Vampire_8: 1608748443526916412
+      Idle_Vampire_9: -6328015141845670506
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

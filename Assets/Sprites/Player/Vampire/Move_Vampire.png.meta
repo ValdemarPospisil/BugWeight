@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 140fa5a0e24d5bf419bbb675117df82f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5233020282361142218
+    second: Move_Vampire_0
+  - first:
+      213: -3836488895495242074
+    second: Move_Vampire_1
+  - first:
+      213: 4569606435501039921
+    second: Move_Vampire_2
+  - first:
+      213: -1379436225634756037
+    second: Move_Vampire_3
+  - first:
+      213: -4219287875135304007
+    second: Move_Vampire_4
+  - first:
+      213: 6257717114984961420
+    second: Move_Vampire_5
+  - first:
+      213: -3992629235868161889
+    second: Move_Vampire_6
+  - first:
+      213: -511626245961725154
+    second: Move_Vampire_7
+  - first:
+      213: 5898351285681659252
+    second: Move_Vampire_8
+  - first:
+      213: 1576468711078916677
+    second: Move_Vampire_9
+  - first:
+      213: -2003808434862156449
+    second: Move_Vampire_10
+  - first:
+      213: -6848111619752391426
+    second: Move_Vampire_11
+  - first:
+      213: -791294387362201354
+    second: Move_Vampire_12
+  - first:
+      213: -3013273417391916867
+    second: Move_Vampire_13
+  - first:
+      213: 4925095237565000710
+    second: Move_Vampire_14
+  - first:
+      213: 7438393149874545559
+    second: Move_Vampire_15
+  - first:
+      213: -2801097731014932109
+    second: Move_Vampire_16
+  - first:
+      213: 5963412407427533803
+    second: Move_Vampire_17
+  - first:
+      213: 1251841394426419611
+    second: Move_Vampire_18
+  - first:
+      213: 1430391327321980960
+    second: Move_Vampire_19
+  - first:
+      213: 6503549442946003454
+    second: Move_Vampire_20
+  - first:
+      213: -6012345441149589880
+    second: Move_Vampire_21
+  - first:
+      213: 8133297335513459187
+    second: Move_Vampire_22
+  - first:
+      213: 1176113984614433844
+    second: Move_Vampire_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Move_Vampire_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 431
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634237767c39067b0800000000000000
+      internalID: -5233020282361142218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 431
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae76471dad02cac0800000000000000
+      internalID: -3836488895495242074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 431
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131e06f97d08a6f30800000000000000
+      internalID: 4569606435501039921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_3
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 431
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a1cb4bf024bdce0800000000000000
+      internalID: -1379436225634756037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_4
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 431
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be827548041275c0800000000000000
+      internalID: -4219287875135304007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_5
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 431
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c859f8faf80e7d650800000000000000
+      internalID: 6257717114984961420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 303
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f982d342dd45798c0800000000000000
+      internalID: -3992629235868161889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_7
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 303
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b4fa7d3a656e8f0800000000000000
+      internalID: -511626245961725154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_8
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 303
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d16875e372bd150800000000000000
+      internalID: 5898351285681659252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 303
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5427063b0fdb0e510800000000000000
+      internalID: 1576468711078916677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_10
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 303
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f551c1a58da0134e0800000000000000
+      internalID: -2003808434862156449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_11
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 303
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc0f62c3ce96f0a0800000000000000
+      internalID: -6848111619752391426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_12
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 175
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0048872f1c405f0800000000000000
+      internalID: -791294387362201354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_13
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 175
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db83a39bac3be26d0800000000000000
+      internalID: -3013273417391916867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_14
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 175
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ca7083604795440800000000000000
+      internalID: 4925095237565000710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_15
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 175
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793a8f5d82b7a3760800000000000000
+      internalID: 7438393149874545559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_16
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 175
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379c3b954708029d0800000000000000
+      internalID: -2801097731014932109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_17
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 175
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb00e13dfb42c250800000000000000
+      internalID: 5963412407427533803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 47
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b999aed9d1f6f5110800000000000000
+      internalID: 1251841394426419611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 47
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02083da6555c9d310800000000000000
+      internalID: 1430391327321980960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_20
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 47
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef17cf5d2cf314a50800000000000000
+      internalID: 6503549442946003454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_21
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 47
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886e6511dabdf8ca0800000000000000
+      internalID: -6012345441149589880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_22
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 47
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f929e7a5d64fd070800000000000000
+      internalID: 8133297335513459187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Vampire_23
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 47
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434005c0075625010800000000000000
+      internalID: 1176113984614433844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Move_Vampire_0: -5233020282361142218
+      Move_Vampire_1: -3836488895495242074
+      Move_Vampire_10: -2003808434862156449
+      Move_Vampire_11: -6848111619752391426
+      Move_Vampire_12: -791294387362201354
+      Move_Vampire_13: -3013273417391916867
+      Move_Vampire_14: 4925095237565000710
+      Move_Vampire_15: 7438393149874545559
+      Move_Vampire_16: -2801097731014932109
+      Move_Vampire_17: 5963412407427533803
+      Move_Vampire_18: 1251841394426419611
+      Move_Vampire_19: 1430391327321980960
+      Move_Vampire_2: 4569606435501039921
+      Move_Vampire_20: 6503549442946003454
+      Move_Vampire_21: -6012345441149589880
+      Move_Vampire_22: 8133297335513459187
+      Move_Vampire_23: 1176113984614433844
+      Move_Vampire_3: -1379436225634756037
+      Move_Vampire_4: -4219287875135304007
+      Move_Vampire_5: 6257717114984961420
+      Move_Vampire_6: -3992629235868161889
+      Move_Vampire_7: -511626245961725154
+      Move_Vampire_8: 5898351285681659252
+      Move_Vampire_9: 1576468711078916677
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

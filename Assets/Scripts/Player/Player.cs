@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 
 public class Player : MonoBehaviour
@@ -9,7 +10,6 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;  
     private Vector2 movement;  
-    private Animator animator;
     private bool isMoving;
     private int level;
     private float toNextLevel;
@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     private float currentHP;
     private Animator activeAnimator;
     private SpriteRenderer spriteRenderer;
+    
 
 
 
@@ -36,6 +37,8 @@ public class Player : MonoBehaviour
     private Animator rangedAnimator;
     [SerializeField]
     private Animator magicAnimator;
+    [SerializeField]
+    private Animator vampirecAnimator;
     
 
     
@@ -55,7 +58,6 @@ public class Player : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         UpdateActiveAnimator();
     }
@@ -94,9 +96,11 @@ public class Player : MonoBehaviour
         meleeAnimator.gameObject.SetActive(activeClass == "Warrior");
         rangedAnimator.gameObject.SetActive(activeClass == "Hunter");
         magicAnimator.gameObject.SetActive(activeClass == "Wizard");
+        vampirecAnimator.gameObject.SetActive(activeClass == "Vampire");
 
         activeAnimator = activeClass == "Warrior" ? meleeAnimator :
                          activeClass == "Hunter" ? rangedAnimator :
+                         activeClass == "Vampire" ? vampirecAnimator :
                          magicAnimator;
     }
 
@@ -177,7 +181,7 @@ public class Player : MonoBehaviour
                 activeAnimator.SetTrigger("Magic");
         }
     }
-
+ 
 
 
       public void DamagePlayer(float amount)
