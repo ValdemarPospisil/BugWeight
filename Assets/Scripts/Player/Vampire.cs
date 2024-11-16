@@ -12,8 +12,8 @@ public class Vampire : PlayerClass
         attackSpeed = 0.8f;
         moveSpeed = 3f;
         
-        elementalBonuses.Add("Blood", 1.3f); // 30% bonus to blood attacks
-        elementalBonuses.Add("Dark", 1.2f);  // 20% bonus to dark attacks
+//        elementalBonuses.Add("Blood", 1.3f); // 30% bonus to blood attacks
+  //      elementalBonuses.Add("Dark", 1.2f);  // 20% bonus to dark attacks
         
         InvokeRepeating(nameof(DamageAura), damageAuraInterval, damageAuraInterval);
     }

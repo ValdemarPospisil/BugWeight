@@ -10,6 +10,7 @@ public class Hunter : PlayerClass
         maxHP = 100f;
         attackSpeed = 1.5f;
         moveSpeed = 8f;
+
         
         elementalBonuses.Add("Wind", 1.3f);   // 30% bonus to wind attacks
         elementalBonuses.Add("Wood", 1.1f);   // 10% bonus to wood attacks
@@ -17,8 +18,9 @@ public class Hunter : PlayerClass
 
     public override void Attack()
     {
-        animator.SetTrigger("Ranged");
+       // animator.SetTrigger("Ranged");
         // Implement ranged attack logic
+        
         Debug.Log("Hunter attacks with ranged weapon.");
     }
 

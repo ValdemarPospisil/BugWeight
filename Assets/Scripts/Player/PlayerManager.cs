@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.Collections.Generic;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -21,37 +20,22 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI xpText;
     [SerializeField] private TextMeshProUGUI toNextLevelText;
 
-    // Player class management
-    private PlayerClass activeClass;
-    public List<PlayerClass> playerClasses; // Assign Warrior, Hunter, etc., in Inspector
-
-    private void Start()
+    void Start()
     {
         // Initialize with the first class as default or any class you prefer
-        SetClass(playerClasses[0]);
+        
         currentHP = maxHP;
         UpdateUI();
     }
 
-    private void Update()
+    void Update()
     {
-        // Example for switching classes for testing (can remove in final)
-        if (Input.GetKeyDown(KeyCode.Alpha1)) SetClass(playerClasses[0]); // Warrior
-        if (Input.GetKeyDown(KeyCode.Alpha2)) SetClass(playerClasses[1]); // Hunter
-        if (Input.GetKeyDown(KeyCode.Alpha3)) SetClass(playerClasses[2]); // Wizard
-        if (Input.GetKeyDown(KeyCode.Alpha4)) SetClass(playerClasses[3]); // Vampire
-
+        
         if (currentHP <= 0) Death();
         if (currentXP >= toNextLevel) LevelUp();
     }
 
-    public void SetClass(PlayerClass newClass)
-    {
-        if (activeClass != null) activeClass.gameObject.SetActive(false);
-        activeClass = newClass;
-        activeClass.gameObject.SetActive(true);
-       // activeClass.Initialize(this); // Pass reference to PlayerManager
-    }
+    
 
     private void LevelUp()
     {

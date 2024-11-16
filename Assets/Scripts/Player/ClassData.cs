@@ -1,11 +1,19 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
-[CreateAssetMenu(fileName = "ClassData", menuName = "ScriptableObjects/ClassData", order = 1)]
+[CreateAssetMenu(fileName = "NewClassData", menuName = "Player/ClassData")]
 public class ClassData : ScriptableObject
 {
     public float maxHP;
     public float attackSpeed;
     public float moveSpeed;
-    public Dictionary<string, float> elementalBonuses;  // Optional for elements
+
+    [System.Serializable]
+    public struct ElementalBonus
+    {
+        public string element;
+        public float multiplier;
+    }
+
+    public List<ElementalBonus> elementalBonuses;
 }

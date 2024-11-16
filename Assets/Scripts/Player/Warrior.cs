@@ -10,6 +10,7 @@ public class Warrior : PlayerClass
         maxHP = 150f;
         attackSpeed = 1.2f;
         moveSpeed = 3f;
+
         
         elementalBonuses.Add("Earth", 1.2f);  // 20% bonus to earth attacks
         elementalBonuses.Add("Fire", 1.1f);   // 10% bonus to fire attacks
@@ -17,7 +18,7 @@ public class Warrior : PlayerClass
 
     public override void Attack()
     {
-        animator.SetTrigger("Melee");
+        //animator.SetTrigger("Melee");
         // Implement melee attack logic
         Debug.Log("Warrior attacks with melee weapon.");
     }
