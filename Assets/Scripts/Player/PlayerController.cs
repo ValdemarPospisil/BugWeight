@@ -1,22 +1,24 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEditor.Animations;
+using UnityEditor.Rendering;
 
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb;   // Reference to Rigidbody2D
-    [SerializeField] private float baseMoveSpeed = 5f; // Default movement speed
+    private Rigidbody2D rb; 
+    [SerializeField] private float baseMoveSpeed = 5f;
 
-    private PlayerClass activeClass;     // The currently active class
-    private Vector2 movementInput;      // Movement input
-    private bool isMoving;
+    private PlayerClass activeClass;    
+    public Vector2 movementInput;
+    public bool isMoving {get; private set; }
 
     private Animator animator;
 
-    public List<PlayerClass> playerClasses; // Assign Warrior, Hunter, etc., in Inspector
-
-
+    public List<PlayerClass> playerClasses; 
+    public Vector2 lastDirection {get; private set; }
+    private bool canMove;
+    
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -24,11 +26,12 @@ public class PlayerController : MonoBehaviour
         SetClass(playerClasses[0]);
         
         animator = GetComponent<Animator>();
+
+        lastDirection = Vector2.right;
     }
 
     private void Start()
     {
-        // Get the active class from PlayerManager
         if (activeClass != null)
         {
             animator.runtimeAnimatorController = activeClass.animatorController;
@@ -37,25 +40,41 @@ public class PlayerController : MonoBehaviour
         {
             Debug.LogError("No active PlayerClass found in PlayerManager!");
         }
-        
+        canMove = true;
     }
 
     private void Update()
     {
+        if (Input.GetKeyUp(KeyCode.Space) && activeClass != null)
+        {
+            activeClass.StopAttack();
+            activeClass.isAttacking = false; // Stop attacking
+            animator.SetBool("IsAttacking", false);
+            canMove = true; 
+
+            
+        }
         HandleInput();
 
-        // Handle Attack Input
-        if (Input.GetKeyDown(KeyCode.Space) && activeClass != null)
-        {
-            activeClass.Attack();
-            animator.SetTrigger("Attack");
-        }
     }
+
+    private void Attack()
+    {
+        activeClass.Attack();
+    }
+    private void StopAttack()
+    {
+        activeClass.StopAttack();
+        Debug.Log("Stopped attacking");
+    }
+
 
     private void FixedUpdate()
     {
         MovePlayer();
     }
+
+   
 
     public void SetClass(PlayerClass newClass)
     {
@@ -68,42 +87,58 @@ public class PlayerController : MonoBehaviour
 
    
     private void HandleInput()
+{
+    
+    if (Input.GetKeyDown(KeyCode.Space) && activeClass != null)
     {
-        // Capture movement input
+        rb.linearVelocity = Vector2.zero; // Stop moving
+        canMove = false; // Prevent movement
+        activeClass.isAttacking = false; // Start attacking
+        animator.SetBool("IsAttacking", true);
+        //activeClass.Attack();
+    }
+    
+    
+
+    if (Input.GetKeyDown(KeyCode.E) && activeClass != null)
+    {
+        activeClass.Special();
+    }
+
+    if (!activeClass.isAttacking)
+    {
         movementInput.x = Input.GetAxisRaw("Horizontal");
         movementInput.y = Input.GetAxisRaw("Vertical");
         movementInput = movementInput.normalized;
 
         isMoving = movementInput != Vector2.zero;
-
-
-        if (animator != null)
-        {
-            animator.SetBool("Idle", !isMoving);
-
-            if (isMoving)
-            {
-                animator.SetFloat("MovementX", movementInput.x);
-                animator.SetFloat("MovementY", movementInput.y);
-            }
-        }
-        else
-        {
-            Debug.LogError("Animator is null");
-        }
- 
-
-        // Normalize input to avoid faster diagonal movement
-        
     }
+
+    if (isMoving)
+    {
+        lastDirection = movementInput;
+    }
+
+    animator.SetBool("Idle", !isMoving);
+
+    if (isMoving)
+    {
+        animator.SetFloat("MovementX", movementInput.x);
+        animator.SetFloat("MovementY", movementInput.y);
+    }
+}
 
     private void MovePlayer()
     {
-        if (activeClass != null)
+        if (activeClass != null && canMove)
         {
-            float moveSpeed = activeClass.GetMoveSpeed(baseMoveSpeed);
-            rb.linearVelocity = movementInput * moveSpeed; // Note: `velocity` instead of `linearVelocity`
+            rb.linearVelocity = movementInput * activeClass.GetMoveSpeed(baseMoveSpeed);
         }
+    }
+
+    private void CanMove()
+    {
+        canMove = true;
     }
 
     
@@ -119,4 +154,6 @@ public class PlayerController : MonoBehaviour
         animator.runtimeAnimatorController = activeClass.animatorController;
         Debug.Log("Switched to class: " + activeClass.GetType().Name);
     }
+
+    
 }

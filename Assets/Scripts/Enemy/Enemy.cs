@@ -2,23 +2,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
     public EnemyType enemyType;
     private EnemyCollisionHandler enemyCollisionHandler;
     private Transform playerTransform;
-    private Player player;
+    private PlayerManager player;
     private GameObject visualChild;
     private Rigidbody2D rb;
     private float attackCooldown;
-    private int enemyCurentHP;
+    private float enemyCurentHP;
 
     private void Start() 
     {
         attackCooldown = 0f;
         enemyCollisionHandler = GetComponentInChildren<EnemyCollisionHandler>();
-        enemyCurentHP = enemyType.data.enemyMaxHP;
+       // enemyCurentHP = enemyType.data.enemyMaxHP;
         UpdateHealthUI();
+
+        
     }
 
     public void Initialize(EnemyType type, Vector3 spawnPosition)
@@ -27,8 +29,8 @@ public class Enemy : MonoBehaviour
         transform.position = spawnPosition;
         enemyCurentHP = type.data.enemyMaxHP;
 
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        FindPlayer();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
 
         if (visualChild == null)
         {
@@ -40,6 +42,8 @@ public class Enemy : MonoBehaviour
         {
             Debug.LogError($"Rigidbody2D component not found on prefab '{type.data.prefab.name}'. Make sure it is attached.");
         }
+
+        Wizard.OnPlayerInvisible += HandlePlayerInvisible;
     }
 
     void Update()
@@ -50,53 +54,77 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    private void OnDestroy()
     {
-        if (playerTransform != null && rb != null)
-        {
-            Vector2 direction = (playerTransform.position - visualChild.transform.position).normalized;
-            rb.linearVelocity = direction * enemyType.data.moveSpeed;
-
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            rb.rotation = angle - 90f;
-        }
+        // Unsubscribe to prevent memory leaks
+        Wizard.OnPlayerInvisible -= HandlePlayerInvisible;
     }
 
-    public void DamageEnemy(int amount) 
+    void FixedUpdate()
+    {
+        if (playerTransform == null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
+
+        Vector2 direction = (playerTransform.position - visualChild.transform.position).normalized;
+        rb.linearVelocity = direction * enemyType.data.moveSpeed;
+        // Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), visualChild.GetComponent<Collider2D>());
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        rb.rotation = angle - 90f;
+    }
+
+    private void FindPlayer()
+    {
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
+    private void HandlePlayerInvisible()
+    {
+        playerTransform = null; // Clear reference to the 
+        FindPlayer();
+    }
+
+
+    public void TakeDamage(float amount) 
     {
         enemyCurentHP -= amount;
         UpdateHealthUI();
+        Debug.Log("Enemy took damage");
 
         if (enemyCurentHP <= 0)
         {
-            player.currentXP += enemyType.data.xpDrop;
-            player.UpdateLevelUI();
-            Destroy(gameObject);
+            EnemyDeath();
         } 
+    }
+    private void EnemyDeath () {
+        player.currentXP += enemyType.data.xpDrop;
+        player.UpdateUI();
+        this.gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
     private void UpdateHealthUI()
     {
-        if (enemyCollisionHandler.enemyHealthBar != null)
-        {
-            enemyCollisionHandler.enemyHealthBar.fillAmount = (float)enemyCurentHP / enemyType.data.enemyMaxHP;
-        }
-
-        if (enemyCollisionHandler.enemyHealthText != null)
-        {
-            enemyCollisionHandler.enemyHealthText.text = Mathf.CeilToInt(enemyCurentHP).ToString();
-        }
+        enemyCollisionHandler.enemyHealthBar.fillAmount = enemyCurentHP / enemyType.data.enemyMaxHP;
     }
 
     public void HandlePlayerCollision(GameObject playerObject)
     {
         if (attackCooldown <= 0)
         {
-            Player player = playerObject.GetComponent<Player>();
+            IDamageable damageable = playerObject.GetComponent<IDamageable>();
             if (player != null)
-            {
-                player.DamagePlayer(enemyType.data.attackDamage);
+            {   
+                damageable.TakeDamage(enemyType.data.attackDamage);
                 attackCooldown = 1f / enemyType.data.attackSpeed;
+            }
+            else
+            {
+                Debug.Log("player je null :(");
             }
         }
     }

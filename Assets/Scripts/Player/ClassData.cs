@@ -7,6 +7,7 @@ public class ClassData : ScriptableObject
     public float maxHP;
     public float attackSpeed;
     public float moveSpeed;
+    public float attackDamage;
 
     [System.Serializable]
     public struct ElementalBonus

@@ -10,6 +10,8 @@ public abstract class PlayerClass : MonoBehaviour
     protected float maxHP;
     protected float attackSpeed;
     protected float moveSpeed;
+    protected float attackDamage;
+    public bool isAttacking;
     protected Dictionary<string, float> elementalBonuses;
     //protected Animator animator;
 
@@ -41,6 +43,9 @@ public abstract class PlayerClass : MonoBehaviour
     }
 
     public abstract void Attack();
+    public abstract void StopAttack();
+    public abstract void Special();
+
 
     public virtual float GetMoveSpeed(float baseSpeed)
     {

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f40ee0e6fa54ceb43a9a6345e7803ea0, type: 3}
-  m_Name: EnemyType 2
+  m_Name: Phanaeus vindex
   m_EditorClassIdentifier: 
-  typeName: Mallodon dasystomum
-  prefab: {fileID: 4731992749744344730, guid: 370cf8a3f163717478ef96b133fe55d5, type: 3}
-  moveSpeed: 2
+  typeName: Phanaeus vindex
+  prefab: {fileID: 4089813131763767470, guid: 5b4a4c52eabd79846a23d672f4957eec, type: 3}
+  moveSpeed: 3
   attackDamage: 2
   attackSpeed: 2
-  xpDrop: 6
-  enemyMaxHP: 70
+  xpDrop: 4
+  enemyMaxHP: 40

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f40ee0e6fa54ceb43a9a6345e7803ea0, type: 3}
-  m_Name: EnemyType 1
+  m_Name: Mallodon dasystomum
   m_EditorClassIdentifier: 
-  typeName: Lytta polita
-  prefab: {fileID: 2967490746865456492, guid: 897527003e3a3314a98cf64d8800fbac, type: 3}
-  moveSpeed: 3
+  typeName: Mallodon dasystomum
+  prefab: {fileID: 4731992749744344730, guid: 370cf8a3f163717478ef96b133fe55d5, type: 3}
+  moveSpeed: 2
   attackDamage: 2
   attackSpeed: 2
-  xpDrop: 8
-  enemyMaxHP: 50
+  xpDrop: 6
+  enemyMaxHP: 70

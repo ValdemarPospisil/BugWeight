@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : MonoBehaviour, IDamageable
 {
     public float maxHP = 100f;
     public float currentHP;
@@ -22,7 +22,6 @@ public class PlayerManager : MonoBehaviour
 
     void Start()
     {
-        // Initialize with the first class as default or any class you prefer
         
         currentHP = maxHP;
         UpdateUI();
@@ -55,7 +54,7 @@ public class PlayerManager : MonoBehaviour
         toNextLevelText.text = toNextLevel.ToString();
     }
 
-    public void DamagePlayer(float amount)
+    public void TakeDamage(float amount)
     {
         currentHP -= amount;
         UpdateUI();

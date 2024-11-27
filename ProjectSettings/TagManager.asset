@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Invisible
+  - Clone
   layers:
   - Default
   - TransparentFX
@@ -12,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Projectile
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -43,6 +45,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 4210985329
+    locked: 0
+  - name: Aura
+    uniqueID: 1111697597
     locked: 0
   - name: Player
     uniqueID: 3439050951

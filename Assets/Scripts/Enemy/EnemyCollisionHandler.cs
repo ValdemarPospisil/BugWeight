@@ -6,7 +6,6 @@ public class EnemyCollisionHandler : MonoBehaviour
 {
     private Enemy enemy;
     public Image enemyHealthBar;
-    public TextMeshProUGUI enemyHealthText;
 
     private void Start()
     {

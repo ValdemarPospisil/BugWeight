@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f40ee0e6fa54ceb43a9a6345e7803ea0, type: 3}
-  m_Name: EnemyType 4
+  m_Name: Lucanus cervus
   m_EditorClassIdentifier: 
-  typeName: Thasus neocalifornicus
-  prefab: {fileID: 7541286863123709192, guid: 3fc4feee168c2834b99516aee9060003, type: 3}
-  moveSpeed: 2
+  typeName: Lucanus cervus
+  prefab: {fileID: 7541286863123709192, guid: 6d161077e669e84428dbf7da9a41041f, type: 3}
+  moveSpeed: 3
   attackDamage: 2
   attackSpeed: 2
   xpDrop: 8
-  enemyMaxHP: 60
+  enemyMaxHP: 50
