@@ -1,0 +1,6805 @@
+fileFormatVersion: 2
+guid: 59352b489f88ce14383a3d567e3af8b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6287190776451258998
+    second: Skill_B_Recolored_0
+  - first:
+      213: 6661719810749417877
+    second: Skill_B_Recolored_1
+  - first:
+      213: 1852667720773769581
+    second: Skill_B_Recolored_2
+  - first:
+      213: 7741787089932127199
+    second: Skill_B_Recolored_3
+  - first:
+      213: 6899024722500082774
+    second: Skill_B_Recolored_4
+  - first:
+      213: 2516846354446919047
+    second: Skill_B_Recolored_5
+  - first:
+      213: 4626112718772633770
+    second: Skill_B_Recolored_6
+  - first:
+      213: -6884294963791193581
+    second: Skill_B_Recolored_7
+  - first:
+      213: 4187128342484077058
+    second: Skill_B_Recolored_8
+  - first:
+      213: -2534452548608071536
+    second: Skill_B_Recolored_9
+  - first:
+      213: -5286980662932565712
+    second: Skill_B_Recolored_10
+  - first:
+      213: 4431852833509950114
+    second: Skill_B_Recolored_11
+  - first:
+      213: -441887406864829429
+    second: Skill_B_Recolored_12
+  - first:
+      213: 8253045018671930440
+    second: Skill_B_Recolored_13
+  - first:
+      213: 6792430416114449472
+    second: Skill_B_Recolored_14
+  - first:
+      213: -7461913266529699930
+    second: Skill_B_Recolored_15
+  - first:
+      213: 964606045042771094
+    second: Skill_B_Recolored_16
+  - first:
+      213: -6493347298594287609
+    second: Skill_B_Recolored_17
+  - first:
+      213: -1930488423469766524
+    second: Skill_B_Recolored_18
+  - first:
+      213: -2714188022074352242
+    second: Skill_B_Recolored_19
+  - first:
+      213: -5996801794433686664
+    second: Skill_B_Recolored_20
+  - first:
+      213: 5268274359937209102
+    second: Skill_B_Recolored_21
+  - first:
+      213: -5750622454868278345
+    second: Skill_B_Recolored_22
+  - first:
+      213: 5807381320109349691
+    second: Skill_B_Recolored_23
+  - first:
+      213: 4830405070348340044
+    second: Skill_B_Recolored_24
+  - first:
+      213: -5136634585569553263
+    second: Skill_B_Recolored_25
+  - first:
+      213: 7792803545441032930
+    second: Skill_B_Recolored_26
+  - first:
+      213: 6249743673361895317
+    second: Skill_B_Recolored_27
+  - first:
+      213: 8294534703137871562
+    second: Skill_B_Recolored_28
+  - first:
+      213: 2404039255518945168
+    second: Skill_B_Recolored_29
+  - first:
+      213: 4155302766007383225
+    second: Skill_B_Recolored_30
+  - first:
+      213: 3999300171999077454
+    second: Skill_B_Recolored_31
+  - first:
+      213: 1008885711804004513
+    second: Skill_B_Recolored_32
+  - first:
+      213: 6109076962248195895
+    second: Skill_B_Recolored_33
+  - first:
+      213: -5342032632791512463
+    second: Skill_B_Recolored_34
+  - first:
+      213: 7868650671092753507
+    second: Skill_B_Recolored_35
+  - first:
+      213: 4047409960757560032
+    second: Skill_B_Recolored_36
+  - first:
+      213: -2154597156236834935
+    second: Skill_B_Recolored_37
+  - first:
+      213: -8765341210241324270
+    second: Skill_B_Recolored_38
+  - first:
+      213: -1180567191819363904
+    second: Skill_B_Recolored_39
+  - first:
+      213: -2505499646852487165
+    second: Skill_B_Recolored_40
+  - first:
+      213: 2694861559752632184
+    second: Skill_B_Recolored_41
+  - first:
+      213: 6462959692102768445
+    second: Skill_B_Recolored_42
+  - first:
+      213: 568212956093231752
+    second: Skill_B_Recolored_43
+  - first:
+      213: -2862827403862911781
+    second: Skill_B_Recolored_44
+  - first:
+      213: -4385814983403598656
+    second: Skill_B_Recolored_45
+  - first:
+      213: 2699584280838957550
+    second: Skill_B_Recolored_46
+  - first:
+      213: -8268765489247338533
+    second: Skill_B_Recolored_47
+  - first:
+      213: -2620166856797759287
+    second: Skill_B_Recolored_48
+  - first:
+      213: -1628466404380832243
+    second: Skill_B_Recolored_49
+  - first:
+      213: 2702194158778341609
+    second: Skill_B_Recolored_50
+  - first:
+      213: 487248991160882742
+    second: Skill_B_Recolored_51
+  - first:
+      213: -3745698540674520195
+    second: Skill_B_Recolored_52
+  - first:
+      213: 2345138326789023578
+    second: Skill_B_Recolored_53
+  - first:
+      213: -8555726605218648876
+    second: Skill_B_Recolored_54
+  - first:
+      213: -5592683156030193163
+    second: Skill_B_Recolored_55
+  - first:
+      213: 5127570136354680912
+    second: Skill_B_Recolored_56
+  - first:
+      213: -8487749615834588245
+    second: Skill_B_Recolored_57
+  - first:
+      213: -4005917710995570509
+    second: Skill_B_Recolored_58
+  - first:
+      213: 6684347816452585049
+    second: Skill_B_Recolored_59
+  - first:
+      213: 7529951340398228923
+    second: Skill_B_Recolored_60
+  - first:
+      213: -970177139593153469
+    second: Skill_B_Recolored_61
+  - first:
+      213: -649379401146591995
+    second: Skill_B_Recolored_62
+  - first:
+      213: 345604859422694956
+    second: Skill_B_Recolored_63
+  - first:
+      213: -4330454533666386359
+    second: Skill_B_Recolored_64
+  - first:
+      213: -7312475961984432941
+    second: Skill_B_Recolored_65
+  - first:
+      213: 3210845910532536250
+    second: Skill_B_Recolored_66
+  - first:
+      213: 7046347738266872177
+    second: Skill_B_Recolored_67
+  - first:
+      213: -952710414646800621
+    second: Skill_B_Recolored_68
+  - first:
+      213: 992428002450628461
+    second: Skill_B_Recolored_69
+  - first:
+      213: -8082660251181702577
+    second: Skill_B_Recolored_70
+  - first:
+      213: -7591707338176321231
+    second: Skill_B_Recolored_71
+  - first:
+      213: -4360834742981212234
+    second: Skill_B_Recolored_72
+  - first:
+      213: 668824692227743797
+    second: Skill_B_Recolored_73
+  - first:
+      213: -9055340335074318191
+    second: Skill_B_Recolored_74
+  - first:
+      213: 554595242668215613
+    second: Skill_B_Recolored_75
+  - first:
+      213: 7143997313377297652
+    second: Skill_B_Recolored_76
+  - first:
+      213: -5223679869440569897
+    second: Skill_B_Recolored_77
+  - first:
+      213: 2791858912805100474
+    second: Skill_B_Recolored_78
+  - first:
+      213: 7967785967385054258
+    second: Skill_B_Recolored_79
+  - first:
+      213: -4677919823997991762
+    second: Skill_B_Recolored_80
+  - first:
+      213: -2452914342122938559
+    second: Skill_B_Recolored_81
+  - first:
+      213: 4899250804576264709
+    second: Skill_B_Recolored_82
+  - first:
+      213: 2605629108967655864
+    second: Skill_B_Recolored_83
+  - first:
+      213: 168452538266132891
+    second: Skill_B_Recolored_84
+  - first:
+      213: -824447203751628956
+    second: Skill_B_Recolored_85
+  - first:
+      213: 1030040226454161177
+    second: Skill_B_Recolored_86
+  - first:
+      213: 1167887866965700241
+    second: Skill_B_Recolored_87
+  - first:
+      213: -3081416047359156368
+    second: Skill_B_Recolored_88
+  - first:
+      213: 2433603694783166600
+    second: Skill_B_Recolored_89
+  - first:
+      213: 2063457038845269778
+    second: Skill_B_Recolored_90
+  - first:
+      213: -8775517565306546609
+    second: Skill_B_Recolored_91
+  - first:
+      213: -277521774866068147
+    second: Skill_B_Recolored_92
+  - first:
+      213: 4605735617513642870
+    second: Skill_B_Recolored_93
+  - first:
+      213: -1416490011140166173
+    second: Skill_B_Recolored_94
+  - first:
+      213: -6003473797244130518
+    second: Skill_B_Recolored_95
+  - first:
+      213: -7369443293782436073
+    second: Skill_B_Recolored_96
+  - first:
+      213: -567097549551993959
+    second: Skill_B_Recolored_97
+  - first:
+      213: -2607644037462291761
+    second: Skill_B_Recolored_98
+  - first:
+      213: 4173232769110927532
+    second: Skill_B_Recolored_99
+  - first:
+      213: -3346393222724313393
+    second: Skill_B_Recolored_100
+  - first:
+      213: -5181654846218585663
+    second: Skill_B_Recolored_101
+  - first:
+      213: 1050776165681741107
+    second: Skill_B_Recolored_102
+  - first:
+      213: 1629401116339304619
+    second: Skill_B_Recolored_103
+  - first:
+      213: -8500642260033419313
+    second: Skill_B_Recolored_104
+  - first:
+      213: -5389201861494937112
+    second: Skill_B_Recolored_105
+  - first:
+      213: -5720461211594876209
+    second: Skill_B_Recolored_106
+  - first:
+      213: 5497999003333118125
+    second: Skill_B_Recolored_107
+  - first:
+      213: 5476709148127243318
+    second: Skill_B_Recolored_108
+  - first:
+      213: 7975937162965101922
+    second: Skill_B_Recolored_109
+  - first:
+      213: 91576298182532672
+    second: Skill_B_Recolored_110
+  - first:
+      213: 2129578536089811674
+    second: Skill_B_Recolored_111
+  - first:
+      213: -2497190815196963918
+    second: Skill_B_Recolored_112
+  - first:
+      213: 3305372445097584652
+    second: Skill_B_Recolored_113
+  - first:
+      213: -2228971247167229961
+    second: Skill_B_Recolored_114
+  - first:
+      213: -80116226164068214
+    second: Skill_B_Recolored_115
+  - first:
+      213: -453396426134567355
+    second: Skill_B_Recolored_116
+  - first:
+      213: 2690924645482935186
+    second: Skill_B_Recolored_117
+  - first:
+      213: 1518081993597106444
+    second: Skill_B_Recolored_118
+  - first:
+      213: -1697344490681601830
+    second: Skill_B_Recolored_119
+  - first:
+      213: 7920777739219257809
+    second: Skill_B_Recolored_120
+  - first:
+      213: -5934314722921417168
+    second: Skill_B_Recolored_121
+  - first:
+      213: 6903318857911579310
+    second: Skill_B_Recolored_122
+  - first:
+      213: 6322667798659521271
+    second: Skill_B_Recolored_123
+  - first:
+      213: 2218747224288928101
+    second: Skill_B_Recolored_124
+  - first:
+      213: -6002365283860215817
+    second: Skill_B_Recolored_125
+  - first:
+      213: -6170179107295757906
+    second: Skill_B_Recolored_126
+  - first:
+      213: -2805264177272893737
+    second: Skill_B_Recolored_127
+  - first:
+      213: -5645805338450832224
+    second: Skill_B_Recolored_128
+  - first:
+      213: -4080526691229786947
+    second: Skill_B_Recolored_129
+  - first:
+      213: -637902906512538853
+    second: Skill_B_Recolored_130
+  - first:
+      213: 730429329443903771
+    second: Skill_B_Recolored_131
+  - first:
+      213: 1315416353060256096
+    second: Skill_B_Recolored_132
+  - first:
+      213: 610509392188469405
+    second: Skill_B_Recolored_133
+  - first:
+      213: -5763284975052064907
+    second: Skill_B_Recolored_134
+  - first:
+      213: -5230710241157956893
+    second: Skill_B_Recolored_135
+  - first:
+      213: -5860087912092133067
+    second: Skill_B_Recolored_136
+  - first:
+      213: -9014827688687607430
+    second: Skill_B_Recolored_137
+  - first:
+      213: 5445681889876362328
+    second: Skill_B_Recolored_138
+  - first:
+      213: 3826549978412049462
+    second: Skill_B_Recolored_139
+  - first:
+      213: 2355193396237868515
+    second: Skill_B_Recolored_140
+  - first:
+      213: -8001134800232722420
+    second: Skill_B_Recolored_141
+  - first:
+      213: 204798321042710524
+    second: Skill_B_Recolored_142
+  - first:
+      213: -580758754548200589
+    second: Skill_B_Recolored_143
+  - first:
+      213: -7202532264898121544
+    second: Skill_B_Recolored_144
+  - first:
+      213: -5466256705657544916
+    second: Skill_B_Recolored_145
+  - first:
+      213: 3772687049080936362
+    second: Skill_B_Recolored_146
+  - first:
+      213: 2852022963056420688
+    second: Skill_B_Recolored_147
+  - first:
+      213: -7686761266601567054
+    second: Skill_B_Recolored_148
+  - first:
+      213: -4168778829117723915
+    second: Skill_B_Recolored_149
+  - first:
+      213: -7245942837923693760
+    second: Skill_B_Recolored_150
+  - first:
+      213: -6658096971912293799
+    second: Skill_B_Recolored_151
+  - first:
+      213: 4472971659805838083
+    second: Skill_B_Recolored_152
+  - first:
+      213: -4869591929381417204
+    second: Skill_B_Recolored_153
+  - first:
+      213: 5613259069810840920
+    second: Skill_B_Recolored_154
+  - first:
+      213: 8688611671536573737
+    second: Skill_B_Recolored_155
+  - first:
+      213: 8717073832199896323
+    second: Skill_B_Recolored_156
+  - first:
+      213: -5150682002343998367
+    second: Skill_B_Recolored_157
+  - first:
+      213: 7228061425251388434
+    second: Skill_B_Recolored_158
+  - first:
+      213: 7787006904392092290
+    second: Skill_B_Recolored_159
+  - first:
+      213: -6510505164475502532
+    second: Skill_B_Recolored_160
+  - first:
+      213: -1635277206467302074
+    second: Skill_B_Recolored_161
+  - first:
+      213: -1085452437483208798
+    second: Skill_B_Recolored_162
+  - first:
+      213: -4733219159226883696
+    second: Skill_B_Recolored_163
+  - first:
+      213: 2101761292944493811
+    second: Skill_B_Recolored_164
+  - first:
+      213: -2085581345941108144
+    second: Skill_B_Recolored_165
+  - first:
+      213: 5948533106275426872
+    second: Skill_B_Recolored_166
+  - first:
+      213: -2277821831588657399
+    second: Skill_B_Recolored_167
+  - first:
+      213: 2410252807522764012
+    second: Skill_B_Recolored_168
+  - first:
+      213: -7963689450281594214
+    second: Skill_B_Recolored_169
+  - first:
+      213: -3617398700026644303
+    second: Skill_B_Recolored_170
+  - first:
+      213: -981034045758658450
+    second: Skill_B_Recolored_171
+  - first:
+      213: 4429776434585879818
+    second: Skill_B_Recolored_172
+  - first:
+      213: -8498914454690643704
+    second: Skill_B_Recolored_173
+  - first:
+      213: -1760350127894266442
+    second: Skill_B_Recolored_174
+  - first:
+      213: -692103363060650521
+    second: Skill_B_Recolored_175
+  - first:
+      213: -967778044945635131
+    second: Skill_B_Recolored_176
+  - first:
+      213: 8195621977441729279
+    second: Skill_B_Recolored_177
+  - first:
+      213: -9037830267731965263
+    second: Skill_B_Recolored_178
+  - first:
+      213: -4893817712332327447
+    second: Skill_B_Recolored_179
+  - first:
+      213: -780972030010787495
+    second: Skill_B_Recolored_180
+  - first:
+      213: 5297037312049344570
+    second: Skill_B_Recolored_181
+  - first:
+      213: -3692501460847343185
+    second: Skill_B_Recolored_182
+  - first:
+      213: 53501094777286924
+    second: Skill_B_Recolored_183
+  - first:
+      213: 6748916444486463673
+    second: Skill_B_Recolored_184
+  - first:
+      213: -3533838499425868997
+    second: Skill_B_Recolored_185
+  - first:
+      213: 5192392376308771865
+    second: Skill_B_Recolored_186
+  - first:
+      213: 2842910756468313621
+    second: Skill_B_Recolored_187
+  - first:
+      213: 4134641740942980714
+    second: Skill_B_Recolored_188
+  - first:
+      213: 8366477474844456925
+    second: Skill_B_Recolored_189
+  - first:
+      213: -3262518253568371748
+    second: Skill_B_Recolored_190
+  - first:
+      213: -3673069212964777819
+    second: Skill_B_Recolored_191
+  - first:
+      213: 3146895493961166247
+    second: Skill_B_Recolored_192
+  - first:
+      213: 4725553937768719538
+    second: Skill_B_Recolored_193
+  - first:
+      213: -8969613573003055207
+    second: Skill_B_Recolored_194
+  - first:
+      213: -6251285217146514648
+    second: Skill_B_Recolored_195
+  - first:
+      213: 2440359833559744740
+    second: Skill_B_Recolored_196
+  - first:
+      213: -2556878160490813075
+    second: Skill_B_Recolored_197
+  - first:
+      213: -2846779360575740573
+    second: Skill_B_Recolored_198
+  - first:
+      213: -3987428770226140332
+    second: Skill_B_Recolored_199
+  - first:
+      213: 8595832968450419763
+    second: Skill_B_Recolored_200
+  - first:
+      213: -8303267739794963876
+    second: Skill_B_Recolored_201
+  - first:
+      213: -6464903855725464982
+    second: Skill_B_Recolored_202
+  - first:
+      213: -6429312410968829684
+    second: Skill_B_Recolored_203
+  - first:
+      213: 6082271799648221213
+    second: Skill_B_Recolored_204
+  - first:
+      213: 1881800867451657649
+    second: Skill_B_Recolored_205
+  - first:
+      213: 5900930655657919221
+    second: Skill_B_Recolored_206
+  - first:
+      213: 6115369546148533728
+    second: Skill_B_Recolored_207
+  - first:
+      213: 3748940098704106593
+    second: Skill_B_Recolored_208
+  - first:
+      213: -6919898249843183271
+    second: Skill_B_Recolored_209
+  - first:
+      213: -89925589304758057
+    second: Skill_B_Recolored_210
+  - first:
+      213: 8758946281099374090
+    second: Skill_B_Recolored_211
+  - first:
+      213: 7138550581835940202
+    second: Skill_B_Recolored_212
+  - first:
+      213: 3856896562273420191
+    second: Skill_B_Recolored_213
+  - first:
+      213: -6047538044549885502
+    second: Skill_B_Recolored_214
+  - first:
+      213: 852042100911202085
+    second: Skill_B_Recolored_215
+  - first:
+      213: -6014546333158450726
+    second: Skill_B_Recolored_216
+  - first:
+      213: -4035508293500876333
+    second: Skill_B_Recolored_217
+  - first:
+      213: 4388111513448019941
+    second: Skill_B_Recolored_218
+  - first:
+      213: -6716398180521688883
+    second: Skill_B_Recolored_219
+  - first:
+      213: -5568344267850451711
+    second: Skill_B_Recolored_220
+  - first:
+      213: -6061879354721768703
+    second: Skill_B_Recolored_221
+  - first:
+      213: -3776201051014594520
+    second: Skill_B_Recolored_222
+  - first:
+      213: -274962818242170057
+    second: Skill_B_Recolored_223
+  - first:
+      213: -3785581612135605565
+    second: Skill_B_Recolored_224
+  - first:
+      213: -8086612771049124466
+    second: Skill_B_Recolored_225
+  - first:
+      213: 8034633006908841516
+    second: Skill_B_Recolored_226
+  - first:
+      213: 4238164030187387145
+    second: Skill_B_Recolored_227
+  - first:
+      213: 8809666903617953854
+    second: Skill_B_Recolored_228
+  - first:
+      213: 1046896706674846885
+    second: Skill_B_Recolored_229
+  - first:
+      213: 7890930574718194569
+    second: Skill_B_Recolored_230
+  - first:
+      213: 7642232578274644832
+    second: Skill_B_Recolored_231
+  - first:
+      213: 3237353734845984548
+    second: Skill_B_Recolored_232
+  - first:
+      213: -3390717506570095655
+    second: Skill_B_Recolored_233
+  - first:
+      213: 8631042466222481226
+    second: Skill_B_Recolored_234
+  - first:
+      213: -8255587549593054950
+    second: Skill_B_Recolored_235
+  - first:
+      213: 6404864655139903372
+    second: Skill_B_Recolored_236
+  - first:
+      213: 2764540742725985159
+    second: Skill_B_Recolored_237
+  - first:
+      213: -1535567888009095699
+    second: Skill_B_Recolored_238
+  - first:
+      213: -2142538776878684992
+    second: Skill_B_Recolored_239
+  - first:
+      213: 3663848132773868609
+    second: Skill_B_Recolored_240
+  - first:
+      213: 1773781042509311497
+    second: Skill_B_Recolored_241
+  - first:
+      213: -5101524563060145651
+    second: Skill_B_Recolored_242
+  - first:
+      213: -7006748339161445663
+    second: Skill_B_Recolored_243
+  - first:
+      213: 5018946088509800574
+    second: Skill_B_Recolored_244
+  - first:
+      213: -6079273763428332382
+    second: Skill_B_Recolored_245
+  - first:
+      213: -5267768030819097276
+    second: Skill_B_Recolored_246
+  - first:
+      213: 6579949155340006923
+    second: Skill_B_Recolored_247
+  - first:
+      213: 7733349567094666696
+    second: Skill_B_Recolored_248
+  - first:
+      213: 7093318125878763978
+    second: Skill_B_Recolored_249
+  - first:
+      213: 8633218306064617828
+    second: Skill_B_Recolored_250
+  - first:
+      213: 7277427275389269882
+    second: Skill_B_Recolored_251
+  - first:
+      213: -3932816927451664133
+    second: Skill_B_Recolored_252
+  - first:
+      213: 7358970112583248583
+    second: Skill_B_Recolored_253
+  - first:
+      213: -142562239363952894
+    second: Skill_B_Recolored_254
+  - first:
+      213: 1444935317785731698
+    second: Skill_B_Recolored_255
+  - first:
+      213: -7554780530136550691
+    second: Skill_B_Recolored_256
+  - first:
+      213: -6158192111076476692
+    second: Skill_B_Recolored_257
+  - first:
+      213: 3430394495591235709
+    second: Skill_B_Recolored_258
+  - first:
+      213: 5417506780195685681
+    second: Skill_B_Recolored_259
+  - first:
+      213: 7451383247956881204
+    second: Skill_B_Recolored_260
+  - first:
+      213: -8866855366101735176
+    second: Skill_B_Recolored_261
+  - first:
+      213: 6323204487800969496
+    second: Skill_B_Recolored_262
+  - first:
+      213: -2186792874455699878
+    second: Skill_B_Recolored_263
+  - first:
+      213: 9203932367514135293
+    second: Skill_B_Recolored_264
+  - first:
+      213: 7738384824392524109
+    second: Skill_B_Recolored_265
+  - first:
+      213: 4961828259771328677
+    second: Skill_B_Recolored_266
+  - first:
+      213: -3072028727420224572
+    second: Skill_B_Recolored_267
+  - first:
+      213: 3723516935802077213
+    second: Skill_B_Recolored_268
+  - first:
+      213: 949257204474195972
+    second: Skill_B_Recolored_269
+  - first:
+      213: -4455831964929037181
+    second: Skill_B_Recolored_270
+  - first:
+      213: 8103834377567701342
+    second: Skill_B_Recolored_271
+  - first:
+      213: -5763285462798026766
+    second: Skill_B_Recolored_272
+  - first:
+      213: 1162314729273258125
+    second: Skill_B_Recolored_273
+  - first:
+      213: 7375967835812594609
+    second: Skill_B_Recolored_274
+  - first:
+      213: 1140300533832078727
+    second: Skill_B_Recolored_275
+  - first:
+      213: 3348731538224254482
+    second: Skill_B_Recolored_276
+  - first:
+      213: 7756536473580477570
+    second: Skill_B_Recolored_277
+  - first:
+      213: 923090431736518883
+    second: Skill_B_Recolored_278
+  - first:
+      213: 7211391081062589322
+    second: Skill_B_Recolored_279
+  - first:
+      213: 2994784215461933604
+    second: Skill_B_Recolored_280
+  - first:
+      213: -3535641073456072283
+    second: Skill_B_Recolored_281
+  - first:
+      213: -1820277256696057290
+    second: Skill_B_Recolored_282
+  - first:
+      213: -4287557989065711712
+    second: Skill_B_Recolored_283
+  - first:
+      213: 476063745635736604
+    second: Skill_B_Recolored_284
+  - first:
+      213: -646579549855215810
+    second: Skill_B_Recolored_285
+  - first:
+      213: 7950468381142057836
+    second: Skill_B_Recolored_286
+  - first:
+      213: 6372368204891210306
+    second: Skill_B_Recolored_287
+  - first:
+      213: -8141265652996843728
+    second: Skill_B_Recolored_288
+  - first:
+      213: -3270035393813372573
+    second: Skill_B_Recolored_289
+  - first:
+      213: -8562000995182317143
+    second: Skill_B_Recolored_290
+  - first:
+      213: -7810486770309248865
+    second: Skill_B_Recolored_291
+  - first:
+      213: 6773738345026298910
+    second: Skill_B_Recolored_292
+  - first:
+      213: -8942190484332277156
+    second: Skill_B_Recolored_293
+  - first:
+      213: 5036914229022606059
+    second: Skill_B_Recolored_294
+  - first:
+      213: -2910812660744659390
+    second: Skill_B_Recolored_295
+  - first:
+      213: 1882200938140352922
+    second: Skill_B_Recolored_296
+  - first:
+      213: 2666372915474175184
+    second: Skill_B_Recolored_297
+  - first:
+      213: 9114810788279107481
+    second: Skill_B_Recolored_298
+  - first:
+      213: 1136571689213187467
+    second: Skill_B_Recolored_299
+  - first:
+      213: -3375313678707554254
+    second: Skill_B_Recolored_300
+  - first:
+      213: -6130275760641014519
+    second: Skill_B_Recolored_301
+  - first:
+      213: 3475897737408648155
+    second: Skill_B_Recolored_302
+  - first:
+      213: -3678240753241294933
+    second: Skill_B_Recolored_303
+  - first:
+      213: 6799863954756545820
+    second: Skill_B_Recolored_304
+  - first:
+      213: 2149039228993255781
+    second: Skill_B_Recolored_305
+  - first:
+      213: 3894567120004768861
+    second: Skill_B_Recolored_306
+  - first:
+      213: 1306638393180010178
+    second: Skill_B_Recolored_307
+  - first:
+      213: 6139254857870412278
+    second: Skill_B_Recolored_308
+  - first:
+      213: -6557526831950182973
+    second: Skill_B_Recolored_309
+  - first:
+      213: 1214202217634612176
+    second: Skill_B_Recolored_310
+  - first:
+      213: -7295538708242716363
+    second: Skill_B_Recolored_311
+  - first:
+      213: 2030588463346402638
+    second: Skill_B_Recolored_312
+  - first:
+      213: -848451102269673539
+    second: Skill_B_Recolored_313
+  - first:
+      213: 6093086982493470377
+    second: Skill_B_Recolored_314
+  - first:
+      213: 1912609750224854654
+    second: Skill_B_Recolored_315
+  - first:
+      213: 8364449157073079724
+    second: Skill_B_Recolored_316
+  - first:
+      213: -402179495692341712
+    second: Skill_B_Recolored_317
+  - first:
+      213: -7900070950320073830
+    second: Skill_B_Recolored_318
+  - first:
+      213: 4831253185429724687
+    second: Skill_B_Recolored_319
+  - first:
+      213: 563936650131136060
+    second: Skill_B_Recolored_320
+  - first:
+      213: -2571741754968653148
+    second: Skill_B_Recolored_321
+  - first:
+      213: 6915730899963957321
+    second: Skill_B_Recolored_322
+  - first:
+      213: 7443232098204836577
+    second: Skill_B_Recolored_323
+  - first:
+      213: -3188381261579654113
+    second: Skill_B_Recolored_324
+  - first:
+      213: 3250944717740765642
+    second: Skill_B_Recolored_325
+  - first:
+      213: 8041935883665530212
+    second: Skill_B_Recolored_326
+  - first:
+      213: -654723167200976219
+    second: Skill_B_Recolored_327
+  - first:
+      213: -2525223706204690536
+    second: Skill_B_Recolored_328
+  - first:
+      213: -3162842368852955249
+    second: Skill_B_Recolored_329
+  - first:
+      213: 7998730914735188607
+    second: Skill_B_Recolored_330
+  - first:
+      213: 7616523169581119900
+    second: Skill_B_Recolored_331
+  - first:
+      213: 5936738251995279584
+    second: Skill_B_Recolored_332
+  - first:
+      213: -2154603362899871488
+    second: Skill_B_Recolored_333
+  - first:
+      213: -6856334647873345657
+    second: Skill_B_Recolored_334
+  - first:
+      213: 7346840769360972466
+    second: Skill_B_Recolored_335
+  - first:
+      213: 102178853745171714
+    second: Skill_B_Recolored_336
+  - first:
+      213: 4681151305981730380
+    second: Skill_B_Recolored_337
+  - first:
+      213: -7908139574777296521
+    second: Skill_B_Recolored_338
+  - first:
+      213: -876651668065806805
+    second: Skill_B_Recolored_339
+  - first:
+      213: 2070021789545494765
+    second: Skill_B_Recolored_340
+  - first:
+      213: 8589939259878653480
+    second: Skill_B_Recolored_341
+  - first:
+      213: -8148579855013010730
+    second: Skill_B_Recolored_342
+  - first:
+      213: 1509439277501637794
+    second: Skill_B_Recolored_343
+  - first:
+      213: 2576796242939830585
+    second: Skill_B_Recolored_344
+  - first:
+      213: 6682792085059932107
+    second: Skill_B_Recolored_345
+  - first:
+      213: 4060383345907426763
+    second: Skill_B_Recolored_346
+  - first:
+      213: -6297663918963754734
+    second: Skill_B_Recolored_347
+  - first:
+      213: -8204824122758715183
+    second: Skill_B_Recolored_348
+  - first:
+      213: -6231397421619041694
+    second: Skill_B_Recolored_349
+  - first:
+      213: 368745311437868968
+    second: Skill_B_Recolored_350
+  - first:
+      213: 7636575307090470567
+    second: Skill_B_Recolored_351
+  - first:
+      213: -2605837015681679499
+    second: Skill_B_Recolored_352
+  - first:
+      213: 3457906219804590173
+    second: Skill_B_Recolored_353
+  - first:
+      213: -3557299366471254663
+    second: Skill_B_Recolored_354
+  - first:
+      213: 5736217651484628302
+    second: Skill_B_Recolored_355
+  - first:
+      213: -2149061267775882731
+    second: Skill_B_Recolored_356
+  - first:
+      213: -339387333786505340
+    second: Skill_B_Recolored_357
+  - first:
+      213: -945885603571607622
+    second: Skill_B_Recolored_358
+  - first:
+      213: 62792728972123770
+    second: Skill_B_Recolored_359
+  - first:
+      213: 5777851277948557802
+    second: Skill_B_Recolored_360
+  - first:
+      213: 7886991881073052471
+    second: Skill_B_Recolored_361
+  - first:
+      213: 8754068424230903927
+    second: Skill_B_Recolored_362
+  - first:
+      213: -6946145267945526656
+    second: Skill_B_Recolored_363
+  - first:
+      213: -5322773428973920713
+    second: Skill_B_Recolored_364
+  - first:
+      213: 5564012935348114348
+    second: Skill_B_Recolored_365
+  - first:
+      213: 3889113228707764331
+    second: Skill_B_Recolored_366
+  - first:
+      213: -2263659412472182368
+    second: Skill_B_Recolored_367
+  - first:
+      213: 4516437048490769825
+    second: Skill_B_Recolored_368
+  - first:
+      213: 635117445829901797
+    second: Skill_B_Recolored_369
+  - first:
+      213: -6610629647320683385
+    second: Skill_B_Recolored_370
+  - first:
+      213: 8611975521957530715
+    second: Skill_B_Recolored_371
+  - first:
+      213: 5545692308161651790
+    second: Skill_B_Recolored_372
+  - first:
+      213: 1528975699102590209
+    second: Skill_B_Recolored_373
+  - first:
+      213: 5271943518375822628
+    second: Skill_B_Recolored_374
+  - first:
+      213: 1381511426122647420
+    second: Skill_B_Recolored_375
+  - first:
+      213: 795140410413879581
+    second: Skill_B_Recolored_376
+  - first:
+      213: -3095604466002826911
+    second: Skill_B_Recolored_377
+  - first:
+      213: -379769850576895989
+    second: Skill_B_Recolored_378
+  - first:
+      213: -1118990094586010814
+    second: Skill_B_Recolored_379
+  - first:
+      213: 9073109836963917918
+    second: Skill_B_Recolored_380
+  - first:
+      213: 3475048278583708340
+    second: Skill_B_Recolored_381
+  - first:
+      213: -5097825118981866753
+    second: Skill_B_Recolored_382
+  - first:
+      213: -3817638863260634481
+    second: Skill_B_Recolored_383
+  - first:
+      213: 4039182052104476931
+    second: Skill_B_Recolored_384
+  - first:
+      213: -387020713882783269
+    second: Skill_B_Recolored_385
+  - first:
+      213: -7844859003887660905
+    second: Skill_B_Recolored_386
+  - first:
+      213: -5967487622994412264
+    second: Skill_B_Recolored_387
+  - first:
+      213: 7925571417831044706
+    second: Skill_B_Recolored_388
+  - first:
+      213: 7167906227635695717
+    second: Skill_B_Recolored_389
+  - first:
+      213: 3059626701780599036
+    second: Skill_B_Recolored_390
+  - first:
+      213: 5256455835988354546
+    second: Skill_B_Recolored_391
+  - first:
+      213: -1991938195068512011
+    second: Skill_B_Recolored_392
+  - first:
+      213: 415751371998637039
+    second: Skill_B_Recolored_393
+  - first:
+      213: 1287127662512825763
+    second: Skill_B_Recolored_394
+  - first:
+      213: 7211882173365259396
+    second: Skill_B_Recolored_395
+  - first:
+      213: -1137250633073257674
+    second: Skill_B_Recolored_396
+  - first:
+      213: 227839535822737820
+    second: Skill_B_Recolored_397
+  - first:
+      213: 4799755986139773620
+    second: Skill_B_Recolored_398
+  - first:
+      213: 7507533057467672736
+    second: Skill_B_Recolored_399
+  - first:
+      213: 2423142849115508896
+    second: Skill_B_Recolored_400
+  - first:
+      213: 8728907835978756326
+    second: Skill_B_Recolored_401
+  - first:
+      213: -4476621271125612776
+    second: Skill_B_Recolored_402
+  - first:
+      213: -7372423533398559111
+    second: Skill_B_Recolored_403
+  - first:
+      213: 8953454992113008381
+    second: Skill_B_Recolored_404
+  - first:
+      213: -3280415743384528726
+    second: Skill_B_Recolored_405
+  - first:
+      213: -6499029526317821559
+    second: Skill_B_Recolored_406
+  - first:
+      213: -3258895548106935329
+    second: Skill_B_Recolored_407
+  - first:
+      213: 4098944061070202971
+    second: Skill_B_Recolored_408
+  - first:
+      213: 8983359815542566868
+    second: Skill_B_Recolored_409
+  - first:
+      213: 8436481355843906921
+    second: Skill_B_Recolored_410
+  - first:
+      213: 5769194474511530796
+    second: Skill_B_Recolored_411
+  - first:
+      213: -6054492162119116299
+    second: Skill_B_Recolored_412
+  - first:
+      213: -772359684837400690
+    second: Skill_B_Recolored_413
+  - first:
+      213: 6301493418014116833
+    second: Skill_B_Recolored_414
+  - first:
+      213: -7414649448292892997
+    second: Skill_B_Recolored_415
+  - first:
+      213: 1081532098061006031
+    second: Skill_B_Recolored_416
+  - first:
+      213: -2759754865954199729
+    second: Skill_B_Recolored_417
+  - first:
+      213: -3451791391862050247
+    second: Skill_B_Recolored_418
+  - first:
+      213: 8634634913647675545
+    second: Skill_B_Recolored_419
+  - first:
+      213: 7063456989561777180
+    second: Skill_B_Recolored_420
+  - first:
+      213: 3663848892246031274
+    second: Skill_B_Recolored_421
+  - first:
+      213: 6976630312912413796
+    second: Skill_B_Recolored_422
+  - first:
+      213: 7098154026053207502
+    second: Skill_B_Recolored_423
+  - first:
+      213: -2669267862921325891
+    second: Skill_B_Recolored_424
+  - first:
+      213: 7508789554941213612
+    second: Skill_B_Recolored_425
+  - first:
+      213: -3336830548893149972
+    second: Skill_B_Recolored_426
+  - first:
+      213: 3011589992835889481
+    second: Skill_B_Recolored_427
+  - first:
+      213: -2289941297143873783
+    second: Skill_B_Recolored_428
+  - first:
+      213: -2189033086545439418
+    second: Skill_B_Recolored_429
+  - first:
+      213: 7548041553329159570
+    second: Skill_B_Recolored_430
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Skill_B_Recolored_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a85a28ebc496fb8a0800000000000000
+      internalID: -6287190776451258998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599c6e06fde237c50800000000000000
+      internalID: 6661719810749417877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d699d87e97ff5b910800000000000000
+      internalID: 1852667720773769581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb0c1e275a507b60800000000000000
+      internalID: 7741787089932127199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c5149be624ebf50800000000000000
+      internalID: 6899024722500082774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785ab0fac62ade220800000000000000
+      internalID: 2516846354446919047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa00c5de101433040800000000000000
+      internalID: 4626112718772633770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a173a74321670a0800000000000000
+      internalID: -6884294963791193581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20acbba0b0bab1a30800000000000000
+      internalID: 4187128342484077058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098e12cc5d0d3dcd0800000000000000
+      internalID: -2534452548608071536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0319b83491fd0a6b0800000000000000
+      internalID: -5286980662932565712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a24b2ecbaa118d30800000000000000
+      internalID: 4431852833509950114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b047a13aeb91ed9f0800000000000000
+      internalID: -441887406864829429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c5f3dc7b4b88270800000000000000
+      internalID: 8253045018671930440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c7f02c97f834e50800000000000000
+      internalID: 6792430416114449472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7f8b34b65f17890800000000000000
+      internalID: -7461913266529699930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69408f65618f26d00800000000000000
+      internalID: 964606045042771094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_17
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7009b00090ff2e5a0800000000000000
+      internalID: -6493347298594287609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488a41cc1078535e0800000000000000
+      internalID: -1930488423469766524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_19
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d53a2df54455ad0800000000000000
+      internalID: -2714188022074352242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873ea565a8417cca0800000000000000
+      internalID: -5996801794433686664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e031b5b2e9bac1940800000000000000
+      internalID: 5268274359937209102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3013c685fa130b0800000000000000
+      internalID: -5750622454868278345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b5b54ba86f79050800000000000000
+      internalID: 5807381320109349691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4bcb53a1db090340800000000000000
+      internalID: 4830405070348340044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194142a3f0207b8b0800000000000000
+      internalID: -5136634585569553263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eada6a5989952c60800000000000000
+      internalID: 7792803545441032930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f0bf322cc8bb650800000000000000
+      internalID: 6249743673361895317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6deadbd5b1c1370800000000000000
+      internalID: 8294534703137871562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f1d4b37fcdc5120800000000000000
+      internalID: 2404039255518945168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_30
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4711699d99aa930800000000000000
+      internalID: 4155302766007383225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_31
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44e926315e508730800000000000000
+      internalID: 3999300171999077454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a87b07a538400e00800000000000000
+      internalID: 1008885711804004513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_33
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f7350412dc7c450800000000000000
+      internalID: 6109076962248195895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_34
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17acaefaf994dd5b0800000000000000
+      internalID: -5342032632791512463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_35
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3646f107810133d60800000000000000
+      internalID: 7868650671092753507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_36
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2055b4ae94b2830800000000000000
+      internalID: 4047409960757560032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_37
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987cf6c4d455912e0800000000000000
+      internalID: -2154597156236834935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_38
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b297c2c904b5680800000000000000
+      internalID: -8765341210241324270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_39
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9502ad468cd9fe0800000000000000
+      internalID: -1180567191819363904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308ad7c885daa3dd0800000000000000
+      internalID: -2505499646852487165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87729e38f42166520800000000000000
+      internalID: 2694861559752632184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d371475099b01b950800000000000000
+      internalID: 6462959692102768445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88236bc4ca2b2e700800000000000000
+      internalID: 568212956093231752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd45f73e4a13548d0800000000000000
+      internalID: -2862827403862911781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc84a772847223c0800000000000000
+      internalID: -4385814983403598656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee962a4b999d67520800000000000000
+      internalID: 2699584280838957550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf376ae8917f3d80800000000000000
+      internalID: -8268765489247338533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c85150402c43abd0800000000000000
+      internalID: -2620166856797759287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_49
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e0936ee668669e0800000000000000
+      internalID: -1628466404380832243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_50
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e85e14454f108520800000000000000
+      internalID: 2702194158778341609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_51
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636df4b306e03c600800000000000000
+      internalID: 487248991160882742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_52
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b6567d50b940cc0800000000000000
+      internalID: -3745698540674520195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_53
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57e96512ea9b8020800000000000000
+      internalID: 2345138326789023578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_54
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc65949bf3f34980800000000000000
+      internalID: -8555726605218648876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_55
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f182870d4cc262b0800000000000000
+      internalID: -5592683156030193163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050725a3fd9c82740800000000000000
+      internalID: 5127570136354680912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_57
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab98b5c1b4753a80800000000000000
+      internalID: -8487749615834588245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_58
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0c9ace01f1868c0800000000000000
+      internalID: -4005917710995570509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_59
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95670d28ce293cc50800000000000000
+      internalID: 6684347816452585049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5b96449d2cf7860800000000000000
+      internalID: 7529951340398228923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3447851280d3982f0800000000000000
+      internalID: -970177139593153469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505933e00e0fcf6f0800000000000000
+      internalID: -649379401146591995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ed98ed9c5dbc400800000000000000
+      internalID: 345604859422694956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ec5dc9b8227e3c0800000000000000
+      internalID: -4330454533666386359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4c5511bddd48a90800000000000000
+      internalID: -7312475961984432941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7bec508573f8c20800000000000000
+      internalID: 3210845910532536250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_67
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179264f4fe7a9c160800000000000000
+      internalID: 7046347738266872177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f8921fcea47c2f0800000000000000
+      internalID: -952710414646800621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_69
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f58379200d5cd00800000000000000
+      internalID: 992428002450628461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_70
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f422528435f94df80800000000000000
+      internalID: -8082660251181702577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_71
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13926450666d4a690800000000000000
+      internalID: -7591707338176321231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_72
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b74c6ce7e33b73c0800000000000000
+      internalID: -4360834742981212234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_73
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530ae359384284900800000000000000
+      internalID: 668824692227743797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_74
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198e0a741f7f45280800000000000000
+      internalID: -9055340335074318191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_75
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d4c515f6152b700800000000000000
+      internalID: 554595242668215613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_76
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4e23cb4b3942360800000000000000
+      internalID: 7143997313377297652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_77
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddc2a1c5d2c187b0800000000000000
+      internalID: -5223679869440569897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_78
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb91c8a3ecaeb620800000000000000
+      internalID: 2791858912805100474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_79
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c04584f13439e60800000000000000
+      internalID: 7967785967385054258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea487da64b0b41fb0800000000000000
+      internalID: -4677919823997991762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f1d45e66f75fdd0800000000000000
+      internalID: -2452914342122938559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502a05046a2adf340800000000000000
+      internalID: 4899250804576264709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b94f609edd092420800000000000000
+      internalID: 2605629108967655864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91add8e0b6765200800000000000000
+      internalID: 168452538266132891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46fe154e2a9fe84f0800000000000000
+      internalID: -824447203751628956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_86
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917c92ae0207b4e00800000000000000
+      internalID: 1030040226454161177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19eaaf7c3db253010800000000000000
+      internalID: 1167887866965700241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f18f35e6c9c35d0800000000000000
+      internalID: -3081416047359156368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_89
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888f0a7aaa5e5c120800000000000000
+      internalID: 2433603694783166600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_90
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217d6a18e3fd2ac10800000000000000
+      internalID: 2063457038845269778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_91
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46d3bfd449173680800000000000000
+      internalID: -8775517565306546609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_92
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d0ca78a6b062cf0800000000000000
+      internalID: -277521774866068147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_93
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bd343542cdaef30800000000000000
+      internalID: 4605735617513642870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_94
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ede91af6dd975ce0800000000000000
+      internalID: -1416490011140166173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_95
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2be5e0a3606faca0800000000000000
+      internalID: -6003473797244130518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_96
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71796b98e5a7ab990800000000000000
+      internalID: -7369443293782436073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_97
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b75f588c34128f0800000000000000
+      internalID: -567097549551993959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_98
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca05665099cfcbd0800000000000000
+      internalID: -2607644037462291761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_99
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca860efb71d4ae930800000000000000
+      internalID: 4173232769110927532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce1eb808193f81d0800000000000000
+      internalID: -3346393222724313393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_101
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9b576fe501718b0800000000000000
+      internalID: -5181654846218585663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_102
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d38edfa5b159e00800000000000000
+      internalID: 1050776165681741107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_103
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba87700beabcc9610800000000000000
+      internalID: 1629401116339304619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_104
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7c80027e6a70a80800000000000000
+      internalID: -8500642260033419313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fog
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e968bec575b535b0800000000000000
+      internalID: -5389201861494937112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_106
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca9c7b16d6dc90b0800000000000000
+      internalID: -5720461211594876209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_107
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da84f11c6f0dc4c40800000000000000
+      internalID: 5497999003333118125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_108
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ca14014fd210c40800000000000000
+      internalID: 5476709148127243318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_109
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d2f55679830be60800000000000000
+      internalID: 7975937162965101922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_110
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ed3037828554100800000000000000
+      internalID: 91576298182532672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_111
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adafde44568cd8d10800000000000000
+      internalID: 2129578536089811674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_112
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb11db2f22385dd0800000000000000
+      internalID: -2497190815196963918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_113
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c08e768e9ba0fdd20800000000000000
+      internalID: 3305372445097584652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_114
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffa906d57a1111e0800000000000000
+      internalID: -2228971247167229961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_115
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80febe77be53eef0800000000000000
+      internalID: -80116226164068214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_116
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54641d54a5635b9f0800000000000000
+      internalID: -453396426134567355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_117
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293ba5b35b5185520800000000000000
+      internalID: 2690924645482935186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_118
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09b540b78f411510800000000000000
+      internalID: 1518081993597106444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_119
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0f47bbd22d178e0800000000000000
+      internalID: -1697344490681601830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d94cf243614ced60800000000000000
+      internalID: 7920777739219257809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_121
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036f5ea633415ada0800000000000000
+      internalID: -5934314722921417168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_122
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea233190de38dcf50800000000000000
+      internalID: 6903318857911579310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_123
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fad6eb2dd0aeb750800000000000000
+      internalID: 6322667798659521271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_124
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561202658d29ace10800000000000000
+      internalID: 2218747224288928101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_125
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f70063839053bca0800000000000000
+      internalID: -6002365283860215817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_126
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9791dface1f5aa0800000000000000
+      internalID: -6170179107295757906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_127
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de458cf713b119d0800000000000000
+      internalID: -2805264177272893737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_128
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a452aa15f116a1b0800000000000000
+      internalID: -5645805338450832224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_129
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc9fb8089e0f57c0800000000000000
+      internalID: -4080526691229786947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_130
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b138120bfa6b527f0800000000000000
+      internalID: -637902906512538853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_131
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19d70bea91032a00800000000000000
+      internalID: 730429329443903771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_132
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06975e7243c414210800000000000000
+      internalID: 1315416353060256096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_133
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90fe6dbe07f87800800000000000000
+      internalID: 610509392188469405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_134
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577fca2b9d2b400b0800000000000000
+      internalID: -5763284975052064907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_135
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea38c8cfb8c867b0800000000000000
+      internalID: -5230710241157956893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_136
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539103f8719ccaea0800000000000000
+      internalID: -5860087912092133067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_137
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a716b60daf5e4e280800000000000000
+      internalID: -9014827688687607430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_138
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854cbdd83d2f29b40800000000000000
+      internalID: 5445681889876362328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_139
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63467827ee2aa1530800000000000000
+      internalID: 3826549978412049462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed9a106ae35fa020800000000000000
+      internalID: 2355193396237868515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_141
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00dc108a4246f090800000000000000
+      internalID: -8001134800232722420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_142
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffd858ecf697d200800000000000000
+      internalID: 204798321042710524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_143
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37bc4fe5dfab0f7f0800000000000000
+      internalID: -580758754548200589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_144
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b03573d0177b0c90800000000000000
+      internalID: -7202532264898121544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_145
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f5f28dc74f324b0800000000000000
+      internalID: -5466256705657544916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_146
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa79f21f1e64b5430800000000000000
+      internalID: 3772687049080936362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_147
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0572c3436cb649720800000000000000
+      internalID: 2852022963056420688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_148
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc5bfeaa53235590800000000000000
+      internalID: -7686761266601567054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_149
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fae447fdb58526c0800000000000000
+      internalID: -4168778829117723915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_150
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04bb5ca216d317b90800000000000000
+      internalID: -7245942837923693760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_151
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95250158410b993a0800000000000000
+      internalID: -6658096971912293799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_152
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30bcd199600331e30800000000000000
+      internalID: 4472971659805838083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_153
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f8c10c0fbbb6cb0800000000000000
+      internalID: -4869591929381417204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_154
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8559058326d46ed40800000000000000
+      internalID: 5613259069810840920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_155
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d1041f746249870800000000000000
+      internalID: 8688611671536573737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_156
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30db021277449f870800000000000000
+      internalID: 8717073832199896323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_157
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cc943220a1588b0800000000000000
+      internalID: -5150682002343998367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_158
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c00d2029b3f4460800000000000000
+      internalID: 7228061425251388434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_159
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a0ecfa581011c60800000000000000
+      internalID: 7787006904392092290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30771b0c0a06a5a0800000000000000
+      internalID: -6510505164475502532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_161
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d29377b045e49e0800000000000000
+      internalID: -1635277206467302074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_162
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af3b3352c2bfe0f0800000000000000
+      internalID: -1085452437483208798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_163
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 091653a904a305eb0800000000000000
+      internalID: -4733219159226883696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_164
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc4f94a2c4fa2d10800000000000000
+      internalID: 2101761292944493811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_165
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05acff4d0d68e03e0800000000000000
+      internalID: -2085581345941108144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_166
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832a23ee75f6d8250800000000000000
+      internalID: 5948533106275426872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_167
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9074782dc1d8360e0800000000000000
+      internalID: -2277821831588657399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_168
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4484b8820f27120800000000000000
+      internalID: 2410252807522764012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_169
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92907e63aa4b7190800000000000000
+      internalID: -7963689450281594214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_170
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8b3f15c0b6ccdc0800000000000000
+      internalID: -3617398700026644303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_171
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68adfdabbaa262f0800000000000000
+      internalID: -981034045758658450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_172
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0543e1823ab97d30800000000000000
+      internalID: 4429776434585879818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_173
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8014bb7255acd0a80800000000000000
+      internalID: -8498914454690643704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_174
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd7c8aa2eaf197e0800000000000000
+      internalID: -1760350127894266442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_175
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7edaae088a72566f0800000000000000
+      internalID: -692103363060650521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_176
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8e791eef2c192f0800000000000000
+      internalID: -967778044945635131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_177
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa7cc624c2bcb170800000000000000
+      internalID: 8195621977441729279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_178
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba0097814d239280800000000000000
+      internalID: -9037830267731965263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_179
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5baec18baa51cb0800000000000000
+      internalID: -4893817712332327447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959f0b3931e6925f0800000000000000
+      internalID: -780972030010787495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_181
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a30f0b2de5bd28940800000000000000
+      internalID: 5297037312049344570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_182
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9459d2c7991ccc0800000000000000
+      internalID: -3692501460847343185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_183
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c017b4556f21eb000800000000000000
+      internalID: 53501094777286924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_184
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0786cbfb7f8ad50800000000000000
+      internalID: 6748916444486463673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_185
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b332f1c9b9845fec0800000000000000
+      internalID: -3533838499425868997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_186
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ca4541b551f0840800000000000000
+      internalID: 5192392376308771865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_187
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e4e67454c047720800000000000000
+      internalID: 2842910756468313621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_188
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66b862d1c2316930800000000000000
+      internalID: 4134641740942980714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_189
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd739659fe2bb1470800000000000000
+      internalID: 8366477474844456925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_190
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd354d61fe439b2d0800000000000000
+      internalID: -3262518253568371748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_191
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a09fc5f203a60dc0800000000000000
+      internalID: -3673069212964777819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_192
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad25de57c40cab20800000000000000
+      internalID: 3146895493961166247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_193
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b427a3f44a849140800000000000000
+      internalID: 4725553937768719538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_194
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f61a87af7858380800000000000000
+      internalID: -8969613573003055207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_195
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823d45a3739fe39a0800000000000000
+      internalID: -6251285217146514648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_196
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0c57bc656edd120800000000000000
+      internalID: 2440359833559744740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_197
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69adf52cd4248cd0800000000000000
+      internalID: -2556878160490813075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_198
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36528f221453e78d0800000000000000
+      internalID: -2846779360575740573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_199
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b8f77e8aec9a8c0800000000000000
+      internalID: -3987428770226140332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_200
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c2419ca888a4770800000000000000
+      internalID: 8595832968450419763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_201
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c528f86bbfdd4cc80800000000000000
+      internalID: -8303267739794963876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_202
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a623e6c123c0846a0800000000000000
+      internalID: -6464903855725464982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_203
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01513a1d6e76c6a0800000000000000
+      internalID: -6429312410968829684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_204
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18786df9f1986450800000000000000
+      internalID: 6082271799648221213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_205
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd5a723bef7d1a10800000000000000
+      internalID: 1881800867451657649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_206
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f204b6ba2154e150800000000000000
+      internalID: 5900930655657919221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_207
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5dc6c93382ed450800000000000000
+      internalID: 6115369546148533728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_208
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164e9733829e60430800000000000000
+      internalID: 3748940098704106593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_209
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951ff38743597ff90800000000000000
+      internalID: -6919898249843183271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_210
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0b549272580cef0800000000000000
+      internalID: -89925589304758057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_211
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e28ab5c370e8970800000000000000
+      internalID: 8758946281099374090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_212
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a614d79bee9311360800000000000000
+      internalID: 7138550581835940202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_213
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f938bb91df2768530800000000000000
+      internalID: 3856896562273420191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_214
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c191f09034d21ca0800000000000000
+      internalID: -6047538044549885502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_215
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f5d76c6cf03db00800000000000000
+      internalID: 852042100911202085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_216
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad956f6f9f9088ca0800000000000000
+      internalID: -6014546333158450726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_217
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9ccbd869efef7c0800000000000000
+      internalID: -4035508293500876333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_218
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7fed91c24b5ec30800000000000000
+      internalID: 4388111513448019941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_219
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0cce7907f8ac2a0800000000000000
+      internalID: -6716398180521688883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_220
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105f0b7046449b2b0800000000000000
+      internalID: -5568344267850451711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_221
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10be88618d0efdba0800000000000000
+      internalID: -6061879354721768703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_222
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82081d9b62d389bc0800000000000000
+      internalID: -3776201051014594520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_223
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7333c3c06c22f2cf0800000000000000
+      internalID: -274962818242170057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_224
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca1864a499e67bc0800000000000000
+      internalID: -3785581612135605565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_225
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8dca79878496cf80800000000000000
+      internalID: -8086612771049124466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_226
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e1e658620c08f60800000000000000
+      internalID: 8034633006908841516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_227
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909382f0bbbf0da30800000000000000
+      internalID: 4238164030187387145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_228
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30e9ab8f59324a70800000000000000
+      internalID: 8809666903617953854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_229
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac61ed0203578e00800000000000000
+      internalID: 1046896706674846885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_230
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983d85dbc87328d60800000000000000
+      internalID: 7890930574718194569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_231
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0635af62a0aae0a60800000000000000
+      internalID: 7642232578274644832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_232
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f67c1d1146dec20800000000000000
+      internalID: 3237353734845984548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_B_Recolored_233
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3f03f7460c1f0d0800000000000000
+      internalID: -3390717506570095655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 802a348141abc784cb17f4277c12eaa3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Fog: -5389201861494937112
+      Skill_B_Recolored_0: -6287190776451258998
+      Skill_B_Recolored_1: 6661719810749417877
+      Skill_B_Recolored_10: -5286980662932565712
+      Skill_B_Recolored_100: -3346393222724313393
+      Skill_B_Recolored_101: -5181654846218585663
+      Skill_B_Recolored_102: 1050776165681741107
+      Skill_B_Recolored_103: 1629401116339304619
+      Skill_B_Recolored_104: -8500642260033419313
+      Skill_B_Recolored_106: -5720461211594876209
+      Skill_B_Recolored_107: 5497999003333118125
+      Skill_B_Recolored_108: 5476709148127243318
+      Skill_B_Recolored_109: 7975937162965101922
+      Skill_B_Recolored_11: 4431852833509950114
+      Skill_B_Recolored_110: 91576298182532672
+      Skill_B_Recolored_111: 2129578536089811674
+      Skill_B_Recolored_112: -2497190815196963918
+      Skill_B_Recolored_113: 3305372445097584652
+      Skill_B_Recolored_114: -2228971247167229961
+      Skill_B_Recolored_115: -80116226164068214
+      Skill_B_Recolored_116: -453396426134567355
+      Skill_B_Recolored_117: 2690924645482935186
+      Skill_B_Recolored_118: 1518081993597106444
+      Skill_B_Recolored_119: -1697344490681601830
+      Skill_B_Recolored_12: -441887406864829429
+      Skill_B_Recolored_120: 7920777739219257809
+      Skill_B_Recolored_121: -5934314722921417168
+      Skill_B_Recolored_122: 6903318857911579310
+      Skill_B_Recolored_123: 6322667798659521271
+      Skill_B_Recolored_124: 2218747224288928101
+      Skill_B_Recolored_125: -6002365283860215817
+      Skill_B_Recolored_126: -6170179107295757906
+      Skill_B_Recolored_127: -2805264177272893737
+      Skill_B_Recolored_128: -5645805338450832224
+      Skill_B_Recolored_129: -4080526691229786947
+      Skill_B_Recolored_13: 8253045018671930440
+      Skill_B_Recolored_130: -637902906512538853
+      Skill_B_Recolored_131: 730429329443903771
+      Skill_B_Recolored_132: 1315416353060256096
+      Skill_B_Recolored_133: 610509392188469405
+      Skill_B_Recolored_134: -5763284975052064907
+      Skill_B_Recolored_135: -5230710241157956893
+      Skill_B_Recolored_136: -5860087912092133067
+      Skill_B_Recolored_137: -9014827688687607430
+      Skill_B_Recolored_138: 5445681889876362328
+      Skill_B_Recolored_139: 3826549978412049462
+      Skill_B_Recolored_14: 6792430416114449472
+      Skill_B_Recolored_140: 2355193396237868515
+      Skill_B_Recolored_141: -8001134800232722420
+      Skill_B_Recolored_142: 204798321042710524
+      Skill_B_Recolored_143: -580758754548200589
+      Skill_B_Recolored_144: -7202532264898121544
+      Skill_B_Recolored_145: -5466256705657544916
+      Skill_B_Recolored_146: 3772687049080936362
+      Skill_B_Recolored_147: 2852022963056420688
+      Skill_B_Recolored_148: -7686761266601567054
+      Skill_B_Recolored_149: -4168778829117723915
+      Skill_B_Recolored_15: -7461913266529699930
+      Skill_B_Recolored_150: -7245942837923693760
+      Skill_B_Recolored_151: -6658096971912293799
+      Skill_B_Recolored_152: 4472971659805838083
+      Skill_B_Recolored_153: -4869591929381417204
+      Skill_B_Recolored_154: 5613259069810840920
+      Skill_B_Recolored_155: 8688611671536573737
+      Skill_B_Recolored_156: 8717073832199896323
+      Skill_B_Recolored_157: -5150682002343998367
+      Skill_B_Recolored_158: 7228061425251388434
+      Skill_B_Recolored_159: 7787006904392092290
+      Skill_B_Recolored_16: 964606045042771094
+      Skill_B_Recolored_160: -6510505164475502532
+      Skill_B_Recolored_161: -1635277206467302074
+      Skill_B_Recolored_162: -1085452437483208798
+      Skill_B_Recolored_163: -4733219159226883696
+      Skill_B_Recolored_164: 2101761292944493811
+      Skill_B_Recolored_165: -2085581345941108144
+      Skill_B_Recolored_166: 5948533106275426872
+      Skill_B_Recolored_167: -2277821831588657399
+      Skill_B_Recolored_168: 2410252807522764012
+      Skill_B_Recolored_169: -7963689450281594214
+      Skill_B_Recolored_17: -6493347298594287609
+      Skill_B_Recolored_170: -3617398700026644303
+      Skill_B_Recolored_171: -981034045758658450
+      Skill_B_Recolored_172: 4429776434585879818
+      Skill_B_Recolored_173: -8498914454690643704
+      Skill_B_Recolored_174: -1760350127894266442
+      Skill_B_Recolored_175: -692103363060650521
+      Skill_B_Recolored_176: -967778044945635131
+      Skill_B_Recolored_177: 8195621977441729279
+      Skill_B_Recolored_178: -9037830267731965263
+      Skill_B_Recolored_179: -4893817712332327447
+      Skill_B_Recolored_18: -1930488423469766524
+      Skill_B_Recolored_180: -780972030010787495
+      Skill_B_Recolored_181: 5297037312049344570
+      Skill_B_Recolored_182: -3692501460847343185
+      Skill_B_Recolored_183: 53501094777286924
+      Skill_B_Recolored_184: 6748916444486463673
+      Skill_B_Recolored_185: -3533838499425868997
+      Skill_B_Recolored_186: 5192392376308771865
+      Skill_B_Recolored_187: 2842910756468313621
+      Skill_B_Recolored_188: 4134641740942980714
+      Skill_B_Recolored_189: 8366477474844456925
+      Skill_B_Recolored_19: -2714188022074352242
+      Skill_B_Recolored_190: -3262518253568371748
+      Skill_B_Recolored_191: -3673069212964777819
+      Skill_B_Recolored_192: 3146895493961166247
+      Skill_B_Recolored_193: 4725553937768719538
+      Skill_B_Recolored_194: -8969613573003055207
+      Skill_B_Recolored_195: -6251285217146514648
+      Skill_B_Recolored_196: 2440359833559744740
+      Skill_B_Recolored_197: -2556878160490813075
+      Skill_B_Recolored_198: -2846779360575740573
+      Skill_B_Recolored_199: -3987428770226140332
+      Skill_B_Recolored_2: 1852667720773769581
+      Skill_B_Recolored_20: -5996801794433686664
+      Skill_B_Recolored_200: 8595832968450419763
+      Skill_B_Recolored_201: -8303267739794963876
+      Skill_B_Recolored_202: -6464903855725464982
+      Skill_B_Recolored_203: -6429312410968829684
+      Skill_B_Recolored_204: 6082271799648221213
+      Skill_B_Recolored_205: 1881800867451657649
+      Skill_B_Recolored_206: 5900930655657919221
+      Skill_B_Recolored_207: 6115369546148533728
+      Skill_B_Recolored_208: 3748940098704106593
+      Skill_B_Recolored_209: -6919898249843183271
+      Skill_B_Recolored_21: 5268274359937209102
+      Skill_B_Recolored_210: -89925589304758057
+      Skill_B_Recolored_211: 8758946281099374090
+      Skill_B_Recolored_212: 7138550581835940202
+      Skill_B_Recolored_213: 3856896562273420191
+      Skill_B_Recolored_214: -6047538044549885502
+      Skill_B_Recolored_215: 852042100911202085
+      Skill_B_Recolored_216: -6014546333158450726
+      Skill_B_Recolored_217: -4035508293500876333
+      Skill_B_Recolored_218: 4388111513448019941
+      Skill_B_Recolored_219: -6716398180521688883
+      Skill_B_Recolored_22: -5750622454868278345
+      Skill_B_Recolored_220: -5568344267850451711
+      Skill_B_Recolored_221: -6061879354721768703
+      Skill_B_Recolored_222: -3776201051014594520
+      Skill_B_Recolored_223: -274962818242170057
+      Skill_B_Recolored_224: -3785581612135605565
+      Skill_B_Recolored_225: -8086612771049124466
+      Skill_B_Recolored_226: 8034633006908841516
+      Skill_B_Recolored_227: 4238164030187387145
+      Skill_B_Recolored_228: 8809666903617953854
+      Skill_B_Recolored_229: 1046896706674846885
+      Skill_B_Recolored_23: 5807381320109349691
+      Skill_B_Recolored_230: 7890930574718194569
+      Skill_B_Recolored_231: 7642232578274644832
+      Skill_B_Recolored_232: 3237353734845984548
+      Skill_B_Recolored_233: -3390717506570095655
+      Skill_B_Recolored_24: 4830405070348340044
+      Skill_B_Recolored_25: -5136634585569553263
+      Skill_B_Recolored_26: 7792803545441032930
+      Skill_B_Recolored_27: 6249743673361895317
+      Skill_B_Recolored_28: 8294534703137871562
+      Skill_B_Recolored_29: 2404039255518945168
+      Skill_B_Recolored_3: 7741787089932127199
+      Skill_B_Recolored_30: 4155302766007383225
+      Skill_B_Recolored_31: 3999300171999077454
+      Skill_B_Recolored_32: 1008885711804004513
+      Skill_B_Recolored_33: 6109076962248195895
+      Skill_B_Recolored_34: -5342032632791512463
+      Skill_B_Recolored_35: 7868650671092753507
+      Skill_B_Recolored_36: 4047409960757560032
+      Skill_B_Recolored_37: -2154597156236834935
+      Skill_B_Recolored_38: -8765341210241324270
+      Skill_B_Recolored_39: -1180567191819363904
+      Skill_B_Recolored_4: 6899024722500082774
+      Skill_B_Recolored_40: -2505499646852487165
+      Skill_B_Recolored_41: 2694861559752632184
+      Skill_B_Recolored_42: 6462959692102768445
+      Skill_B_Recolored_43: 568212956093231752
+      Skill_B_Recolored_44: -2862827403862911781
+      Skill_B_Recolored_45: -4385814983403598656
+      Skill_B_Recolored_46: 2699584280838957550
+      Skill_B_Recolored_47: -8268765489247338533
+      Skill_B_Recolored_48: -2620166856797759287
+      Skill_B_Recolored_49: -1628466404380832243
+      Skill_B_Recolored_5: 2516846354446919047
+      Skill_B_Recolored_50: 2702194158778341609
+      Skill_B_Recolored_51: 487248991160882742
+      Skill_B_Recolored_52: -3745698540674520195
+      Skill_B_Recolored_53: 2345138326789023578
+      Skill_B_Recolored_54: -8555726605218648876
+      Skill_B_Recolored_55: -5592683156030193163
+      Skill_B_Recolored_56: 5127570136354680912
+      Skill_B_Recolored_57: -8487749615834588245
+      Skill_B_Recolored_58: -4005917710995570509
+      Skill_B_Recolored_59: 6684347816452585049
+      Skill_B_Recolored_6: 4626112718772633770
+      Skill_B_Recolored_60: 7529951340398228923
+      Skill_B_Recolored_61: -970177139593153469
+      Skill_B_Recolored_62: -649379401146591995
+      Skill_B_Recolored_63: 345604859422694956
+      Skill_B_Recolored_64: -4330454533666386359
+      Skill_B_Recolored_65: -7312475961984432941
+      Skill_B_Recolored_66: 3210845910532536250
+      Skill_B_Recolored_67: 7046347738266872177
+      Skill_B_Recolored_68: -952710414646800621
+      Skill_B_Recolored_69: 992428002450628461
+      Skill_B_Recolored_7: -6884294963791193581
+      Skill_B_Recolored_70: -8082660251181702577
+      Skill_B_Recolored_71: -7591707338176321231
+      Skill_B_Recolored_72: -4360834742981212234
+      Skill_B_Recolored_73: 668824692227743797
+      Skill_B_Recolored_74: -9055340335074318191
+      Skill_B_Recolored_75: 554595242668215613
+      Skill_B_Recolored_76: 7143997313377297652
+      Skill_B_Recolored_77: -5223679869440569897
+      Skill_B_Recolored_78: 2791858912805100474
+      Skill_B_Recolored_79: 7967785967385054258
+      Skill_B_Recolored_8: 4187128342484077058
+      Skill_B_Recolored_80: -4677919823997991762
+      Skill_B_Recolored_81: -2452914342122938559
+      Skill_B_Recolored_82: 4899250804576264709
+      Skill_B_Recolored_83: 2605629108967655864
+      Skill_B_Recolored_84: 168452538266132891
+      Skill_B_Recolored_85: -824447203751628956
+      Skill_B_Recolored_86: 1030040226454161177
+      Skill_B_Recolored_87: 1167887866965700241
+      Skill_B_Recolored_88: -3081416047359156368
+      Skill_B_Recolored_89: 2433603694783166600
+      Skill_B_Recolored_9: -2534452548608071536
+      Skill_B_Recolored_90: 2063457038845269778
+      Skill_B_Recolored_91: -8775517565306546609
+      Skill_B_Recolored_92: -277521774866068147
+      Skill_B_Recolored_93: 4605735617513642870
+      Skill_B_Recolored_94: -1416490011140166173
+      Skill_B_Recolored_95: -6003473797244130518
+      Skill_B_Recolored_96: -7369443293782436073
+      Skill_B_Recolored_97: -567097549551993959
+      Skill_B_Recolored_98: -2607644037462291761
+      Skill_B_Recolored_99: 4173232769110927532
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
