@@ -2734,7 +2734,7 @@ MonoBehaviour:
   allAbilities:
   - {fileID: 11400000, guid: cd1d1a7c483f38447b279986a5b7ad94, type: 2}
   - {fileID: 11400000, guid: e0f4dc63667694f44ae1cc2d5a5ea1f2, type: 2}
-  - {fileID: 11400000, guid: b08e1cff2bf7c824d99428337b9720b4, type: 2}
+  - {fileID: 11400000, guid: b3438f05423754b428ab6862dbb1906d, type: 2}
   specialAbilityUI: {fileID: 41202137}
 --- !u!4 &1034239305
 Transform:

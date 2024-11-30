@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
@@ -11,8 +12,9 @@ public class Enemy : MonoBehaviour, IDamageable
     private float enemyCurrentHP;
     private GameObject visualChild;
     private string targetTag = "Player";
-
-    private LevelManager levelManager; // Reference to the LevelManager
+    public bool enemyCanMove = true;
+    private bool isKnockedBack = false;
+    private LevelManager levelManager;
 
     private void Start()
     {
@@ -56,10 +58,12 @@ public class Enemy : MonoBehaviour, IDamageable
         {
             attackCooldown -= Time.deltaTime;
         }
+
     }
 
     private void FixedUpdate()
     {
+        if (isKnockedBack) return;
         if (targetTransform == null)
         {
             rb.linearVelocity = Vector2.zero;
@@ -67,11 +71,31 @@ public class Enemy : MonoBehaviour, IDamageable
         }
 
         Vector2 direction = (targetTransform.position - visualChild.transform.position).normalized;
+        
         rb.linearVelocity = direction * enemyType.data.moveSpeed;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         rb.rotation = angle - 90f;
     }
+
+  
+    public IEnumerator ApplyKnockback(Vector2 direction, float knockbackForce, float knockbackDuration)
+    {
+        if (rb == null) yield break;
+
+        isKnockedBack = true;
+
+        // Apply force
+        rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+
+        // Wait for knockback duration
+        yield return new WaitForSeconds(knockbackDuration);
+
+        // Stop movement after knockback
+        rb.linearVelocity = Vector2.zero;
+        isKnockedBack = false;
+    }
+
 
     private void FindTarget()
     {

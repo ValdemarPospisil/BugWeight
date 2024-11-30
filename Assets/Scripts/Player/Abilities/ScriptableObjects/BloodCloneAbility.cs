@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "SpecialAbilities/Blood Clone")]
+[CreateAssetMenu(fileName = "Blood Clone", menuName = "SpecialAbilities/Blood Clone")]
 public class BloodCloneAbility : SpecialAbility
 {
     [SerializeField] private GameObject bloodClonePrefab;

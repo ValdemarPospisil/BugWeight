@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "SpecialAbilities/Blood Surge")]
+[CreateAssetMenu(fileName = "Blood Surge", menuName = "SpecialAbilities/Blood Surge")]
 public class BloodSurgeAbility : SpecialAbility
 {
     [SerializeField] private float dashSpeed = 10f;
