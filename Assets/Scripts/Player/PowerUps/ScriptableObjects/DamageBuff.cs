@@ -11,7 +11,7 @@ public class DamageBuff : PowerUp
         PlayerManager playerManager = player.GetComponent<PlayerManager>();
         if (playerManager != null)
         {
-            playerManager.damageMultiplier *= damageMultiplier;
+           // playerManager.damageMultiplier *= damageMultiplier;
             playerManager.StartCoroutine(RemoveBuffAfterDuration(playerManager));
         }
     }
@@ -21,7 +21,7 @@ public class DamageBuff : PowerUp
         PlayerManager playerManager = player.GetComponent<PlayerManager>();
         if (playerManager != null)
         {
-            playerManager.damageMultiplier /= damageMultiplier;
+          //  playerManager.damageMultiplier /= damageMultiplier;
         }
     }
 

@@ -2,13 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : MonoBehaviour, IDamageable
 {
     public float maxHP = 100f;
     public float currentHP;
     public float currentXP;
     private int level = 1;
     private float toNextLevel = 100;
+    
 
     // UI elements
     [Header("UI Elements")]
@@ -25,6 +26,7 @@ public class PlayerManager : MonoBehaviour
         // Initialize with the first class as default or any class you prefer
         
         currentHP = maxHP;
+        
         UpdateUI();
     }
 
@@ -35,7 +37,18 @@ public class PlayerManager : MonoBehaviour
         if (currentXP >= toNextLevel) LevelUp();
     }
 
-    
+    public void Heal (float amount)
+    {
+        currentHP += amount;
+        if (currentHP > maxHP) currentHP = maxHP;
+        UpdateUI();
+    }
+
+    public void GainXP(float amount)
+    {
+        currentXP += amount;
+        UpdateUI();
+    }
 
     private void LevelUp()
     {
@@ -54,16 +67,18 @@ public class PlayerManager : MonoBehaviour
         xpText.text = currentXP.ToString();
         toNextLevelText.text = toNextLevel.ToString();
     }
-
-    public void DamagePlayer(float amount)
+     
+    
+    public void TakeDamage(float damage)
     {
-        currentHP -= amount;
+        currentHP -= damage;
         UpdateUI();
     }
 
     private void Death()
     {
-        Debug.Log("The Player is dead!");
         deathText.gameObject.SetActive(true);
+        Time.timeScale = 0;
+        Destroy(gameObject);
     }
 }

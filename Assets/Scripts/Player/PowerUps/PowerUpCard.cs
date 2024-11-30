@@ -25,7 +25,8 @@ public class PowerUpCard : MonoBehaviour
     }
 
     private void OnSelected()
-    {
+    {   
+        Debug.Log("Selected: " + powerUp.skillName);
         powerUpManager.ActivatePowerUp(powerUp);
         powerUpManager.powerUpUI.HideChoices();
     }

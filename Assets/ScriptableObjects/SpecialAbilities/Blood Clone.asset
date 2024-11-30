@@ -10,9 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ec7721375525e3429e201cb9d0e3379, type: 3}
-  m_Name: Decoy Ability
+  m_Name: Blood Clone
   m_EditorClassIdentifier: 
-  abilityName: Decoy
+  abilityName: Blood Clone
   icon: {fileID: -5389201861494937112, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
-  decoyPrefab: {fileID: 661790433407783582, guid: 34487bb361d00934fa777015cfbfcd39, type: 3}
-  invisibilityDuration: 5
+  abilityDescription: Make a blood clone of yourself and go invisible for a period
+    of time
+  bloodClonePrefab: {fileID: 930252425609928099, guid: 5aab1559c8bb7c7468395b833085bf88, type: 3}
+  cloneDuration: 5
+  explosionDamage: 10
+  explosionRadius: 3.5

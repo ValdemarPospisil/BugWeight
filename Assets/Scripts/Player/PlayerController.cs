@@ -1,122 +1,108 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
-
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb;   // Reference to Rigidbody2D
-    [SerializeField] private float baseMoveSpeed = 5f; // Default movement speed
-
-    private PlayerClass activeClass;     // The currently active class
-    private Vector2 movementInput;      // Movement input
-    private bool isMoving;
-
+    private Rigidbody2D rb;
+    [SerializeField] private float moveSpeed = 5f;
+    private bool isDashing;
+    private SpecialAbilityManager specialManager;
+    private PowerUpManager powerUpManager;
     private Animator animator;
+    private TrailRenderer trailRenderer;
+    private bool isMoving;
+    private SpriteRenderer spriteRenderer;
 
-    public List<PlayerClass> playerClasses; // Assign Warrior, Hunter, etc., in Inspector
-
+    public bool IsDashing
+    {
+        get => isDashing;
+        set => isDashing = value;
+    }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-
-        SetClass(playerClasses[0]);
-        
+        specialManager = ServiceLocator.GetService<SpecialAbilityManager>();
+        powerUpManager = ServiceLocator.GetService<PowerUpManager>();
+        trailRenderer = GetComponent<TrailRenderer>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Start()
     {
-        // Get the active class from PlayerManager
-        if (activeClass != null)
-        {
-            animator.runtimeAnimatorController = activeClass.animatorController;
-        }
-        else
-        {
-            Debug.LogError("No active PlayerClass found in PlayerManager!");
-        }
-        
+        trailRenderer.emitting = false;
     }
 
     private void Update()
     {
         HandleInput();
-
-        // Handle Attack Input
-        if (Input.GetKeyDown(KeyCode.Space) && activeClass != null)
-        {
-            activeClass.Attack();
-            animator.SetTrigger("Attack");
-        }
     }
 
-    private void FixedUpdate()
+    public void SpeedBoost(float multiplier)
     {
-        MovePlayer();
+        moveSpeed *= multiplier;
     }
 
-    public void SetClass(PlayerClass newClass)
-    {
-        if (activeClass != null) activeClass.gameObject.SetActive(false);
-        activeClass = newClass;
-        activeClass.gameObject.SetActive(true);
-        Debug.Log(activeClass);
-        //activeClass.Initialize(this); // Pass reference to PlayerManager
-    }
-
-   
     private void HandleInput()
     {
-        // Capture movement input
-        movementInput.x = Input.GetAxisRaw("Horizontal");
-        movementInput.y = Input.GetAxisRaw("Vertical");
-        movementInput = movementInput.normalized;
+        Vector2 movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
+        animator.SetFloat("MovementX", movementInput.x);
+        animator.SetFloat("MovementY", movementInput.y);
         isMoving = movementInput != Vector2.zero;
-
-
-        if (animator != null)
+        animator.SetBool("IsMoving", !isMoving);
+        if (!isDashing)
         {
-            animator.SetBool("Idle", !isMoving);
+            rb.linearVelocity = movementInput * moveSpeed;
+        }
 
-            if (isMoving)
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            specialManager.UseSpecialAbility();
+        }
+    }
+
+    public IEnumerator UseCloneAbility(GameObject clonePrefab, float cloneDuration, float explosionDamage, float explosionRadius)
+    {
+        // Instantiate the clone
+        GameObject clone = Instantiate(clonePrefab, transform.position, transform.rotation);
+        BloodClone bloodClone = clone.GetComponent<BloodClone>();
+        bloodClone.Initialize(cloneDuration, explosionDamage, explosionRadius);
+        clone.tag = "Clone";
+
+        // Make the player invisible
+        spriteRenderer.color = new Color(1, 1, 1, 0.3f);
+        gameObject.tag = "Invisible";
+
+        // Notify enemies to target the clone
+        NotifyEnemies("Clone");
+
+        // Wait for the clone duration
+        yield return new WaitForSeconds(cloneDuration);
+
+        // Destroy the clone
+        Destroy(clone);
+
+        // Make the player visible again
+        spriteRenderer.color = new Color(1, 1, 1, 1);
+        gameObject.tag = "Player";
+
+        // Notify enemies to target the player again
+        NotifyEnemies("Player");
+    }
+
+    private void NotifyEnemies(string targetTag)
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            Enemy enemyScript = enemy.GetComponentInParent<Enemy>();
+            if (enemyScript != null)
             {
-                animator.SetFloat("MovementX", movementInput.x);
-                animator.SetFloat("MovementY", movementInput.y);
+                enemyScript.SetTargetTag(targetTag);
             }
         }
-        else
-        {
-            Debug.LogError("Animator is null");
-        }
- 
-
-        // Normalize input to avoid faster diagonal movement
-        
-    }
-
-    private void MovePlayer()
-    {
-        if (activeClass != null)
-        {
-            float moveSpeed = activeClass.GetMoveSpeed(baseMoveSpeed);
-            rb.linearVelocity = movementInput * moveSpeed; // Note: `velocity` instead of `linearVelocity`
-        }
-    }
-
-    
-    public void SwitchClass(PlayerClass newClass)
-    {
-        if (newClass == null)
-        {
-            Debug.LogError("Attempted to switch to a null PlayerClass!");
-            return;
-        }
-
-        activeClass = newClass;
-        animator.runtimeAnimatorController = activeClass.animatorController;
-        Debug.Log("Switched to class: " + activeClass.GetType().Name);
     }
 }

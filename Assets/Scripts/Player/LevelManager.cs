@@ -8,7 +8,12 @@ public class LevelManager : MonoBehaviour
     public float toNextLevel { get; private set; } = 100;
 
     public UnityEvent OnLevelUp = new UnityEvent();
+    public static LevelManager Instance { get; private set; }
 
+    public void Start()
+    {
+        currentXP = 0;
+    }
     public void AddXP(float amount)
     {
         currentXP += amount;

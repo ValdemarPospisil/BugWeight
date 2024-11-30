@@ -8,6 +8,8 @@ public class HealingPowerUp : PowerUp
     public override void Activate(GameObject player)
     {
         PlayerManager playerManager = player.GetComponent<PlayerManager>();
+        
+        Debug.Log("Healing player");
         if (playerManager != null)
         {
             playerManager.Heal(healAmount);

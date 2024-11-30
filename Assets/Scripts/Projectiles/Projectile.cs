@@ -75,7 +75,7 @@ public class Projectile : MonoBehaviour
     Enemy enemy = other.GetComponentInParent<Enemy>();
     if (enemy != null)
     {
-        enemy.DamageEnemy(projectileType.data.damage);
+       // enemy.DamageEnemy(projectileType.data.damage);
         Destroy(gameObject);  // Destroy projectile on impact
     }
 }

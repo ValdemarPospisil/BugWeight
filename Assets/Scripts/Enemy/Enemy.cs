@@ -1,34 +1,42 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
+using System.Collections.Generic;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
     public EnemyType enemyType;
     private EnemyCollisionHandler enemyCollisionHandler;
-    private Transform playerTransform;
-    private Player player;
-    private GameObject visualChild;
+    private Transform targetTransform;
     private Rigidbody2D rb;
     private float attackCooldown;
-    private int enemyCurentHP;
+    private float enemyCurrentHP;
+    private GameObject visualChild;
+    private string targetTag = "Player";
 
-    private void Start() 
+    private LevelManager levelManager; // Reference to the LevelManager
+
+    private void Start()
     {
         attackCooldown = 0f;
         enemyCollisionHandler = GetComponentInChildren<EnemyCollisionHandler>();
-        enemyCurentHP = enemyType.data.enemyMaxHP;
+        enemyCurrentHP = enemyType.data.enemyMaxHP;
+        gameObject.layer = LayerMask.NameToLayer("Enemy");
+
+        // Find LevelManager
+        levelManager = FindFirstObjectByType<LevelManager>();
+        if (levelManager == null)
+        {
+            Debug.LogError("LevelManager not found in the scene.");
+        }
+
         UpdateHealthUI();
+        FindTarget();
     }
 
     public void Initialize(EnemyType type, Vector3 spawnPosition)
     {
         enemyType = type;
         transform.position = spawnPosition;
-        enemyCurentHP = type.data.enemyMaxHP;
-
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        enemyCurrentHP = type.data.enemyMaxHP;
 
         if (visualChild == null)
         {
@@ -42,7 +50,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         if (attackCooldown > 0)
         {
@@ -50,41 +58,67 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (playerTransform != null && rb != null)
+        if (targetTransform == null)
         {
-            Vector2 direction = (playerTransform.position - visualChild.transform.position).normalized;
-            rb.linearVelocity = direction * enemyType.data.moveSpeed;
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
 
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            rb.rotation = angle - 90f;
+        Vector2 direction = (targetTransform.position - visualChild.transform.position).normalized;
+        rb.linearVelocity = direction * enemyType.data.moveSpeed;
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        rb.rotation = angle - 90f;
+    }
+
+    private void FindTarget()
+    {
+        GameObject targetObject = GameObject.FindGameObjectWithTag(targetTag);
+        if (targetObject != null)
+        {
+            targetTransform = targetObject.transform;
+        }
+        else
+        {
+            Debug.LogError($"{targetTag} not found in the scene.");
         }
     }
 
-    public void DamageEnemy(int amount) 
+    public void SetTargetTag(string newTargetTag)
     {
-        enemyCurentHP -= amount;
+        targetTag = newTargetTag;
+        FindTarget();
+    }
+
+    public void TakeDamage(float amount)
+    {
+        if (this == null) return;
+        enemyCurrentHP -= amount;
         UpdateHealthUI();
 
-        if (enemyCurentHP <= 0)
+        if (enemyCurrentHP <= 0)
         {
-            player.currentXP += enemyType.data.xpDrop;
-            player.UpdateLevelUI();
-            Destroy(gameObject);
-        } 
+            EnemyDeath();
+        }
+    }
+
+    private void EnemyDeath()
+    {
+        if (levelManager != null)
+        {
+            levelManager.AddXP(enemyType.data.xpDrop); // Add XP through LevelManager
+        }
+
+        Destroy(gameObject); // Destroy the enemy object
     }
 
     private void UpdateHealthUI()
     {
-        if (enemyCollisionHandler.enemyHealthBar != null)
+        if (enemyCollisionHandler != null && enemyCollisionHandler.enemyHealthBar != null)
         {
-            enemyCollisionHandler.enemyHealthBar.fillAmount = (float)enemyCurentHP / enemyType.data.enemyMaxHP;
-        }
-
-        if (enemyCollisionHandler.enemyHealthText != null)
-        {
-            enemyCollisionHandler.enemyHealthText.text = Mathf.CeilToInt(enemyCurentHP).ToString();
+            enemyCollisionHandler.enemyHealthBar.fillAmount = enemyCurrentHP / enemyType.data.enemyMaxHP;
         }
     }
 
@@ -92,10 +126,10 @@ public class Enemy : MonoBehaviour
     {
         if (attackCooldown <= 0)
         {
-            Player player = playerObject.GetComponent<Player>();
-            if (player != null)
+            IDamageable damageable = playerObject.GetComponent<IDamageable>();
+            if (damageable != null)
             {
-                player.DamagePlayer(enemyType.data.attackDamage);
+                damageable.TakeDamage(enemyType.data.attackDamage);
                 attackCooldown = 1f / enemyType.data.attackSpeed;
             }
         }

@@ -7,9 +7,10 @@ public class PowerUpManager : MonoBehaviour
     public List<PowerUp> allPowerUps; // List of all available power-ups
     public PowerUpUI powerUpUI; // Reference to the UI manager
 
-    private void Start()
+    private void Awake()
     {
-        ShowPowerUpChoices();
+        // Ensure this GameObject persists across scenes
+        DontDestroyOnLoad(gameObject);
     }
 
     public void ShowPowerUpChoices()
@@ -31,9 +32,8 @@ public class PowerUpManager : MonoBehaviour
     {
         // Prevent duplicate power-ups
         if (activePowerUps.Contains(powerUp)) return;
-
-        // Activate and add to list
-        powerUp.Activate(gameObject);
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        powerUp.Activate(player);
         activePowerUps.Add(powerUp);
     }
 
@@ -41,7 +41,8 @@ public class PowerUpManager : MonoBehaviour
     {
         if (activePowerUps.Contains(powerUp))
         {
-            powerUp.Deactivate(gameObject);
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            powerUp.Deactivate(player);
             activePowerUps.Remove(powerUp);
         }
     }
@@ -50,7 +51,8 @@ public class PowerUpManager : MonoBehaviour
     {
         foreach (var powerUp in activePowerUps)
         {
-            powerUp.Deactivate(gameObject);
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            powerUp.Deactivate(player);
         }
         activePowerUps.Clear();
     }

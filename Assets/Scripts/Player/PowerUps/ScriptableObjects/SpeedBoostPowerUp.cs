@@ -8,20 +8,20 @@ public class SpeedBoostPowerUp : PowerUp
 
     public override void Activate(GameObject player)
     {
-        PlayerManager playerManager = player.GetComponent<PlayerManager>();
-        if (playerManager != null)
+        PlayerController playerController = player.GetComponent<PlayerController>();
+        if (playerController != null)
         {
-            playerManager.speedMultiplier *= speedMultiplier;
-            playerManager.StartCoroutine(RemoveBuffAfterDuration(playerManager));
+            playerController.SpeedBoost(speedMultiplier);
+           // playerController.StartCoroutine(RemoveBuffAfterDuration(playerController));
         }
     }
 
     public override void Deactivate(GameObject player)
     {
-        PlayerManager playerManager = player.GetComponent<PlayerManager>();
-        if (playerManager != null)
+        PlayerController playerController = player.GetComponent<PlayerController>();
+        if (playerController != null)
         {
-            playerManager.speedMultiplier /= speedMultiplier;
+            playerController.SpeedBoost(-speedMultiplier);
         }
     }
 
