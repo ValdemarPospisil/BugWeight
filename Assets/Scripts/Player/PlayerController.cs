@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private TrailRenderer trailRenderer;
     private bool isMoving;
     private SpriteRenderer spriteRenderer;
+    private CapsuleCollider2D capsuleCollider2D;
+    private BatSwarmDamage batSwarmDamageScript;
 
     public bool IsDashing
     {
@@ -28,6 +30,9 @@ public class PlayerController : MonoBehaviour
         trailRenderer = GetComponent<TrailRenderer>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        capsuleCollider2D = GetComponent<CapsuleCollider2D>();
+        batSwarmDamageScript = GetComponentInChildren<BatSwarmDamage>();
+        batSwarmDamageScript.gameObject.SetActive(false);
     }
 
     private void Start()
@@ -42,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
     public void SpeedBoost(float multiplier)
     {
-        moveSpeed *= multiplier;
+        moveSpeed += multiplier;
     }
 
     private void HandleInput()
@@ -62,6 +67,26 @@ public class PlayerController : MonoBehaviour
         {
             specialManager.UseSpecialAbility();
         }
+    }
+
+    public void BatSwarm(float damage, float batsDuration, float batSpeed)
+    {
+        
+        batSwarmDamageScript.SetDamage(damage);
+        StartCoroutine(TransformToBats(batsDuration, batSpeed));
+    }
+
+    private IEnumerator TransformToBats(float batsDuration, float batSpeed)
+    {
+        batSwarmDamageScript.gameObject.SetActive(true);
+        SpeedBoost(batSpeed);
+        capsuleCollider2D.enabled = false;
+        spriteRenderer.enabled = false;
+        yield return new WaitForSeconds(batsDuration);
+        SpeedBoost(-batSpeed);
+        spriteRenderer.enabled = true;
+        capsuleCollider2D.enabled = true;
+        batSwarmDamageScript.gameObject.SetActive(false);
     }
 
     public IEnumerator UseCloneAbility(GameObject clonePrefab, float cloneDuration, float explosionDamage, float explosionRadius)

@@ -9,15 +9,19 @@ public class LevelManager : MonoBehaviour
 
     public UnityEvent OnLevelUp = new UnityEvent();
     public static LevelManager Instance { get; private set; }
+    private PlayerManager playerManager;
 
     public void Start()
     {
         currentXP = 0;
+        playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
+        playerManager.UpdateUI();
     }
     public void AddXP(float amount)
     {
         currentXP += amount;
         CheckLevelUp();
+        playerManager.UpdateUI();
     }
 
     private void CheckLevelUp()
@@ -27,6 +31,7 @@ public class LevelManager : MonoBehaviour
             currentXP -= toNextLevel;
             level++;
             toNextLevel += toNextLevel * 0.3f; // Increment difficulty to level up
+            playerManager.UpdateUI();
             OnLevelUp.Invoke();
         }
     }

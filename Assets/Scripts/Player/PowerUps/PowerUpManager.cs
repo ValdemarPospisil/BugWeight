@@ -15,7 +15,7 @@ public class PowerUpManager : MonoBehaviour
 
     public void ShowPowerUpChoices()
     {
-        // Randomly select 3 power-ups
+        Time.timeScale = 0f;
         List<PowerUp> randomPowerUps = new List<PowerUp>();
         while (randomPowerUps.Count < 3)
         {
@@ -30,7 +30,7 @@ public class PowerUpManager : MonoBehaviour
 
     public void ActivatePowerUp(PowerUp powerUp)
     {
-        // Prevent duplicate power-ups
+        Time.timeScale = 1f;
         if (activePowerUps.Contains(powerUp)) return;
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         powerUp.Activate(player);

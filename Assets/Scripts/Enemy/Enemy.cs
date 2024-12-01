@@ -15,13 +15,18 @@ public class Enemy : MonoBehaviour, IDamageable
     public bool enemyCanMove = true;
     private bool isKnockedBack = false;
     private LevelManager levelManager;
-
+    private bool isDead = false;
+    private ParticleSystem deathParticles;
+    private SpriteRenderer sprite;
     private void Start()
     {
         attackCooldown = 0f;
         enemyCollisionHandler = GetComponentInChildren<EnemyCollisionHandler>();
         enemyCurrentHP = enemyType.data.enemyMaxHP;
         gameObject.layer = LayerMask.NameToLayer("Enemy");
+        deathParticles = GetComponentInChildren<ParticleSystem>();
+        deathParticles.Stop();
+        sprite = GetComponentInChildren<SpriteRenderer>();
 
         // Find LevelManager
         levelManager = FindFirstObjectByType<LevelManager>();
@@ -92,7 +97,10 @@ public class Enemy : MonoBehaviour, IDamageable
         yield return new WaitForSeconds(knockbackDuration);
 
         // Stop movement after knockback
-        rb.linearVelocity = Vector2.zero;
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
         isKnockedBack = false;
     }
 
@@ -124,19 +132,28 @@ public class Enemy : MonoBehaviour, IDamageable
 
         if (enemyCurrentHP <= 0)
         {
-            EnemyDeath();
+            if (!isDead)
+            {
+                isDead = true;
+                StartCoroutine(Die());
+            }
         }
     }
-
-    private void EnemyDeath()
+    
+    private IEnumerator Die()
     {
-        if (levelManager != null)
-        {
-            levelManager.AddXP(enemyType.data.xpDrop); // Add XP through LevelManager
-        }
+        enemyCollisionHandler.DisableCollision();
+        deathParticles.Play();
+        levelManager.AddXP(enemyType.data.xpDrop);
+        
+        sprite.enabled = false;
+        enemyCollisionHandler.enemyHealthBar.transform.parent.gameObject.SetActive(false);
 
-        Destroy(gameObject); // Destroy the enemy object
+        yield return new WaitForSeconds(0.5f);
+
+        Destroy(gameObject); 
     }
+
 
     private void UpdateHealthUI()
     {

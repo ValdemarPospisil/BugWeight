@@ -5,10 +5,7 @@ using TMPro;
 public class PlayerManager : MonoBehaviour, IDamageable
 {
     public float maxHP = 100f;
-    public float currentHP;
-    public float currentXP;
-    private int level = 1;
-    private float toNextLevel = 100;
+    public float currentHP { get; private set; }
     
 
     // UI elements
@@ -20,21 +17,17 @@ public class PlayerManager : MonoBehaviour, IDamageable
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private TextMeshProUGUI xpText;
     [SerializeField] private TextMeshProUGUI toNextLevelText;
+    private LevelManager levelManager;
 
-    void Start()
-    {
-        // Initialize with the first class as default or any class you prefer
-        
+    private void Awake() {
         currentHP = maxHP;
-        
-        UpdateUI();
+        levelManager = ServiceLocator.GetService<LevelManager>();
     }
 
     void Update()
     {
         
         if (currentHP <= 0) Death();
-        if (currentXP >= toNextLevel) LevelUp();
     }
 
     public void Heal (float amount)
@@ -44,28 +37,14 @@ public class PlayerManager : MonoBehaviour, IDamageable
         UpdateUI();
     }
 
-    public void GainXP(float amount)
-    {
-        currentXP += amount;
-        UpdateUI();
-    }
-
-    private void LevelUp()
-    {
-        level++;
-        currentXP = 0;
-        toNextLevel += toNextLevel * 0.3f;
-        UpdateUI();
-    }
-
     public void UpdateUI()
     {
         healthBar.fillAmount = currentHP / maxHP;
         healthText.text = Mathf.Ceil(currentHP).ToString();
-        xpBar.fillAmount = currentXP / toNextLevel;
-        levelText.text = level.ToString();
-        xpText.text = currentXP.ToString();
-        toNextLevelText.text = toNextLevel.ToString();
+        xpBar.fillAmount = levelManager.currentXP / levelManager.toNextLevel;
+        levelText.text = levelManager.level.ToString();
+        xpText.text = levelManager.currentXP.ToString();
+        toNextLevelText.text = levelManager.toNextLevel.ToString();
     }
      
     

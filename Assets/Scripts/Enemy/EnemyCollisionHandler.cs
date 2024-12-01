@@ -20,4 +20,9 @@ public class EnemyCollisionHandler : MonoBehaviour
             enemy.HandlePlayerCollision(collision.gameObject);
         }
     }
+
+    public void DisableCollision()
+    {
+        GetComponent<Collider2D>().enabled = false;
+    }
 }
