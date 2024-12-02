@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53fef733e3faa92449c2ac3567e64ba0, type: 3}
+  m_Name: Shadow Step
+  m_EditorClassIdentifier: 
+  abilityName: Shadow Step
+  icon: {fileID: -8500642260033419313, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
+  abilityDescription: teleport short distance and leave your shadow behind that explodes
+    and deals damage.
+  teleportDistance: 4
+  shadowExplosionDelay: 0.8
+  explosionDamage: 15
+  explosionRadius: 3
+  shadowPrefab: {fileID: 930252425609928099, guid: d51ed35e66c63994eb186090afe87010, type: 3}
+  shadowExplosionEffect: {fileID: 8416442787123951291, guid: 82bd681766115df4f9315e0137d52d0c, type: 3}

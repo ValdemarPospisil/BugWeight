@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 3482621199288465255, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   abilityDescription: Surge forward and leave a blood mist trail behind that deals
     damage
-  dashSpeed: 50
-  dashDuration: 0.2
-  damageDuration: 3
+  dashSpeed: 25
+  dashDuration: 2
+  damageDuration: 5
   bloodTrailPrefab: {fileID: 3955109691808629756, guid: 0965f4d06c8a15f44af95ad6877ec803, type: 3}
