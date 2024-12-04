@@ -1,6 +1,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class ProjectileType
+{
+    public ProjectileTypeData data;
+
+    public ProjectileType(ProjectileTypeData data)
+    {
+        this.data = data;
+    }
+}
+
 public class ProjectileFactory : MonoBehaviour
 {
     private Dictionary<string, ProjectileType> projectileTypes = new Dictionary<string, ProjectileType>();

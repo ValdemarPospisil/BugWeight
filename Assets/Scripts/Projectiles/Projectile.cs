@@ -2,50 +2,40 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public ProjectileType projectileType;  // Shared projectile type data
-    private Vector2 direction;             // Direction of movement
-    private Rigidbody2D rb;                // Rigidbody for physics-based movement
-    private float lifetime = 50f;                // Lifetime counter
-     private GameObject visualChild;
+    private Vector2 direction; // Direction of movement
+    private Rigidbody2D rb; // Rigidbody for physics-based movement
+    private float speed; // Speed of the projectile
+    private float damage; // Damage dealt by this projectile
+    private float lifetime = 5f; // Lifetime counter
 
-    public void Initialize(ProjectileType type, Vector2 direction)
+    public void Initialize(Vector2 direction, float speed, float damage)
     {
-        projectileType = type;
         this.direction = direction;
+        this.speed = speed;
+        this.damage = damage;
 
-        if (visualChild == null)
-        {
-            // Instantiate the prefab as a child of this GameObject and store the reference
-            visualChild = Instantiate(type.data.prefab, transform);
-        }
-
-        // Access Rigidbody2D and other components from the child
-        rb = visualChild.GetComponent<Rigidbody2D>();
-
-
+        rb = GetComponent<Rigidbody2D>();
         if (rb == null)
         {
-            Debug.LogError("No Rigidbody2D found on the projectile prefab.");
+            Debug.LogError("No Rigidbody2D found on the projectile.");
         }
         RotateToFaceDirection();
-       // lifetime = projectileType.data.lifetime;
     }
 
-     private void RotateToFaceDirection()
+    private void RotateToFaceDirection()
     {
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
-
 
     private void FixedUpdate()
     {
         // Move the projectile in the set direction
         if (rb != null)
         {
-            rb.linearVelocity = direction * projectileType.data.speed;
+            rb.linearVelocity = direction * speed;
         }
-        
+
         // Reduce lifetime and destroy projectile if expired
         lifetime -= Time.fixedDeltaTime;
         if (lifetime <= 0)
@@ -53,30 +43,17 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    /*
-    private void HandleEnemyCollision(Collider2D other)
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Handle collision logic, such as damaging an enemy
-        Enemy enemy = other.GetComponentInChildren<Enemy>();
-        if (enemy != null)
+        if (other.CompareTag("Enemy"))
         {
-          //  enemy.TakeDamage(projectileType.data.damage);
-            Destroy(gameObject);  // Destroy projectile on impact
-            Debug.Log("Enemy is not null");
-        }
-        else
-        {
-            Debug.Log("enemy is null");
+            IDamageable damageable = other.GetComponentInParent<IDamageable>();
+            if (damageable != null)
+            {
+                damageable.TakeDamage(damage);
+                Destroy(gameObject);
+            }
         }
     }
-    */
-    public void HandleCollision(GameObject other)
-{
-    Enemy enemy = other.GetComponentInParent<Enemy>();
-    if (enemy != null)
-    {
-       // enemy.DamageEnemy(projectileType.data.damage);
-        Destroy(gameObject);  // Destroy projectile on impact
-    }
-}
 }

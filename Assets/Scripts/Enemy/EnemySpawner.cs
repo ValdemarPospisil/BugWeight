@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -7,17 +8,27 @@ public class EnemySpawner : MonoBehaviour
     public List<EnemyTypeData> enemyTypeDataList; // List of ScriptableObject data assets
 
 
-    public float spawnRadiusMin = 10f;
-    public float spawnRadiusMax = 20f;
-    public int minEnemies = 1;
-    public int maxEnemies = 5;
+    [SerializeField] private float spawnRadiusMin = 10f;
+    [SerializeField] private float spawnRadiusMax = 20f;
+    [SerializeField] private int minDuration = 5;
+    [SerializeField] private int maxDuration = 10;
+    [SerializeField] private int minEnemies = 1;
+    [SerializeField] private int maxEnemies = 5;
 
-    public void Start()
-    {
-        SpawnEnemies();
+    private void Start () {
+        StartCoroutine(StartSpawningEnemies());
     }
 
-    public void SpawnEnemies()
+    private IEnumerator StartSpawningEnemies()
+    {
+        while (true)
+        {
+            SpawnEnemies();
+            yield return new WaitForSeconds(Random.Range(minDuration, maxDuration));
+        }
+    }
+
+    private void SpawnEnemies()
     {
         int enemyCount = Random.Range(minEnemies, maxEnemies);
 

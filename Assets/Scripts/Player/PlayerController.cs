@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     private CapsuleCollider2D capsuleCollider2D;
     private float dashSpeed;
     private BatSwarmDamage batSwarmDamageScript;
-    private Vector2 lastDirection = new Vector2(1, 0);
+    public Vector2 lastDirection{ get; private set;} = new Vector2(1, 0);
 
 
     private void Awake()

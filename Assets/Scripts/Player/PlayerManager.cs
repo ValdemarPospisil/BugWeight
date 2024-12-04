@@ -46,7 +46,11 @@ public class PlayerManager : MonoBehaviour, IDamageable
         xpText.text = levelManager.currentXP.ToString();
         toNextLevelText.text = levelManager.toNextLevel.ToString();
     }
-     
+    
+    public float GetHealthPercentage()
+    {
+        return currentHP / maxHP;
+    }
     
     public void TakeDamage(float damage)
     {

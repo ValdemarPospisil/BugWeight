@@ -1,4 +1,5 @@
 using UnityEngine;
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
@@ -18,5 +19,16 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    private void Start()
+    {
+        // Initialize game state
+        StartNewGame();
+    }
+
+    public void StartNewGame()
+    {
+        powerUpManager.ResetPowerUps();
+        // Reset other game states as needed
     }
 }

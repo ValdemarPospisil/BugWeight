@@ -8,7 +8,7 @@ public class PowerUpCard : MonoBehaviour
     public TextMeshProUGUI nameText; // Name of the power-up
     public TextMeshProUGUI descriptionText; // Description of the power-up
     public Button button; // Button to select the power-up
-
+    private int showTier = 1;
     private PowerUp powerUp;
     private PowerUpManager powerUpManager;
 
@@ -16,18 +16,60 @@ public class PowerUpCard : MonoBehaviour
     {
         powerUp = powerUpData;
         powerUpManager = manager;
+        
+        if(powerUp.basePicked)
+        {
+            showTier = powerUp.currentTier + 1;
+        }
+        else
+        {
+            showTier = powerUp.currentTier;
+        }
+        
 
-        icon.sprite = powerUpData.icon; // Assuming the PowerUp class has an 'icon' property
-        nameText.text = powerUpData.skillName;
-        descriptionText.text = powerUpData.skillDescription;
-
+        UpdateCardUI();
         button.onClick.AddListener(OnSelected);
+        
+    }
+
+    private void UpdateCardUI()
+    {
+        if (showTier - 1 < powerUp.tiers.Count)
+        {  
+            var tier = powerUp.tiers[showTier - 1];
+            Debug.Log("Tier: " + showTier);
+            icon.sprite = tier.icon;
+            nameText.text = $"{powerUp.baseName} {GetRomanNumeral(showTier)}";
+            descriptionText.text = GenerateDescription(tier);
+        }
+    }
+
+    private string GenerateDescription(PowerUpTier tier)
+    {
+        return $"{powerUp.baseDescription}\n" +
+               $"Damage: {tier.damage}\n" +
+               $"Speed: {tier.speed}\n" +
+               $"Interval: {tier.duration}";
+    }
+
+    private string GetRomanNumeral(int number)
+    {
+        switch (number)
+        {
+            case 1: return "I";
+            case 2: return "II";
+            case 3: return "III";
+            case 4: return "IV";
+            default: return number.ToString();
+        }
     }
 
     private void OnSelected()
-    {   
-        Debug.Log("Selected: " + powerUp.skillName);
+    {
+        Debug.Log("Selected: " + powerUp.baseName);
         powerUpManager.ActivatePowerUp(powerUp);
+        powerUp.basePicked = true;
+        
         powerUpManager.powerUpUI.HideChoices();
     }
 }

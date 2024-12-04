@@ -20,12 +20,6 @@ public class SpecialAbilityUI : MonoBehaviour
     public void DisplayChoices(List<SpecialAbility> abilities)
     {
         ClearCards();
-        specialManager = ServiceLocator.GetService<SpecialAbilityManager>();
-        if (specialManager == null)
-        {
-            Debug.LogError("SpecialAbilityManager not found in ServiceLocator.");
-            return;
-        }
 
         foreach (SpecialAbility ability in abilities)
         {

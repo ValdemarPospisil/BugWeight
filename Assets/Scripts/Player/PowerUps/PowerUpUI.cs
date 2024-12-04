@@ -10,14 +10,13 @@ public class PowerUpUI : MonoBehaviour
 
     private void Start()
     {
-        
+        powerUpManager = ServiceLocator.GetService<PowerUpManager>();
     }
 
     public void DisplayChoices(List<PowerUp> powerUps)
     {
         ClearCards();
 
-        powerUpManager = ServiceLocator.GetService<PowerUpManager>();
         foreach (PowerUp powerUp in powerUps)
         {
             GameObject card = Instantiate(cardPrefab, cardContainer);

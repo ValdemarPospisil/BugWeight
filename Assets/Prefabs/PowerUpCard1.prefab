@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4595869913713725734}
   - component: {fileID: 205447151775186534}
-  - component: {fileID: 7892132647786011974}
+  - component: {fileID: 7585538535225777075}
   - component: {fileID: 1481735929797315503}
   - component: {fileID: 3861151499108093315}
   m_Layer: 5
-  m_Name: PowerUpCard
+  m_Name: PowerUpCard1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60056609156241884}
   m_CullTransparentMesh: 1
---- !u!114 &7892132647786011974
+--- !u!114 &7585538535225777075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,10 +118,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.8490566, g: 0.19704515, b: 0.19704515, a: 1}
-    m_PressedColor: {r: 0.3283019, g: 0.03654679, b: 0.03654679, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.3509434, g: 0.10528298, b: 0.10528298, a: 0.5019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5389201861494937112, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
+  m_Sprite: {fileID: 1538039798710672557, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
