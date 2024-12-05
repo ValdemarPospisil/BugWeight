@@ -6,7 +6,7 @@ public class EnemyCollisionHandler : MonoBehaviour
 {
     private Enemy enemy;
     public Image enemyHealthBar;
-    public TextMeshProUGUI enemyHealthText;
+    public GameObject deathParticles;
 
     private void Start()
     {

@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private float dashSpeed;
     private BatSwarmDamage batSwarmDamageScript;
     public Vector2 lastDirection{ get; private set;} = new Vector2(1, 0);
+    private string targetTag = "Player";
 
 
     private void Awake()
@@ -43,6 +44,10 @@ public class PlayerController : MonoBehaviour
         HandleInput();
     }
 
+    private void FixedUpdate()
+    {
+        NotifyEnemies(targetTag);
+    }
     public void SpeedBoost(float multiplier)
     {
         moveSpeed += multiplier;
@@ -140,24 +145,23 @@ public class PlayerController : MonoBehaviour
 
         // Make the player invisible
         spriteRenderer.color = new Color(1, 1, 1, 0.3f);
-        gameObject.tag = "Invisible";
+        
+        targetTag = "Clone";
 
-        // Notify enemies to target the clone
-        NotifyEnemies("Clone");
+       
 
         // Wait for the clone duration
         yield return new WaitForSeconds(cloneDuration);
 
-        // Destroy the clone
-        Destroy(clone);
+        targetTag = "Player";
+        
 
-        // Make the player visible again
         spriteRenderer.color = new Color(1, 1, 1, 1);
-        gameObject.tag = "Player";
+        //Destroy(clone);
 
-        // Notify enemies to target the player again
-        NotifyEnemies("Player");
+
     }
+
 
 
     public IEnumerator ShadowStep(float teleportDistance, float shadowExplosionDelay, float explosionDamage,

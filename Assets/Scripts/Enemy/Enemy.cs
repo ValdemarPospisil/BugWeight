@@ -16,7 +16,8 @@ public class Enemy : MonoBehaviour, IDamageable
     private bool isKnockedBack = false;
     private LevelManager levelManager;
     private bool isDead = false;
-    private ParticleSystem deathParticles;
+    private GameObject deathParticles;
+    
     private SpriteRenderer sprite;
     private void Start()
     {
@@ -24,8 +25,6 @@ public class Enemy : MonoBehaviour, IDamageable
         enemyCollisionHandler = GetComponentInChildren<EnemyCollisionHandler>();
         enemyCurrentHP = enemyType.data.enemyMaxHP;
         gameObject.layer = LayerMask.NameToLayer("Enemy");
-        deathParticles = GetComponentInChildren<ParticleSystem>();
-        deathParticles.Stop();
         sprite = GetComponentInChildren<SpriteRenderer>();
 
         // Find LevelManager
@@ -135,22 +134,19 @@ public class Enemy : MonoBehaviour, IDamageable
             if (!isDead)
             {
                 isDead = true;
-                StartCoroutine(Die());
+                Die();
             }
         }
     }
     
-    private IEnumerator Die()
+    private void Die()
     {
         enemyCollisionHandler.DisableCollision();
-        deathParticles.Play();
+        enemyCollisionHandler = visualChild.GetComponent<EnemyCollisionHandler>();
+        
+        deathParticles = Instantiate(enemyCollisionHandler.deathParticles, transform.position, Quaternion.identity);
         levelManager.AddXP(enemyType.data.xpDrop);
         
-        sprite.enabled = false;
-        enemyCollisionHandler.enemyHealthBar.transform.parent.gameObject.SetActive(false);
-
-        yield return new WaitForSeconds(0.5f);
-
         Destroy(gameObject); 
     }
 

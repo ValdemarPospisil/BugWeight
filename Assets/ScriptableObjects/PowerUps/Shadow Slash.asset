@@ -16,6 +16,7 @@ MonoBehaviour:
   baseDescription: Slash in front of you dealing damage to enemies.
   maxTier: 4
   currentTier: 1
+  basePicked: 0
   tiers:
   - damage: 8
     duration: 2
@@ -30,7 +31,7 @@ MonoBehaviour:
     speed: 12
     icon: {fileID: -1990334289332442759, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   - damage: 15
-    duration: 2
+    duration: 1
     speed: 15
     icon: {fileID: 5518095252687463166, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   slashPrefab: {fileID: 1400189961869223541, guid: 8a4b915073c5398498b9bc2729fa8bb0, type: 3}

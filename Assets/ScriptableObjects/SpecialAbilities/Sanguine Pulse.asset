@@ -18,7 +18,7 @@ MonoBehaviour:
     healing slightly for each enemy hit.
   pushForce: 10
   healAmount: 5
-  cooldown: 5
-  pulseRadius: 2.5
-  knockbackDuration: 0.2
+  pulseRadius: 4
+  damage: 20
+  knockbackDuration: 1
   abilityPrefab: {fileID: 1039445899800646278, guid: 095a0ed7e9ffc5448a30b2feffd54598, type: 3}

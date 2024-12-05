@@ -1,49 +1,49 @@
 fileFormatVersion: 2
-guid: 2c6e6f2e6251f504b97eed48919bd897
+guid: e89c100eaa9c0ef49bafa42df3cb60cc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3449882713964607508
-    second: ShadowSlash_0
+      213: 5710053751212586157
+    second: ShadowSlashDouble_0
   - first:
-      213: 76374677178333269
-    second: ShadowSlash_1
+      213: -5703156586901412112
+    second: ShadowSlashDouble_1
   - first:
-      213: 6307261421682396925
-    second: ShadowSlash_2
+      213: 1537643698201117168
+    second: ShadowSlashDouble_2
   - first:
-      213: 827849545956621829
-    second: ShadowSlash_3
+      213: -8743721685022752203
+    second: ShadowSlashDouble_3
   - first:
-      213: -3750441166209968440
-    second: ShadowSlash_4
+      213: -2297182324202547638
+    second: ShadowSlashDouble_4
   - first:
-      213: -3157455735229261340
-    second: ShadowSlash_5
+      213: -7383359843215706297
+    second: ShadowSlashDouble_5
   - first:
-      213: 8008343560990903142
-    second: ShadowSlash_6
+      213: 6635062799227828994
+    second: ShadowSlashDouble_6
   - first:
-      213: -8571097721362183637
-    second: ShadowSlash_7
+      213: -1314653190089075036
+    second: ShadowSlashDouble_7
   - first:
-      213: 7717965002208198460
-    second: ShadowSlash_8
+      213: -4473138515632246187
+    second: ShadowSlashDouble_8
   - first:
-      213: -4216117353155891696
-    second: ShadowSlash_9
+      213: 7251193647504771081
+    second: ShadowSlashDouble_9
   - first:
-      213: -7877532511125673169
-    second: ShadowSlash_10
+      213: 7440377833268957267
+    second: ShadowSlashDouble_10
   - first:
-      213: 1095380262094216207
-    second: ShadowSlash_11
+      213: 4287569735400209588
+    second: ShadowSlashDouble_11
   - first:
-      213: -4410900454973712959
-    second: ShadowSlash_12
+      213: 3014632976929663274
+    second: ShadowSlashDouble_12
   - first:
-      213: -6142413374165066825
-    second: ShadowSlash_13
+      213: -5115954659667095814
+    second: ShadowSlashDouble_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,7 +152,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShadowSlash_0
+      name: ShadowSlashDouble_0
       rect:
         serializedVersion: 2
         x: 0
@@ -167,14 +167,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 418fe92dc0270ef20800000000000000
-      internalID: 3449882713964607508
+      spriteID: da4b96132af2e3f40800000000000000
+      internalID: 5710053751212586157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowSlash_1
+      name: ShadowSlashDouble_1
       rect:
         serializedVersion: 2
         x: 128
@@ -189,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 558bc0f3d565f0100800000000000000
-      internalID: 76374677178333269
+      spriteID: 0f6ef430d415ad0b0800000000000000
+      internalID: -5703156586901412112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowSlash_2
+      name: ShadowSlashDouble_2
       rect:
         serializedVersion: 2
         x: 256
@@ -211,14 +211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dfe87e088d4e78750800000000000000
-      internalID: 6307261421682396925
+      spriteID: 0f14566fbcec65510800000000000000
+      internalID: 1537643698201117168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowSlash_3
+      name: ShadowSlashDouble_3
       rect:
         serializedVersion: 2
         x: 384
@@ -233,14 +233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 50e7632a6cc1d7b00800000000000000
-      internalID: 827849545956621829
+      spriteID: 532c655247f08a680800000000000000
+      internalID: -8743721685022752203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowSlash_4
+      name: ShadowSlashDouble_4
       rect:
         serializedVersion: 2
         x: 512
@@ -255,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c69d0941a1c3fbc0800000000000000
-      internalID: -3750441166209968440
+      spriteID: a46d99dd8d4ce10e0800000000000000
+      internalID: -2297182324202547638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowSlash_5
+      name: ShadowSlashDouble_5
       rect:
         serializedVersion: 2
         x: 640
@@ -277,14 +277,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e9d3abdcb67e24d0800000000000000
-      internalID: -3157455735229261340
+      spriteID: 7477e306759098990800000000000000
+      internalID: -7383359843215706297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowSlash_6
+      name: ShadowSlashDouble_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b326a367a741c50800000000000000
+      internalID: 6635062799227828994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowSlashDouble_7
       rect:
         serializedVersion: 2
         x: 0
@@ -299,36 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66b4628e90a532f60800000000000000
-      internalID: 8008343560990903142
+      spriteID: 4a618e193e961cde0800000000000000
+      internalID: -1314653190089075036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowSlash_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b2a0c07b8085d0980800000000000000
-      internalID: -8571097721362183637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShadowSlash_7
+      name: ShadowSlashDouble_8
       rect:
         serializedVersion: 2
         x: 128
@@ -343,17 +343,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3f34892748bb1b60800000000000000
-      internalID: 7717965002208198460
+      spriteID: 5523f9048383ce1c0800000000000000
+      internalID: -4473138515632246187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShadowSlash_9
+      name: ShadowSlashDouble_9
       rect:
         serializedVersion: 2
-        x: 384
+        x: 256
         y: 0
         width: 128
         height: 128
@@ -363,54 +363,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: dbe59c4f080aa614da6190c84d447560
-      internalID: -1428501220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShadowSlash_10
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea3a4ff768632a445987495048df942b
-      internalID: 1882454469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShadowSlash_11
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1672f0a70b7cd34479dece8708093dc9
-      internalID: -1098818346
+      spriteID: 9084715343a61a460800000000000000
+      internalID: 7251193647504771081
       vertices: []
       indices: 
       edges: []
@@ -419,7 +375,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 64bd64eafd8ef8d4f88fcf7de8015cd1
+    spriteID: cdaf23a83a2dd954a81d76453f5b6323
     internalID: 0
     vertices: []
     indices: 
@@ -429,18 +385,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ShadowSlash_0: 3449882713964607508
-      ShadowSlash_1: 76374677178333269
-      ShadowSlash_10: 1882454469
-      ShadowSlash_11: -1098818346
-      ShadowSlash_2: 6307261421682396925
-      ShadowSlash_3: 827849545956621829
-      ShadowSlash_4: -3750441166209968440
-      ShadowSlash_5: -3157455735229261340
-      ShadowSlash_6: 8008343560990903142
-      ShadowSlash_7: 7717965002208198460
-      ShadowSlash_8: -8571097721362183637
-      ShadowSlash_9: -1428501220
+      ShadowSlashDouble_0: 5710053751212586157
+      ShadowSlashDouble_1: -5703156586901412112
+      ShadowSlashDouble_2: 1537643698201117168
+      ShadowSlashDouble_3: -8743721685022752203
+      ShadowSlashDouble_4: -2297182324202547638
+      ShadowSlashDouble_5: -7383359843215706297
+      ShadowSlashDouble_6: 6635062799227828994
+      ShadowSlashDouble_7: -1314653190089075036
+      ShadowSlashDouble_8: -4473138515632246187
+      ShadowSlashDouble_9: 7251193647504771081
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

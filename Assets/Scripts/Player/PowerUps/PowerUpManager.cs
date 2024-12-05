@@ -118,6 +118,7 @@ public class PowerUpManager : MonoBehaviour
         foreach (var powerUp in allPowerUps)
         {
             powerUp.currentTier = 1;
+            powerUp.basePicked = false;
         }
     }
 }

@@ -17,6 +17,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private TextMeshProUGUI xpText;
     [SerializeField] private TextMeshProUGUI toNextLevelText;
+
+    [SerializeField] private GameObject deathParticles;
     private LevelManager levelManager;
 
     private void Awake() {
@@ -60,6 +62,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
 
     private void Death()
     {
+        deathParticles = Instantiate(deathParticles, transform.position, Quaternion.identity);
         deathText.gameObject.SetActive(true);
         Time.timeScale = 0;
         Destroy(gameObject);

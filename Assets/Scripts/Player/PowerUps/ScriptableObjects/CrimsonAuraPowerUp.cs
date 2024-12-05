@@ -12,7 +12,18 @@ public class CrimsonAuraPowerUp : PowerUp
         PlayerManager playerManager = player.GetComponent<PlayerManager>();
         if (playerManager != null)
         {
-            playerManager.StartCoroutine(ActivateCrimsonAura(playerManager));
+            var tier = tiers[currentTier - 1];
+            float baseDamage = tier.damage;
+            float auraRadius = tier.speed;
+
+            GameObject aura = Instantiate(auraPrefab, playerManager.transform.position, Quaternion.identity);
+            aura.transform.SetParent(playerManager.transform);
+
+            var auraDamage = aura.GetComponent<CrimsonAuraDamage>();
+            if (auraDamage != null)
+            {
+                auraDamage.Initialize(this);
+            }
         }
     }
 
@@ -27,35 +38,6 @@ public class CrimsonAuraPowerUp : PowerUp
         {
             var tier = tiers[currentTier - 1];
             // No need to store shootInterval and speed separately
-        }
-    }
-
-    private IEnumerator ActivateCrimsonAura(PlayerManager playerManager)
-    {
-        var tier = tiers[currentTier - 1];
-        float baseDamage = tier.damage;
-        float auraRadius = tier.speed;
-        float duration = tier.duration;
-
-        GameObject aura = Instantiate(auraPrefab, playerManager.transform.position, Quaternion.identity);
-        aura.transform.SetParent(playerManager.transform);
-
-        while (true)
-        {
-            float healthPercentage = playerManager.GetHealthPercentage();
-            float damage = baseDamage * (1 + (1 - healthPercentage));
-
-            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(playerManager.transform.position, auraRadius);
-            foreach (var hitCollider in hitColliders)
-            {
-                var damageable = hitCollider.GetComponentInParent<IDamageable>();
-                if (damageable != null && hitCollider.gameObject.tag == "Enemy")
-                {
-                    damageable.TakeDamage(damage * Time.deltaTime);
-                }
-            }
-
-            yield return null;
         }
     }
 }

@@ -57,12 +57,11 @@ public class SanguinePulseAbility : SpecialAbility
             playerManager.Heal(enemiesHit * healAmount);
         }
 
-        Debug.Log($"{abilityName} activated: Pushed {enemiesHit} enemies back and healed for {enemiesHit * healAmount}.");
     }
 
     private IEnumerator enumerator(GameObject instantiatedPrefab)
     {
-        yield return new WaitForSeconds(0.18f);
+        yield return new WaitForSeconds(0.5f);
 
         Destroy(instantiatedPrefab);
     }
