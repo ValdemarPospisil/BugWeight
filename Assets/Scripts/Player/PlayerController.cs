@@ -213,7 +213,7 @@ public class PlayerController : MonoBehaviour
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
-            Enemy enemyScript = enemy.GetComponentInParent<Enemy>();
+            Enemy enemyScript = enemy.GetComponent<Enemy>();
             if (enemyScript != null)
             {
                 enemyScript.SetTargetTag(targetTag);

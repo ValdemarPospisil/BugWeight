@@ -38,7 +38,7 @@ public class PowerUpCard : MonoBehaviour
         {  
             var tier = powerUp.tiers[showTier - 1];
             Debug.Log("Tier: " + showTier);
-            icon.sprite = tier.icon;
+            icon.sprite = powerUp.icon;
             nameText.text = $"{powerUp.baseName} {GetRomanNumeral(showTier)}";
             descriptionText.text = GenerateDescription(tier);
         }

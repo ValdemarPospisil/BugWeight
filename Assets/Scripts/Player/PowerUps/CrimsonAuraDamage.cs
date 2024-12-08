@@ -29,7 +29,7 @@ public class CrimsonAuraDamage : MonoBehaviour
             Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, powerUp.tiers[powerUp.currentTier-1].speed);
             foreach (var hitCollider in hitColliders)
             {
-                var damageable = hitCollider.GetComponentInParent<IDamageable>();
+                var damageable = hitCollider.GetComponent<IDamageable>();
                 if (damageable != null && hitCollider.gameObject.tag == "Enemy")
                 {
                     damageable.TakeDamage(damage * Time.deltaTime);

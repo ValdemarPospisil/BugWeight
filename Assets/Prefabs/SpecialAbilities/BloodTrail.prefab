@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1436746107058783285}
   - component: {fileID: 1692070894109768681}
   - component: {fileID: 1875734082399625622}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BloodTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

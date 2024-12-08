@@ -12,26 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7a39ca259cc6444bb3d0493e35b95d, type: 3}
   m_Name: Blood Bolt
   m_EditorClassIdentifier: 
+  icon: {fileID: -780972030010787495, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   baseName: Blood Bolt
   baseDescription: Shoot a Blood Bolt in front of you dealing damage.
   maxTier: 4
-  currentTier: 4
+  currentTier: 2
   basePicked: 1
   tiers:
   - damage: 6
     duration: 2
     speed: 8
-    icon: {fileID: -5390535793904445246, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   - damage: 8
     duration: 2
     speed: 10
-    icon: {fileID: -5756592381387193457, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   - damage: 10
     duration: 1.5
     speed: 12
-    icon: {fileID: 6706497440921269095, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   - damage: 15
     duration: 1
     speed: 15
-    icon: {fileID: 4971332159612872879, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   projectilePrefab: {fileID: 5017267562488890452, guid: c884c8a233ac07049ab26b0fc2672574, type: 3}

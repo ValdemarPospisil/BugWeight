@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4196093305338577178}
   - component: {fileID: 2679787077720451144}
   - component: {fileID: 5152620311334912072}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: ShadowClone
   m_TagString: Clone
   m_Icon: {fileID: 0}

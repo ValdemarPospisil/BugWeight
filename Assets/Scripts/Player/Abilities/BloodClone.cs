@@ -43,7 +43,7 @@ public class BloodClone : MonoBehaviour
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
         foreach (var hitCollider in hitColliders)
         {
-            var damageable = hitCollider.GetComponentInParent<IDamageable>();
+            var damageable = hitCollider.GetComponent<IDamageable>();
             if (damageable != null && hitCollider.gameObject.tag == "Enemy")
             {
                 damageable.TakeDamage(explosionDamage);

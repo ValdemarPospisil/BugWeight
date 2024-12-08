@@ -12,26 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00360b387cbf5674f9dd3b2b4c902877, type: 3}
   m_Name: Summon Wolf
   m_EditorClassIdentifier: 
+  icon: {fileID: 9025682934106409848, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   baseName: Summon Wolf
   baseDescription: summon a wolf that will help you fight
   maxTier: 4
-  currentTier: 1
+  currentTier: 2
   basePicked: 1
   tiers:
   - damage: 25
     duration: 2
     speed: 8
-    icon: {fileID: 6471414924681220601, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   - damage: 25
     duration: 2
     speed: 6
-    icon: {fileID: -1903731076157756923, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   - damage: 30
     duration: 1.5
     speed: 8
-    icon: {fileID: 8024904077173173214, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   - damage: 20
     duration: 1
     speed: 10
-    icon: {fileID: 970251280949176533, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   wolfPrefab: {fileID: 4409084541835187931, guid: c01c90ef8b313954bb6832a5a90c5038, type: 3}

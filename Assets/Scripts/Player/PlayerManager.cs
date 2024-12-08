@@ -6,6 +6,10 @@ public class PlayerManager : MonoBehaviour, IDamageable
 {
     public float maxHP = 100f;
     public float currentHP { get; private set; }
+    private int extraLives = 0;
+    private float healthPercentageToRebirth = 0.5f;
+    public delegate void FatalDamageHandler(Vector3 position);
+    public event FatalDamageHandler OnFatalDamage;
     
 
     // UI elements
@@ -26,6 +30,12 @@ public class PlayerManager : MonoBehaviour, IDamageable
         levelManager = ServiceLocator.GetService<LevelManager>();
     }
 
+    private void Start()
+    {
+        UpdateUI();
+        extraLives = 0;
+    }
+
     void Update()
     {
         
@@ -37,6 +47,13 @@ public class PlayerManager : MonoBehaviour, IDamageable
         currentHP += amount;
         if (currentHP > maxHP) currentHP = maxHP;
         UpdateUI();
+    }
+
+    public void AddExtraLives(int lives, float healthPercentage)
+    {
+        extraLives += lives;
+        healthPercentageToRebirth = healthPercentage;
+        Debug.Log("Player received " + lives + " extra lives and " + healthPercentage * 100 + "% health on resurrection.");
     }
 
     public void UpdateUI()
@@ -62,9 +79,26 @@ public class PlayerManager : MonoBehaviour, IDamageable
 
     private void Death()
     {
-        deathParticles = Instantiate(deathParticles, transform.position, Quaternion.identity);
-        deathText.gameObject.SetActive(true);
-        Time.timeScale = 0;
-        Destroy(gameObject);
+        OnFatalDamage?.Invoke(transform.position);
+
+        if (extraLives > 0)
+        {
+            extraLives--;
+            Resurrect();
+        }
+        else
+        {
+            deathParticles = Instantiate(deathParticles, transform.position, Quaternion.identity);
+            deathText.gameObject.SetActive(true);
+            Time.timeScale = 0;
+            Destroy(gameObject);
+        }
+    }
+
+    private void Resurrect()
+    {
+        currentHP = maxHP * healthPercentageToRebirth;
+        UpdateUI();
+        Debug.Log("Player resurrected with " + currentHP + " HP.");
     }
 }

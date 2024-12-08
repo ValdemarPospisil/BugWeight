@@ -12,27 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5176d7463b0254d40b2698ce1cff4ecc, type: 3}
   m_Name: Crimson Aura
   m_EditorClassIdentifier: 
+  icon: {fileID: 5476709148127243318, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   baseName: Crimson Aura
   baseDescription: Deal damage to nearby enemies. The less health you have the more
     damage you deal.
   maxTier: 4
-  currentTier: 4
+  currentTier: 2
   basePicked: 1
   tiers:
   - damage: 4
     duration: 2
     speed: 1.4
-    icon: {fileID: 5268274359937209102, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   - damage: 6
     duration: 2
     speed: 1.7
-    icon: {fileID: -5750622454868278345, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   - damage: 8
     duration: 2
     speed: 2
-    icon: {fileID: 6109076962248195895, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   - damage: 40
     duration: 1
     speed: 2.3
-    icon: {fileID: 7741787089932127199, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   auraPrefab: {fileID: 6632239719484675788, guid: 1f1e13c046daeaa429d08c42a300c5fd, type: 3}

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8924755c428e48948ae8b40d102812f6, type: 3}
+  m_Name: Crimson Vengeance
+  m_EditorClassIdentifier: 
+  icon: {fileID: -5645805338450832224, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
+  baseName: Crimson Vengeance
+  baseDescription: Upon taking lethal damage you realease massive Blood explosion
+    dealing high damage. On tier IV you also get an extra life
+  maxTier: 4
+  currentTier: 2
+  basePicked: 1
+  tiers:
+  - damage: 40
+    duration: 3
+    speed: 5
+  - damage: 60
+    duration: 3
+    speed: 5
+  - damage: 80
+    duration: 3
+    speed: 5
+  - damage: 100
+    duration: 3
+    speed: 5
+  bloodExplosionPrefab: {fileID: 7958669827260308180, guid: cbacd9e07b3234d4a86b31077ae9c9ed, type: 3}

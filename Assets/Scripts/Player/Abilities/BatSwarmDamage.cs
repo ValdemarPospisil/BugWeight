@@ -11,7 +11,7 @@ public class BatSwarmDamage : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            other.GetComponentInParent<IDamageable>().TakeDamage(damage);
+            other.GetComponent<IDamageable>().TakeDamage(damage);
         }
     }
 }

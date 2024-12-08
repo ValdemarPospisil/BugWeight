@@ -18,7 +18,7 @@ public class ShadowSlashDamage : MonoBehaviour
         Collider2D[] hitColliders = Physics2D.OverlapBoxAll(transform.position, new Vector2(1.0f, 1.0f), 0f); // Adjust size as needed
         foreach (var hitCollider in hitColliders)
         {
-            var damageable = hitCollider.GetComponentInParent<IDamageable>();
+            var damageable = hitCollider.GetComponent<IDamageable>();
             if (damageable != null && hitCollider.gameObject.tag == "Enemy")
             {
                 damageable.TakeDamage(damage);

@@ -4037,7 +4037,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skills_Final_Recolored_78
+      name: ShadowSlash
       rect:
         serializedVersion: 2
         x: 576
@@ -4279,7 +4279,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skills_Final_Recolored_89
+      name: VampiricHunger
       rect:
         serializedVersion: 2
         x: 288
@@ -5049,7 +5049,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skills_Final_Recolored_124
+      name: SummonWolf
       rect:
         serializedVersion: 2
         x: 128
@@ -10431,6 +10431,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Dash: 1538039798710672557
+      ShadowSlash: 6763691793223663490
       Skills_Final_Recolored_0: -980627807136020050
       Skills_Final_Recolored_1: 8745732502673775855
       Skills_Final_Recolored_10: -2810598121905242500
@@ -10460,7 +10461,6 @@ TextureImporter:
       Skills_Final_Recolored_121: -6322056924959117536
       Skills_Final_Recolored_122: -3878540583792795183
       Skills_Final_Recolored_123: 4971332159612872879
-      Skills_Final_Recolored_124: 9025682934106409848
       Skills_Final_Recolored_125: 7356533472499775847
       Skills_Final_Recolored_126: 3958902769798140403
       Skills_Final_Recolored_128: 2711688547708928239
@@ -10774,7 +10774,6 @@ TextureImporter:
       Skills_Final_Recolored_75: 8406211061111681277
       Skills_Final_Recolored_76: 3190204956757465818
       Skills_Final_Recolored_77: 4962502096094803860
-      Skills_Final_Recolored_78: 6763691793223663490
       Skills_Final_Recolored_79: -1535150752130429612
       Skills_Final_Recolored_8: -12502326116658913
       Skills_Final_Recolored_80: 1177274443510805927
@@ -10786,7 +10785,6 @@ TextureImporter:
       Skills_Final_Recolored_86: -4643257196595977706
       Skills_Final_Recolored_87: -8927136640294316029
       Skills_Final_Recolored_88: -848287087110258424
-      Skills_Final_Recolored_89: 3462283292702899348
       Skills_Final_Recolored_9: 6471414924681220601
       Skills_Final_Recolored_90: -6424126242182586609
       Skills_Final_Recolored_91: 6946882394518062593
@@ -10798,6 +10796,8 @@ TextureImporter:
       Skills_Final_Recolored_97: -7343834306130627499
       Skills_Final_Recolored_98: 6706497440921269095
       Skills_Final_Recolored_99: 5375219577049772879
+      SummonWolf: 9025682934106409848
+      VampiricHunger: 3462283292702899348
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -3779,7 +3779,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skill_B_Recolored_108
+      name: Aura
       rect:
         serializedVersion: 2
         x: 256
@@ -4175,7 +4175,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skill_B_Recolored_126
+      name: ExtraLife
       rect:
         serializedVersion: 2
         x: 192
@@ -4219,7 +4219,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skill_B_Recolored_128
+      name: Vengeance
       rect:
         serializedVersion: 2
         x: 256
@@ -5363,7 +5363,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skill_B_Recolored_180
+      name: BloodBolt
       rect:
         serializedVersion: 2
         x: 0
@@ -6564,6 +6564,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      Aura: 5476709148127243318
+      BloodBolt: -780972030010787495
+      ExtraLife: -6170179107295757906
       Fog: -5389201861494937112
       Skill_B_Recolored_0: -6287190776451258998
       Skill_B_Recolored_1: 6661719810749417877
@@ -6575,7 +6578,6 @@ TextureImporter:
       Skill_B_Recolored_104: -8500642260033419313
       Skill_B_Recolored_106: -5720461211594876209
       Skill_B_Recolored_107: 5497999003333118125
-      Skill_B_Recolored_108: 5476709148127243318
       Skill_B_Recolored_109: 7975937162965101922
       Skill_B_Recolored_11: 4431852833509950114
       Skill_B_Recolored_110: 91576298182532672
@@ -6595,9 +6597,7 @@ TextureImporter:
       Skill_B_Recolored_123: 6322667798659521271
       Skill_B_Recolored_124: 2218747224288928101
       Skill_B_Recolored_125: -6002365283860215817
-      Skill_B_Recolored_126: -6170179107295757906
       Skill_B_Recolored_127: -2805264177272893737
-      Skill_B_Recolored_128: -5645805338450832224
       Skill_B_Recolored_129: -4080526691229786947
       Skill_B_Recolored_13: 8253045018671930440
       Skill_B_Recolored_130: -637902906512538853
@@ -6655,7 +6655,6 @@ TextureImporter:
       Skill_B_Recolored_178: -9037830267731965263
       Skill_B_Recolored_179: -4893817712332327447
       Skill_B_Recolored_18: -1930488423469766524
-      Skill_B_Recolored_180: -780972030010787495
       Skill_B_Recolored_181: 5297037312049344570
       Skill_B_Recolored_182: -3692501460847343185
       Skill_B_Recolored_183: 53501094777286924
@@ -6798,6 +6797,7 @@ TextureImporter:
       Skill_B_Recolored_97: -567097549551993959
       Skill_B_Recolored_98: -2607644037462291761
       Skill_B_Recolored_99: 4173232769110927532
+      Vengeance: -5645805338450832224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

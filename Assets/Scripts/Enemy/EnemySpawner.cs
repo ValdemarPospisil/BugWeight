@@ -1,12 +1,11 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
 
 public class EnemySpawner : MonoBehaviour
 {
-   public EnemyFactory enemyFactory;
+    public EnemyFactory enemyFactory;
     public List<EnemyTypeData> enemyTypeDataList; // List of ScriptableObject data assets
-
 
     [SerializeField] private float spawnRadiusMin = 10f;
     [SerializeField] private float spawnRadiusMax = 20f;
@@ -38,18 +37,16 @@ public class EnemySpawner : MonoBehaviour
             EnemyType enemyType = enemyFactory.GetEnemyType(randomData);
 
             Vector3 spawnPosition = GetRandomSpawnPosition();
-            GameObject enemyObject = new GameObject("Enemy_" + i);
-            Enemy enemy = enemyObject.AddComponent<Enemy>();
+            GameObject enemyObject = Instantiate(enemyType.data.prefab, spawnPosition, Quaternion.identity);
+            Enemy enemy = enemyObject.GetComponent<Enemy>();
             enemy.Initialize(enemyType, spawnPosition);
         }
     }
+
     private Vector3 GetRandomSpawnPosition()
     {
-        // Random angle and distance for spawn
         float angle = Random.Range(0, Mathf.PI * 2);
         float distance = Random.Range(spawnRadiusMin, spawnRadiusMax);
-
-        // Calculate position around the player
         return transform.position + new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0) * distance;
     }
 }

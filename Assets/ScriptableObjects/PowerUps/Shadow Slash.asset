@@ -12,26 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e589cf248ea848342b2725980243ccfd, type: 3}
   m_Name: Shadow Slash
   m_EditorClassIdentifier: 
+  icon: {fileID: 6763691793223663490, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   baseName: Shadow Slash
   baseDescription: Slash in front of you dealing damage to enemies.
   maxTier: 4
-  currentTier: 1
-  basePicked: 0
+  currentTier: 2
+  basePicked: 1
   tiers:
   - damage: 8
     duration: 2
     speed: 8
-    icon: {fileID: -1630058114545329971, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   - damage: 10
     duration: 2
     speed: 10
-    icon: {fileID: -1271868709418410104, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   - damage: 12
     duration: 1.5
     speed: 12
-    icon: {fileID: -1990334289332442759, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   - damage: 15
     duration: 1
     speed: 15
-    icon: {fileID: 5518095252687463166, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   slashPrefab: {fileID: 1400189961869223541, guid: 8a4b915073c5398498b9bc2729fa8bb0, type: 3}

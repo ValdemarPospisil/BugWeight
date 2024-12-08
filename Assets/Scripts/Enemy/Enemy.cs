@@ -1,59 +1,57 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
     public EnemyType enemyType;
-    private EnemyCollisionHandler enemyCollisionHandler;
     private Transform targetTransform;
     private Rigidbody2D rb;
     private float attackCooldown;
     private float enemyCurrentHP;
-    private GameObject visualChild;
     private string targetTag = "Player";
     public bool enemyCanMove = true;
     private bool isKnockedBack = false;
     private LevelManager levelManager;
     private bool isDead = false;
-    private GameObject deathParticles;
-    
-    private SpriteRenderer sprite;
+    public static event System.Action<Vector3> OnEnemyKilled;
+
+    // Merged from EnemyCollisionHandler.cs
+    [SerializeField] private Image enemyHealthBar;
+    private Canvas enemyCanvas;
+    [SerializeField] private GameObject deathParticles;
+
     private void Start()
     {
         attackCooldown = 0f;
-        enemyCollisionHandler = GetComponentInChildren<EnemyCollisionHandler>();
-        enemyCurrentHP = enemyType.data.enemyMaxHP;
+        
         gameObject.layer = LayerMask.NameToLayer("Enemy");
-        sprite = GetComponentInChildren<SpriteRenderer>();
+        enemyCanvas = GetComponentInChildren<Canvas>();
 
-        // Find LevelManager
         levelManager = FindFirstObjectByType<LevelManager>();
         if (levelManager == null)
         {
             Debug.LogError("LevelManager not found in the scene.");
         }
 
+        
+
         UpdateHealthUI();
+        enemyCanvas.enabled = false;
         FindTarget();
     }
 
     public void Initialize(EnemyType type, Vector3 spawnPosition)
     {
         enemyType = type;
+        enemyCurrentHP = enemyType.data.enemyMaxHP;
         transform.position = spawnPosition;
         enemyCurrentHP = type.data.enemyMaxHP;
 
-        if (visualChild == null)
-        {
-            visualChild = Instantiate(type.data.prefab, transform);
-        }
 
-        rb = visualChild.GetComponent<Rigidbody2D>();
-        if (rb == null)
-        {
-            Debug.LogError($"Rigidbody2D component not found on prefab '{type.data.prefab.name}'. Make sure it is attached.");
-        }
+        rb = GetComponent<Rigidbody2D>();
+        
     }
 
     private void Update()
@@ -62,7 +60,6 @@ public class Enemy : MonoBehaviour, IDamageable
         {
             attackCooldown -= Time.deltaTime;
         }
-
     }
 
     private void FixedUpdate()
@@ -74,35 +71,29 @@ public class Enemy : MonoBehaviour, IDamageable
             return;
         }
 
-        Vector2 direction = (targetTransform.position - visualChild.transform.position).normalized;
-        
+        Vector2 direction = (targetTransform.position - transform.position).normalized;
         rb.linearVelocity = direction * enemyType.data.moveSpeed;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         rb.rotation = angle - 90f;
     }
 
-  
     public IEnumerator ApplyKnockback(Vector2 direction, float knockbackForce, float knockbackDuration)
     {
         if (rb == null) yield break;
 
         isKnockedBack = true;
 
-        // Apply force
         rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
 
-        // Wait for knockback duration
         yield return new WaitForSeconds(knockbackDuration);
 
-        // Stop movement after knockback
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
         }
         isKnockedBack = false;
     }
-
 
     private void FindTarget()
     {
@@ -138,37 +129,45 @@ public class Enemy : MonoBehaviour, IDamageable
             }
         }
     }
-    
+
     private void Die()
     {
-        enemyCollisionHandler.DisableCollision();
-        enemyCollisionHandler = visualChild.GetComponent<EnemyCollisionHandler>();
-        
-        deathParticles = Instantiate(enemyCollisionHandler.deathParticles, transform.position, Quaternion.identity);
-        levelManager.AddXP(enemyType.data.xpDrop);
-        
-        Destroy(gameObject); 
-    }
+        DisableCollision();
+        OnEnemyKilled?.Invoke(transform.position);
 
+        Instantiate(deathParticles, transform.position, Quaternion.identity);
+        levelManager.AddXP(enemyType.data.xpDrop);
+
+        Destroy(gameObject);
+    }
 
     private void UpdateHealthUI()
     {
-        if (enemyCollisionHandler != null && enemyCollisionHandler.enemyHealthBar != null)
+        enemyCanvas.enabled = true;
+        if (enemyHealthBar != null)
         {
-            enemyCollisionHandler.enemyHealthBar.fillAmount = enemyCurrentHP / enemyType.data.enemyMaxHP;
+            enemyHealthBar.fillAmount = enemyCurrentHP / enemyType.data.enemyMaxHP;
         }
     }
 
-    public void HandlePlayerCollision(GameObject playerObject)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        if (attackCooldown <= 0)
+        if (collision.gameObject.CompareTag("Player") && this != null)
         {
-            IDamageable damageable = playerObject.GetComponent<IDamageable>();
+            if (attackCooldown <= 0)
+        {
+            IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
             if (damageable != null)
             {
                 damageable.TakeDamage(enemyType.data.attackDamage);
                 attackCooldown = 1f / enemyType.data.attackSpeed;
             }
         }
+        }
+    }
+
+    public void DisableCollision()
+    {
+        GetComponent<Collider2D>().enabled = false;
     }
 }

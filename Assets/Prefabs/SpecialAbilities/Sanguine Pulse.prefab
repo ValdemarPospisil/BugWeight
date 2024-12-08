@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1427174170515205343}
   - component: {fileID: 8830337502934440901}
   - component: {fileID: 2063343161937903091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sanguine Pulse
   m_TagString: Untagged
   m_Icon: {fileID: 0}

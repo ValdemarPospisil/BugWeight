@@ -90,7 +90,7 @@ public class WolfBehavior : MonoBehaviour
             // Trigger attack animation
             animator.SetTrigger("Attack");
 
-            enemy.GetComponentInParent<IDamageable>()?.TakeDamage(attackDamage);
+            enemy.GetComponent<IDamageable>()?.TakeDamage(attackDamage);
             lastAttackTime = Time.time;
         }
     }
