@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 4e23272b710b56b4d89f27e091b99da2
+guid: b9b2342152543d44f8d38d01de4bd7b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1124711357401961452
-    second: BackgroundCell_0
+      213: 619676390839663050
+    second: Untitled - 2_0
+  - first:
+      213: -1228031770342078978
+    second: Untitled - 2_1
+  - first:
+      213: 1867131389168247788
+    second: Untitled - 2_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,89 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackgroundCell_0
+      name: Untitled - 2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 14
         y: 0
-        width: 32
-        height: 32
+        width: 51
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 34103557d08de3f4ab2d04cb8d05cd65
-      internalID: -1124711357401961452
+      spriteID: ac9b1bfe468899800800000000000000
+      internalID: 619676390839663050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundCell_1
+      name: Untitled - 2_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 77
         y: 0
-        width: 32
-        height: 32
+        width: 52
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ccc52151b0d95084fb4afb09de9e23b2
-      internalID: -1048292340
+      spriteID: ef5cddb7c9725fee0800000000000000
+      internalID: -1228031770342078978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackgroundCell_2
+      name: Untitled - 2_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 141
         y: 0
-        width: 32
-        height: 32
+        width: 51
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8f2966033eb06e84695fb105bb4da535
-      internalID: 472054600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundCell_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d3b036d7044f854ca5897e8e5f9bdd0
-      internalID: 454045880
+      spriteID: ce3ea502b1269e910800000000000000
+      internalID: 1867131389168247788
       vertices: []
       indices: 
       edges: []
@@ -204,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -213,11 +197,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BackgroundCell_0: -1124711357401961452
-      BackgroundCell_1: -1048292340
-      BackgroundCell_2: 472054600
-      BackgroundCell_3: 454045880
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

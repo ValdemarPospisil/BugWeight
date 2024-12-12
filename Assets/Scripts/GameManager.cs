@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
         StartNewGame();
     }
 
+
     public void StartNewGame()
     {
         powerUpManager.ResetPowerUps();

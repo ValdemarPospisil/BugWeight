@@ -17,12 +17,12 @@ public class WolfBehavior : MonoBehaviour
     private float lastAttackTime;
     private CircleCollider2D detectionRange;
 
-    public void Initialize(GameObject player, float damage, float patrolRange, float attackCooldown)
+    public void Initialize(GameObject player, float damage, float patrolRange, float speed)
     {
         this.player = player;
         this.attackDamage = damage;
         this.patrolRange = patrolRange;
-        this.attackCooldown = attackCooldown;
+        this.moveSpeed = speed;
 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4e23272b710b56b4d89f27e091b99da2
+guid: c32c32a173c2e3d48b35caa748389781
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1124711357401961452
-    second: BackgroundCell_0
+      213: -459381765158235276
+    second: SkilHolderClicked_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,89 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackgroundCell_0
+      name: SkilHolderClicked_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 94
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 34103557d08de3f4ab2d04cb8d05cd65
-      internalID: -1124711357401961452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundCell_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ccc52151b0d95084fb4afb09de9e23b2
-      internalID: -1048292340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundCell_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f2966033eb06e84695fb105bb4da535
-      internalID: 472054600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackgroundCell_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d3b036d7044f854ca5897e8e5f9bdd0
-      internalID: 454045880
+      spriteID: 473937fe7b2ff99f0800000000000000
+      internalID: -459381765158235276
       vertices: []
       indices: 
       edges: []
@@ -214,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BackgroundCell_0: -1124711357401961452
-      BackgroundCell_1: -1048292340
-      BackgroundCell_2: 472054600
-      BackgroundCell_3: 454045880
+      SkilHolderClicked_0: -459381765158235276
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
