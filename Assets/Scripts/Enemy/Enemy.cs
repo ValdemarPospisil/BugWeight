@@ -10,6 +10,9 @@ public class Enemy : MonoBehaviour, IDamageable
     private Rigidbody2D rb;
     private float attackCooldown;
     private float enemyCurrentHP;
+    private float enemyMaxHP;
+    private float attackDamage;
+    private float xpDrop;
     private string targetTag = "Player";
     public bool enemyCanMove = true;
     private bool isKnockedBack = false;
@@ -29,11 +32,7 @@ public class Enemy : MonoBehaviour, IDamageable
         gameObject.layer = LayerMask.NameToLayer("Enemy");
         enemyCanvas = GetComponentInChildren<Canvas>();
 
-        levelManager = FindFirstObjectByType<LevelManager>();
-        if (levelManager == null)
-        {
-            Debug.LogError("LevelManager not found in the scene.");
-        }
+        
 
         
 
@@ -44,11 +43,15 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public void Initialize(EnemyType type, Vector3 spawnPosition)
     {
+        levelManager = ServiceLocator.GetService<LevelManager>();
         enemyType = type;
-        enemyCurrentHP = enemyType.data.enemyMaxHP;
         transform.position = spawnPosition;
-        enemyCurrentHP = type.data.enemyMaxHP;
 
+        attackDamage = type.data.attackDamage;
+        enemyMaxHP = type.data.enemyMaxHP;
+        xpDrop = type.data.xpDrop;
+        enemyCurrentHP = enemyMaxHP;
+        ScaleStats();
 
         rb = GetComponent<Rigidbody2D>();
         
@@ -76,6 +79,13 @@ public class Enemy : MonoBehaviour, IDamageable
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         rb.rotation = angle - 90f;
+    }
+    private void ScaleStats()
+    {
+        float levelMultiplier = 1 + (levelManager.level * 0.01f);
+        attackDamage *= levelMultiplier;
+        enemyMaxHP *= levelMultiplier;
+        enemyCurrentHP = enemyMaxHP;
     }
 
     public IEnumerator ApplyKnockback(Vector2 direction, float knockbackForce, float knockbackDuration)
@@ -136,7 +146,7 @@ public class Enemy : MonoBehaviour, IDamageable
         OnEnemyKilled?.Invoke(transform.position);
 
         Instantiate(deathParticles, transform.position, Quaternion.identity);
-        levelManager.AddXP(enemyType.data.xpDrop);
+        levelManager.AddXP(xpDrop);
 
         Destroy(gameObject);
     }
@@ -146,7 +156,7 @@ public class Enemy : MonoBehaviour, IDamageable
         enemyCanvas.enabled = true;
         if (enemyHealthBar != null)
         {
-            enemyHealthBar.fillAmount = enemyCurrentHP / enemyType.data.enemyMaxHP;
+            enemyHealthBar.fillAmount = enemyCurrentHP / enemyMaxHP;
         }
     }
 
@@ -159,7 +169,7 @@ public class Enemy : MonoBehaviour, IDamageable
             IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
             if (damageable != null)
             {
-                damageable.TakeDamage(enemyType.data.attackDamage);
+                damageable.TakeDamage(attackDamage);
                 attackCooldown = 1f / enemyType.data.attackSpeed;
             }
         }

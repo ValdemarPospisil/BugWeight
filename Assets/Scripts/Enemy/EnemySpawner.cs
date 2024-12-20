@@ -13,13 +13,18 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private int maxDuration = 10;
     [SerializeField] private int minEnemies = 1;
     [SerializeField] private int maxEnemies = 5;
+    private LevelManager levelManager;
 
+    private void Awake() {
+        levelManager = ServiceLocator.GetService<LevelManager>();
+    }
     private void Start () {
         StartCoroutine(StartSpawningEnemies());
     }
 
     private IEnumerator StartSpawningEnemies()
     {
+        yield return new WaitForSeconds(1f);
         while (true)
         {
             SpawnEnemies();
@@ -30,6 +35,7 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnEnemies()
     {
         int enemyCount = Random.Range(minEnemies, maxEnemies);
+        enemyCount = enemyCount + Random.Range(0, levelManager.level * 2);
 
         for (int i = 0; i < enemyCount; i++)
         {

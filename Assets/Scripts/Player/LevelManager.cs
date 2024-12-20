@@ -24,6 +24,7 @@ public class LevelManager : MonoBehaviour
     public void AddXP(float amount)
     {
         currentXP += amount;
+        currentXP = Mathf.Round(currentXP);
         CheckLevelUp();
         playerManager.UpdateUI();
     }
@@ -44,7 +45,8 @@ public class LevelManager : MonoBehaviour
         {
             currentXP -= toNextLevel;
             level++;
-            toNextLevel += toNextLevel * 0.3f; // Increment difficulty to level up
+            toNextLevel += toNextLevel * 0.2f; // Increment difficulty to level up
+            toNextLevel = Mathf.Round(toNextLevel);
             playerManager.UpdateUI();
             LevelUp();
             //OnLevelUp.Invoke();

@@ -8,8 +8,8 @@ Zápočet:
     ✔ add tiers for special abilities @done (12/20/2024, 2:51:12 PM)
     ☐ fix UI cards
     ☐ change level UI
-    ☐ scale enemies number with level
-    ☐ scale enemies stats with level
+    ✔ scale enemies number with level @done (12/20/2024, 7:22:25 PM)
+    ✔ scale enemies stats with level @done (12/20/2024, 7:22:36 PM)
     ☐ 1 more special ability
     ☐ 1 more enemy type (shooting projectiles)
     ☐ use flyweight pattern for the enemy shooting projectiles
