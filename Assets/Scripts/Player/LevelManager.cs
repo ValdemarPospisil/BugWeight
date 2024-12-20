@@ -29,7 +29,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void LevelUp () {
-        if (level == 10 || level == 20 || level == 30) {
+        if (level % 5 == 0) {
             specialAbilityManager.ShowSpecialAbilityChoices();
         }
         else

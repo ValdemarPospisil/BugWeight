@@ -5,23 +5,23 @@ using System.Collections.Generic;
 public struct PowerUpTier
 {
     public float damage;
-    public float duration; // This will be used as the duration of the slash effect
-    public float speed; // This will be used as the radius of the slash effect
+    public float duration;
+    public float speed; 
 }
 
 public abstract class PowerUp : ScriptableObject
 {
-    public Sprite icon; // Icon for the UI
-    public string baseName; // Base name of the power-up
+    public Sprite icon;
+    public string baseName;
     [TextArea(3, 10)]
-    public string baseDescription; // Base description of the power-up
-    public int maxTier = 4; // Maximum tier for the power-up (3 upgrade tiers)
-    public int currentTier = 1; // Current tier of the power-up (1 is the base tier)
+    public string baseDescription;
+    public int maxTier = 4;
+    public int currentTier = 1; 
 
     protected PowerUpManager manager;
     public bool basePicked;
 
-    public List<PowerUpTier> tiers; // List of tier properties
+    public List<PowerUpTier> tiers;
 
     public void Initialize(PowerUpManager powerUpManager)
     {

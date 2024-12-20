@@ -9,8 +9,6 @@ public class SanguinePulseAbility : SpecialAbility
     [SerializeField] private float pushForce = 10f;
     [SerializeField] private float healAmount = 5f;
     [SerializeField] private float pulseRadius = 5f; 
-    [SerializeField] private float damage = 5f;
-    [SerializeField] private float knockbackDuration = 0.5f;
     [SerializeField] private GameObject abilityPrefab;
 
     public override void Activate()
@@ -38,7 +36,7 @@ public class SanguinePulseAbility : SpecialAbility
                 // Push the enemy back
                 Vector2 pushDirection = (enemy.transform.position - player.transform.position).normalized;
                 
-                player.GetComponent<MonoBehaviour>().StartCoroutine(enemy.ApplyKnockback(pushDirection, pushForce, knockbackDuration));
+                player.GetComponent<MonoBehaviour>().StartCoroutine(enemy.ApplyKnockback(pushDirection, pushForce, duration));
 
                 enemy.TakeDamage(damage);
                 
@@ -64,5 +62,17 @@ public class SanguinePulseAbility : SpecialAbility
         yield return new WaitForSeconds(0.5f);
 
         Destroy(instantiatedPrefab);
+    }
+
+    protected override void UpdateProperties()
+    {
+        if (currentTier < maxTier)
+        {
+            pushForce += pushForce * percentageIncrease;
+            healAmount += healAmount * percentageIncrease;
+            duration -= duration * percentageIncrease;
+            cooldown -= cooldown * percentageIncrease;
+            damage += damage * percentageIncrease;
+        }
     }
 }

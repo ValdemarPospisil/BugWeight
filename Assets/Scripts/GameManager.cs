@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public void StartNewGame()
     {
         powerUpManager.ResetPowerUps();
+        specialAbilityManager.ResetSpecialAbilities();
         // Reset other game states as needed
     }
 }

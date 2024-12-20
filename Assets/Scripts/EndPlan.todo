@@ -1,0 +1,32 @@
+Zápočet:
+    ☐ special abitlity cooldowns
+    ☐ Find any design patterns
+    ☐ Learn the desgin patterns
+    ☐ (optional) Make a scene without flyweight
+    ✔ show fps and ram usage in game @done (12/20/2024, 10:43:59 AM)
+    ✔ add the abbility to have more special abilities @done (12/20/2024, 5:39:16 PM)
+    ✔ add tiers for special abilities @done (12/20/2024, 2:51:12 PM)
+    ☐ fix UI cards
+    ☐ change level UI
+    ☐ scale enemies number with level
+    ☐ scale enemies stats with level
+    ☐ 1 more special ability
+    ☐ 1 more enemy type (shooting projectiles)
+    ☐ use flyweight pattern for the enemy shooting projectiles
+    ☐ 1 more powerup
+    ☐ balance the game
+    ☐ (optional) better background
+
+Itch.io:
+    ☐ add sound and music
+    ☐ add game menu and pause
+    ☐ add options menu
+    ☐ add tutorial elements
+    ☐ add more enemy types
+    ☐ add more powerups
+    ☐ add more special abilities
+    ☐ map borders (camera, enemies, player)
+    ☐ (optional) add permanent upgrades (bat, blood, wolf, shadow buffs)
+    ☐ add WebGL functionality
+    ☐ add timer and score
+    ☐ add leaderboard

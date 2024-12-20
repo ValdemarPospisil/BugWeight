@@ -4,7 +4,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Bat Swarm", menuName = "SpecialAbilities/Bat Swarm")]
 public class BatSwarmAbility : SpecialAbility
 {
-    [SerializeField] private float damage = 5f;
     [SerializeField] private float BatsDuration = 5f;
     [SerializeField] private float BatSpeed = 5f;
 
@@ -14,6 +13,17 @@ public class BatSwarmAbility : SpecialAbility
     {
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
-        playerController.BatSwarm(damage, BatsDuration, BatSpeed);
+        playerController.BatSwarm(damage, duration, BatSpeed);
+    }
+
+    protected override void UpdateProperties()
+    {
+        if (currentTier < maxTier)
+        {
+            damage += damage * percentageIncrease;
+            cooldown -= cooldown * percentageIncrease;
+            BatsDuration += BatsDuration * percentageIncrease;
+            BatSpeed += BatSpeed * percentageIncrease;
+        }
     }
 }

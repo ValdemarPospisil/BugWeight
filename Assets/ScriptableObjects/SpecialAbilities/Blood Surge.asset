@@ -16,6 +16,13 @@ MonoBehaviour:
   icon: {fileID: 3482621199288465255, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   abilityDescription: Surge forward and leave a blood mist trail behind that deals
     damage
+  cooldown: 8
+  percentageIncrease: 0.1
+  damage: 5
+  duration: 5
+  maxTier: 4
+  currentTier: 1
+  basePicked: 1
   dashSpeed: 25
   dashDuration: 2
   damageDuration: 5

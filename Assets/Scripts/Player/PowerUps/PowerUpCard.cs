@@ -4,10 +4,10 @@ using TMPro;
 
 public class PowerUpCard : MonoBehaviour
 {
-    public Image icon; // Icon image
-    public TextMeshProUGUI nameText; // Name of the power-up
-    public TextMeshProUGUI descriptionText; // Description of the power-up
-    public Button button; // Button to select the power-up
+    [SerializeField] private Image icon; // Icon image
+    [SerializeField] private TextMeshProUGUI nameText; // Name of the power-up
+    [SerializeField] private TextMeshProUGUI descriptionText; // Description of the power-up
+    [SerializeField] private Button button; // Button to select the power-up
     private int showTier = 1;
     private PowerUp powerUp;
     private PowerUpManager powerUpManager;
@@ -37,7 +37,6 @@ public class PowerUpCard : MonoBehaviour
         if (showTier - 1 < powerUp.tiers.Count)
         {  
             var tier = powerUp.tiers[showTier - 1];
-            Debug.Log("Tier: " + showTier);
             icon.sprite = powerUp.icon;
             nameText.text = $"{powerUp.baseName} {GetRomanNumeral(showTier)}";
             descriptionText.text = GenerateDescription(tier);

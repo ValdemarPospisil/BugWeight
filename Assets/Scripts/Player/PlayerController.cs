@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,9 +16,8 @@ public class PlayerController : MonoBehaviour
     private CapsuleCollider2D capsuleCollider2D;
     private float dashSpeed;
     private BatSwarmDamage batSwarmDamageScript;
-    public Vector2 lastDirection{ get; private set;} = new Vector2(1, 0);
+    public Vector2 lastDirection { get; private set; } = new Vector2(1, 0);
     private string targetTag = "Player";
-
 
     private void Awake()
     {
@@ -48,6 +46,7 @@ public class PlayerController : MonoBehaviour
     {
         NotifyEnemies(targetTag);
     }
+
     public void SpeedBoost(float multiplier)
     {
         moveSpeed += multiplier;
@@ -81,13 +80,20 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            specialManager.UseSpecialAbility();
+            specialManager.UseSpecialAbility(0);
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            specialManager.UseSpecialAbility(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            specialManager.UseSpecialAbility(2);
         }
     }
 
     public void BatSwarm(float damage, float batsDuration, float batSpeed)
     {
-        
         batSwarmDamageScript.SetDamage(damage);
         StartCoroutine(TransformToBats(batsDuration, batSpeed));
     }
@@ -105,20 +111,17 @@ public class PlayerController : MonoBehaviour
         batSwarmDamageScript.gameObject.SetActive(false);
     }
 
-    
     public IEnumerator BloodSurge(float surgeSpeed, float dashDuration, float damageDuration, GameObject bloodTrailPrefab)
-    {  
+    {
         if (isDashing) yield break;
         dashSpeed = surgeSpeed;
-        
-        
+
         capsuleCollider2D.isTrigger = true;
-        
+
         isDashing = true;
         var bloodTrail = Instantiate(bloodTrailPrefab, transform.position, Quaternion.identity);
         bloodTrail.transform.SetParent(transform);
         spriteRenderer.enabled = false;
-
 
         var trailRenderer = GetComponent<TrailRenderer>();
         trailRenderer.emitting = true;
@@ -145,27 +148,20 @@ public class PlayerController : MonoBehaviour
 
         // Make the player invisible
         spriteRenderer.color = new Color(1, 1, 1, 0.3f);
-        
-        targetTag = "Clone";
 
-       
+        targetTag = "Clone";
 
         // Wait for the clone duration
         yield return new WaitForSeconds(cloneDuration);
 
         targetTag = "Player";
-        
 
         spriteRenderer.color = new Color(1, 1, 1, 1);
         //Destroy(clone);
-
-
     }
 
-
-
     public IEnumerator ShadowStep(float teleportDistance, float shadowExplosionDelay, float explosionDamage,
-     float explosionRadius, GameObject shadowPrefab, GameObject shadowExplosionEffect)
+        float explosionRadius, GameObject shadowPrefab, GameObject shadowExplosionEffect)
     {
         Vector2 teleportDirection = lastDirection * teleportDistance;
         Vector2 teleportPosition = (Vector2)transform.position + teleportDirection;
@@ -180,7 +176,6 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(shadowExplosionDelay);
 
         // Explode the shadow
-        
         ExplodeShadow(shadow, explosionDamage, explosionRadius, shadowExplosionEffect);
     }
 
@@ -205,8 +200,6 @@ public class PlayerController : MonoBehaviour
         Destroy(shadow, 0.4f);
         Destroy(explosion, 0.5f);
     }
-
-
 
     private void NotifyEnemies(string targetTag)
     {

@@ -9,6 +9,7 @@ public class BloodSurgeAbility : SpecialAbility
     //[SerializeField] private float damagePerSecond = 10f;
     [SerializeField] private float damageDuration = 3f;
     [SerializeField] private GameObject bloodTrailPrefab;
+    
 
     public override void Activate()
     {
@@ -17,6 +18,17 @@ public class BloodSurgeAbility : SpecialAbility
         if (player != null)
         {
             playerController.StartCoroutine(playerController.BloodSurge(dashSpeed, dashDuration, damageDuration, bloodTrailPrefab));
+        }
+    }
+    protected override void UpdateProperties()
+    {
+        if (currentTier <= maxTier)
+        {
+            dashSpeed += dashSpeed * percentageIncrease;
+            damageDuration += damageDuration * percentageIncrease;
+            dashDuration -= dashDuration * percentageIncrease;
+            cooldown -= cooldown * percentageIncrease;
+            damage += damage * percentageIncrease;
         }
     }
 }

@@ -24,33 +24,17 @@ public class PowerUpManager : MonoBehaviour
         List<PowerUp> availablePowerUps = GetAvailablePowerUps();
         List<PowerUp> randomPowerUps = new List<PowerUp>();
 
-        // Show base power-ups first
-        foreach (PowerUp powerUp in availablePowerUps)
+        for (int i = 0; i < availablePowerUps.Count; i++)
         {
-            if (powerUp.currentTier == 1)
-            {
-                randomPowerUps.Add(powerUp);
-                if (randomPowerUps.Count >= 3)
-                {
-                    break;
-                }
-            }
+            PowerUp temp = availablePowerUps[i];
+            int randomIndex = Random.Range(i, availablePowerUps.Count);
+            availablePowerUps[i] = availablePowerUps[randomIndex];
+            availablePowerUps[randomIndex] = temp;
         }
 
-        // If less than 3 power-ups, add higher tiers
-        if (randomPowerUps.Count < 3)
+        for (int i = 0; i < Mathf.Min(3, availablePowerUps.Count); i++)
         {
-            foreach (PowerUp powerUp in availablePowerUps)
-            {
-                if (powerUp.currentTier > 1 && !randomPowerUps.Contains(powerUp))
-                {
-                    randomPowerUps.Add(powerUp);
-                    if (randomPowerUps.Count >= 3)
-                    {
-                        break;
-                    }
-                }
-            }
+            randomPowerUps.Add(availablePowerUps[i]);
         }
 
         powerUpUI.DisplayChoices(randomPowerUps);

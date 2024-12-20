@@ -10,12 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 222f7abc07c69424188ed9a31e49e788, type: 3}
-  m_Name: Sanguine Pulse
+  m_Name: Shadow Pulse
   m_EditorClassIdentifier: 
-  abilityName: Sanguine Pulse
+  abilityName: Shadow Pulse
   icon: {fileID: 6109076962248195895, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   abilityDescription: unleashes a pulse of blood energy, pushing enemies back and
     healing slightly for each enemy hit.
+  maxTier: 4
+  currentTier: 1
+  basePicked: 0
   pushForce: 10
   healAmount: 5
   pulseRadius: 4

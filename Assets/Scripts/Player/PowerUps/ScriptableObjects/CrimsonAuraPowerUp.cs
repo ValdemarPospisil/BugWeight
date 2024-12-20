@@ -13,8 +13,6 @@ public class CrimsonAuraPowerUp : PowerUp
         if (playerManager != null)
         {
             var tier = tiers[currentTier - 1];
-            float baseDamage = tier.damage;
-            float auraRadius = tier.speed;
 
             GameObject aura = Instantiate(auraPrefab, playerManager.transform.position, Quaternion.identity);
             aura.transform.SetParent(playerManager.transform);

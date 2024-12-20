@@ -15,6 +15,12 @@ MonoBehaviour:
   abilityName: Bat Swarm
   icon: {fileID: 568212956093231752, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   abilityDescription: Transform into swarm of bats
-  damage: 1
-  BatsDuration: 10
+  cooldown: 0
+  percentageIncrease: 0
+  damage: 5
+  duration: 5
+  maxTier: 4
+  currentTier: 1
+  basePicked: 0
+  BatsDuration: 5
   BatSpeed: 5
