@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29d0ea39628d20f44a9efb537be7e6de, type: 3}
-  m_Name: Blood Rebirh
+  m_Name: Wolf Sacrifice
   m_EditorClassIdentifier: 
   icon: {fileID: -6170179107295757906, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
-  baseName: Blood Rebirth
-  baseDescription: You get another chance at life with % of your max health.
+  baseName: Wolf Sacrifice
+  baseDescription: Upondying  sacrificee one of your wolves (if you have any) and
+    revive with full health.
   maxTier: 4
   currentTier: 2
   basePicked: 1

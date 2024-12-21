@@ -49,6 +49,17 @@ public class PlayerManager : MonoBehaviour, IDamageable
         UpdateUI();
     }
 
+    public void BuffHealth(float amount)
+    {
+        maxHP += amount;
+        if (amount > 0)
+        {
+            currentHP += amount;
+        }
+        if (currentHP > maxHP) currentHP = maxHP;
+        UpdateUI();
+    }
+
     public void AddExtraLives(int lives, float healthPercentage)
     {
         extraLives += lives;

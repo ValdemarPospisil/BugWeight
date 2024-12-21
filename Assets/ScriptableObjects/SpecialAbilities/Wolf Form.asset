@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 453f0655865ec2a479eb2d6ae0792669, type: 3}
+  m_Name: Wolf Form
+  m_EditorClassIdentifier: 
+  abilityName: Wolf Form
+  icon: {fileID: 3190204956757465818, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
+  abilityDescription: 'Transform into a wolf for a period of time gaining huge HP
+    boost. '
+  cooldown: 5
+  percentageIncrease: 0.1
+  damage: 20
+  duration: 5
+  maxTier: 4
+  currentTier: 1
+  basePicked: 0
+  hpBoost: 50
+  wolfDuration: 10
+  wolfPrefab: {fileID: 8453303425883192840, guid: e76bba63adcf3b54db0ac1f2560d2196, type: 3}

@@ -18,4 +18,4 @@ MonoBehaviour:
   attackDamage: 2
   attackSpeed: 2
   xpDrop: 30
-  enemyMaxHP: 60
+  enemyMaxHP: 50

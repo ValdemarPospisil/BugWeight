@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private BatSwarmDamage batSwarmDamageScript;
     public Vector2 lastDirection { get; private set; } = new Vector2(1, 0);
     private string targetTag = "Player";
+    private bool isWolfForm;
 
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         trailRenderer.emitting = false;
+        isWolfForm = false;
     }
 
     private void Update()
@@ -68,7 +70,14 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("MovementX", movementInput.x);
         animator.SetFloat("MovementY", movementInput.y);
         isMoving = movementInput != Vector2.zero;
-        animator.SetBool("IsMoving", !isMoving);
+        if (isWolfForm)
+        {
+            animator.SetBool("IsMoving", isMoving);
+        }
+        else
+        {
+            animator.SetBool("IsMoving", !isMoving);
+        }
         if (!isDashing)
         {
             rb.linearVelocity = movementInput * moveSpeed;
@@ -79,16 +88,37 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
-        {
-            specialManager.UseSpecialAbility(0);
+        {  
+            if (isWolfForm)
+            {
+                animator.SetTrigger("Attack");
+            }
+            else
+            {
+                specialManager.UseSpecialAbility(0);
+            }
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            specialManager.UseSpecialAbility(1);
+            if (isWolfForm)
+            {
+                animator.SetTrigger("AttackB");
+            }
+            else
+            {
+                specialManager.UseSpecialAbility(1);
+            }
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            specialManager.UseSpecialAbility(2);
+            if (isWolfForm)
+            {
+                animator.SetTrigger("Ability");
+            }
+            else
+            {
+                specialManager.UseSpecialAbility(2);
+            }
         }
     }
 
@@ -213,4 +243,34 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+
+    public IEnumerator TransformToWolf(float hpBoost, float wolfDuration, GameObject wolfPrefab)
+{
+    // Store the original HP and modify it
+    var playerManager = GetComponent<PlayerManager>();
+    playerManager.BuffHealth(hpBoost);
+    
+    // Change the sprite or activate a wolf visual
+    spriteRenderer.enabled = false; // Hide original sprite
+    GameObject wolfInstance = Instantiate(wolfPrefab, transform.position, Quaternion.identity);
+    wolfInstance.transform.position = new Vector3(wolfInstance.transform.position.x, wolfInstance.transform.position.y, 0);
+    wolfInstance.transform.SetParent(transform);
+    Animator wolfAnimator = wolfInstance.GetComponent<Animator>();
+    animator = wolfAnimator;
+    isWolfForm = true;
+
+
+    // Timer for wolf duration
+    yield return new WaitForSeconds(wolfDuration);
+
+    playerManager.BuffHealth(-hpBoost);
+    animator = GetComponent<Animator>();
+    isWolfForm = false;
+
+    Destroy(wolfInstance); // Remove wolf visuals
+    spriteRenderer.enabled = true; // Show original sprite
+   
+}
+
 }
