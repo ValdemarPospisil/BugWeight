@@ -161,6 +161,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302b1088a24583a49afd2811961a2a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wolfPrefab: {fileID: 7132395684340724752, guid: b7316082c189c4a469bdf5463d332556, type: 3}
+  attackDamage: 10
+  freezeRadius: 10
+  freezeDuration: 5
+  summonOffset: 1
 --- !u!50 &2624966267234751530
 Rigidbody2D:
   serializedVersion: 5

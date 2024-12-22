@@ -4,8 +4,9 @@ using UnityEngine;
 public class WolfFormAbility : SpecialAbility
 {
     [SerializeField] private float hpBoost = 50f; 
-    [SerializeField] private float wolfDuration = 10f;  
     [SerializeField] private GameObject wolfPrefab;     
+    [SerializeField] private float freezeRadius = 5; 
+    [SerializeField] private float freezeDuration = 10f;  
 
     public override void Activate()
     {
@@ -14,7 +15,7 @@ public class WolfFormAbility : SpecialAbility
 
         if (player != null)
         {
-            playerController.StartCoroutine(playerController.TransformToWolf(hpBoost, wolfDuration, wolfPrefab));
+            playerController.StartCoroutine(playerController.TransformToWolf(hpBoost, duration, wolfPrefab, damage, freezeRadius, freezeDuration));
         }
     }
 
@@ -23,8 +24,11 @@ public class WolfFormAbility : SpecialAbility
         if (currentTier <= maxTier)
         {
             hpBoost += hpBoost * percentageIncrease;
-            wolfDuration += wolfDuration * percentageIncrease;
+            duration += duration * percentageIncrease;
             cooldown -= cooldown * percentageIncrease;
+            damage += damage * percentageIncrease;
+            freezeDuration += freezeDuration * percentageIncrease;
+            freezeRadius += freezeRadius * percentageIncrease;
         }
     }
 }

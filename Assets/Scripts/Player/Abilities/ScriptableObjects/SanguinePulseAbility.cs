@@ -36,7 +36,7 @@ public class SanguinePulseAbility : SpecialAbility
                 // Push the enemy back
                 Vector2 pushDirection = (enemy.transform.position - player.transform.position).normalized;
                 
-                player.GetComponent<MonoBehaviour>().StartCoroutine(enemy.ApplyKnockback(pushDirection, pushForce, duration));
+                enemy.Knockback(pushDirection, pushForce, duration);
 
                 enemy.TakeDamage(damage);
                 

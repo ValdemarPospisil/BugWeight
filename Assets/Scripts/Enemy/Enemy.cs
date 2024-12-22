@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
 
-public class Enemy : MonoBehaviour, IDamageable
+public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 {
     public EnemyType enemyType;
     private Transform targetTransform;
@@ -31,6 +31,7 @@ public class Enemy : MonoBehaviour, IDamageable
         
         gameObject.layer = LayerMask.NameToLayer("Enemy");
         enemyCanvas = GetComponentInChildren<Canvas>();
+        enemyCanMove = true;
 
         
 
@@ -68,6 +69,11 @@ public class Enemy : MonoBehaviour, IDamageable
     private void FixedUpdate()
     {
         if (isKnockedBack) return;
+        if (!enemyCanMove)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
         if (targetTransform == null)
         {
             rb.linearVelocity = Vector2.zero;
@@ -88,7 +94,7 @@ public class Enemy : MonoBehaviour, IDamageable
         enemyCurrentHP = enemyMaxHP;
     }
 
-    public IEnumerator ApplyKnockback(Vector2 direction, float knockbackForce, float knockbackDuration)
+    private IEnumerator ApplyKnockback(Vector2 direction, float knockbackForce, float knockbackDuration)
     {
         if (rb == null) yield break;
 
@@ -138,6 +144,25 @@ public class Enemy : MonoBehaviour, IDamageable
                 Die();
             }
         }
+    }
+
+    public void Freeze(float duration)
+    {
+        if (this == null) return;
+        StartCoroutine(FreezeCoroutine(duration));
+    }
+
+    private IEnumerator FreezeCoroutine(float duration)
+    {
+        enemyCanMove = false;
+        yield return new WaitForSeconds(duration);
+        enemyCanMove = true;
+    }
+
+    public void Knockback(Vector2 direction, float knockbackForce, float knockbackDuration)
+    {
+        if (this == null) return;
+        StartCoroutine(ApplyKnockback(direction, knockbackForce, knockbackDuration));
     }
 
     private void Die()

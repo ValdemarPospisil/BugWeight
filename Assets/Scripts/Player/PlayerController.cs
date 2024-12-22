@@ -67,8 +67,8 @@ public class PlayerController : MonoBehaviour
             lastDirection = movementInput;
         }
 
-        animator.SetFloat("MovementX", movementInput.x);
-        animator.SetFloat("MovementY", movementInput.y);
+        animator.SetFloat("MovementX", lastDirection.x);
+        animator.SetFloat("MovementY", lastDirection.y);
         isMoving = movementInput != Vector2.zero;
         if (isWolfForm)
         {
@@ -245,7 +245,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    public IEnumerator TransformToWolf(float hpBoost, float wolfDuration, GameObject wolfPrefab)
+    public IEnumerator TransformToWolf(float hpBoost, float wolfDuration, GameObject wolfPrefab, float wolfDamage, float freezeRadius, float freezeDuration)
 {
     // Store the original HP and modify it
     var playerManager = GetComponent<PlayerManager>();
@@ -258,6 +258,7 @@ public class PlayerController : MonoBehaviour
     wolfInstance.transform.SetParent(transform);
     Animator wolfAnimator = wolfInstance.GetComponent<Animator>();
     animator = wolfAnimator;
+    wolfInstance.GetComponent<WolfForm>().Initialize(wolfDamage, freezeRadius, freezeDuration);
     isWolfForm = true;
 
 

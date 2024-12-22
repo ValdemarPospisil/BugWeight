@@ -16,13 +16,14 @@ MonoBehaviour:
   icon: {fileID: 3190204956757465818, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   abilityDescription: 'Transform into a wolf for a period of time gaining huge HP
     boost. '
-  cooldown: 5
+  cooldown: 4.5
   percentageIncrease: 0.1
-  damage: 20
-  duration: 5
+  damage: 22
+  duration: 5.5
   maxTier: 4
-  currentTier: 1
-  basePicked: 0
-  hpBoost: 50
-  wolfDuration: 10
+  currentTier: 2
+  basePicked: 1
+  hpBoost: 66
   wolfPrefab: {fileID: 8453303425883192840, guid: e76bba63adcf3b54db0ac1f2560d2196, type: 3}
+  freezeRadius: 7.7
+  freezeDuration: 11
