@@ -190,14 +190,14 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         if (collision.gameObject.CompareTag("Player") && this != null)
         {
             if (attackCooldown <= 0)
-        {
-            IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
-            if (damageable != null)
             {
-                damageable.TakeDamage(attackDamage);
-                attackCooldown = 1f / enemyType.data.attackSpeed;
+                IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
+                if (damageable != null)
+                {
+                    damageable.TakeDamage(attackDamage);
+                    attackCooldown = 1f / enemyType.data.attackSpeed;
+                }
             }
-        }
         }
     }
 

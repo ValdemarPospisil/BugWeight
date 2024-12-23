@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 6109076962248195895, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   abilityDescription: unleashes a pulse of blood energy, pushing enemies back and
     healing slightly for each enemy hit.
-  cooldown: 4.5
+  cooldown: 20
   percentageIncrease: 0.1
   damage: 22
   duration: 0.3

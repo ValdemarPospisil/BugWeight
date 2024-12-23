@@ -17,14 +17,14 @@ MonoBehaviour:
   baseDescription: summon a wolf that will help you fight
   maxTier: 4
   currentTier: 1
-  basePicked: 1
+  basePicked: 0
   tiers:
   - damage: 25
     duration: 2
-    speed: 8
+    speed: 10
   - damage: 25
     duration: 2
-    speed: 7
+    speed: 12
   - damage: 30
     duration: 1.5
     speed: 12

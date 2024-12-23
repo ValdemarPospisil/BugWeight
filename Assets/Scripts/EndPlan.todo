@@ -1,5 +1,5 @@
 Zápočet:
-    ☐ special abitlity cooldowns
+    ✔ special abitlity cooldowns @done (12/23/2024, 7:09:00 PM)
     ☐ Find any design patterns
     ☐ Learn the desgin patterns
     ☐ (optional) Make a scene without flyweight
@@ -10,7 +10,7 @@ Zápočet:
     ☐ change level UI
     ✔ scale enemies number with level @done (12/20/2024, 7:22:25 PM)
     ✔ scale enemies stats with level @done (12/20/2024, 7:22:36 PM)
-    ☐ 1 more special ability
+    ✔ 1 more special ability @done (12/23/2024, 2:22:49 PM)
     ☐ 1 more enemy type (shooting projectiles)
     ☐ use flyweight pattern for the enemy shooting projectiles
     ☐ 1 more powerup

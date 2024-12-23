@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c9ff07ec799c84c43902561e80036055
+guid: cef663404f4b6cf43aa162bd98052428
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2361717734011353382
-    second: PowerUpHolder_0
+      213: 8867876376819156252
+    second: SpecialAbilityCard_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PowerUpHolder_0
+      name: SpecialAbilityCard_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad6438cdb3e793fd0800000000000000
-      internalID: -2361717734011353382
+      spriteID: c154268a496011b70800000000000000
+      internalID: 8867876376819156252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpecialAbilityCard_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 94
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086aea70b263cab49b56a73a3a11ca46
+      internalID: -1132763331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpecialAbilityCard_2
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 94
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4cd0a48fb044743b29fdf68008666d
+      internalID: -677476920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpecialAbilityCard_3
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 0
+        width: 94
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90dcb0747c919844bfb1db802aa6eb6
+      internalID: -1244196125
       vertices: []
       indices: 
       edges: []
@@ -138,7 +204,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 735f7422f0af1574d9a214f93fd14629
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +214,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PowerUpHolder_0: -2361717734011353382
+      SpecialAbilityCard_0: 8867876376819156252
+      SpecialAbilityCard_1: -1132763331
+      SpecialAbilityCard_2: -677476920
+      SpecialAbilityCard_3: -1244196125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

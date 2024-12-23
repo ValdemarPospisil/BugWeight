@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpecialAbilityUI : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class SpecialAbilityUI : MonoBehaviour
             GameObject card = Instantiate(cardPrefab, cardContainer);
             SpecialAbilityCard cardScript = card.GetComponent<SpecialAbilityCard>();
             cardScript.SetUp(ability, specialManager);
+            Button button = card.GetComponent<Button>();
+            button.Select();
         }
 
         // Show the card container (if hidden by default)

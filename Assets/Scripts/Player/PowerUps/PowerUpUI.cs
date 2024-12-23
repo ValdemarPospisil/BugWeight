@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PowerUpUI : MonoBehaviour
 {
@@ -22,9 +23,10 @@ public class PowerUpUI : MonoBehaviour
             GameObject card = Instantiate(cardPrefab, cardContainer);
             PowerUpCard cardScript = card.GetComponent<PowerUpCard>();
             cardScript.SetUp(powerUp, powerUpManager);
+            Button button = card.GetComponent<Button>();
+            button.Select();
         }
 
-        // Show the card container (if hidden by default)
         cardContainer.gameObject.SetActive(true);
     }
 

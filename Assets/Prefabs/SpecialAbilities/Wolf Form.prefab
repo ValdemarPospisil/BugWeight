@@ -147,8 +147,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.7646904, y: 0.095088005}
-  m_Radius: 0.5622053
+  m_Offset: {x: 0.7646904, y: 0.22711086}
+  m_Radius: 0.43018246
 --- !u!114 &5616090455013315199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,9 +162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wolfPrefab: {fileID: 7132395684340724752, guid: b7316082c189c4a469bdf5463d332556, type: 3}
-  attackDamage: 10
-  freezeRadius: 10
-  freezeDuration: 5
   summonOffset: 1
 --- !u!50 &2624966267234751530
 Rigidbody2D:

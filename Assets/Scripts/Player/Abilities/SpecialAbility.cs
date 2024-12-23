@@ -6,7 +6,7 @@ public abstract class SpecialAbility : ScriptableObject
     public Sprite icon;
     [TextArea(3, 10)]
     public string abilityDescription;
-    [SerializeField] protected float cooldown = 5f;
+    public float cooldown = 5f;
     [SerializeField] protected float percentageIncrease = 0.1f;
     [SerializeField] protected float damage = 5f;
     [SerializeField] protected float duration = 5f;

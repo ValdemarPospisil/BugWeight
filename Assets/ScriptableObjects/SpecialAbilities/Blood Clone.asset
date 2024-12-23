@@ -16,7 +16,12 @@ MonoBehaviour:
   icon: {fileID: -5389201861494937112, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   abilityDescription: Make a blood clone of yourself and go invisible for a period
     of time
+  cooldown: 20
+  percentageIncrease: 0.1
+  damage: 5
+  duration: 5
+  maxTier: 4
+  currentTier: 1
+  basePicked: 0
   bloodClonePrefab: {fileID: 930252425609928099, guid: 5aab1559c8bb7c7468395b833085bf88, type: 3}
-  cloneDuration: 5
-  explosionDamage: 10
   explosionRadius: 3.5

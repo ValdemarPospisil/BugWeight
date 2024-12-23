@@ -66,7 +66,10 @@ public class WolfBehavior : MonoBehaviour
     private void SetNewPatrolTarget()
     {
         Vector3 randomDirection = Random.insideUnitCircle * patrolRange;
-        patrolTarget = player.transform.position + randomDirection;
+        if (player != null)
+        {
+            patrolTarget = player.transform.position + randomDirection;
+        }
         patrolTarget.z = 0; // Ensure the wolf stays in the same plane
     }
 

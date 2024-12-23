@@ -19,6 +19,13 @@ public class PlayerController : MonoBehaviour
     public Vector2 lastDirection { get; private set; } = new Vector2(1, 0);
     private string targetTag = "Player";
     private bool isWolfForm;
+    [SerializeField] private float cooldownSpace = 0;
+    [SerializeField] private float cooldownE = 0;
+    [SerializeField] private float cooldownQ = 0;
+    [SerializeField] private float wolfCooldownSpace = 0;
+    [SerializeField] private float wolfCooldownE = 0;
+    [SerializeField] private float wolfCooldownQ = 0;
+    private float wolfCooldowns;
 
     private void Awake()
     {
@@ -41,6 +48,14 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (cooldownSpace > 0) cooldownSpace -= Time.deltaTime;
+        if (cooldownE > 0) cooldownE -= Time.deltaTime;
+        if (cooldownQ > 0) cooldownQ -= Time.deltaTime;
+
+        if (wolfCooldownSpace > 0) wolfCooldownSpace -= Time.deltaTime;
+        if (wolfCooldownE > 0) wolfCooldownE -= Time.deltaTime;
+        if (wolfCooldownQ > 0) wolfCooldownQ -= Time.deltaTime;
+
         HandleInput();
     }
 
@@ -87,37 +102,49 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = lastDirection * dashSpeed;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && wolfCooldownSpace <= 0)
         {  
             if (isWolfForm)
             {
                 animator.SetTrigger("Attack");
+                wolfCooldownSpace = wolfCooldowns / 4;
             }
-            else
+            else if (cooldownSpace <= 0)
             {
                 specialManager.UseSpecialAbility(0);
+                cooldownSpace = specialManager.activeAbilities[0].cooldown; 
             }
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && wolfCooldownE <= 0)
         {
             if (isWolfForm)
             {
                 animator.SetTrigger("AttackB");
+                wolfCooldownE = wolfCooldowns / 4;
             }
-            else
+            else if (cooldownE <= 0)
             {
-                specialManager.UseSpecialAbility(1);
+                if (specialManager.activeAbilities.Count > 1)
+                {
+                    specialManager.UseSpecialAbility(1);
+                    cooldownE = specialManager.activeAbilities[1].cooldown; 
+                }
             }
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && wolfCooldownQ <= 0)
         {
             if (isWolfForm)
             {
                 animator.SetTrigger("Ability");
+                wolfCooldownQ = wolfCooldowns / 2;
             }
-            else
+            else if (cooldownQ <= 0)
             {
-                specialManager.UseSpecialAbility(2);
+                if (specialManager.activeAbilities.Count > 2)
+                {
+                    specialManager.UseSpecialAbility(2);
+                    cooldownQ = specialManager.activeAbilities[2].cooldown; 
+                }
             }
         }
     }
@@ -250,6 +277,7 @@ public class PlayerController : MonoBehaviour
     // Store the original HP and modify it
     var playerManager = GetComponent<PlayerManager>();
     playerManager.BuffHealth(hpBoost);
+    wolfCooldowns = wolfDuration;
     
     // Change the sprite or activate a wolf visual
     spriteRenderer.enabled = false; // Hide original sprite
@@ -265,13 +293,17 @@ public class PlayerController : MonoBehaviour
     // Timer for wolf duration
     yield return new WaitForSeconds(wolfDuration);
 
-    playerManager.BuffHealth(-hpBoost);
-    animator = GetComponent<Animator>();
-    isWolfForm = false;
-
     Destroy(wolfInstance); // Remove wolf visuals
     spriteRenderer.enabled = true; // Show original sprite
-   
+    isWolfForm = false;
+
+    playerManager.BuffHealth(-hpBoost);
+    animator = GetComponent<Animator>();
+    
+
+    wolfCooldownSpace = 0;
+    wolfCooldownE = 0;
+    wolfCooldownQ = 0;
 }
 
 }

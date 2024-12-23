@@ -16,9 +16,15 @@ MonoBehaviour:
   icon: {fileID: -8500642260033419313, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   abilityDescription: teleport short distance and leave your shadow behind that explodes
     and deals damage.
+  cooldown: 10
+  percentageIncrease: 0.1
+  damage: 5
+  duration: 5
+  maxTier: 4
+  currentTier: 1
+  basePicked: 0
   teleportDistance: 4
   shadowExplosionDelay: 0.8
-  explosionDamage: 15
   explosionRadius: 3
   shadowPrefab: {fileID: 930252425609928099, guid: d51ed35e66c63994eb186090afe87010, type: 3}
   shadowExplosionEffect: {fileID: 8416442787123951291, guid: 82bd681766115df4f9315e0137d52d0c, type: 3}

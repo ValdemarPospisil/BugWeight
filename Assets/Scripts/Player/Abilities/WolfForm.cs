@@ -9,7 +9,6 @@ public class WolfForm : MonoBehaviour
     private float freezeRadius = 5;
     private float freezeDuration = 2;
     [SerializeField] private float summonOffset = 1f;
-    private int wolfDuration = 5;
 
     
     public void Initialize(float attackDamage, float freezeRadius, float freezeDuration)
@@ -66,7 +65,7 @@ public class WolfForm : MonoBehaviour
 
     private IEnumerator KillWolves(GameObject wolf1, GameObject wolf2)
     {
-        yield return new WaitForSeconds(wolfDuration);
+        yield return new WaitForSeconds(8f);
         Destroy(wolf1);
         Destroy(wolf2);
         Debug.Log("Wolves have been killed");

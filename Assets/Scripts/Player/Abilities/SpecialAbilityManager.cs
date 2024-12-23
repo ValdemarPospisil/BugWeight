@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class SpecialAbilityManager : MonoBehaviour
 {
     public List<SpecialAbility> allAbilities;
-    private List<SpecialAbility> activeAbilities = new List<SpecialAbility>();
+    public List<SpecialAbility> activeAbilities = new List<SpecialAbility>();
     public SpecialAbilityUI specialAbilityUI; // Reference to the UI manager
 
     public void ShowSpecialAbilityChoices()
