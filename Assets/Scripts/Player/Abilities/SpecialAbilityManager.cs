@@ -81,6 +81,12 @@ public class SpecialAbilityManager : MonoBehaviour
         {
             UpgradeSpecialAbility(ability);
         }
+
+        PlayerController player = FindFirstObjectByType<PlayerController>();
+        if (player != null)
+        {
+            player.SetAbilityIcon();
+        }
     }
 
     public void UpgradeSpecialAbility(SpecialAbility ability)

@@ -8,6 +8,7 @@ Zápočet:
     ✔ add tiers for special abilities @done (12/20/2024, 2:51:12 PM)
     ☐ fix UI cards
     ☐ change level UI
+    ☐ add UI for special abilities cooldowns
     ✔ scale enemies number with level @done (12/20/2024, 7:22:25 PM)
     ✔ scale enemies stats with level @done (12/20/2024, 7:22:36 PM)
     ✔ 1 more special ability @done (12/23/2024, 2:22:49 PM)
@@ -25,6 +26,7 @@ Itch.io:
     ☐ add more enemy types
     ☐ add more powerups
     ☐ add more special abilities
+    ☐ add UI for special abilities and powerups
     ☐ map borders (camera, enemies, player)
     ☐ (optional) add permanent upgrades (bat, blood, wolf, shadow buffs)
     ☐ add WebGL functionality
