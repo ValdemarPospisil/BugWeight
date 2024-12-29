@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f7c93e492ea4e9042b2fcdec1daa0e39, type: 3}
+  m_Sprite: {fileID: -257932037, guid: 7db334ff77950ab4e9b2ad8a7f755de0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7266618193421305375}
-  - component: {fileID: 6469201095544702416}
+  - component: {fileID: 7223861816820940543}
   - component: {fileID: 4933068417286329721}
   - component: {fileID: 5143275977380535572}
   - component: {fileID: 8464992945948749406}
@@ -112,7 +112,7 @@ Transform:
   - {fileID: 6986371753237042062}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6469201095544702416
+--- !u!114 &7223861816820940543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: db0f3cca597044b4a96cb2a1052e5a83, type: 3}
+  m_Sprite: {fileID: -8227546954408941770, guid: 7db334ff77950ab4e9b2ad8a7f755de0, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

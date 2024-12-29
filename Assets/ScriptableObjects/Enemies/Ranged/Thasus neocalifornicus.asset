@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72629d8da03f7f4eaf349477f2bcb53, type: 3}
+  m_Name: Thasus neocalifornicus
+  m_EditorClassIdentifier: 
+  typeName: Thasus neocalifornicus
+  prefab: {fileID: 7541286863123709192, guid: 3fc4feee168c2834b99516aee9060003, type: 3}
+  behaviorType: 1
+  baseAttackDamage: 10
+  baseMaxHP: 50
+  baseXpDrop: 10
+  moveSpeed: 4
+  attackSpeed: 4
+  projectileSpeed: 12
+  attackRange: 25
+  projectilePrefab: {fileID: 5017267562488890452, guid: a59e04818f6ba2c4aa550c5b85e6ccea, type: 3}

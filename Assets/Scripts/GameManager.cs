@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public SpecialAbilityManager specialAbilityManager;
     public PowerUpManager powerUpManager;
     public LevelManager levelManager;
+    public TargetingSystem targetingSystem;
 
     private void Awake()
     {

@@ -19,8 +19,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
     [SerializeField] private TextMeshProUGUI deathText;
     [SerializeField] private Image xpBar;
     [SerializeField] private TextMeshProUGUI levelText;
-    [SerializeField] private TextMeshProUGUI xpText;
-    [SerializeField] private TextMeshProUGUI toNextLevelText;
+  //  [SerializeField] private TextMeshProUGUI xpText;
+   // [SerializeField] private TextMeshProUGUI toNextLevelText;
 
     [SerializeField] private GameObject deathParticles;
     private LevelManager levelManager;
@@ -73,8 +73,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
         healthText.text = Mathf.Ceil(currentHP).ToString();
         xpBar.fillAmount = levelManager.currentXP / levelManager.toNextLevel;
         levelText.text = levelManager.level.ToString();
-        xpText.text = levelManager.currentXP.ToString();
-        toNextLevelText.text = levelManager.toNextLevel.ToString();
+    //    xpText.text = levelManager.currentXP.ToString();
+    //    toNextLevelText.text = levelManager.toNextLevel.ToString();
     }
     
     public float GetHealthPercentage()

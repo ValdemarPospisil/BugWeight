@@ -112,7 +112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6521319240495202822}
-  - component: {fileID: 8255569609526637401}
+  - component: {fileID: -1212373064030906438}
   - component: {fileID: 8964599466342430990}
   - component: {fileID: 8258180890121720970}
   - component: {fileID: 5229888388996768892}
@@ -140,7 +140,7 @@ Transform:
   - {fileID: 3510511221686436992}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8255569609526637401
+--- !u!114 &-1212373064030906438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: db0f3cca597044b4a96cb2a1052e5a83, type: 3}
+  m_Sprite: {fileID: -8227546954408941770, guid: 7db334ff77950ab4e9b2ad8a7f755de0, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -482,7 +482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f7c93e492ea4e9042b2fcdec1daa0e39, type: 3}
+  m_Sprite: {fileID: -1820124004, guid: 7db334ff77950ab4e9b2ad8a7f755de0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

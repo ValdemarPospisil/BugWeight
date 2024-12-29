@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private string targetTag = "Player";
     private bool isWolfForm;
     private float wolfCooldowns;
+    [Header("UI Elements")]
     [SerializeField] private TextMeshProUGUI cooldownSpaceText;
     [SerializeField] private TextMeshProUGUI cooldownEText;
     [SerializeField] private TextMeshProUGUI cooldownQText;
@@ -89,7 +90,6 @@ public class PlayerController : MonoBehaviour
         {
             if (cooldowns[key] > 0)
             {
-                Debug.Log(cooldowns[key]);
                 cooldowns[key] -= Time.deltaTime;
                 
                 cooldownTexts[key].text = Mathf.Ceil(cooldowns[key]).ToString();
@@ -148,14 +148,14 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = lastDirection * dashSpeed;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && (!cooldowns.ContainsKey("Space") || cooldowns["Space"] <= 0))
+        if (Input.GetKeyDown(KeyCode.E) && (!cooldowns.ContainsKey("Space") || cooldowns["Space"] <= 0))
         {  
             if (isWolfForm)
             {
                 animator.SetTrigger("Attack");
                 cooldowns["Space"] = wolfCooldowns / 10;
             }
-            else if (!cooldowns.ContainsKey("Space") || cooldowns["Space"] <= 0)
+            else if (!cooldowns.ContainsKey("E") || cooldowns["Space"] <= 0)
             {
                 if (specialManager.activeAbilities.Count > 0)
                 {
@@ -164,7 +164,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.E) && (!cooldowns.ContainsKey("E") || cooldowns["E"] <= 0))
+        if (Input.GetKeyDown(KeyCode.Q) && (!cooldowns.ContainsKey("E") || cooldowns["E"] <= 0))
         {
             if (isWolfForm)
             {
@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.Q) && (!cooldowns.ContainsKey("Q") || cooldowns["Q"] <= 0))
+        if (Input.GetKeyDown(KeyCode.R) && (!cooldowns.ContainsKey("Q") || cooldowns["Q"] <= 0))
         {
             if (isWolfForm)
             {

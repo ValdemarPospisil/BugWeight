@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class EnemyFactory : MonoBehaviour
 {
@@ -7,12 +7,33 @@ public class EnemyFactory : MonoBehaviour
 
     public EnemyType GetEnemyType(EnemyTypeData data)
     {
-        if (!enemyTypes.ContainsKey(name))
+        if (data == null)
         {
-            // Create a new type if it doesn't exist
-             EnemyType newType = new EnemyType(data);
+            Debug.LogError("EnemyTypeData is null!");
+            return null;
+        }
+
+        if (!enemyTypes.ContainsKey(data.typeName))
+        {
+            EnemyType newType = new EnemyType(data);
             enemyTypes[data.typeName] = newType;
         }
         return enemyTypes[data.typeName];
+    }
+
+    public GameObject CreateEnemy(EnemyType enemyType, Vector3 spawnPosition, string targetTag)
+    {
+        if (enemyType == null || enemyType.data == null)
+        {
+            Debug.LogError("EnemyType or EnemyTypeData is null during enemy creation!");
+            return null;
+        }
+
+        GameObject enemyObject = Instantiate(enemyType.data.prefab, spawnPosition, Quaternion.identity);
+        Enemy enemy = enemyObject.GetComponent<Enemy>();
+
+        enemy.Initialize(enemyType, spawnPosition);
+        enemy.SetTargetTag(targetTag); // Set the target tag for the enemy
+        return enemyObject;
     }
 }

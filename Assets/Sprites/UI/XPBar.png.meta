@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: f7c93e492ea4e9042b2fcdec1daa0e39
+guid: a876a13e85d0c6d479bbf8bd1b1dd787
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1333515913005022435
-    second: HealthBarEmpty_0
+      213: -1737884496820240548
+    second: XPBar_0
+  - first:
+      213: -9124246192761165882
+    second: XPBar_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,23 +116,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HealthBarEmpty_0
+      name: full
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 250
-        height: 25
+        y: 150
+        width: 1880
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d134107a7566e7de0800000000000000
-      internalID: -1333515913005022435
+      spriteID: a753cfa869157fe48b47e8eb5d40a352
+      internalID: -1737884496820240548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: levelHolder
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 30
+        width: 221
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0b15de119726e4180f481d7e69ff66
+      internalID: 1649122058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: empty
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 1880
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b54d599e2692743b8d58345578fc73
+      internalID: -1036371642
       vertices: []
       indices: 
       edges: []
@@ -138,7 +185,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 08d96204cde27e04f91b7269ac73f38e
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +195,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HealthBarEmpty_0: -1333515913005022435
+      empty: -1036371642
+      full: -1737884496820240548
+      levelHolder: 1649122058
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

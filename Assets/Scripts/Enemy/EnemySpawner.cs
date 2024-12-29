@@ -18,6 +18,7 @@ public class EnemySpawner : MonoBehaviour
     private void Awake() {
         levelManager = ServiceLocator.GetService<LevelManager>();
     }
+
     private void Start () {
         StartCoroutine(StartSpawningEnemies());
     }
@@ -35,17 +36,14 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnEnemies()
     {
         int enemyCount = Random.Range(minEnemies, maxEnemies);
-        enemyCount = enemyCount + Random.Range(0, levelManager.level * 2);
+        enemyCount += Random.Range(0, levelManager.level * 2);
 
         for (int i = 0; i < enemyCount; i++)
         {
             EnemyTypeData randomData = enemyTypeDataList[Random.Range(0, enemyTypeDataList.Count)];
             EnemyType enemyType = enemyFactory.GetEnemyType(randomData);
-
             Vector3 spawnPosition = GetRandomSpawnPosition();
-            GameObject enemyObject = Instantiate(enemyType.data.prefab, spawnPosition, Quaternion.identity);
-            Enemy enemy = enemyObject.GetComponent<Enemy>();
-            enemy.Initialize(enemyType, spawnPosition);
+            enemyFactory.CreateEnemy(enemyType, spawnPosition, "Player");
         }
     }
 

@@ -6,9 +6,9 @@ Zápočet:
     ✔ show fps and ram usage in game @done (12/20/2024, 10:43:59 AM)
     ✔ add the abbility to have more special abilities @done (12/20/2024, 5:39:16 PM)
     ✔ add tiers for special abilities @done (12/20/2024, 2:51:12 PM)
-    ☐ fix UI cards
-    ☐ change level UI
-    ☐ add UI for special abilities cooldowns
+    ✔ fix UI cards @done (12/25/2024, 1:18:21 PM)
+    ✔ change level UI @done (12/25/2024, 8:30:12 PM)
+    ✔ add UI for special abilities cooldowns @done (12/25/2024, 11:57:32 AM)
     ✔ scale enemies number with level @done (12/20/2024, 7:22:25 PM)
     ✔ scale enemies stats with level @done (12/20/2024, 7:22:36 PM)
     ✔ 1 more special ability @done (12/23/2024, 2:22:49 PM)
