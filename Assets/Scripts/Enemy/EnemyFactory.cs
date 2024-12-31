@@ -21,19 +21,4 @@ public class EnemyFactory : MonoBehaviour
         return enemyTypes[data.typeName];
     }
 
-    public GameObject CreateEnemy(EnemyType enemyType, Vector3 spawnPosition, string targetTag)
-    {
-        if (enemyType == null || enemyType.data == null)
-        {
-            Debug.LogError("EnemyType or EnemyTypeData is null during enemy creation!");
-            return null;
-        }
-
-        GameObject enemyObject = Instantiate(enemyType.data.prefab, spawnPosition, Quaternion.identity);
-        Enemy enemy = enemyObject.GetComponent<Enemy>();
-
-        enemy.Initialize(enemyType, spawnPosition);
-        enemy.SetTargetTag(targetTag); // Set the target tag for the enemy
-        return enemyObject;
-    }
 }

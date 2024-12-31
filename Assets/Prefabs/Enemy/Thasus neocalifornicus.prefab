@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9fdab976144d704887faad65f13a6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projPrefab: {fileID: 5017267562488890452, guid: 5c66382f41b07b045afb16a7d82cf3f6, type: 3}
   enemyHealthBar: {fileID: 5194174007319917431}
   deathParticles: {fileID: 7697985001639266104, guid: 2ec6e1ecb2023764fa64aaf67e29a49e, type: 3}
 --- !u!50 &6190102003311869556

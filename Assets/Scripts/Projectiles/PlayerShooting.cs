@@ -53,7 +53,7 @@ public class PlayerShooting : MonoBehaviour
 
             // Initialize the projectile with the properties from the power-up
             var tier = activePowerUp.tiers[activePowerUp.currentTier - 1];
-            projectileScript.Initialize(direction, tier.speed, tier.damage);
+            projectileScript.Initialize(direction, tier.speed, tier.damage, "Enemy");
         }
     }
 

@@ -7,12 +7,14 @@ public class Projectile : MonoBehaviour
     private float speed; // Speed of the projectile
     private float damage; // Damage dealt by this projectile
     private float lifetime = 5f; // Lifetime counter
+    private string targetTag; // Tag of the target object
 
-    public void Initialize(Vector2 direction, float speed, float damage)
+    public void Initialize(Vector2 direction, float speed, float damage, string targetTag)
     {
         this.direction = direction;
         this.speed = speed;
         this.damage = damage;
+        this.targetTag = targetTag;
 
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)
@@ -30,10 +32,16 @@ public class Projectile : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Move the projectile in the set direction
-        if (rb != null)
+        
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, speed * Time.fixedDeltaTime);
+        if (hit.collider != null && hit.collider.CompareTag(targetTag))
         {
-            rb.linearVelocity = direction * speed;
+            IDamageable damageable = hit.collider.GetComponent<IDamageable>();
+            if (damageable != null)
+            {
+                damageable.TakeDamage(damage);
+                Destroy(gameObject);
+            }
         }
 
         // Reduce lifetime and destroy projectile if expired
@@ -43,10 +51,10 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+/*
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag(targetTag))
         {
             IDamageable damageable = other.GetComponent<IDamageable>();
             if (damageable != null)
@@ -56,4 +64,5 @@ public class Projectile : MonoBehaviour
             }
         }
     }
+    */
 }

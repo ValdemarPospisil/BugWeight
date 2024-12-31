@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 {
-    private EnemyType enemyType;
+    private EnemyTypeData enemyData;
     private Transform targetTransform;
     private Rigidbody2D rb;
     private float attackCooldown;
@@ -19,58 +19,82 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
     private LevelManager levelManager;
     private bool isDead = false;
     public static event System.Action<Vector3> OnEnemyKilled;
+    private CapsuleCollider2D capsuleCollider;
 
     // Merged from EnemyCollisionHandler.cs
+  //  [SerializeField] private GameObject projPrefab;
     [SerializeField] private Image enemyHealthBar;
     private Canvas enemyCanvas;
     [SerializeField] private GameObject deathParticles;
 
     private MeleeEnemyData meleeData;
     private RangedEnemyData rangedData;
+    private ProjectileFactory projectileFactory;
+    private EnemySpawner enemySpawner;
 
-    private void Start()
+    private void OnEnable()
     {
         attackCooldown = 0f;
-        
+        projectileFactory = ServiceLocator.GetService<ProjectileFactory>();
+        levelManager = ServiceLocator.GetService<LevelManager>();
         gameObject.layer = LayerMask.NameToLayer("Enemy");
-        enemyCanvas = GetComponentInChildren<Canvas>();
+        
         enemyCanMove = true;
         rb = GetComponent<Rigidbody2D>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        capsuleCollider.enabled = true;
 
-        UpdateHealthUI();
-        enemyCanvas.enabled = false;
+        enemyCanMove = true;
+        isKnockedBack = false;
+
+        enemyCanvas = GetComponentInChildren<Canvas>();
+
+        isDead = false;
+        gameObject.SetActive(true);
+        ResetEnemy();
         FindTarget();
+        UpdateHealthUI();
+
     }
 
     private void InitializeEnemyData()
     {
-        if(enemyType == null) Debug.LogError("Enemy Type is null");
+        if(enemyData == null) Debug.Log("Enemy Type is null");
 
-        if (enemyType.data is MeleeEnemyData)
+        if (enemyData is MeleeEnemyData)
         {
-            meleeData = (MeleeEnemyData)enemyType.data;
+            meleeData = (MeleeEnemyData)enemyData;
         }
-        else if (enemyType.data is RangedEnemyData)
+        else if (enemyData is RangedEnemyData)
         {
-            rangedData = (RangedEnemyData)enemyType.data;
+            rangedData = (RangedEnemyData)enemyData;
         }
     }
 
-    public void Initialize(EnemyType type, Vector3 spawnPosition)
+    public void Initialize(EnemyTypeData data, Vector3 spawnPosition, EnemySpawner spawner)
     {
-        levelManager = ServiceLocator.GetService<LevelManager>();
-        enemyType = type;
-        transform.position = spawnPosition;
+        enemyData = data;
+        enemySpawner = spawner;
 
-        attackDamage = type.data.GetScaledAttackDamage(levelManager.level);
-        enemyMaxHP = type.data.GetScaledMaxHP(levelManager.level);
-        xpDrop = type.data.GetScaledXpDrop(levelManager.level);
+        transform.position = spawnPosition;
+        ResetEnemy();
+        InitializeEnemyData();
+    }
+
+    private void ResetEnemy()
+    {
+        // Reset enemy stats and state
+        if (enemyData == null) return;
+
+        attackDamage = enemyData.GetScaledAttackDamage(levelManager.level);
+        xpDrop = enemyData.GetScaledXpDrop(levelManager.level);
+        enemyMaxHP = enemyData.GetScaledMaxHP(levelManager.level);
         enemyCurrentHP = enemyMaxHP;
 
-
-        InitializeEnemyData();
-        
+        gameObject.SetActive(true);
     }
+
+
 
     private void Update()
     {
@@ -93,26 +117,26 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         rb.rotation = angle - 90f;
-
-
-        if (enemyType.data.behaviorType == EnemyBehaviorType.Melee)
+        if (enemyData.behaviorType == EnemyBehaviorType.Melee)
         {
-            rb.linearVelocity = direction * enemyType.data.moveSpeed;
+            rb.linearVelocity = direction * enemyData.moveSpeed;
         }
-        else if (enemyType.data.behaviorType == EnemyBehaviorType.Ranged)
+        else if (enemyData.behaviorType == EnemyBehaviorType.Ranged)
         {
+            if (rangedData == null) Debug.Log("Ranged Data is null");
             if (Vector2.Distance(transform.position, targetTransform.position) <= rangedData.attackRange)
             {
+                
                 rb.linearVelocity = Vector2.zero;
                 if (attackCooldown <= 0)
                 {
                     Attack();
-                    attackCooldown = 1f / enemyType.data.attackSpeed;
+                    attackCooldown = 1f / enemyData.attackSpeed;
                 }
             }
             else
             {
-                rb.linearVelocity = direction * enemyType.data.moveSpeed;
+                rb.linearVelocity = direction * enemyData.moveSpeed;
             }
         }
     }
@@ -133,8 +157,6 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         }
         isKnockedBack = false;
     }
-
-   
 
     public void SetTargetTag(string newTargetTag)
     {
@@ -191,11 +213,12 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         Instantiate(deathParticles, transform.position, Quaternion.identity);
         levelManager.AddXP(xpDrop);
 
-        Destroy(gameObject);
+        enemySpawner.ReturnEnemy(this, enemyData);
     }
 
     private void UpdateHealthUI()
     {
+        if (enemyCanvas == null) Debug.Log("Enemy Canvas is null");
         enemyCanvas.enabled = true;
         if (enemyHealthBar != null)
         {
@@ -205,7 +228,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && this != null && enemyType.data.behaviorType == EnemyBehaviorType.Melee)
+        if (collision.gameObject.CompareTag("Player") && this != null && enemyData.behaviorType == EnemyBehaviorType.Melee)
         {
             if (attackCooldown <= 0)
             {
@@ -213,7 +236,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
                 if (damageable != null)
                 {
                     damageable.TakeDamage(attackDamage);
-                    attackCooldown = 1f / enemyType.data.attackSpeed;
+                    attackCooldown = 1f / enemyData.attackSpeed;
                 }
             }
         }
@@ -226,40 +249,26 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 
     private void Attack()
     {
-        if (meleeData != null)
+        if (Vector2.Distance(transform.position, targetTransform.position) <= rangedData.attackRange)
         {
-            if (Vector2.Distance(transform.position, targetTransform.position) <= meleeData.meleeAttackRange)
-            {
-                // Perform melee attack logic
-                IDamageable target = targetTransform.GetComponent<IDamageable>();
-                target?.TakeDamage(meleeData.GetScaledAttackDamage(levelManager.level));
+            // Perform ranged attack logic
+            ProjectileType projectileType = projectileFactory.GetProjectileType(rangedData.projectileTypeData);
+            Vector2 direction = (targetTransform.position - transform.position).normalized;
 
-                // Apply knockback (if needed)
-                if (target is IKnockable knockable)
-                {
-                    Vector2 direction = (targetTransform.position - transform.position).normalized;
-                    knockable.Knockback(direction, meleeData.knockbackStrength, 0.5f);
-                }
-            }
-        }
-        else if (rangedData != null)
-        {
-            if (Vector2.Distance(transform.position, targetTransform.position) <= rangedData.attackRange)
-            {
-                // Perform ranged attack logic
-                GameObject projectile = Instantiate(rangedData.projectilePrefab, transform.position, Quaternion.identity);
-                Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-                Vector2 direction = (targetTransform.position - transform.position).normalized;
+            GameObject projectileGO = new GameObject("Projectile");
+            projectileGO.transform.position = transform.position;
+            projectileGO.transform.rotation = Quaternion.identity;
+            projectileGO.transform.localScale = Vector3.one;
+            SpriteRenderer spriteRenderer = projectileGO.AddComponent<SpriteRenderer>();
+            spriteRenderer.sprite = projectileType.data.sprite;
+            spriteRenderer.sortingLayerName = "Enemy";
+            Rigidbody2D enemyRb = projectileGO.AddComponent<Rigidbody2D>();
+            enemyRb.gravityScale = 0;
+            Projectile proj = projectileGO.AddComponent<Projectile>();
 
-                rb.linearVelocity = direction * rangedData.projectileSpeed;
+            proj.Initialize(direction, projectileType.data.speed, projectileType.data.damage, "Player");
 
-                // Assign damage to projectile
-                Projectile proj = projectile.GetComponent<Projectile>();
-                if (proj != null)
-                {
-                    proj.Initialize(direction, rangedData.projectileSpeed, rangedData.GetScaledAttackDamage(levelManager.level));
-                }
-            }
+            enemyRb.linearVelocity = direction * rangedData.projectileSpeed;
         }
     }
 }

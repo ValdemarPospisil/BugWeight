@@ -1,26 +1,40 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public EnemyFactory enemyFactory;
-    public List<EnemyTypeData> enemyTypeDataList; // List of ScriptableObject data assets
-
+    [SerializeField] private List<EnemyTypeData> enemyTypeDataList;
     [SerializeField] private float spawnRadiusMin = 10f;
     [SerializeField] private float spawnRadiusMax = 20f;
     [SerializeField] private int minDuration = 5;
     [SerializeField] private int maxDuration = 10;
     [SerializeField] private int minEnemies = 1;
     [SerializeField] private int maxEnemies = 5;
-    private LevelManager levelManager;
+    [SerializeField] private int enemyLimit = 40;
 
-    private void Awake() {
-        levelManager = ServiceLocator.GetService<LevelManager>();
+    private Dictionary<EnemyTypeData, List<Enemy>> enemyPools = new Dictionary<EnemyTypeData, List<Enemy>>();
+
+    private void Start()
+    {
+        InitializeEnemyPools();
+        StartCoroutine(StartSpawningEnemies());
     }
 
-    private void Start () {
-        StartCoroutine(StartSpawningEnemies());
+    private void InitializeEnemyPools()
+    {
+        foreach (var data in enemyTypeDataList)
+        {
+            enemyPools[data] = new List<Enemy>();
+
+            for (int i = 0; i < enemyLimit; i++)
+            {
+                var enemy = Instantiate(data.prefab).GetComponent<Enemy>();
+                enemy.Initialize(data, Vector3.zero, this);
+                enemy.gameObject.SetActive(false);
+                enemyPools[data].Add(enemy);
+            }
+        }
     }
 
     private IEnumerator StartSpawningEnemies()
@@ -35,15 +49,25 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemies()
     {
-        int enemyCount = Random.Range(minEnemies, maxEnemies);
-        enemyCount += Random.Range(0, levelManager.level * 2);
-
-        for (int i = 0; i < enemyCount; i++)
+       
+        foreach (var pool in enemyPools)
         {
-            EnemyTypeData randomData = enemyTypeDataList[Random.Range(0, enemyTypeDataList.Count)];
-            EnemyType enemyType = enemyFactory.GetEnemyType(randomData);
-            Vector3 spawnPosition = GetRandomSpawnPosition();
-            enemyFactory.CreateEnemy(enemyType, spawnPosition, "Player");
+            var enemyData = pool.Key;
+            var enemies = pool.Value;
+
+            int spawnCount = Random.Range(minEnemies, maxEnemies);
+
+            for (int i = 0; i < spawnCount; i++)
+            {
+                var enemyToSpawn = GetInactiveEnemy(enemies);
+                if (enemyToSpawn != null)
+                {
+                    Vector3 spawnPoint = GetRandomSpawnPosition();
+                    enemyToSpawn.Initialize(enemyData, spawnPoint, this);
+                    enemyToSpawn.gameObject.SetActive(true);
+                }
+            }
+            
         }
     }
 
@@ -52,5 +76,25 @@ public class EnemySpawner : MonoBehaviour
         float angle = Random.Range(0, Mathf.PI * 2);
         float distance = Random.Range(spawnRadiusMin, spawnRadiusMax);
         return transform.position + new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0) * distance;
+    }
+
+    private Enemy GetInactiveEnemy(List<Enemy> pool)
+    {
+        foreach (var enemy in pool)
+        {
+            if (!enemy.gameObject.activeSelf)
+                return enemy;
+        }
+        return null;
+    }
+
+    public void ReturnEnemy(Enemy enemy, EnemyTypeData enemyTypeData)
+    {
+        
+        if (enemyPools.ContainsKey(enemyTypeData))
+        {
+            enemyPools[enemyTypeData].Add(enemy);
+            enemy.gameObject.SetActive(false);
+        }
     }
 }

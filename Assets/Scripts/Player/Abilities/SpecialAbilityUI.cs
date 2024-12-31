@@ -7,16 +7,6 @@ public class SpecialAbilityUI : MonoBehaviour
     [SerializeField] private Transform cardContainer; // Parent object for UI cards
     [SerializeField] private GameObject cardPrefab; // Prefab for individual cards
 
-    private SpecialAbilityManager specialManager;
-
-    private void Start()
-    {
-        specialManager = ServiceLocator.GetService<SpecialAbilityManager>();
-        if (specialManager == null)
-        {
-            Debug.LogError("SpecialAbilityManager not found in ServiceLocator.");
-        }
-    }
 
     public void DisplayChoices(List<SpecialAbility> abilities)
     {
@@ -26,7 +16,7 @@ public class SpecialAbilityUI : MonoBehaviour
         {
             GameObject card = Instantiate(cardPrefab, cardContainer);
             SpecialAbilityCard cardScript = card.GetComponent<SpecialAbilityCard>();
-            cardScript.SetUp(ability, specialManager);
+            cardScript.SetUp(ability);
             Button button = card.GetComponent<Button>();
             button.Select();
         }

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbbf6a5adfcb07e4281bb494d705ed62, type: 3}
+  m_Name: SimpleRangedEnemyData
+  m_EditorClassIdentifier: 
+  projectileSpeed: 8
+  attackRange: 25
+  projectilePrefab: {fileID: 5017267562488890452, guid: 5c66382f41b07b045afb16a7d82cf3f6, type: 3}
+  baseAttackDamage: 10
+  baseMaxHP: 50
+  baseXpDrop: 10
+  moveSpeed: 4
+  attackSpeed: 0.5
+  enemyPrefab: {fileID: 93380666659025394, guid: 8309016a270e33146a11d803e76c0877, type: 3}

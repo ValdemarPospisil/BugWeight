@@ -18,7 +18,7 @@ MonoBehaviour:
   baseAttackDamage: 10
   baseMaxHP: 50
   baseXpDrop: 10
-  moveSpeed: 0
+  moveSpeed: 3
   attackSpeed: 5
   meleeAttackRange: 2
   knockbackStrength: 3

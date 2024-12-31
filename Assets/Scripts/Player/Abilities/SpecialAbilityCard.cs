@@ -13,10 +13,10 @@ public class SpecialAbilityCard : MonoBehaviour
     private SpecialAbility specialAbility;
     private SpecialAbilityManager specialAbilityManager;
 
-    public void SetUp(SpecialAbility abilityData, SpecialAbilityManager manager)
+    public void SetUp(SpecialAbility abilityData)
     {
         specialAbility = abilityData;
-        specialAbilityManager = manager;
+        specialAbilityManager = ServiceLocator.GetService<SpecialAbilityManager>();
 
         if(specialAbility.basePicked)
         {
@@ -35,7 +35,6 @@ public class SpecialAbilityCard : MonoBehaviour
     {
         if (showTier < specialAbility.maxTier)
         {  
-            Debug.Log("Special Ability Tier: " + showTier);
             icon.sprite = specialAbility.icon;
             nameText.text = $"{specialAbility.name} {GetRomanNumeral(showTier)}";
             descriptionText.text = specialAbility.abilityDescription;
@@ -58,7 +57,6 @@ public class SpecialAbilityCard : MonoBehaviour
 
     private void OnSelected()
     {
-        Debug.Log("Selected: " + specialAbility.abilityName);
         specialAbility.basePicked = true;
         specialAbilityManager.ActivateSpecialAbility(specialAbility);
         specialAbilityManager.specialAbilityUI.HideChoices();
