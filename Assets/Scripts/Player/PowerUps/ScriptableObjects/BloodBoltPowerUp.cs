@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "PowerUps/Blood Bolt")]
 public class BloodBoltPowerUp : PowerUp
 {
-    public GameObject projectilePrefab; // The projectile to spawn
+    public string projectileName; // The projectile to spawn
 
     public override void Activate(GameObject player)
     {

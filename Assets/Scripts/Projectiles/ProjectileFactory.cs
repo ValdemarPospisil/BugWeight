@@ -1,27 +1,79 @@
 using System.Collections.Generic;
 using UnityEngine;
-public class ProjectileType
-{
-    public ProjectileTypeData data;
-
-    public ProjectileType(ProjectileTypeData data)
-    {
-        this.data = data;
-    }
-}
 
 public class ProjectileFactory : MonoBehaviour
 {
-    private Dictionary<string, ProjectileType> projectileTypes = new Dictionary<string, ProjectileType>();
+    [SerializeField] private List<ProjectileTypeData> projectileTypes;
+    [SerializeField] private int initialPoolSize = 10;
 
-    public ProjectileType GetProjectileType(ProjectileTypeData data)
+    private Dictionary<string, Queue<Projectile>> projectilePools = new Dictionary<string, Queue<Projectile>>();
+
+    private void Start()
     {
-        if (!projectileTypes.ContainsKey(data.typeName))
+        InitializePools();
+    }
+
+    private void InitializePools()
+    {
+        foreach (var type in projectileTypes)
         {
-            // Create a new projectile type if it doesn't already exist
-            ProjectileType newType = new ProjectileType(data);
-            projectileTypes[data.typeName] = newType;
+            var pool = new Queue<Projectile>();
+            var container = new GameObject(type.typeName + " Container");
+
+            for (int i = 0; i < initialPoolSize; i++) // Initial pool size
+            {
+                var projectile = Instantiate(type.prefab).GetComponent<Projectile>();
+                projectile.gameObject.SetActive(false);
+                projectile.Initialize(type);
+                pool.Enqueue(projectile);
+                projectile.transform.SetParent(container.transform);
+            }
+
+            projectilePools[type.typeName] = pool;
         }
-        return projectileTypes[data.typeName];
+    }
+
+    public Projectile SpawnProjectile(string typeName, Vector3 position, Vector2 direction)
+    {
+        if (!projectilePools.ContainsKey(typeName))
+        {
+            Debug.LogError("Projectile type not found: " + typeName);
+            return null;
+        }
+
+        var pool = projectilePools[typeName];
+        Projectile projectile;
+
+        if (pool.Count > 0)
+        {
+            projectile = pool.Dequeue();
+        }
+        else
+        {
+            var type = projectileTypes.Find(t => t.name == typeName);
+            if (type == null)
+            {
+                Debug.LogError("Projectile type not found: " + typeName);
+                return null;
+            }
+
+            projectile = Instantiate(type.prefab).GetComponent<Projectile>();
+            projectile.Initialize(type);
+        }
+
+        projectile.transform.position = position;
+        projectile.gameObject.SetActive(true);
+        projectile.Launch(direction, () => ReturnProjectile(typeName, projectile));
+        return projectile;
+    }
+
+    public void ReturnProjectile(string typeName, Projectile projectile)
+    {
+        projectile.gameObject.SetActive(false);
+
+        if (projectilePools.ContainsKey(typeName))
+        {
+            projectilePools[typeName].Enqueue(projectile);
+        }
     }
 }

@@ -7,10 +7,13 @@ public class PlayerShooting : MonoBehaviour
     private BloodBoltPowerUp activePowerUp;
     private float shootTimer;
     private PlayerController playerController;
+    private ProjectileFactory projectileFactory;
 
-    private void Awake()
+
+    private void Start()
     {
         playerController = GetComponent<PlayerController>();
+        projectileFactory = ServiceLocator.GetService<ProjectileFactory>();
     }
 
     private void Update()
@@ -47,13 +50,13 @@ public class PlayerShooting : MonoBehaviour
         // Spawn a projectile in each direction
         foreach (Vector2 direction in directions)
         {
-            // Instantiate a new GameObject for each projectile
-            GameObject projectile = Instantiate(activePowerUp.projectilePrefab, firePoint.position, Quaternion.identity);
-            Projectile projectileScript = projectile.GetComponent<Projectile>();
+            if (activePowerUp.projectileName == null)
+            {
+                Debug.Log("Projectile name is null");
+                return;
+            }
 
-            // Initialize the projectile with the properties from the power-up
-            var tier = activePowerUp.tiers[activePowerUp.currentTier - 1];
-            projectileScript.Initialize(direction, tier.speed, tier.damage, "Enemy");
+            projectileFactory.SpawnProjectile(activePowerUp.projectileName, firePoint.position, direction);
         }
     }
 

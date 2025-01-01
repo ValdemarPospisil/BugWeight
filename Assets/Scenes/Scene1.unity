@@ -7461,6 +7461,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37a61dbee15f4a488be80f8a88089e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileTypes:
+  - {fileID: 11400000, guid: 79043b3dfaf53f3438f75dad550a3735, type: 2}
+  - {fileID: 11400000, guid: 84a6ef0be3e0cf045b4fb1f53de2686e, type: 2}
+  - {fileID: 11400000, guid: e5ae859a6678ce74dab9a635bd536fba, type: 2}
+  - {fileID: 11400000, guid: e5fa50c00aca9994e9074720656c486c, type: 2}
+  initialPoolSize: 30
 --- !u!114 &4710724692977152240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8953,7 +8959,7 @@ MonoBehaviour:
   maxDuration: 15
   minEnemies: 1
   maxEnemies: 5
-  enemyLimit: 40
+  enemyLimit: 20
 --- !u!199 &8657337267583007683
 ParticleSystemRenderer:
   serializedVersion: 6

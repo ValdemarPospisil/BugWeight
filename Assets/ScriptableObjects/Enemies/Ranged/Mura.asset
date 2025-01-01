@@ -22,4 +22,4 @@ MonoBehaviour:
   attackSpeed: 0.25
   projectileSpeed: 6
   attackRange: 10
-  projectileTypeData: {fileID: 11400000, guid: 84a6ef0be3e0cf045b4fb1f53de2686e, type: 2}
+  projectilename: Cyan

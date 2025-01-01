@@ -65,7 +65,6 @@ public class PowerUpCard : MonoBehaviour
 
     private void OnSelected()
     {
-        Debug.Log("Selected: " + powerUp.baseName);
         powerUpManager.ActivatePowerUp(powerUp);
         powerUp.basePicked = true;
         

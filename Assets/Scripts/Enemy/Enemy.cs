@@ -249,26 +249,17 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 
     private void Attack()
     {
-        if (Vector2.Distance(transform.position, targetTransform.position) <= rangedData.attackRange)
-        {
-            // Perform ranged attack logic
-            ProjectileType projectileType = projectileFactory.GetProjectileType(rangedData.projectileTypeData);
-            Vector2 direction = (targetTransform.position - transform.position).normalized;
+        // Define the direction for the projectile
+        Vector2 direction = (targetTransform.position - transform.position).normalized;
 
-            GameObject projectileGO = new GameObject("Projectile");
-            projectileGO.transform.position = transform.position;
-            projectileGO.transform.rotation = Quaternion.identity;
-            projectileGO.transform.localScale = Vector3.one;
-            SpriteRenderer spriteRenderer = projectileGO.AddComponent<SpriteRenderer>();
-            spriteRenderer.sprite = projectileType.data.sprite;
-            spriteRenderer.sortingLayerName = "Enemy";
-            Rigidbody2D enemyRb = projectileGO.AddComponent<Rigidbody2D>();
-            enemyRb.gravityScale = 0;
-            Projectile proj = projectileGO.AddComponent<Projectile>();
+        // Spawn the projectile using the factory
+        projectileFactory.SpawnProjectile(
+            rangedData.projectilename,  // Name of the projectile type
+            transform.position,                 // Spawn position
+            direction                           // Direction of movement
+        );
 
-            proj.Initialize(direction, projectileType.data.speed, projectileType.data.damage, "Player");
-
-            enemyRb.linearVelocity = direction * rangedData.projectileSpeed;
-        }
+        
     }
+
 }

@@ -1,7 +1,7 @@
 Zápočet:
     ✔ special abitlity cooldowns @done (12/23/2024, 7:09:00 PM)
-    ☐ Find any design patterns
-    ☐ Learn the desgin patterns
+    ✔ Find any design patterns @done (1/1/2025, 2:00:57 PM)
+    ✔ Learn the desgin patterns @done (1/1/2025, 2:00:57 PM)
     ☐ (optional) Make a scene without flyweight
     ✔ show fps and ram usage in game @done (12/20/2024, 10:43:59 AM)
     ✔ add the abbility to have more special abilities @done (12/20/2024, 5:39:16 PM)
@@ -12,8 +12,8 @@ Zápočet:
     ✔ scale enemies number with level @done (12/20/2024, 7:22:25 PM)
     ✔ scale enemies stats with level @done (12/20/2024, 7:22:36 PM)
     ✔ 1 more special ability @done (12/23/2024, 2:22:49 PM)
-    ☐ 1 more enemy type (shooting projectiles)
-    ☐ use flyweight pattern for the enemy shooting projectiles
+    ✔ 1 more enemy type (shooting projectiles) @done (1/1/2025, 2:00:42 PM)
+    ✔ use flyweight pattern for the enemy shooting projectiles @done (1/1/2025, 2:00:44 PM)
     ☐ 1 more powerup
     ☐ balance the game
     ☐ (optional) better background

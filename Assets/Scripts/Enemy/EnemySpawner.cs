@@ -27,11 +27,14 @@ public class EnemySpawner : MonoBehaviour
         {
             enemyPools[data] = new List<Enemy>();
 
+            var container = new GameObject(data.typeName + " Container");
+
             for (int i = 0; i < enemyLimit; i++)
             {
                 var enemy = Instantiate(data.prefab).GetComponent<Enemy>();
                 enemy.Initialize(data, Vector3.zero, this);
                 enemy.gameObject.SetActive(false);
+                enemy.transform.SetParent(container.transform);
                 enemyPools[data].Add(enemy);
             }
         }
