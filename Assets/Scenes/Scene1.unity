@@ -460,7 +460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!156049354 &1210251373
 Grid:
   m_ObjectHideFlags: 0
@@ -508,7 +508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1410996206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,37 +592,6 @@ MonoBehaviour:
   cropSoilMinHeight: 30
   cropSoilMaxHeight: 80
   cropSoilAttempts: 15
---- !u!1 &1461055321
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1461055322}
-  m_Layer: 0
-  m_Name: Enemies
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1461055322
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461055321}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 77.22625, y: 75.77346, z: 7.8749337}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1875020042
 GameObject:
   m_ObjectHideFlags: 0
@@ -8954,11 +8923,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ce6f4e3fb3448ea4ca7a855764b3f6ad, type: 2}
   - {fileID: 11400000, guid: d79a60c64fb74af4dae471fa03cfcb6f, type: 2}
   spawnRadiusMin: 10
-  spawnRadiusMax: 30
-  minDuration: 5
-  maxDuration: 15
-  minEnemies: 1
-  maxEnemies: 5
+  spawnRadiusMax: 20
+  minDuration: 8
+  maxDuration: 8
+  minEnemies: 3
+  maxEnemies: 3
   enemyLimit: 20
 --- !u!199 &8657337267583007683
 ParticleSystemRenderer:
@@ -9291,4 +9260,3 @@ SceneRoots:
   - {fileID: 974927855}
   - {fileID: 1410996207}
   - {fileID: 1210251374}
-  - {fileID: 1461055322}

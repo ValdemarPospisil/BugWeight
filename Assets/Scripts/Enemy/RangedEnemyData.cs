@@ -5,7 +5,7 @@ public class RangedEnemyData : EnemyTypeData
 {
     public float projectileSpeed;
     public float attackRange;
-    public ProjectileTypeData projectileTypeData;
+    public string projectilename;
 
     // Example override if ranged needs unique scaling
     public override float GetScaledAttackDamage(int level)

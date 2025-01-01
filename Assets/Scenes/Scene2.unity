@@ -1730,6 +1730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37a61dbee15f4a488be80f8a88089e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileTypes:
+  - {fileID: 11400000, guid: e5fa50c00aca9994e9074720656c486c, type: 2}
+  initialPoolSize: 10
 --- !u!222 &3209428062473520598
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8212,16 +8215,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9776e3c90335fe34b9c091e6fa87ae29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyTypeDataList:
-  - {fileID: 11400000, guid: 05721f4eaf7287e4eb31125cff91a635, type: 2}
-  - {fileID: 11400000, guid: 6ad3881c1067f8d46a5f347d13792996, type: 2}
-  - {fileID: 11400000, guid: e97c5391d798fff48ab40664a2539010, type: 2}
+  enemies:
+  - {fileID: 93380666659025394, guid: ce9c983e195346d4281eb88fd00eb2c5, type: 3}
+  - {fileID: 93380666659025394, guid: abfb8ca7dfe56be469b02729323dfacd, type: 3}
+  - {fileID: 93380666659025394, guid: 32663430e37ff8442aadd19127f5947f, type: 3}
+  - {fileID: 93380666659025394, guid: e49b5631e8114354d85fdc273d4b3381, type: 3}
+  - {fileID: 93380666659025394, guid: 6827af443fa022f4ab9f9fe5504c2b5b, type: 3}
+  - {fileID: 93380666659025394, guid: 3080e448f1f3f7045a970affa3e11d0e, type: 3}
   spawnRadiusMin: 10
   spawnRadiusMax: 30
-  minDuration: 5
-  maxDuration: 0
-  minEnemies: 10
-  maxEnemies: 15
+  minDuration: 8
+  maxDuration: 8
+  minEnemies: 18
+  maxEnemies: 18
 --- !u!114 &7802859909182596649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8561,7 +8567,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4615867833829873218}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba7ad5a49786e704ebc5fa66c3d6de8e, type: 3}
   m_Name: 

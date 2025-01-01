@@ -1,22 +1,31 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SimpleEnemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 {
-    private SimpleRangedEnemyData rangedData;
+    [SerializeField] private float projectileSpeed;
+    [SerializeField] private float projectileDamage;
+    [SerializeField] private float attackRange;
+    [SerializeField] private GameObject projectilePrefab;
+    [SerializeField] private float attackDamage;
+    [SerializeField] private float enemyMaxHP;
+    [SerializeField] private float xpDrop;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float attackSpeed;
+    [SerializeField] private EnemyBehaviorType enemyClass;
+    [SerializeField] private Image enemyHealthBar;
     private Transform targetTransform;
     private Rigidbody2D rb;
     private float attackCooldown;
     private float enemyCurrentHP;
-    private float enemyMaxHP;
-    private float attackDamage;
-    private float xpDrop;
     private string targetTag = "Player";
     private bool enemyCanMove = true;
     private bool isKnockedBack = false;
     private LevelManager levelManager;
     private bool isDead = false;
     public static event System.Action<Vector3> OnEnemyKilled;
+    private Canvas enemyCanvas;
 
     [SerializeField] private GameObject deathParticles;
 
@@ -26,20 +35,18 @@ public class SimpleEnemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         gameObject.layer = LayerMask.NameToLayer("Enemy");
         enemyCanMove = true;
         rb = GetComponent<Rigidbody2D>();
+        levelManager = ServiceLocator.GetService<LevelManager>();
+        enemyCurrentHP = enemyMaxHP;
+        enemyCanvas = GetComponentInChildren<Canvas>();
 
         FindTarget();
     }
 
-    public void Initialize(SimpleRangedEnemyData data, Vector3 spawnPosition)
+    public void Initialize(Vector3 spawnPosition)
     {
-        levelManager = ServiceLocator.GetService<LevelManager>();
-        rangedData = data;
+        
         transform.position = spawnPosition;
-
-        attackDamage = data.GetScaledAttackDamage(levelManager.level);
-        enemyMaxHP = data.GetScaledMaxHP(levelManager.level);
-        xpDrop = data.GetScaledXpDrop(levelManager.level);
-        enemyCurrentHP = enemyMaxHP;
+        
     }
 
     private void Update()
@@ -63,37 +70,42 @@ public class SimpleEnemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         rb.rotation = angle - 90f;
-
-        if (Vector2.Distance(transform.position, targetTransform.position) <= rangedData.attackRange)
+        if (enemyClass == EnemyBehaviorType.Melee)
         {
-            rb.linearVelocity = Vector2.zero;
-            if (attackCooldown <= 0)
-            {
-                Attack();
-                attackCooldown = 1f / rangedData.attackSpeed;
-            }
+            rb.linearVelocity = direction * moveSpeed;
         }
-        else
+        else if (enemyClass == EnemyBehaviorType.Ranged)
         {
-            rb.linearVelocity = direction * rangedData.moveSpeed;
+            if (Vector2.Distance(transform.position, targetTransform.position) <= attackRange)
+            {
+                
+                rb.linearVelocity = Vector2.zero;
+                if (attackCooldown <= 0)
+                {
+                    Attack();
+                    attackCooldown = 1f / attackSpeed;
+                }
+            }
+            else
+            {
+                rb.linearVelocity = direction * moveSpeed;
+            }
         }
     }
 
     private void Attack()
     {
-        if (Vector2.Distance(transform.position, targetTransform.position) <= rangedData.attackRange)
+        if (Vector2.Distance(transform.position, targetTransform.position) <= attackRange)
         {
-            GameObject projectile = Instantiate(rangedData.projectilePrefab, transform.position, Quaternion.identity);
-            Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-            Vector2 direction = (targetTransform.position - transform.position).normalized;
+           Vector2 direction = (targetTransform.position - transform.position).normalized;
 
-            rb.linearVelocity = direction * rangedData.projectileSpeed;
+            GameObject projectileGO = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
 
-            Projectile proj = projectile.GetComponent<Projectile>();
-            if (proj != null)
-            {
-                proj.Initialize(direction, rangedData.projectileSpeed, rangedData.GetScaledAttackDamage(levelManager.level), "Player");
-            }
+            SimpleProjectile proj = projectileGO.GetComponent<SimpleProjectile>();
+
+            proj.Initialize(direction, projectileSpeed, projectileDamage, "Player");
+
+            rb.linearVelocity = direction * projectileSpeed;
         }
     }
 
@@ -115,6 +127,7 @@ public class SimpleEnemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
                 isDead = true;
                 Die();
             }
+            UpdateHealthUI();
         }
     }
 
@@ -163,4 +176,37 @@ public class SimpleEnemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 
         Destroy(gameObject);
     }
+
+     private void UpdateHealthUI()
+    {
+        if (enemyCanvas == null) Debug.Log("Enemy Canvas is null");
+        enemyCanvas.enabled = true;
+        if (enemyHealthBar != null)
+        {
+            enemyHealthBar.fillAmount = enemyCurrentHP / enemyMaxHP;
+        }
+    }
+
+
+     private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && this != null && enemyClass == EnemyBehaviorType.Melee)
+        {
+            if (attackCooldown <= 0)
+            {
+                IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
+                if (damageable != null)
+                {
+                    damageable.TakeDamage(attackDamage);
+                    attackCooldown = 1f / attackSpeed;
+                }
+            }
+        }
+    }
+
+    public void DisableCollision()
+    {
+        GetComponent<Collider2D>().enabled = false;
+    }
+
 }

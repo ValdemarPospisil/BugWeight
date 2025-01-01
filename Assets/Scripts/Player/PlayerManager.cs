@@ -64,7 +64,6 @@ public class PlayerManager : MonoBehaviour, IDamageable
     {
         extraLives += lives;
         healthPercentageToRebirth = healthPercentage;
-        Debug.Log("Player received " + lives + " extra lives and " + healthPercentage * 100 + "% health on resurrection.");
     }
 
     public void UpdateUI()

@@ -44,7 +44,7 @@ public class Projectile : MonoBehaviour
         lifetime -= Time.fixedDeltaTime;
         if (lifetime <= 0)
         {
-            Destroy(gameObject);
+            onDeactivate?.Invoke();
         }
     }
 
@@ -63,7 +63,7 @@ public class Projectile : MonoBehaviour
             if (damageable != null)
             {
                 damageable.TakeDamage(data.damage);
-                Destroy(gameObject);
+                return true;
             }
         }
         return false;

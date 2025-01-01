@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SimpleEnemySpawner : MonoBehaviour
 {
-    public List<SimpleRangedEnemyData> enemyTypeDataList; // List of ScriptableObject data assets
+    public List<GameObject> enemies; // List of ScriptableObject data assets
 
     [SerializeField] private float spawnRadiusMin = 10f;
     [SerializeField] private float spawnRadiusMax = 20f;
@@ -39,10 +39,10 @@ public class SimpleEnemySpawner : MonoBehaviour
 
         for (int i = 0; i < enemyCount; i++)
         {
-            SimpleRangedEnemyData randomData = enemyTypeDataList[Random.Range(0, enemyTypeDataList.Count)];
+            GameObject randomEnemies = enemies[Random.Range(0, enemies.Count)];
             Vector3 spawnPosition = GetRandomSpawnPosition();
-            SimpleEnemy enemy = Instantiate(randomData.enemyPrefab, spawnPosition, Quaternion.identity).GetComponent<SimpleEnemy>();
-            enemy.Initialize(randomData, spawnPosition);
+            SimpleEnemy enemy = Instantiate(randomEnemies, spawnPosition, Quaternion.identity).GetComponent<SimpleEnemy>();
+            enemy.Initialize(spawnPosition);
         }
     }
 
