@@ -70,7 +70,6 @@ public class EnemySpawner : MonoBehaviour
                     enemyToSpawn.gameObject.SetActive(true);
                 }
             }
-            
         }
     }
 

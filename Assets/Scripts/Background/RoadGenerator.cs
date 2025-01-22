@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System.Collections.Generic;
 
 public class RoadGenerator : MonoBehaviour
 {
@@ -7,7 +8,11 @@ public class RoadGenerator : MonoBehaviour
     [SerializeField] private TileBase roadTile;       // Road tile
     [SerializeField] private TileBase grassTile;      // Grass tile
     [SerializeField] private TileBase borderTile;      // Grass tile
-    [SerializeField] private TileBase cropSoilTile;    // Crop soil tile
+    [SerializeField] private TileBase buildingTile;    // Crop soil tile
+    [SerializeField] private TileBase building2Tile;    // Crop soil tile
+    [SerializeField] private TileBase building3Tile;    // Crop soil tile
+    [SerializeField] private TileBase building4Tile;    // Crop soil tile
+    [SerializeField] private TileBase outlineTile;    // Building outline tile
     [SerializeField] private int width = 50;          // Grid width
     [SerializeField] private int height = 50;         // Grid height
     [SerializeField] private int numberOfRoads = 10;  // Number of initial roads
@@ -15,11 +20,11 @@ public class RoadGenerator : MonoBehaviour
     [SerializeField] private int minRoadLength = 10;  // Minimum road length
     [SerializeField] private float primaryChance = 0.8f; // Chance to continue in primary direction
     [SerializeField] private int roadWidth = 3;       // Width of the road
-    [SerializeField] private int cropSoilMinWidth = 3; // Minimum width of crop soil
-    [SerializeField] private int cropSoilMaxWidth = 6; // Maximum width of crop soil
-    [SerializeField] private int cropSoilMinHeight = 3; // Minimum height of crop soil
-    [SerializeField] private int cropSoilMaxHeight = 6; // Maximum height of crop soil
-    [SerializeField] private int cropSoilAttempts = 10; // Number of crop soil attempts
+    [SerializeField] private int buildingMinWidth = 15; 
+    [SerializeField] private int buildingMaxWidth = 30; 
+    [SerializeField] private int buildingMinHeight = 15;
+    [SerializeField] private int buildingMaxHeight = 30;
+    [SerializeField] private int buildingAttempts = 10;
 
     private int[,] grid;            // 2D array to represent the grid (1 = road, 0 = grass)
     private Vector2Int[] directions = new Vector2Int[]
@@ -35,7 +40,8 @@ public class RoadGenerator : MonoBehaviour
         grid = new int[width, height];
         GenerateRoads();
         ExpandRoads();
-        SpawnCropSoil(cropSoilMinWidth, cropSoilMaxWidth, cropSoilMinHeight, cropSoilMaxHeight, cropSoilAttempts);
+        //SpawnCropSoil(cropSoilMinWidth, cropSoilMaxWidth, cropSoilMinHeight, cropSoilMaxHeight, cropSoilAttempts);
+        SpawnBuildings(buildingMinWidth, buildingMaxWidth, buildingMinHeight, buildingMaxHeight, buildingAttempts);
         RenderTilemap();
     }
 
@@ -129,36 +135,7 @@ public class RoadGenerator : MonoBehaviour
 
 
 
-    // Render the grid to the Tilemap
-    void RenderTilemap()
-    {
-        for (int x = 0; x < width; x++)
-        {
-            for (int y = 0; y < height; y++)
-            {
-                if (grid[x, y] == 0)
-                {
-                    tilemap.SetTile(new Vector3Int(x, y, 0), grassTile);
-                }
-                else if (grid[x, y] == 1)
-                {
-                    tilemap.SetTile(new Vector3Int(x, y, 0), roadTile);
-                }
-                else if (grid[x, y] == 2)
-                {
-                    tilemap.SetTile(new Vector3Int(x, y, 0), borderTile);
-                }
-                else if (grid[x, y] == 3)
-                {
-                    tilemap.SetTile(new Vector3Int(x, y, 0), cropSoilTile);
-                }
-                else
-                {
-                    Debug.LogError("Invalid grid value: " + grid[x, y]);
-                }
-            }
-        }
-    }
+    
 
     // Utility: Wrap position around the grid borders
     Vector2Int WrapPosition(Vector2Int position)
@@ -186,20 +163,81 @@ public class RoadGenerator : MonoBehaviour
         return directions[1];                                 // Right -> Down
     }
 
-    void SpawnCropSoil(int minWidth, int maxWidth, int minHeight, int maxHeight, int attempts) {
+    void SpawnBuildings(int minWidth,int maxWidth,int minHeight, int maxHeight, int attempts) 
+    {
         for (int i = 0; i < attempts; i++) {
-            int soilWidth = Random.Range(minWidth, maxWidth + 1);
-            int soilHeight = Random.Range(minHeight, maxHeight + 1);
 
-            // Random top-left position for the crop soil
-            int startX = Random.Range(0, width - soilWidth);
-            int startY = Random.Range(0, height - soilHeight);
+            int areaWidth = Random.Range(minWidth, maxWidth + 1);
+            int areaHeight = Random.Range(minHeight, maxHeight + 1);
 
-            if (IsAreaFree(startX, startY, soilWidth, soilHeight)) {
-                MarkArea(startX, startY, soilWidth, soilHeight, 3);  // 3 for crop soil tile
+            int startX = Random.Range(0, width - areaWidth);
+            int startY = Random.Range(0, height - areaHeight);
+
+            if (IsAreaFree(startX, startY, areaWidth, areaHeight)) {
+                MarkBuildingOutline(startX, startY, areaWidth, areaHeight, 3); // Outline tile value
+                FillBuildingInteriorWithVoronoi(startX, startY, areaWidth, areaHeight);
             }
         }
     }
+
+    // Marks the outline of a rectangular area with a specific tile value, leaving a random door
+    void MarkBuildingOutline(int startX, int startY, int areaWidth, int areaHeight, int tileValue) {
+        // Determine door position and size
+        int doorWidth = 5;
+        int doorPosition = Random.Range(1, areaWidth - doorWidth - 1);
+
+        // Top and bottom borders with door
+        for (int x = startX; x < startX + areaWidth; x++) {
+            if (x < startX + doorPosition || x >= startX + doorPosition + doorWidth) {
+                grid[x, startY] = tileValue; // Top border
+                grid[x, startY + areaHeight - 1] = tileValue; // Bottom border
+            }
+        }
+
+        // Left and right borders
+        for (int y = startY; y < startY + areaHeight; y++) {
+            grid[startX, y] = tileValue; // Left border
+            grid[startX + areaWidth - 1, y] = tileValue; // Right border
+        }
+    }
+
+    void FillBuildingInteriorWithVoronoi(int startX, int startY, int areaWidth, int areaHeight) {
+    int numSeeds = Random.Range(3, 6);
+    List<Vector2Int> seeds = new List<Vector2Int>();
+    Dictionary<Vector2Int, int> seedTileMap = new Dictionary<Vector2Int, int>();
+
+    // Place seeds and assign each a random tile type
+    for (int i = 0; i < numSeeds; i++) {
+        int seedX = Random.Range(startX + 1, startX + areaWidth - 1);
+        int seedY = Random.Range(startY + 1, startY + areaHeight - 1);
+        Vector2Int seed = new Vector2Int(seedX, seedY);
+        seeds.Add(seed);
+        seedTileMap[seed] = Random.Range(4, 8); // Assume tile types 3 to 5 are different floor types
+    }
+
+    // Assign each tile in the area to the closest seed's tile type
+    for (int y = startY + 1; y < startY + areaHeight - 1; y++) {
+        for (int x = startX + 1; x < startX + areaWidth - 1; x++) {
+            Vector2Int currentTile = new Vector2Int(x, y);
+            Vector2Int closestSeed = FindClosestSeed(currentTile, seeds);
+            grid[x, y] = seedTileMap[closestSeed];
+        }
+    }
+}
+
+    Vector2Int FindClosestSeed(Vector2Int tile, List<Vector2Int> seeds) {
+        Vector2Int closestSeed = seeds[0];
+        float minDistance = Vector2Int.Distance(tile, closestSeed);
+        foreach (Vector2Int seed in seeds) {
+            float distance = Vector2Int.Distance(tile, seed);
+            if (distance < minDistance) {
+                closestSeed = seed;
+                minDistance = distance;
+            }
+        }
+        return closestSeed;
+    }
+
 
 // Checks if a rectangular area is free of roads or other obstacles
     bool IsAreaFree(int startX, int startY, int areaWidth, int areaHeight) {
@@ -213,11 +251,50 @@ public class RoadGenerator : MonoBehaviour
         return true;
     }
 
-    // Marks a rectangular area with a specific tile value
-    void MarkArea(int startX, int startY, int areaWidth, int areaHeight, int tileValue) {
-        for (int y = startY; y < startY + areaHeight; y++) {
-            for (int x = startX; x < startX + areaWidth; x++) {
-                grid[x, y] = tileValue;
+
+   // Render the grid to the Tilemap
+    void RenderTilemap()
+    {
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                if (grid[x, y] == 0)
+                {
+                    tilemap.SetTile(new Vector3Int(x, y, 0), grassTile);
+                }
+                else if (grid[x, y] == 1)
+                {
+                    tilemap.SetTile(new Vector3Int(x, y, 0), roadTile);
+                }
+                else if (grid[x, y] == 2)
+                {
+                    tilemap.SetTile(new Vector3Int(x, y, 0), borderTile);
+                }
+                else if (grid[x, y] == 3)
+                {
+                    tilemap.SetTile(new Vector3Int(x, y, 0), outlineTile);
+                }
+                else if (grid[x, y] == 4)
+                {
+                    tilemap.SetTile(new Vector3Int(x, y, 0), buildingTile);
+                }
+                else if (grid[x, y] == 5)
+                {
+                    tilemap.SetTile(new Vector3Int(x, y, 0), building2Tile);
+                }
+                else if (grid[x, y] == 6)
+                {
+                    tilemap.SetTile(new Vector3Int(x, y, 0), building3Tile);
+                }
+                else if (grid[x, y] == 7)
+                {
+                    tilemap.SetTile(new Vector3Int(x, y, 0), building4Tile);
+                }
+                else
+                {
+                    Debug.LogError("Invalid grid value: " + grid[x, y]);
+                }
             }
         }
     }

@@ -44,10 +44,8 @@ public class PlayerShooting : MonoBehaviour
     {
         if (activePowerUp == null) return;
 
-        // Define directions based on the tier
         Vector2[] directions = GetDirectionsForTier(activePowerUp.currentTier);
 
-        // Spawn a projectile in each direction
         foreach (Vector2 direction in directions)
         {
             if (activePowerUp.projectileName == null)
@@ -62,7 +60,6 @@ public class PlayerShooting : MonoBehaviour
 
     private Vector2[] GetDirectionsForTier(int tier)
     {
-        // Define directions based on the tier
         switch (tier)
         {
             case 1:

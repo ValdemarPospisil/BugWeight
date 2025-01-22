@@ -18,11 +18,11 @@ MonoBehaviour:
     damage
   cooldown: 5
   percentageIncrease: 0.1
-  damage: 5
+  damage: 15
   duration: 5
   maxTier: 4
   currentTier: 1
-  basePicked: 0
+  basePicked: 1
   dashSpeed: 25
   dashDuration: 2
   damageDuration: 5

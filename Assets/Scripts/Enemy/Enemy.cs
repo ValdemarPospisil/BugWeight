@@ -20,9 +20,6 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
     private bool isDead = false;
     public static event System.Action<Vector3> OnEnemyKilled;
     private CapsuleCollider2D capsuleCollider;
-
-    // Merged from EnemyCollisionHandler.cs
-  //  [SerializeField] private GameObject projPrefab;
     [SerializeField] private Image enemyHealthBar;
     private Canvas enemyCanvas;
     [SerializeField] private GameObject deathParticles;
@@ -83,7 +80,6 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 
     private void ResetEnemy()
     {
-        // Reset enemy stats and state
         if (enemyData == null) return;
 
         attackDamage = enemyData.GetScaledAttackDamage(levelManager.level);
@@ -249,17 +245,14 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 
     private void Attack()
     {
-        // Define the direction for the projectile
         Vector2 direction = (targetTransform.position - transform.position).normalized;
 
-        // Spawn the projectile using the factory
         projectileFactory.SpawnProjectile(
-            rangedData.projectilename,  // Name of the projectile type
-            transform.position,                 // Spawn position
-            direction                           // Direction of movement
+            rangedData.projectilename,
+            transform.position,
+            direction                       
         );
 
-        
     }
 
 }

@@ -10,7 +10,6 @@ public class EnemyTypeData : ScriptableObject
     public string typeName;
     public GameObject prefab;
     public EnemyBehaviorType behaviorType;
-
     public float baseAttackDamage;
     public float baseMaxHP;
     public float baseXpDrop;

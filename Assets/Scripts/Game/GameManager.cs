@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Persist across scenes
         }
         else
         {
@@ -25,7 +24,6 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        // Initialize game state
         StartNewGame();
     }
 
@@ -34,6 +32,5 @@ public class GameManager : MonoBehaviour
     {
         powerUpManager.ResetPowerUps();
         specialAbilityManager.ResetSpecialAbilities();
-        // Reset other game states as needed
     }
 }

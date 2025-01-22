@@ -29,7 +29,6 @@ public class Projectile : MonoBehaviour
         {
             transform.position += direction * data.speed * Time.deltaTime;
 
-            // Example collision detection or lifetime check
             if (CheckCollision())
             {
                 onDeactivate?.Invoke();

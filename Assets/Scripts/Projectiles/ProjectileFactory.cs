@@ -20,7 +20,7 @@ public class ProjectileFactory : MonoBehaviour
             var pool = new Queue<Projectile>();
             var container = new GameObject(type.typeName + " Container");
 
-            for (int i = 0; i < initialPoolSize; i++) // Initial pool size
+            for (int i = 0; i < initialPoolSize; i++)
             {
                 var projectile = Instantiate(type.prefab).GetComponent<Projectile>();
                 projectile.gameObject.SetActive(false);
@@ -33,12 +33,12 @@ public class ProjectileFactory : MonoBehaviour
         }
     }
 
-    public Projectile SpawnProjectile(string typeName, Vector3 position, Vector2 direction)
+    public void SpawnProjectile(string typeName, Vector3 position, Vector2 direction)
     {
         if (!projectilePools.ContainsKey(typeName))
         {
             Debug.LogError("Projectile type not found: " + typeName);
-            return null;
+            return;
         }
 
         var pool = projectilePools[typeName];
@@ -50,11 +50,11 @@ public class ProjectileFactory : MonoBehaviour
         }
         else
         {
-            var type = projectileTypes.Find(t => t.name == typeName);
+            var type = projectileTypes.Find(t => t.typeName == typeName);
             if (type == null)
             {
                 Debug.LogError("Projectile type not found: " + typeName);
-                return null;
+                return;
             }
 
             projectile = Instantiate(type.prefab).GetComponent<Projectile>();
@@ -64,7 +64,6 @@ public class ProjectileFactory : MonoBehaviour
         projectile.transform.position = position;
         projectile.gameObject.SetActive(true);
         projectile.Launch(direction, () => ReturnProjectile(typeName, projectile));
-        return projectile;
     }
 
     public void ReturnProjectile(string typeName, Projectile projectile)

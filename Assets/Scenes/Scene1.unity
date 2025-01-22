@@ -487,9 +487,133 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 767689442}
+  - {fileID: 1252901063}
   - {fileID: 1138122227}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1252901062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1252901063}
+  - component: {fileID: 1252901065}
+  - component: {fileID: 1252901064}
+  m_Layer: 0
+  m_Name: BuildingTilemap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1252901063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252901062}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1210251374}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!483693784 &1252901064
+TilemapRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252901062}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -83981967
+  m_SortingLayer: 1
+  m_SortingOrder: 5
+  m_ChunkSize: {x: 32, y: 32, z: 32}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_MaxChunkCount: 16
+  m_MaxFrameAge: 16
+  m_SortOrder: 0
+  m_Mode: 0
+  m_DetectChunkCullingBounds: 0
+  m_MaskInteraction: 0
+--- !u!1839735485 &1252901065
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252901062}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 1, y: 1, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
 --- !u!1 &1410996205
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +703,7 @@ MonoBehaviour:
   roadTile: {fileID: 11400000, guid: 04337e976f00a6c42a6e4b1771bdeb5e, type: 2}
   grassTile: {fileID: 11400000, guid: 5c76775a9c30339439e9ed7437a20675, type: 2}
   borderTile: {fileID: 11400000, guid: 0ebd2a7f22318234187b8d20eff098d5, type: 2}
-  cropSoilTile: {fileID: 11400000, guid: e09df92e03bf9914f98d79013cbb8762, type: 2}
+  buildingTile: {fileID: 11400000, guid: e09df92e03bf9914f98d79013cbb8762, type: 2}
   width: 700
   height: 700
   numberOfRoads: 3
@@ -587,11 +711,9 @@ MonoBehaviour:
   minRoadLength: 500
   primaryChance: 0.99
   roadWidth: 3
-  cropSoilMinWidth: 30
-  cropSoilMaxWidth: 80
-  cropSoilMinHeight: 30
-  cropSoilMaxHeight: 80
-  cropSoilAttempts: 15
+  buildingAreaWidth: 30
+  buildingAreaHeight: 30
+  buildingAttempts: 50
 --- !u!1 &1875020042
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,7 +992,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3228577848773894751}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa2c9278ebad84b42b40a4d308f9c5c5, type: 3}
   m_Name: 
@@ -1969,6 +2091,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardContainer: {fileID: 2352191130441020707}
   cardPrefab: {fileID: 60056609156241884, guid: a7b74a37aafee2a44b46acc165b6ccab, type: 3}
+--- !u!1001 &3387233839038876794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1562987157052163996, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 61.04742
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562987157052163996, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 76.32585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562987157052163996, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562987157052163996, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562987157052163996, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562987157052163996, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562987157052163996, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562987157052163996, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562987157052163996, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562987157052163996, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191419185244975688, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_Name
+      value: Buidings
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191419185244975688, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d13f721b4c41c54fb32dffec7afd923, type: 3}
 --- !u!224 &3527897357669413891
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7432,7 +7615,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 84a6ef0be3e0cf045b4fb1f53de2686e, type: 2}
   - {fileID: 11400000, guid: e5ae859a6678ce74dab9a635bd536fba, type: 2}
   - {fileID: 11400000, guid: e5fa50c00aca9994e9074720656c486c, type: 2}
-  initialPoolSize: 30
+  initialPoolSize: 20
 --- !u!114 &4710724692977152240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8266,7 +8449,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6207056612023931935}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -8921,11 +9104,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d79a60c64fb74af4dae471fa03cfcb6f, type: 2}
   spawnRadiusMin: 10
   spawnRadiusMax: 20
-  minDuration: 8
-  maxDuration: 8
-  minEnemies: 3
+  minDuration: 5
+  maxDuration: 10
+  minEnemies: 1
   maxEnemies: 3
-  enemyLimit: 20
+  enemyLimit: 15
 --- !u!199 &8657337267583007683
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -9232,3 +9415,4 @@ SceneRoots:
   - {fileID: 974927855}
   - {fileID: 1410996207}
   - {fileID: 1210251374}
+  - {fileID: 3387233839038876794}

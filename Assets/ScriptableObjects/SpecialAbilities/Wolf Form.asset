@@ -18,12 +18,12 @@ MonoBehaviour:
     boost. '
   cooldown: 4.05
   percentageIncrease: 0.1
-  damage: 43.923
-  duration: 23.425602
+  damage: 45
+  duration: 20
   maxTier: 4
   currentTier: 1
   basePicked: 0
-  hpBoost: 117.128006
+  hpBoost: 120
   wolfPrefab: {fileID: 8453303425883192840, guid: e76bba63adcf3b54db0ac1f2560d2196, type: 3}
-  freezeRadius: 14.641001
-  freezeDuration: 7.3205004
+  freezeRadius: 15
+  freezeDuration: 7.5

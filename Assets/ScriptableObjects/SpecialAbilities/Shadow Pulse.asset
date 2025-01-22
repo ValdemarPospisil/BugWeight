@@ -18,7 +18,7 @@ MonoBehaviour:
     healing slightly for each enemy hit.
   cooldown: 5
   percentageIncrease: 0.1
-  damage: 22
+  damage: 40
   duration: 0.3
   maxTier: 4
   currentTier: 1
