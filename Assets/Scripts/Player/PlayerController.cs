@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
     private Dictionary<string, float> cooldowns = new Dictionary<string, float>();
     private Dictionary<string, TextMeshProUGUI> cooldownTexts = new Dictionary<string, TextMeshProUGUI>();
     private Dictionary<string, Image> cooldownCovers = new Dictionary<string, Image>();
+    public static PlayerController Instance { get; private set; }
 
     
     private bool isBats = false;
@@ -230,6 +231,13 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    public void TransformToHuman()
+    {
+        isWolfForm = false;
+
+        SetAbilityIcon();
+    }
+
     public void BatSwarm(float damage, float batsDuration, float batSpeed)
     {
         batSwarmDamageScript.SetDamage(damage);
@@ -375,7 +383,7 @@ public class PlayerController : MonoBehaviour
         wolfCooldowns = wolfDuration;
         
         spriteRenderer.enabled = false;
-        GameObject wolfInstance = Instantiate(wolfPrefab, transform.position, Quaternion.identity);
+        GameObject wolfInstance = Instantiate(wolfPrefab, transform.position, Quaternion.identity, transform);
         wolfInstance.transform.position = new Vector3(wolfInstance.transform.position.x, wolfInstance.transform.position.y, 0);
         wolfInstance.transform.SetParent(transform);
         Animator wolfAnimator = wolfInstance.GetComponent<Animator>();

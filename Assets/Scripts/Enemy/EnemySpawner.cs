@@ -12,6 +12,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private int minEnemies = 1;
     [SerializeField] private int maxEnemies = 5;
     [SerializeField] private int enemyLimit = 40;
+    public static EnemySpawner Instance { get; private set; }
 
     private Dictionary<EnemyTypeData, List<Enemy>> enemyPools = new Dictionary<EnemyTypeData, List<Enemy>>();
 
@@ -48,6 +49,18 @@ public class EnemySpawner : MonoBehaviour
             SpawnEnemies();
             yield return new WaitForSeconds(Random.Range(minDuration, maxDuration));
         }
+    }
+
+    public void ResetEnemies()
+    {
+        foreach (var pool in enemyPools)
+        {
+            foreach (var enemy in pool.Value)
+            {
+                enemy.gameObject.SetActive(false);
+            }
+        }
+        StartCoroutine(StartSpawningEnemies());
     }
 
     private void SpawnEnemies()

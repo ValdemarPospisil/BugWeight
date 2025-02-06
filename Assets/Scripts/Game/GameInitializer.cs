@@ -9,6 +9,9 @@ public class GameInitializer : MonoBehaviour
         ServiceLocator.RegisterService(FindFirstObjectByType<LevelManager>());
         ServiceLocator.RegisterService(FindFirstObjectByType<TargetingSystem>());
         ServiceLocator.RegisterService(FindFirstObjectByType<ProjectileFactory>());
+        ServiceLocator.RegisterService(FindFirstObjectByType<EnemySpawner>());
+        ServiceLocator.RegisterService(FindFirstObjectByType<PlayerManager>());
+        ServiceLocator.RegisterService(FindFirstObjectByType<PlayerController>());
 
         DontDestroyOnLoad(gameObject);
     }

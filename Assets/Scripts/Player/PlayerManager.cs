@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class PlayerManager : MonoBehaviour, IDamageable
 {
@@ -10,13 +11,15 @@ public class PlayerManager : MonoBehaviour, IDamageable
     private float healthPercentageToRebirth = 0.5f;
     public delegate void FatalDamageHandler(Vector3 position);
     public event FatalDamageHandler OnFatalDamage;
+    public static PlayerManager Instance { get; private set; }
+
     
 
     // UI elements
     [Header("UI Elements")]
     [SerializeField] private Image healthBar;
     [SerializeField] private TextMeshProUGUI healthText;
-    [SerializeField] private TextMeshProUGUI deathText;
+    [SerializeField] private GameObject deathScreen;
     [SerializeField] private Image xpBar;
     [SerializeField] private TextMeshProUGUI levelText;
   //  [SerializeField] private TextMeshProUGUI xpText;
@@ -34,6 +37,9 @@ public class PlayerManager : MonoBehaviour, IDamageable
     {
         UpdateUI();
         extraLives = 0;
+        Debug.Log("Starting player manager");
+        gameObject.SetActive(true);
+        Time.timeScale = 1;
     }
 
     void Update()
@@ -98,17 +104,24 @@ public class PlayerManager : MonoBehaviour, IDamageable
         }
         else
         {
-            deathParticles = Instantiate(deathParticles, transform.position, Quaternion.identity);
-            deathText.gameObject.SetActive(true);
+//            deathParticles = Instantiate(deathParticles, transform.position, Quaternion.identity);
+            deathScreen.gameObject.SetActive(true);
+            gameObject.SetActive(false);
             Time.timeScale = 0;
-            Destroy(gameObject);
+         
         }
+    }
+    
+    public void ResetPlayer()
+    {
+        currentHP = maxHP;
+        extraLives = 0;
+        UpdateUI();
     }
 
     private void Resurrect()
     {
         currentHP = maxHP * healthPercentageToRebirth;
         UpdateUI();
-        Debug.Log("Player resurrected with " + currentHP + " HP.");
     }
 }

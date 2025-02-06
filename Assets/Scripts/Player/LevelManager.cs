@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour
     public void Start()
     {
         currentXP = 0;
-        playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
+        playerManager = ServiceLocator.GetService<PlayerManager>();
         specialAbilityManager = GetComponent<SpecialAbilityManager>();
         powerUpManager = GetComponent<PowerUpManager>();
         playerManager.UpdateUI();
@@ -37,6 +37,23 @@ public class LevelManager : MonoBehaviour
         {
             powerUpManager.ShowPowerUpChoices();
         }
+    }
+
+    public void ResetLevel()
+    {
+        currentXP = 0;
+        level = 1;
+        toNextLevel = 100;
+        if (playerManager != null)
+        {
+            Debug.Log("Player manager is not null");
+            playerManager.UpdateUI();
+        }
+        else
+        {
+            Debug.Log("Player manager is null");
+        }
+        
     }
 
     private void CheckLevelUp()

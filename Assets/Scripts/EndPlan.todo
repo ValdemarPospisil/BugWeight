@@ -16,10 +16,11 @@ Zápočet:
     ✔ use flyweight pattern for the enemy shooting projectiles @done (1/1/2025, 2:00:44 PM)
     ☐ 1 more powerup
     ☐ balance the game
-    ☐ (optional) better background
+    ✔ (optional) better background @done (2/6/2025, 11:21:33 AM)
 
 Itch.io:
     ☐ add sound and music
+    ☐ add restart game button
     ☐ add game menu and pause
     ☐ add options menu
     ☐ add tutorial elements

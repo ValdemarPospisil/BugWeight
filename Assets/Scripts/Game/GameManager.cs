@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +12,9 @@ public class GameManager : MonoBehaviour
     public LevelManager levelManager;
     public TargetingSystem targetingSystem;
     public ProjectileFactory projectileFactory;
+    public EnemySpawner enemySpawner;
+    public PlayerManager playerManager;
+    public PlayerController playerController;
 
     private void Awake()
     {
@@ -21,16 +26,31 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+       // StartNewGame();
     }
     private void Start()
     {
-        StartNewGame();
+        levelManager.ResetLevel();
+        enemySpawner.ResetEnemies();
+        powerUpManager.ResetPowerUps();
+        specialAbilityManager.ResetSpecialAbilities();
+        playerManager.ResetPlayer();
+        playerManager.transform.position = new Vector3(85, 85, 0);
     }
 
 
     public void StartNewGame()
     {
-        powerUpManager.ResetPowerUps();
-        specialAbilityManager.ResetSpecialAbilities();
+         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+         /*
+        Time.timeScale = 1;
+        playerManager.gameObject.SetActive(true);
+        
+        
+        
+        
+        
+        */
+
     }
 }
