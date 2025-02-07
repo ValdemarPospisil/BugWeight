@@ -250,6 +250,7 @@ public class PlayerController : MonoBehaviour
         SpeedBoost(batSpeed);
         capsuleCollider2D.enabled = false;
         spriteRenderer.enabled = false;
+        rb.bodyType = RigidbodyType2D.Kinematic;
         isBats = true;
         yield return new WaitForSeconds(batsDuration);
         SpeedBoost(-batSpeed);
@@ -258,6 +259,7 @@ public class PlayerController : MonoBehaviour
             spriteRenderer.enabled = true;
         }
         isBats = false;
+        rb.bodyType = RigidbodyType2D.Dynamic;
         capsuleCollider2D.enabled = true;
         batSwarmDamageScript.gameObject.SetActive(false);
     }
