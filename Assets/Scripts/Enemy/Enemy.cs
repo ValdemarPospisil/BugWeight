@@ -247,6 +247,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
     {
         Vector2 direction = (targetTransform.position - transform.position).normalized;
 
+        if (projectileFactory == null) Debug.Log("Projectile Factory is null");
         projectileFactory.SpawnProjectile(
             rangedData.projectilename,
             transform.position,

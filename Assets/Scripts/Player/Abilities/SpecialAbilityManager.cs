@@ -56,7 +56,8 @@ public class SpecialAbilityManager : MonoBehaviour
             specialAbility.basePicked = false;
         }
         activeAbilities.Clear();
-        ShowSpecialAbilityChoices();
+        Invoke("ShowSpecialAbilityChoices", 0.75f);
+        //ShowSpecialAbilityChoices();
     }
 
     public void UseSpecialAbility(int index)

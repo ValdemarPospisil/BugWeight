@@ -13,6 +13,6 @@ public class GameInitializer : MonoBehaviour
         ServiceLocator.RegisterService(FindFirstObjectByType<PlayerManager>());
         ServiceLocator.RegisterService(FindFirstObjectByType<PlayerController>());
 
-        DontDestroyOnLoad(gameObject);
+       // DontDestroyOnLoad(gameObject);
     }
 }

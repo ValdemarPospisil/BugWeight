@@ -1,7 +1,7 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public EnemySpawner enemySpawner;
     public PlayerManager playerManager;
     public PlayerController playerController;
+    [SerializeField] private CanvasGroup fadePanel; // Assign the Panel's Canvas Group
+    [SerializeField] private float fadeDuration = 1f; // Time for fade
 
     private void Awake()
     {
@@ -25,32 +27,50 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
         }
-       // StartNewGame();
     }
+
     private void Start()
     {
-        levelManager.ResetLevel();
-        enemySpawner.ResetEnemies();
+        StartCoroutine(FadeIn());
         powerUpManager.ResetPowerUps();
         specialAbilityManager.ResetSpecialAbilities();
-        playerManager.ResetPlayer();
         playerManager.transform.position = new Vector3(85, 85, 0);
     }
 
-
     public void StartNewGame()
     {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-         /*
-        Time.timeScale = 1;
-        playerManager.gameObject.SetActive(true);
-        
-        
-        
-        
-        
-        */
+        StartCoroutine(FadeOutAndReload());
+    }
 
+    IEnumerator FadeIn()
+    {
+        fadePanel.alpha = 1; // Start fully black
+        float elapsedTime = 0;
+
+        while (elapsedTime < fadeDuration)
+        {
+            fadePanel.alpha = Mathf.Lerp(1, 0, elapsedTime / fadeDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null; // Wait for the next frame
+        }
+        fadePanel.alpha = 0; // Ensure it's fully transparent
+    }
+
+    IEnumerator FadeOutAndReload()
+    {
+        float elapsedTime = 0;
+        fadePanel.alpha = 0; // Start fully transparent
+
+        while (elapsedTime < fadeDuration)
+        {
+            fadePanel.alpha = Mathf.Lerp(0, 1, elapsedTime / fadeDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null; // Wait for the next frame
+        }
+
+        fadePanel.alpha = 1; // Ensure it's fully opaque
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -18,6 +18,8 @@ public class DeathScreen : MonoBehaviour
     public void RestartGame()
     {
         gameObject.SetActive(false);
+        Time.timeScale = 1;
         GameManager.Instance.StartNewGame();
+        Debug.Log("Restarting game...");
     }
 }

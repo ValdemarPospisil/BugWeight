@@ -15,6 +15,7 @@ public class ProjectileFactory : MonoBehaviour
 
     private void InitializePools()
     {
+        Debug.Log("Initializing projectile pools");
         foreach (var type in projectileTypes)
         {
             var pool = new Queue<Projectile>();
@@ -43,7 +44,7 @@ public class ProjectileFactory : MonoBehaviour
 
         var pool = projectilePools[typeName];
         Projectile projectile;
-
+        
         if (pool.Count > 0)
         {
             projectile = pool.Dequeue();
@@ -60,7 +61,11 @@ public class ProjectileFactory : MonoBehaviour
             projectile = Instantiate(type.prefab).GetComponent<Projectile>();
             projectile.Initialize(type);
         }
-
+        if (projectile == null)
+        {
+            Debug.LogError("Projectile type not found: " + typeName);
+            return;
+        }
         projectile.transform.position = position;
         projectile.gameObject.SetActive(true);
         projectile.Launch(direction, () => ReturnProjectile(typeName, projectile));

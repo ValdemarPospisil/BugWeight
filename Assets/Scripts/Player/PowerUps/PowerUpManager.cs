@@ -10,7 +10,7 @@ public class PowerUpManager : MonoBehaviour
     private void Awake()
     {
         // Ensure this GameObject persists across scenes
-        DontDestroyOnLoad(gameObject);
+     //   DontDestroyOnLoad(gameObject);
     }
 
     private void Start()

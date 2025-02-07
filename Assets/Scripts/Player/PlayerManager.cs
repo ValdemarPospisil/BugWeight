@@ -37,7 +37,6 @@ public class PlayerManager : MonoBehaviour, IDamageable
     {
         UpdateUI();
         extraLives = 0;
-        Debug.Log("Starting player manager");
         gameObject.SetActive(true);
         Time.timeScale = 1;
     }
@@ -104,21 +103,13 @@ public class PlayerManager : MonoBehaviour, IDamageable
         }
         else
         {
-//            deathParticles = Instantiate(deathParticles, transform.position, Quaternion.identity);
+            deathParticles = Instantiate(deathParticles, transform.position, Quaternion.identity);
             deathScreen.gameObject.SetActive(true);
             gameObject.SetActive(false);
             Time.timeScale = 0;
-         
         }
     }
     
-    public void ResetPlayer()
-    {
-        currentHP = maxHP;
-        extraLives = 0;
-        UpdateUI();
-    }
-
     private void Resurrect()
     {
         currentHP = maxHP * healthPercentageToRebirth;
