@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 {
     private EnemyTypeData enemyData;
     private Transform targetTransform;
+    
     private Rigidbody2D rb;
     private float attackCooldown;
     private float enemyCurrentHP;
@@ -23,6 +24,9 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
     [SerializeField] private Image enemyHealthBar;
     private Canvas enemyCanvas;
     [SerializeField] private GameObject deathParticles;
+    [SerializeField] private GameObject[] enemyCoins;
+    [SerializeField] private int minAmountOfCoins;
+    [SerializeField] private int maxAmountOfCoins;
 
     private MeleeEnemyData meleeData;
     private RangedEnemyData rangedData;
@@ -206,12 +210,17 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         DisableCollision();
         OnEnemyKilled?.Invoke(transform.position);
 
-        Instantiate(deathParticles, transform.position, Quaternion.identity);
-        levelManager.AddXP(xpDrop);
+        GameObject particles = Instantiate(deathParticles, transform.position, Quaternion.identity);
+        int randomAmountOfCoins = Random.Range(minAmountOfCoins, maxAmountOfCoins);
 
+        for(int i = 0; i < randomAmountOfCoins; i++) {
+            int rand = Random.Range(0, enemyCoins.Length);
+            Instantiate(enemyCoins[rand], transform.position, Quaternion.identity);
+        }
+
+        levelManager.AddXP(xpDrop);
         enemySpawner.ReturnEnemy(this, enemyData);
     }
-
     private void UpdateHealthUI()
     {
         if (enemyCanvas == null) Debug.Log("Enemy Canvas is null");

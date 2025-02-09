@@ -154,6 +154,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealthBar: {fileID: 6914388769174138558}
   deathParticles: {fileID: 7697985001639266104, guid: 2ec6e1ecb2023764fa64aaf67e29a49e, type: 3}
+  enemyCoins:
+  - {fileID: 6881121629147738108, guid: 5cf7c9b2e35458049885d5c37bb33f04, type: 3}
+  - {fileID: 2294450162114351903, guid: 95490af0ed66a6b4faf1fef7d821679f, type: 3}
+  - {fileID: 8336710568343677764, guid: 3b271273025e6634c9164cb171ec502d, type: 3}
+  - {fileID: 4867281757975068149, guid: 90dcee5b6a83eb741a105a7a4fffcfc7, type: 3}
+  - {fileID: 5868257210944130112, guid: 241aff835d3a2c24d9a0e982f2a77244, type: 3}
+  - {fileID: 6056776151202710276, guid: 715aa18a204d17e44b1da4506053c4ee, type: 3}
+  minAmountOfCoins: 1
+  maxAmountOfCoins: 4
 --- !u!50 &8964599466342430990
 Rigidbody2D:
   serializedVersion: 5

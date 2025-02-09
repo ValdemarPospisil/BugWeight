@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 798882896296758815}
+  - component: {fileID: 8770032970079127455}
   - component: {fileID: 5087436014546003799}
   - component: {fileID: 4438382084622982129}
   - component: {fileID: 3592642688039818991}
@@ -34,6 +35,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8770032970079127455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7697985001639266104}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88464fd1ffd29d64da94f94183c99248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5087436014546003799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,7 +68,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7697985001639266104}
   serializedVersion: 8
-  lengthInSec: 0.5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -129,9 +142,9 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 3
-      scalar: 1
-      minScalar: 0.3
+      minMaxState: 0
+      scalar: 2
+      minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -183,8 +196,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
-      minScalar: 2
+      scalar: 2
+      minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -301,8 +314,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: 1
+      scalar: 1
+      minScalar: 0.3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -763,9 +776,9 @@ ParticleSystem:
     m_TextureBilinearFiltering: 0
     randomDirectionAmount: 0
     sphericalDirectionAmount: 0
-    randomPositionAmount: 0
+    randomPositionAmount: 0.1
     radius:
-      value: 0.3
+      value: 0.5
       mode: 0
       spread: 0
       speed:
@@ -993,8 +1006,8 @@ ParticleSystem:
       time: 0
       countCurve:
         serializedVersion: 2
-        minMaxState: 0
-        scalar: 20
+        minMaxState: 3
+        scalar: 50
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -1059,18 +1072,18 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0
+          value: 1
           inSlope: 0
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
-          value: 1
+          value: 0
           inSlope: 1
-          outSlope: 0
+          outSlope: 1
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
@@ -3693,8 +3706,8 @@ ParticleSystem:
   CollisionModule:
     enabled: 0
     serializedVersion: 4
-    type: 0
-    collisionMode: 0
+    type: 1
+    collisionMode: 1
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0

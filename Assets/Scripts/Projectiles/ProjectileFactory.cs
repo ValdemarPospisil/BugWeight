@@ -15,7 +15,6 @@ public class ProjectileFactory : MonoBehaviour
 
     private void InitializePools()
     {
-        Debug.Log("Initializing projectile pools");
         foreach (var type in projectileTypes)
         {
             var pool = new Queue<Projectile>();

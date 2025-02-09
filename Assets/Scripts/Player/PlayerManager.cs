@@ -25,10 +25,20 @@ public class PlayerManager : MonoBehaviour, IDamageable
   //  [SerializeField] private TextMeshProUGUI xpText;
    // [SerializeField] private TextMeshProUGUI toNextLevelText;
 
-    [SerializeField] private GameObject deathParticles;
     private LevelManager levelManager;
 
-    private void Awake() {
+    private void Awake() 
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        //DontDestroyOnLoad(gameObject);
         currentHP = maxHP;
         levelManager = ServiceLocator.GetService<LevelManager>();
     }
@@ -103,7 +113,6 @@ public class PlayerManager : MonoBehaviour, IDamageable
         }
         else
         {
-            deathParticles = Instantiate(deathParticles, transform.position, Quaternion.identity);
             deathScreen.gameObject.SetActive(true);
             gameObject.SetActive(false);
             Time.timeScale = 0;
