@@ -12,6 +12,10 @@ public class PlayerManager : MonoBehaviour, IDamageable
     public delegate void FatalDamageHandler(Vector3 position);
     public event FatalDamageHandler OnFatalDamage;
     public static PlayerManager Instance { get; private set; }
+    public static bool explodeOnDeath = false;
+    [SerializeField] private GameObject explosionEffect; 
+    public static float explosionRadius = 2f; // Radius of the explosion
+    public static float explosionDamage;
 
     
 
@@ -49,6 +53,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
         extraLives = 0;
         gameObject.SetActive(true);
         Time.timeScale = 1;
+        healthPercentageToRebirth = 0.5f;
     }
 
     void Update()
@@ -78,7 +83,9 @@ public class PlayerManager : MonoBehaviour, IDamageable
     public void AddExtraLives(int lives, float healthPercentage)
     {
         extraLives += lives;
-        healthPercentageToRebirth = healthPercentage;
+        Debug.Log("Health %:" + healthPercentage);
+        healthPercentageToRebirth += healthPercentage;
+        Debug.Log("Extra lives: " + extraLives + " " +  healthPercentageToRebirth);
     }
 
     public void UpdateUI()
@@ -113,15 +120,34 @@ public class PlayerManager : MonoBehaviour, IDamageable
         }
         else
         {
+            if (explodeOnDeath == true)
+            {
+                Explode();
+            }
             deathScreen.gameObject.SetActive(true);
             gameObject.SetActive(false);
+            PowerUpManager powerUpManager = ServiceLocator.GetService<PowerUpManager>();
+            powerUpManager.DeactivateAllPowerUps();
             Time.timeScale = 0;
         }
     }
-    
+    private void Explode()
+    {
+        // Instantiate explosion effect
+        if (explosionEffect != null)
+        {
+            BloodExplosion explosion = Instantiate(explosionEffect, transform.position, Quaternion.identity).GetComponent<BloodExplosion>();
+            if (explosion != null)
+            {
+                explosion.SetUpExplosion(explosionDamage, explosionRadius, 0.8f);
+            }
+        }
+
+    }
     private void Resurrect()
     {
         currentHP = maxHP * healthPercentageToRebirth;
+        Debug.Log("Resurrected with " + currentHP + " HP");
         UpdateUI();
     }
 }

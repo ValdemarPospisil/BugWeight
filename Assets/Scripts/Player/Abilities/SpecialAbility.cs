@@ -2,6 +2,7 @@ using UnityEngine;
 
 public abstract class SpecialAbility : ScriptableObject
 {
+    public GroupType group;
     public string abilityName;
     public Sprite icon;
     [TextArea(3, 10)]

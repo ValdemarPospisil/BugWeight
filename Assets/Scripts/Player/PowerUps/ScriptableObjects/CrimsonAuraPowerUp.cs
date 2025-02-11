@@ -25,7 +25,7 @@ public class CrimsonAuraPowerUp : PowerUp
         }
     }
 
-    public override void Deactivate(GameObject player)
+    public override void Deactivate()
     {
         // No deactivation needed for this power-up
     }

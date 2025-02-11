@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53fef733e3faa92449c2ac3567e64ba0, type: 3}
   m_Name: Shadow Step
   m_EditorClassIdentifier: 
+  group: 1
   abilityName: Shadow Step
   icon: {fileID: -8500642260033419313, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   abilityDescription: teleport short distance and leave your shadow behind that explodes

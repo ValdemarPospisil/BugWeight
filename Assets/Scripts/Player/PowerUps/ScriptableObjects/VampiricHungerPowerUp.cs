@@ -13,7 +13,7 @@ public class VampiricHungerPowerUp : PowerUp
         Enemy.OnEnemyKilled += HandleEnemyKilled;
     }
 
-    public override void Deactivate(GameObject player)
+    public override void Deactivate()
     {
         Enemy.OnEnemyKilled -= HandleEnemyKilled;
     }

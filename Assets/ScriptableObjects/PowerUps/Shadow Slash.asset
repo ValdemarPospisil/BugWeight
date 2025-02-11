@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e589cf248ea848342b2725980243ccfd, type: 3}
   m_Name: Shadow Slash
   m_EditorClassIdentifier: 
+  group: 1
   icon: {fileID: 6763691793223663490, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   baseName: Shadow Slash
   baseDescription: Slash in front of you dealing damage to enemies.

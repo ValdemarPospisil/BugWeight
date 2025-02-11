@@ -27,6 +27,11 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
     [SerializeField] private GameObject[] enemyCoins;
     [SerializeField] private int minAmountOfCoins;
     [SerializeField] private int maxAmountOfCoins;
+    public static bool explodeOnDeath = false;
+    public static float explosionChance = 0.3f; // 30% chance to explode
+    [SerializeField] private GameObject explosionEffect; // Prefab for the explosion effect
+    public static float explosionRadius = 2f; // Radius of the explosion
+    public static float explosionDamage;
 
     private MeleeEnemyData meleeData;
     private RangedEnemyData rangedData;
@@ -218,9 +223,29 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
             Instantiate(enemyCoins[rand], transform.position, Quaternion.identity);
         }
 
+         if (explodeOnDeath && Random.value <= explosionChance)
+        {
+            Explode();
+        }
+
         levelManager.AddXP(xpDrop);
         enemySpawner.ReturnEnemy(this, enemyData);
     }
+
+    private void Explode()
+    {
+        // Instantiate explosion effect
+        if (explosionEffect != null)
+        {
+            BloodExplosion explosion = Instantiate(explosionEffect, transform.position, Quaternion.identity).GetComponent<BloodExplosion>();
+            if (explosion != null)
+            {
+                explosion.SetUpExplosion(explosionDamage, explosionRadius, 0.8f);
+            }
+        }
+
+    }
+
     private void UpdateHealthUI()
     {
         if (enemyCanvas == null) Debug.Log("Enemy Canvas is null");

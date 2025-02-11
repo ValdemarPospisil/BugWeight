@@ -9,8 +9,17 @@ public struct PowerUpTier
     public float speed; 
 }
 
+public enum GroupType
+{
+    Blood,
+    Shadow,
+    Wolf,
+    Necromatic
+}
+
 public abstract class PowerUp : ScriptableObject
 {
+    public GroupType group;
     public Sprite icon;
     public string baseName;
     [TextArea(3, 10)]
@@ -29,7 +38,7 @@ public abstract class PowerUp : ScriptableObject
     }
 
     public abstract void Activate(GameObject player);
-    public abstract void Deactivate(GameObject player);
+    public abstract void Deactivate();
 
     public bool CanUpgrade()
     {

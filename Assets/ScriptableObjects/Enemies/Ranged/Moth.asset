@@ -17,7 +17,7 @@ MonoBehaviour:
   behaviorType: 1
   baseAttackDamage: 5
   baseMaxHP: 25
-  baseXpDrop: 10
+  baseXpDrop: 25
   moveSpeed: 4
   attackSpeed: 0.25
   projectileSpeed: 6

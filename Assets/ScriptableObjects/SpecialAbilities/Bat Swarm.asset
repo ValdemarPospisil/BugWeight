@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2d36428f2cd6246ba5a7215af69ec4, type: 3}
   m_Name: Bat Swarm
   m_EditorClassIdentifier: 
+  group: 1
   abilityName: Bat Swarm
   icon: {fileID: 568212956093231752, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   abilityDescription: Transform into swarm of bats

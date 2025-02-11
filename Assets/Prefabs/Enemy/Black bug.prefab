@@ -163,6 +163,7 @@ MonoBehaviour:
   - {fileID: 6056776151202710276, guid: 715aa18a204d17e44b1da4506053c4ee, type: 3}
   minAmountOfCoins: 1
   maxAmountOfCoins: 4
+  explosionEffect: {fileID: 7958669827260308180, guid: cbacd9e07b3234d4a86b31077ae9c9ed, type: 3}
 --- !u!50 &8964599466342430990
 Rigidbody2D:
   serializedVersion: 5

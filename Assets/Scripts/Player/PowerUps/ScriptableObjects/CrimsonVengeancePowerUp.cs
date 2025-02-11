@@ -4,58 +4,64 @@ using UnityEngine;
 public class CrimsonVengeancePowerUp : PowerUp
 {
     public GameObject bloodExplosionPrefab; // The blood explosion prefab to spawn
-    private bool bloodRebirthActive;
     private int extraLivesOnTierIV;
 
     public override void Activate(GameObject player)
     {
         UpdateProperties();
-        PlayerManager playerManager = player.GetComponent<PlayerManager>();
-        if (playerManager != null)
-        {
-            playerManager.OnFatalDamage += HandleFatalDamage;
-        }
-    }
+        
+        Enemy.explosionChance = tiers[currentTier - 1].duration;
+        Enemy.explosionRadius = tiers[currentTier - 1].speed;
+        Enemy.explosionDamage = tiers[currentTier - 1].damage;
+        Enemy.explodeOnDeath = true;
 
-    public override void Deactivate(GameObject player)
+    }
+    
+
+    public override void Deactivate()
     {
-        PlayerManager playerManager = player.GetComponent<PlayerManager>();
-        if (playerManager != null)
-        {
-            playerManager.OnFatalDamage -= HandleFatalDamage;
-        }
+        Debug.Log("Deactivate Crimson Vengeance");
+        PlayerManager.explodeOnDeath = false;
+        Enemy.explodeOnDeath = false;
     }
-
+/*
     private void HandleFatalDamage(Vector3 position)
     {
-        if (bloodExplosionPrefab != null)
+        if (currentTier == maxTier)
         {
-            GameObject explosion = Instantiate(bloodExplosionPrefab, position, Quaternion.identity);
-            BloodExplosion explosionScript = explosion.GetComponent<BloodExplosion>();
-            if (explosionScript != null)
-            {
-                var tier = tiers[currentTier - 1];
-                explosionScript.SetUpExplosion(tier.damage, tier.speed, tier.duration);
-            }
-        }
+            
+            PlayerManager.Instance.AddExtraLives(1, 50); // Add extra life on tier IV
+            
 
-        if (bloodRebirthActive && currentTier == maxTier)
-        {
-            PlayerManager playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
-            if (playerManager != null)
+            if (bloodExplosionPrefab != null)
             {
-                playerManager.AddExtraLives(1, 50); // Add extra life on tier IV
+                GameObject explosion = Instantiate(bloodExplosionPrefab, position, Quaternion.identity);
+                BloodExplosion explosionScript = explosion.GetComponent<BloodExplosion>();
+                if (explosionScript != null)
+                {
+                    var tier = tiers[currentTier - 1];
+                    explosionScript.SetUpExplosion(tier.damage, tier.speed, tier.duration);
+                }
             }
         }
     }
-
+*/
     protected override void UpdateProperties()
     {
         if (currentTier < tiers.Count)
         {
             var tier = tiers[currentTier - 1];
-            bloodRebirthActive = tier.damage > 0; // Using damage to check if Blood Rebirth is active
-            extraLivesOnTierIV = Mathf.RoundToInt(tier.speed); // Using speed as extra lives on tier IV
+        }
+
+         if (currentTier == maxTier)
+        {
+            Debug.Log("Activate Crimson Vengeance Tire IV");
+            PlayerManager.Instance.AddExtraLives(1, 0.05f); // Add extra life on tier IV
+
+            PlayerManager.explosionRadius = tiers[currentTier - 1].speed;
+            PlayerManager.explosionDamage = tiers[currentTier - 1].damage;
+            PlayerManager.explodeOnDeath = true;
+
         }
     }
 }

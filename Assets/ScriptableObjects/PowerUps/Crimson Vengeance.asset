@@ -12,24 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8924755c428e48948ae8b40d102812f6, type: 3}
   m_Name: Crimson Vengeance
   m_EditorClassIdentifier: 
+  group: 3
   icon: {fileID: -5645805338450832224, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   baseName: Crimson Vengeance
-  baseDescription: Upon taking lethal damage you realease massive Blood explosion
-    dealing high damage. On tier IV you also get an extra life
+  baseDescription: enemies have % chance to explode upon dying dealing damage in
+    a radius. On tier IV the player gets a extra life and will explode too upon death.
   maxTier: 4
-  currentTier: 2
-  basePicked: 1
+  currentTier: 1
+  basePicked: 0
   tiers:
   - damage: 40
-    duration: 3
+    duration: 0.5
     speed: 5
+  - damage: 50
+    duration: 0.6
+    speed: 6
   - damage: 60
-    duration: 3
-    speed: 5
+    duration: 0.7
+    speed: 8
   - damage: 80
-    duration: 3
-    speed: 5
-  - damage: 100
-    duration: 3
-    speed: 5
+    duration: 1
+    speed: 10
   bloodExplosionPrefab: {fileID: 7958669827260308180, guid: cbacd9e07b3234d4a86b31077ae9c9ed, type: 3}

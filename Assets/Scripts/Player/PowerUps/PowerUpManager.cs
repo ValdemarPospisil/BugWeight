@@ -81,8 +81,7 @@ public class PowerUpManager : MonoBehaviour
     {
         if (activePowerUps.Contains(powerUp))
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            powerUp.Deactivate(player);
+            powerUp.Deactivate();
             activePowerUps.Remove(powerUp);
         }
     }
@@ -91,8 +90,7 @@ public class PowerUpManager : MonoBehaviour
     {
         foreach (var powerUp in activePowerUps)
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            powerUp.Deactivate(player);
+            powerUp.Deactivate();
         }
         activePowerUps.Clear();
     }

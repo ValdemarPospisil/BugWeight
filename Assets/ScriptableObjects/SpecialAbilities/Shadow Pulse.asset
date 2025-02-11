@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 222f7abc07c69424188ed9a31e49e788, type: 3}
   m_Name: Shadow Pulse
   m_EditorClassIdentifier: 
+  group: 3
   abilityName: Shadow Pulse
   icon: {fileID: 6109076962248195895, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   abilityDescription: unleashes a pulse of blood energy, pushing enemies back and

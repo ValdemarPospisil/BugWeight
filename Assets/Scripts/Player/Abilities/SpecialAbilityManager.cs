@@ -97,4 +97,5 @@ public class SpecialAbilityManager : MonoBehaviour
             ability.Upgrade();
         }
     }
+
 }

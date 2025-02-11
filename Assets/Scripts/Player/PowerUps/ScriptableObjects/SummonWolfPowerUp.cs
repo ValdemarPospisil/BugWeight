@@ -17,7 +17,7 @@ public class SummonWolfPowerUp : PowerUp
         wolfBehavior.Initialize(player, damage, speed, duration);
     }
 
-    public override void Deactivate(GameObject player)
+    public override void Deactivate()
     {
         // No deactivation needed for this power-up
     }

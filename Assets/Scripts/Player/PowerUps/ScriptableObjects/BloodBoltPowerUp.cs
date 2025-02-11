@@ -15,13 +15,13 @@ public class BloodBoltPowerUp : PowerUp
         }
     }
 
-    public override void Deactivate(GameObject player)
+    public override void Deactivate()
     {
-        PlayerShooting playerShooting = player.GetComponent<PlayerShooting>();
-        if (playerShooting != null)
-        {
-            playerShooting.StopShooting();
-        }
+//        PlayerShooting playerShooting = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerShooting>();
+     //   if (playerShooting != null)
+     //   {
+      //      playerShooting.StopShooting();
+     //   }
     }
 
     protected override void UpdateProperties()

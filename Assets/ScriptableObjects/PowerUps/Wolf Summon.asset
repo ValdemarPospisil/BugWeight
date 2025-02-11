@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00360b387cbf5674f9dd3b2b4c902877, type: 3}
   m_Name: Wolf Summon
   m_EditorClassIdentifier: 
+  group: 2
   icon: {fileID: 9025682934106409848, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   baseName: Summon Wolf
   baseDescription: summon a wolf that will help you fight

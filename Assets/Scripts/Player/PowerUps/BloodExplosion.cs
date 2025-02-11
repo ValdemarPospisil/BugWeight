@@ -25,13 +25,16 @@ public class BloodExplosion : MonoBehaviour
     
     private void Explode()
     {
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, radius);
-        foreach (var hitCollider in hitColliders)
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, radius);
+        foreach (Collider2D enemy in hitEnemies)
         {
-            Enemy enemy = hitCollider.GetComponent<Enemy>();
-            if (enemy != null)
+            if (enemy.CompareTag("Enemy"))
             {
-                enemy.TakeDamage(damage);
+            IDamageable damageable = enemy.GetComponent<IDamageable>();
+            if (damageable != null)
+            {
+                damageable.TakeDamage(damage);
+            }
             }
         }
     }
