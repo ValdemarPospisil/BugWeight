@@ -20,19 +20,19 @@ MonoBehaviour:
   - damage: 0.1
     duration: 10
     varFloat: 2
-    cooldown: 40
+    cooldown: 3
   - damage: 0.15
     duration: 20
     varFloat: 4
-    cooldown: 35
+    cooldown: 2
   - damage: 0.5
     duration: 30
     varFloat: 6
-    cooldown: 30
+    cooldown: 2
   - damage: 0.3
     duration: 40
     varFloat: 10
-    cooldown: 20
+    cooldown: 2
   maxTier: 4
   currentTier: 1
   basePicked: 0

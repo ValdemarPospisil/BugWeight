@@ -5,10 +5,9 @@ using UnityEngine;
 public class BloodCloneAbility : SpecialAbility
 {
     [SerializeField] private GameObject bloodClonePrefab;
-    [SerializeField] private float explosionRadius = 5f;
     private float damage;
     private float duration;
-    private float healthOfTheWall;
+    private float cloneHealth;
 
     public override void Activate()
     {
@@ -19,7 +18,7 @@ public class BloodCloneAbility : SpecialAbility
             var playerController = player.GetComponent<PlayerController>();
             if (playerController != null)
             {
-                playerController.StartCoroutine(playerController.UseCloneAbility(bloodClonePrefab, duration, damage, explosionRadius));
+                playerController.StartCoroutine(playerController.UseCloneAbility(bloodClonePrefab, duration, damage, cloneHealth));
             }
         }
     }
@@ -30,7 +29,7 @@ public class BloodCloneAbility : SpecialAbility
             var tier = tierVariables[currentTier - 1];
             damage = tier.damage;
             duration = tier.duration;
-            healthOfTheWall = tier.varFloat;
+            cloneHealth = tier.varFloat;
             cooldown = tier.cooldown;
             
         }

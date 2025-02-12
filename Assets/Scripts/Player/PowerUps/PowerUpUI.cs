@@ -17,14 +17,18 @@ public class PowerUpUI : MonoBehaviour
     public void DisplayChoices(List<PowerUp> powerUps)
     {
         ClearCards();
-
+        int index = 0;
         foreach (PowerUp powerUp in powerUps)
         {
             GameObject card = Instantiate(cardPrefab, cardContainer);
             PowerUpCard cardScript = card.GetComponent<PowerUpCard>();
             cardScript.SetUp(powerUp, powerUpManager);
             Button button = card.GetComponent<Button>();
-            button.Select();
+            index++;
+            if (index == 2)
+            {
+                button.Select();
+            }
         }
 
         cardContainer.gameObject.SetActive(true);

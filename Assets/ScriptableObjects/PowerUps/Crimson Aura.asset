@@ -18,15 +18,15 @@ MonoBehaviour:
   baseDescription: Deal damage to nearby enemies. The less health you have the more
     damage you deal.
   maxTier: 4
-  currentTier: 2
+  currentTier: 1
   basePicked: 1
   tierVariables:
   - damage: 5
-    variable: 0.5
+    variable: 1.4
   - damage: 10
-    variable: 1
+    variable: 1.75
   - damage: 15
-    variable: 1.5
-  - damage: 25
     variable: 2
+  - damage: 25
+    variable: 2.4
   auraPrefab: {fileID: 6632239719484675788, guid: 1f1e13c046daeaa429d08c42a300c5fd, type: 3}

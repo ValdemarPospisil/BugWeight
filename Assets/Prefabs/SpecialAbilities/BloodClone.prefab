@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8538111967776532389}
   m_Layer: 3
   m_Name: BloodClone
-  m_TagString: Clone
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707e3b847aafda24c87d459b621a2867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionRadius: 3
 --- !u!61 &8538111967776532389
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -435,8 +436,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1
-      minScalar: 0.5
+      scalar: 0.8
+      minScalar: 0.4
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1128,8 +1129,8 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 3
-        scalar: 200
-        minScalar: 150
+        scalar: 500
+        minScalar: 250
         maxCurve:
           serializedVersion: 2
           m_Curve:

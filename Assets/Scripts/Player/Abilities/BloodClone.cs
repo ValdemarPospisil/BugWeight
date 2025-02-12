@@ -1,18 +1,20 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
-public class BloodClone : MonoBehaviour
+public class BloodClone : MonoBehaviour, IDamageable
 {
     private float duration;
     private float explosionDamage;
-    private float explosionRadius;
+    [SerializeField] private float explosionRadius;
+    private float cloneHealth;
     private ParticleSystem explosionEffect;
 
-    public void Initialize(float duration, float explosionDamage, float explosionRadius)
+    public void Initialize(float duration, float explosionDamage, float cloneHealth)
     {
         this.duration = duration;
         this.explosionDamage = explosionDamage;
-        this.explosionRadius = explosionRadius;
+        this.cloneHealth = cloneHealth;
         explosionEffect = GetComponentInChildren<ParticleSystem>();
         explosionEffect.Stop(); // Stop the particle system so it doesn't play on start
         StartCoroutine(Expire());
@@ -24,9 +26,15 @@ public class BloodClone : MonoBehaviour
         Explode();
     }
 
-    private void OnDestroy()
+
+    private void FixedUpdate()
     {
-        //Explode();
+        if (cloneHealth <= 0)
+        {
+            PlayerController playerController = ServiceLocator.GetService<PlayerController>();
+            playerController.ChangeToNormal();
+            Explode();
+        }
     }
 
     private void Explode()
@@ -54,10 +62,15 @@ public class BloodClone : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void TakeDamage(float damage)
+    {
+        cloneHealth -= damage;
+    }
+
     void OnDrawGizmos()
     {
         // Draw a yellow sphere at the transform's position
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, 3.5f);
+        Gizmos.DrawWireSphere(transform.position, 3f);
     }
 }

@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: 0afc9ee9d9007924cbbfdff387628e6f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2215152779320667485
+    second: necroticTexture_0
+  - first:
+      213: -6805549740849746945
+    second: necroticTexture_1
+  - first:
+      213: -3863518770648742649
+    second: necroticTexture_2
+  - first:
+      213: 2709523255258997244
+    second: necroticTexture_3
+  - first:
+      213: 575107806532186442
+    second: necroticTexture_4
+  - first:
+      213: 5598133431531884195
+    second: necroticTexture_5
+  - first:
+      213: 1196763264043257098
+    second: necroticTexture_6
+  - first:
+      213: 8893563822326537044
+    second: necroticTexture_7
+  - first:
+      213: 5075642612604196325
+    second: necroticTexture_8
+  - first:
+      213: -5920373853089092524
+    second: necroticTexture_9
+  - first:
+      213: -2456515664601791087
+    second: necroticTexture_10
+  - first:
+      213: 615308020750079262
+    second: necroticTexture_11
+  - first:
+      213: 8385628789962818964
+    second: necroticTexture_12
+  - first:
+      213: -2001918785620406873
+    second: necroticTexture_13
+  - first:
+      213: 6292512472210639899
+    second: necroticTexture_14
+  - first:
+      213: -1944982614356138405
+    second: necroticTexture_15
+  - first:
+      213: -7758176989713476930
+    second: necroticTexture_16
+  - first:
+      213: -9072221194851338087
+    second: necroticTexture_17
+  - first:
+      213: 135413800288466088
+    second: necroticTexture_18
+  - first:
+      213: -6179679253631822164
+    second: necroticTexture_19
+  - first:
+      213: -4375394259820645836
+    second: necroticTexture_20
+  - first:
+      213: -8145852282712394586
+    second: necroticTexture_21
+  - first:
+      213: -6072072837966271738
+    second: necroticTexture_22
+  - first:
+      213: -23520008481306432
+    second: necroticTexture_23
+  - first:
+      213: -5262184907855628671
+    second: necroticTexture_24
+  - first:
+      213: 6163950307592257837
+    second: necroticTexture_25
+  - first:
+      213: -7673901137991032884
+    second: necroticTexture_26
+  - first:
+      213: -6454846086202105389
+    second: necroticTexture_27
+  - first:
+      213: -5970541838034598775
+    second: necroticTexture_28
+  - first:
+      213: -2280280769352058506
+    second: necroticTexture_29
+  - first:
+      213: -8885288227247572595
+    second: necroticTexture_30
+  - first:
+      213: -1815987014578997756
+    second: necroticTexture_31
+  - first:
+      213: 2587405427459524785
+    second: necroticTexture_32
+  - first:
+      213: -3361593620278513882
+    second: necroticTexture_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: necroticTexture_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 263
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5da0a667bdcdbe10800000000000000
+      internalID: 2215152779320667485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 258
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb266b6194dd81a0800000000000000
+      internalID: -6805549740849746945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 274
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7058d6cd526026ac0800000000000000
+      internalID: -3863518770648742649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 281
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf16f548b092a9520800000000000000
+      internalID: 2709523255258997244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 266
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41b7e3c0813bf700800000000000000
+      internalID: 575107806532186442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_5
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 260
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae42bf12b090bd40800000000000000
+      internalID: 5598133431531884195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 176
+        width: 45
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d098119d1cb9010800000000000000
+      internalID: 1196763264043257098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 231
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45bd9012d294c6b70800000000000000
+      internalID: 8893563822326537044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 216
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5db13701e407640800000000000000
+      internalID: 5075642612604196325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_9
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 208
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c2d1d195b96dda0800000000000000
+      internalID: -5920373853089092524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_10
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 187
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1954a3aa404b8edd0800000000000000
+      internalID: -2456515664601791087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_11
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 195
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15d14482630a8800800000000000000
+      internalID: 615308020750079262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_12
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 182
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495c50c94fcbf5470800000000000000
+      internalID: 8385628789962818964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 187
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad0ae99871c734e0800000000000000
+      internalID: -2001918785620406873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_14
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 155
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c84da11ce735750800000000000000
+      internalID: 6292512472210639899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_15
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 121
+        width: 13
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56edf00e980205e0800000000000000
+      internalID: -1944982614356138405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_16
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 128
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2d487e12b655490800000000000000
+      internalID: -7758176989713476930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 143
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998bd15d3eef81280800000000000000
+      internalID: -9072221194851338087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 130
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a431e7422611e100800000000000000
+      internalID: 135413800288466088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_19
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 109
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca69c6dc57e5d3aa0800000000000000
+      internalID: -6179679253631822164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_20
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 117
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4327b1f3a1a7743c0800000000000000
+      internalID: -4375394259820645836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_21
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 91
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a47f18e18e14fe80800000000000000
+      internalID: -8145852282712394586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_22
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 93
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60be8b2dce9abbba0800000000000000
+      internalID: -6072072837966271738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_23
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 78
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c88b594da07caff0800000000000000
+      internalID: -23520008481306432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_24
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 65
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186f7d0e4b6f8f6b0800000000000000
+      internalID: -5262184907855628671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_25
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 71
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2142319520ca8550800000000000000
+      internalID: 6163950307592257837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_26
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 57
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf1494b293d08590800000000000000
+      internalID: -7673901137991032884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_27
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 57
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d16a101fa7cb66a0800000000000000
+      internalID: -6454846086202105389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 12
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9840753e4df542da0800000000000000
+      internalID: -5970541838034598775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_29
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679bd92c8b0da50e0800000000000000
+      internalID: -2280280769352058506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_30
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 12
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89b2fffe6d11b480800000000000000
+      internalID: -8885288227247572595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_31
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 16
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406fb478e615cc6e0800000000000000
+      internalID: -1815987014578997756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_32
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 34
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b884a1178f48e320800000000000000
+      internalID: 2587405427459524785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroticTexture_33
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 16
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f6410b9683951d0800000000000000
+      internalID: -3361593620278513882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      necroticTexture_0: 2215152779320667485
+      necroticTexture_1: -6805549740849746945
+      necroticTexture_10: -2456515664601791087
+      necroticTexture_11: 615308020750079262
+      necroticTexture_12: 8385628789962818964
+      necroticTexture_13: -2001918785620406873
+      necroticTexture_14: 6292512472210639899
+      necroticTexture_15: -1944982614356138405
+      necroticTexture_16: -7758176989713476930
+      necroticTexture_17: -9072221194851338087
+      necroticTexture_18: 135413800288466088
+      necroticTexture_19: -6179679253631822164
+      necroticTexture_2: -3863518770648742649
+      necroticTexture_20: -4375394259820645836
+      necroticTexture_21: -8145852282712394586
+      necroticTexture_22: -6072072837966271738
+      necroticTexture_23: -23520008481306432
+      necroticTexture_24: -5262184907855628671
+      necroticTexture_25: 6163950307592257837
+      necroticTexture_26: -7673901137991032884
+      necroticTexture_27: -6454846086202105389
+      necroticTexture_28: -5970541838034598775
+      necroticTexture_29: -2280280769352058506
+      necroticTexture_3: 2709523255258997244
+      necroticTexture_30: -8885288227247572595
+      necroticTexture_31: -1815987014578997756
+      necroticTexture_32: 2587405427459524785
+      necroticTexture_33: -3361593620278513882
+      necroticTexture_4: 575107806532186442
+      necroticTexture_5: 5598133431531884195
+      necroticTexture_6: 1196763264043257098
+      necroticTexture_7: 8893563822326537044
+      necroticTexture_8: 5075642612604196325
+      necroticTexture_9: -5920373853089092524
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

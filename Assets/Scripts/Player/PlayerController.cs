@@ -313,17 +313,27 @@ public class PlayerController : MonoBehaviour
         GameObject clone = Instantiate(clonePrefab, transform.position, transform.rotation);
         BloodClone bloodClone = clone.GetComponent<BloodClone>();
         bloodClone.Initialize(cloneDuration, explosionDamage, explosionRadius);
-        clone.tag = "Clone";
+        tag = "Invisible";
+        rb.bodyType = RigidbodyType2D.Kinematic;
 
         spriteRenderer.color = new Color(1, 1, 1, 0.3f);
 
-        targetTag = "Clone";
 
         yield return new WaitForSeconds(cloneDuration);
 
-        targetTag = "Player";
+        ChangeToNormal();
+    }
 
+    public void ChangeToNormal()
+    {
+        isWolfForm = false;
+        SetAbilityIcon();
+        tag = "Player";
         spriteRenderer.color = new Color(1, 1, 1, 1);
+        isWolfForm = false;
+        isDashing = false;
+        isBats = false;
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     public IEnumerator ShadowStep(float teleportDistance, float shadowExplosionDelay, float explosionDamage,

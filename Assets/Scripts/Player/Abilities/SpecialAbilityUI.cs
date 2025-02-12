@@ -11,14 +11,18 @@ public class SpecialAbilityUI : MonoBehaviour
     public void DisplayChoices(List<SpecialAbility> abilities)
     {
         ClearCards();
-
+        int index = 0;
         foreach (SpecialAbility ability in abilities)
         {
             GameObject card = Instantiate(cardPrefab, cardContainer);
             SpecialAbilityCard cardScript = card.GetComponent<SpecialAbilityCard>();
             cardScript.SetUp(ability);
             Button button = card.GetComponent<Button>();
-            button.Select();
+            index++;
+            if (index == 2)
+            {
+                button.Select();
+            }
         }
 
         // Show the card container (if hidden by default)
