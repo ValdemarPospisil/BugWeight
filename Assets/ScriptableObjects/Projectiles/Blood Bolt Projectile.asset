@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeName: Blood Bolt
   prefab: {fileID: 5017267562488890452, guid: c884c8a233ac07049ab26b0fc2672574, type: 3}
-  speed: 8
-  damage: 15
-  lifetime: 6
+  speed: 5
+  damage: 20
+  lifetime: 5
   targetTag: Enemy
+  isScalable: 1

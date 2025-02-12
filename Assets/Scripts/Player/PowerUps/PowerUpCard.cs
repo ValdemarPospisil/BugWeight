@@ -34,20 +34,20 @@ public class PowerUpCard : MonoBehaviour
 
     private void UpdateCardUI()
     {
-        if (showTier - 1 < powerUp.tiers.Count)
+        if (showTier - 1 < powerUp.tierVariables.Count)
         {  
-            var tier = powerUp.tiers[showTier - 1];
+            var tier = powerUp.tierVariables[showTier - 1];
             icon.sprite = powerUp.icon;
             nameText.text = $"{powerUp.baseName} {GetRomanNumeral(showTier)}";
             descriptionText.text = GenerateDescription(tier);
         }
     }
 
-    private string GenerateDescription(PowerUpTier tier)
+    private string GenerateDescription(TierVariable tier)
     {
         return $"{powerUp.baseDescription}\n" +
                $"Damage: {tier.damage}\n" +
-               $"Speed: {tier.speed}\n" +
+               $"Speed: {tier.varFloat}\n" +
                $"Interval: {tier.duration}";
     }
 

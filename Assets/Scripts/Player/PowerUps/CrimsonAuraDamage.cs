@@ -24,9 +24,9 @@ public class CrimsonAuraDamage : MonoBehaviour
         if (playerManager != null)
         {
             float healthPercentage = playerManager.GetHealthPercentage();
-            float damage = powerUp.tiers[powerUp.currentTier-1].damage * (1 + (1 - healthPercentage));
+            float damage = powerUp.tierVariables[powerUp.currentTier-1].damage * (1 + (1 - healthPercentage));
 
-            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, powerUp.tiers[powerUp.currentTier-1].speed);
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, powerUp.tierVariables[powerUp.currentTier-1].varFloat);
             foreach (var hitCollider in hitColliders)
             {
                 var damageable = hitCollider.GetComponent<IDamageable>();

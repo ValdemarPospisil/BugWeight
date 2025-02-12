@@ -21,7 +21,7 @@ public class PlayerShooting : MonoBehaviour
         if (activePowerUp != null)
         {
             shootTimer += Time.deltaTime;
-            if (shootTimer >= activePowerUp.tiers[activePowerUp.currentTier - 1].duration)
+            if (shootTimer >= activePowerUp.tierVariables[activePowerUp.currentTier - 1].duration)
             {
                 ShootProjectiles();
                 shootTimer = 0f;

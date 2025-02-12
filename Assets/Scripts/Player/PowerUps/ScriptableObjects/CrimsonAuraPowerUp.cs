@@ -12,7 +12,7 @@ public class CrimsonAuraPowerUp : PowerUp
         PlayerManager playerManager = player.GetComponent<PlayerManager>();
         if (playerManager != null)
         {
-            var tier = tiers[currentTier - 1];
+            var tier = tierVariables[currentTier - 1];
 
             GameObject aura = Instantiate(auraPrefab, playerManager.transform.position, Quaternion.identity);
             aura.transform.SetParent(playerManager.transform);
@@ -32,9 +32,9 @@ public class CrimsonAuraPowerUp : PowerUp
 
     protected override void UpdateProperties()
     {
-        if (currentTier < tiers.Count)
+        if (currentTier < tierVariables.Count)
         {
-            var tier = tiers[currentTier - 1];
+            var tier = tierVariables[currentTier - 1];
             // No need to store shootInterval and speed separately
         }
     }

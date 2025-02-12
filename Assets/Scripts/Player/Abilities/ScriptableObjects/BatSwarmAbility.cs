@@ -12,7 +12,8 @@ public class BatSwarmAbility : SpecialAbility
 
     public override void Activate()
     {
-        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        UpdateProperties();
+        playerController = ServiceLocator.GetService<PlayerController>();
 
         playerController.BatSwarm(damage, duration, BatSpeed);
     }
@@ -21,10 +22,9 @@ public class BatSwarmAbility : SpecialAbility
     {
         if (currentTier < maxTier)
         {
-            damage += damage * percentageIncrease;
-            cooldown -= cooldown * percentageIncrease;
-            duration += duration * percentageIncrease;
-            BatSpeed += BatSpeed * percentageIncrease;
+            damage = tierVariables[currentTier].damage;
+            duration = tierVariables[currentTier].duration;
+            BatSpeed = tierVariables[currentTier].varFloat;
         }
     }
 }

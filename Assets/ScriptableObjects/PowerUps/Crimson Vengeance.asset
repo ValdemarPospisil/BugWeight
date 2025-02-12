@@ -20,17 +20,20 @@ MonoBehaviour:
   maxTier: 4
   currentTier: 1
   basePicked: 0
-  tiers:
-  - damage: 40
-    duration: 0.5
-    speed: 5
-  - damage: 50
-    duration: 0.6
-    speed: 6
-  - damage: 60
-    duration: 0.7
-    speed: 8
-  - damage: 80
-    duration: 1
-    speed: 10
-  bloodExplosionPrefab: {fileID: 7958669827260308180, guid: cbacd9e07b3234d4a86b31077ae9c9ed, type: 3}
+  tierVariables:
+  - damage: 30
+    duration: 20
+    varFloat: 25
+    varInt: 0
+  - damage: 30
+    duration: 20
+    varFloat: 25
+    varInt: 0
+  - damage: 30
+    duration: 20
+    varFloat: 25
+    varInt: 0
+  - damage: 30
+    duration: 20
+    varFloat: 25
+    varInt: 0

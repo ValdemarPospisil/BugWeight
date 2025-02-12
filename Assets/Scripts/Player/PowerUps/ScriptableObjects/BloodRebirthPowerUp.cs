@@ -19,11 +19,11 @@ public class BloodRebirthPowerUp : PowerUp
 
     protected override void UpdateProperties()
     {
-        if (currentTier < tiers.Count)
+        if (currentTier < tierVariables.Count)
         {
-            var tier = tiers[currentTier - 1];
+            var tier = tierVariables[currentTier - 1];
             healthPercentage = tier.damage; // Using damage as health percentage
-            extraLives = Mathf.RoundToInt(tier.speed); // Using speed as extra lives
+            extraLives =  tier.varInt; // Using speed as extra lives
         }
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");

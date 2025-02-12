@@ -18,18 +18,22 @@ MonoBehaviour:
   baseDescription: summon a wolf that will help you fight
   maxTier: 4
   currentTier: 1
-  basePicked: 0
-  tiers:
+  basePicked: 1
+  tierVariables:
   - damage: 25
-    duration: 2
-    speed: 10
-  - damage: 25
-    duration: 2
-    speed: 12
-  - damage: 30
-    duration: 1.5
-    speed: 12
-  - damage: 40
-    duration: 1
-    speed: 15
+    duration: 20
+    varFloat: 20
+    varInt: 20
+  - damage: 20
+    duration: 20
+    varFloat: 20
+    varInt: 20
+  - damage: 20
+    duration: 20
+    varFloat: 20
+    varInt: 20
+  - damage: 20
+    duration: 20
+    varFloat: 20
+    varInt: 20
   wolfPrefab: {fileID: 7132395684340724752, guid: b7316082c189c4a469bdf5463d332556, type: 3}

@@ -57,7 +57,6 @@ public class SpecialAbilityManager : MonoBehaviour
         }
         activeAbilities.Clear();
         Invoke("ShowSpecialAbilityChoices", 0.75f);
-        //ShowSpecialAbilityChoices();
     }
 
     public void UseSpecialAbility(int index)

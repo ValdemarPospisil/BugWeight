@@ -2,12 +2,14 @@ using UnityEngine;
 using System.Collections.Generic;
 
 [System.Serializable]
-public struct PowerUpTier
+public struct TierVariable
 {
     public float damage;
     public float duration;
-    public float speed; 
+    public float varFloat; 
+    public int varInt;
 }
+
 
 public enum GroupType
 {
@@ -30,7 +32,7 @@ public abstract class PowerUp : ScriptableObject
     protected PowerUpManager manager;
     public bool basePicked;
 
-    public List<PowerUpTier> tiers;
+    public List<TierVariable> tierVariables;
 
     public void Initialize(PowerUpManager powerUpManager)
     {

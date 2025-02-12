@@ -26,9 +26,9 @@ public class BloodBoltPowerUp : PowerUp
 
     protected override void UpdateProperties()
     {
-        if (currentTier < tiers.Count)
+        if (currentTier < tierVariables.Count)
         {
-            var tier = tiers[currentTier - 1];
+            var tier = tierVariables[currentTier - 1];
             // No need to store shootInterval and speed separately
         }
     }

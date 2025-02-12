@@ -43,10 +43,10 @@ public class VampiricHungerPowerUp : PowerUp
 
     protected override void UpdateProperties()
     {
-        if (currentTier < tiers.Count)
+        if (currentTier < tierVariables.Count)
         {
-            var tier = tiers[currentTier - 1];
-            spawnChance = tier.speed; // Using speed as spawn chance
+            var tier = tierVariables[currentTier - 1];
+            spawnChance = tier.varFloat; // Using speed as spawn chance
             healAmount = tier.damage; // Using damage as heal amount
         }
     }

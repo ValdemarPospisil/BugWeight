@@ -24,11 +24,11 @@ public class SummonWolfPowerUp : PowerUp
 
     protected override void UpdateProperties()
     {
-        if (currentTier < tiers.Count)
+        if (currentTier < tierVariables.Count)
         {
-            var tier = tiers[currentTier - 1];
+            var tier = tierVariables[currentTier - 1];
             damage = tier.damage;
-            speed = tier.speed;
+            speed = tier.varInt;
             duration = tier.duration;
         }
         // Update properties based on the current tier if needed

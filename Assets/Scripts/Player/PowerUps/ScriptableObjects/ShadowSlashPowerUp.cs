@@ -48,9 +48,9 @@ public class ShadowSlashPowerUp : PowerUp
 
     protected override void UpdateProperties()
     {
-        if (currentTier < tiers.Count)
+        if (currentTier < tierVariables.Count)
         {
-            var tier = tiers[currentTier - 1];
+            var tier = tierVariables[currentTier - 1];
             damage = tier.damage;
             interval = tier.duration;
             isDoubleDamage = currentTier >= 2;

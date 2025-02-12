@@ -9,4 +9,5 @@ public class ProjectileTypeData : ScriptableObject
     public float damage;
     public float lifetime;
     public string targetTag;
+    public bool isScalable;
 }
