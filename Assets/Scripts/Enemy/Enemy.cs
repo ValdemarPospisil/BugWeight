@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
     public static bool explodeOnDeath = false;
     public static float explosionChance = 0.3f; // 30% chance to explode
     [SerializeField] private GameObject explosionEffect; // Prefab for the explosion effect
-    public static float explosionRadius = 2f; // Radius of the explosion
+    [SerializeField] private float explosionRadius = 2f; // Radius of the explosion
     public static float explosionDamage;
 
     private MeleeEnemyData meleeData;

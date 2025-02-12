@@ -17,14 +17,24 @@ MonoBehaviour:
   icon: {fileID: 6109076962248195895, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   abilityDescription: unleashes a pulse of blood energy, pushing enemies back and
     healing slightly for each enemy hit.
-  cooldown: 5
-  percentageIncrease: 0.1
-  damage: 40
-  duration: 0.3
+  tierVariables:
+  - damage: 25
+    duration: 4
+    varFloat: 5
+    cooldown: 40
+  - damage: 35
+    duration: 8
+    varFloat: 8
+    cooldown: 30
+  - damage: 45
+    duration: 12
+    varFloat: 14
+    cooldown: 20
+  - damage: 65
+    duration: 16
+    varFloat: 20
+    cooldown: 10
   maxTier: 4
   currentTier: 1
   basePicked: 0
-  pushForce: 6
-  healAmount: 5.5
-  pulseRadius: 4
   abilityPrefab: {fileID: 1039445899800646278, guid: 095a0ed7e9ffc5448a30b2feffd54598, type: 3}

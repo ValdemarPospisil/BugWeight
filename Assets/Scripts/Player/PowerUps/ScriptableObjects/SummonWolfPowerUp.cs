@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "PowerUps/Summon Wolf")]
 public class SummonWolfPowerUp : PowerUp
 {
-    public GameObject wolfPrefab; // The wolf prefab to spawn
+    public GameObject wolfPrefab;
     private float damage;
     private float speed;
     private float duration;
@@ -11,7 +11,7 @@ public class SummonWolfPowerUp : PowerUp
     public override void Activate(GameObject player)
     {
         UpdateProperties();
-        Vector3 spawnPosition = player.transform.position + new Vector3(1, 0, 0); // Spawn next to the player
+        Vector3 spawnPosition = player.transform.position + new Vector3(1, 0, 0);
         GameObject wolf = Instantiate(wolfPrefab, spawnPosition, Quaternion.identity);
         WolfBehavior wolfBehavior = wolf.GetComponent<WolfBehavior>();
         wolfBehavior.Initialize(player, damage, speed, duration);
@@ -19,7 +19,6 @@ public class SummonWolfPowerUp : PowerUp
 
     public override void Deactivate()
     {
-        // No deactivation needed for this power-up
     }
 
     protected override void UpdateProperties()
@@ -28,9 +27,8 @@ public class SummonWolfPowerUp : PowerUp
         {
             var tier = tierVariables[currentTier - 1];
             damage = tier.damage;
-            speed = tier.varInt;
-            duration = tier.duration;
+            speed = tier.variable;
+            duration = tier.variable * 2;
         }
-        // Update properties based on the current tier if needed
     }
 }

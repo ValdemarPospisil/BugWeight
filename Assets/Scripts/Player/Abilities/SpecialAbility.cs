@@ -7,7 +7,7 @@ public struct TierVariableSA
     public float damage;
     public float duration;
     public float varFloat; 
-    public int varInt;
+    public float cooldown;
 }
 public abstract class SpecialAbility : ScriptableObject
 {
@@ -16,14 +16,11 @@ public abstract class SpecialAbility : ScriptableObject
     public Sprite icon;
     [TextArea(3, 10)]
     public string abilityDescription;
-    public List<TierVariable> tierVariables;
-    public float cooldown = 5f;
-    [SerializeField] protected float percentageIncrease = 0.1f;
-    [SerializeField] protected float damage = 5f;
-    [SerializeField] protected float duration = 5f;
+    public List<TierVariableSA> tierVariables;
     public int maxTier = 4;
     public int currentTier = 1; 
     public abstract void Activate();
+    public float cooldown { get; protected set; }
     public bool basePicked;
 
      public bool CanUpgrade()

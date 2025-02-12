@@ -15,8 +15,6 @@ public class ShadowSlashPowerUp : PowerUp
         PlayerController playerController = player.GetComponent<PlayerController>();
         if (playerController != null)
         {
-             // Assuming tier 2 is double damage
-
             playerController.StartCoroutine(SpawnSlashes(playerController));
         }
     }
@@ -25,19 +23,30 @@ public class ShadowSlashPowerUp : PowerUp
     {
         while (true)
         {
-            GameObject slash = Instantiate(slashPrefab, playerController.transform.position, Quaternion.identity);
-            slash.transform.SetParent(playerController.transform);
-            slash.transform.localPosition = new Vector2(playerController.lastDirection.x * 1.3f, playerController.lastDirection.y *  1.3f);
-           
-            slash.transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(playerController.lastDirection.y, playerController.lastDirection.x) * Mathf.Rad2Deg - 90);
+            // Instantiate slash in front of the player
+            InstantiateSlash(playerController, playerController.GetCurrentDirection());
 
-            var slashDamage = slash.GetComponent<ShadowSlashDamage>();
-            if (slashDamage != null)
+            // If current tier is 4, instantiate slash behind the player too
+            if (currentTier == 4)
             {
-                slashDamage.Initialize(damage, isDoubleDamage);
+                InstantiateSlash(playerController, -playerController.GetCurrentDirection());
             }
 
             yield return new WaitForSeconds(interval);
+        }
+    }
+
+    private void InstantiateSlash(PlayerController playerController, Vector2 direction)
+    {
+        GameObject slash = Instantiate(slashPrefab, playerController.transform.position, Quaternion.identity);
+        slash.transform.SetParent(playerController.transform);
+        slash.transform.localPosition = new Vector2(direction.x * 1.3f, direction.y * 1.3f);
+        slash.transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90);
+
+        var slashDamage = slash.GetComponent<ShadowSlashDamage>();
+        if (slashDamage != null)
+        {
+            slashDamage.Initialize(damage, isDoubleDamage);
         }
     }
 
@@ -52,7 +61,7 @@ public class ShadowSlashPowerUp : PowerUp
         {
             var tier = tierVariables[currentTier - 1];
             damage = tier.damage;
-            interval = tier.duration;
+            interval = tier.variable;
             isDoubleDamage = currentTier >= 2;
         }
     }

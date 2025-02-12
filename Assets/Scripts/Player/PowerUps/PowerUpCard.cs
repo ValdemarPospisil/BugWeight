@@ -47,8 +47,7 @@ public class PowerUpCard : MonoBehaviour
     {
         return $"{powerUp.baseDescription}\n" +
                $"Damage: {tier.damage}\n" +
-               $"Speed: {tier.varFloat}\n" +
-               $"Interval: {tier.duration}";
+               $"Speed: {tier.variable}\n";;
     }
 
     private string GetRomanNumeral(int number)

@@ -16931,10 +16931,7 @@ MonoBehaviour:
   allAbilities:
   - {fileID: 11400000, guid: 2b6b0898bfb202c4d8b73192744ed2b5, type: 2}
   - {fileID: 11400000, guid: 382f0df84155713448146863eec9f49a, type: 2}
-  - {fileID: 11400000, guid: cd1d1a7c483f38447b279986a5b7ad94, type: 2}
   - {fileID: 11400000, guid: 56014dc0e51e5eb45b9534fe87b85395, type: 2}
-  - {fileID: 11400000, guid: e0f4dc63667694f44ae1cc2d5a5ea1f2, type: 2}
-  - {fileID: 11400000, guid: b3438f05423754b428ab6862dbb1906d, type: 2}
   activeAbilities: []
   specialAbilityUI: {fileID: 3381126709965548693}
 --- !u!1 &5522033088195279073

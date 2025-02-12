@@ -6,9 +6,13 @@ public class BloodCloneAbility : SpecialAbility
 {
     [SerializeField] private GameObject bloodClonePrefab;
     [SerializeField] private float explosionRadius = 5f;
+    private float damage;
+    private float duration;
+    private float healthOfTheWall;
 
     public override void Activate()
     {
+        UpdateProperties();
         var player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
@@ -23,9 +27,11 @@ public class BloodCloneAbility : SpecialAbility
     {
         if (currentTier < maxTier)
         {
-            damage += damage * percentageIncrease;
-            cooldown -= cooldown * percentageIncrease;
-            duration += duration * percentageIncrease;
+            var tier = tierVariables[currentTier - 1];
+            damage = tier.damage;
+            duration = tier.duration;
+            healthOfTheWall = tier.varFloat;
+            cooldown = tier.cooldown;
             
         }
     }

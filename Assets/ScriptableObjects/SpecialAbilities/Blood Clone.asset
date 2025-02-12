@@ -12,14 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec7721375525e3429e201cb9d0e3379, type: 3}
   m_Name: Blood Clone
   m_EditorClassIdentifier: 
+  group: 0
   abilityName: Blood Clone
   icon: {fileID: -5389201861494937112, guid: 59352b489f88ce14383a3d567e3af8b1, type: 3}
   abilityDescription: Make a blood clone of yourself and go invisible for a period
     of time
-  cooldown: 5
-  percentageIncrease: 0.1
-  damage: 30
-  duration: 5
+  tierVariables:
+  - damage: 15
+    duration: 15
+    varFloat: 40
+    cooldown: 60
+  - damage: 20
+    duration: 20
+    varFloat: 60
+    cooldown: 50
+  - damage: 30
+    duration: 25
+    varFloat: 80
+    cooldown: 40
+  - damage: 50
+    duration: 35
+    varFloat: 110
+    cooldown: 30
   maxTier: 4
   currentTier: 1
   basePicked: 0

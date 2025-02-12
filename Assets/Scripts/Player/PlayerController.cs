@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     private Dictionary<string, TextMeshProUGUI> cooldownTexts = new Dictionary<string, TextMeshProUGUI>();
     private Dictionary<string, Image> cooldownCovers = new Dictionary<string, Image>();
     public static PlayerController Instance { get; private set; }
+    private Vector2 currentDirection;
 
     
     private bool isBats = false;
@@ -79,6 +80,17 @@ public class PlayerController : MonoBehaviour
     {
         UpdateCooldowns();
         HandleInput();
+
+        currentDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+
+        if (currentDirection != Vector2.zero)
+        {
+            lastDirection = currentDirection;
+        }
+    }
+    public Vector2 GetCurrentDirection()
+    {
+        return currentDirection != Vector2.zero ? currentDirection : lastDirection;
     }
 
     private void UpdateCooldowns()
@@ -264,7 +276,7 @@ public class PlayerController : MonoBehaviour
         batSwarmDamageScript.gameObject.SetActive(false);
     }
 
-    public IEnumerator BloodSurge(float surgeSpeed, float dashDuration, float damageDuration, GameObject bloodTrailPrefab)
+    public IEnumerator BloodSurge(float surgeSpeed, float dashDuration, float mistDamage, GameObject bloodTrailPrefab)
     {
         if (isDashing) yield break;
         dashSpeed = surgeSpeed;
@@ -274,6 +286,8 @@ public class PlayerController : MonoBehaviour
         isDashing = true;
         var bloodTrail = Instantiate(bloodTrailPrefab, transform.position, Quaternion.identity);
         bloodTrail.transform.SetParent(transform);
+        BloodTrailDamage bloodTrailDamage = bloodTrail.GetComponent<BloodTrailDamage>();
+        bloodTrailDamage.SetDamage(mistDamage);
         spriteRenderer.enabled = false;
 
         var trailRenderer = GetComponent<TrailRenderer>();
@@ -291,7 +305,7 @@ public class PlayerController : MonoBehaviour
         capsuleCollider2D.isTrigger = false;
         isDashing = false;
 
-        Destroy(bloodTrail, damageDuration);
+        Destroy(bloodTrail, 10f);
     }
 
     public IEnumerator UseCloneAbility(GameObject clonePrefab, float cloneDuration, float explosionDamage, float explosionRadius)

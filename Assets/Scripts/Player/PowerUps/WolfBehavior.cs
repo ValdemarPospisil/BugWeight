@@ -20,9 +20,9 @@ public class WolfBehavior : MonoBehaviour
     public void Initialize(GameObject player, float damage, float patrolRange, float speed)
     {
         this.player = player;
-        this.attackDamage = damage;
+        attackDamage = damage;
         this.patrolRange = patrolRange;
-        this.moveSpeed = speed;
+        moveSpeed = speed;
 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();

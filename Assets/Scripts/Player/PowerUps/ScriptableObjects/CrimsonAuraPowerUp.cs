@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 [CreateAssetMenu(menuName = "PowerUps/Crimson Aura")]
 public class CrimsonAuraPowerUp : PowerUp
@@ -35,7 +34,6 @@ public class CrimsonAuraPowerUp : PowerUp
         if (currentTier < tierVariables.Count)
         {
             var tier = tierVariables[currentTier - 1];
-            // No need to store shootInterval and speed separately
         }
     }
 }

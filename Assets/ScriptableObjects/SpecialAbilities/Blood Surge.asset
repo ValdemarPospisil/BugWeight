@@ -12,18 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684359295d9b04646bc3a2ee136fb816, type: 3}
   m_Name: Blood Surge
   m_EditorClassIdentifier: 
+  group: 0
   abilityName: Blood Surge
   icon: {fileID: 3482621199288465255, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   abilityDescription: Surge forward and leave a blood mist trail behind that deals
     damage
-  cooldown: 5
-  percentageIncrease: 0.1
-  damage: 15
-  duration: 5
+  tierVariables:
+  - damage: 0.1
+    duration: 8
+    varFloat: 2
+    cooldown: 35
+  - damage: 0.15
+    duration: 16
+    varFloat: 4
+    cooldown: 30
+  - damage: 0.2
+    duration: 24
+    varFloat: 6
+    cooldown: 25
+  - damage: 0.4
+    duration: 36
+    varFloat: 8
+    cooldown: 15
   maxTier: 4
   currentTier: 1
   basePicked: 1
-  dashSpeed: 25
-  dashDuration: 2
-  damageDuration: 5
   bloodTrailPrefab: {fileID: 3955109691808629756, guid: 0965f4d06c8a15f44af95ad6877ec803, type: 3}

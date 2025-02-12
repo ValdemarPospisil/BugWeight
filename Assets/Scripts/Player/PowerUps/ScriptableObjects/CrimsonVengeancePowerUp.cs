@@ -23,8 +23,7 @@ public class CrimsonVengeancePowerUp : PowerUp
             var tier = tierVariables[currentTier - 1];
         }
 
-        Enemy.explosionChance = tierVariables[currentTier - 1].duration;
-        Enemy.explosionRadius = tierVariables[currentTier - 1].varFloat;
+        Enemy.explosionChance = tierVariables[currentTier - 1].variable;
         Enemy.explosionDamage = tierVariables[currentTier - 1].damage;
         
 

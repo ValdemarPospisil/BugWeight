@@ -17,23 +17,15 @@ MonoBehaviour:
   baseName: Blood Bolt
   baseDescription: Shoot a Blood Bolt in front of you dealing damage.
   maxTier: 4
-  currentTier: 2
-  basePicked: 1
+  currentTier: 1
+  basePicked: 0
   tierVariables:
-  - damage: 5
-    duration: 2
-    varFloat: 8
-    varInt: 0
-  - damage: 100
-    duration: 1
-    varFloat: 16
-    varInt: 0
-  - damage: 100
-    duration: 1
-    varFloat: 24
-    varInt: 0
-  - damage: 100
-    duration: 1
-    varFloat: 30
-    varInt: 0
+  - damage: 10
+    variable: 7
+  - damage: 15
+    variable: 9
+  - damage: 20
+    variable: 12
+  - damage: 30
+    variable: 16
   projectileName: Blood Bolt

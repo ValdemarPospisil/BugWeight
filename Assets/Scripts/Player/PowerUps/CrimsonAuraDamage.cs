@@ -26,7 +26,7 @@ public class CrimsonAuraDamage : MonoBehaviour
             float healthPercentage = playerManager.GetHealthPercentage();
             float damage = powerUp.tierVariables[powerUp.currentTier-1].damage * (1 + (1 - healthPercentage));
 
-            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, powerUp.tierVariables[powerUp.currentTier-1].varFloat);
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, powerUp.tierVariables[powerUp.currentTier-1].variable);
             foreach (var hitCollider in hitColliders)
             {
                 var damageable = hitCollider.GetComponent<IDamageable>();
@@ -47,6 +47,6 @@ public class CrimsonAuraDamage : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 1.4f);
+        Gizmos.DrawWireSphere(transform.position, 2.4f);
     }
 }

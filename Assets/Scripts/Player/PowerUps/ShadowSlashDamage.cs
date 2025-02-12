@@ -15,7 +15,7 @@ public class ShadowSlashDamage : MonoBehaviour
 
     public void DealDamage()
     {
-        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(transform.position, new Vector2(1.0f, 1.0f), 0f); // Adjust size as needed
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 1.5f); // Adjust size as needed
         foreach (var hitCollider in hitColliders)
         {
             var damageable = hitCollider.GetComponent<IDamageable>();
@@ -24,6 +24,12 @@ public class ShadowSlashDamage : MonoBehaviour
                 damageable.TakeDamage(damage);
             }
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 1.5f);
     }
 
     public void DestroySlash()

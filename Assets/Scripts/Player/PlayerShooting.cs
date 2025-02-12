@@ -6,9 +6,9 @@ public class PlayerShooting : MonoBehaviour
 
     private BloodBoltPowerUp activePowerUp;
     private float shootTimer;
+    private float shootCooldown = 1f;
     private PlayerController playerController;
     private ProjectileFactory projectileFactory;
-
 
     private void Start()
     {
@@ -21,7 +21,7 @@ public class PlayerShooting : MonoBehaviour
         if (activePowerUp != null)
         {
             shootTimer += Time.deltaTime;
-            if (shootTimer >= activePowerUp.tierVariables[activePowerUp.currentTier - 1].duration)
+            if (shootTimer >= shootCooldown)
             {
                 ShootProjectiles();
                 shootTimer = 0f;
@@ -60,12 +60,15 @@ public class PlayerShooting : MonoBehaviour
 
     private Vector2[] GetDirectionsForTier(int tier)
     {
+        // Use the player's current input direction instead of lastDirection
+        Vector2 currentDirection = playerController.GetCurrentDirection();
+
         switch (tier)
         {
             case 1:
-                return new Vector2[] { playerController.lastDirection };
+                return new Vector2[] { currentDirection };
             case 2:
-                return new Vector2[] { playerController.lastDirection, -playerController.lastDirection };
+                return new Vector2[] { currentDirection, -currentDirection };
             case 3:
                 return new Vector2[] { Vector2.up, Vector2.down, Vector2.left, Vector2.right };
             case 4:
@@ -73,7 +76,7 @@ public class PlayerShooting : MonoBehaviour
                     new Vector2(1, 1).normalized, new Vector2(1, -1).normalized,
                     new Vector2(-1, 1).normalized, new Vector2(-1, -1).normalized };
             default:
-                return new Vector2[] { playerController.lastDirection };
+                return new Vector2[] { currentDirection };
         }
     }
 }

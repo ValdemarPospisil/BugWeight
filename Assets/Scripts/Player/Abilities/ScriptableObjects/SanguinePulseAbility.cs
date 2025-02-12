@@ -1,18 +1,16 @@
 using UnityEngine;
-using System.Collections;
-using UnityEditor;
-using Unity.VisualScripting;
 
 [CreateAssetMenu(fileName = "Sanguine Pulse", menuName = "SpecialAbilities/SanguinePulse")]
 public class SanguinePulseAbility : SpecialAbility
 {
-    [SerializeField] private float pushForce = 10f;
-    [SerializeField] private float healAmount = 5f;
-    [SerializeField] private float pulseRadius = 5f; 
+    private float damage = 10f;
+    private float pullForce = 5f;
+    private float pulseRadius = 5f; 
     [SerializeField] private GameObject abilityPrefab;
 
     public override void Activate()
     {
+        UpdateProperties();
         // Find the player
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player == null)
@@ -33,46 +31,29 @@ public class SanguinePulseAbility : SpecialAbility
             Enemy enemy = hitCollider.GetComponentInParent<Enemy>();
             if (enemy != null)
             {
-                // Push the enemy back
                 Vector2 pushDirection = (enemy.transform.position - player.transform.position).normalized;
                 
-                enemy.Knockback(pushDirection, pushForce, duration);
+                enemy.Knockback(-pushDirection, pullForce, 0.5f);
 
                 enemy.TakeDamage(damage);
                 
-                // Increment the count of enemies hit
                 enemiesHit++;
             }
             
         }
-        player.GetComponent<MonoBehaviour>().StartCoroutine(enumerator(instantiatedPrefab));
+        Destroy(instantiatedPrefab, 0.5f);
 
-
-        // Heal the player for each enemy hit
-        PlayerManager playerManager = player.GetComponent<PlayerManager>();
-        if (playerManager != null)
-        {
-            playerManager.Heal(enemiesHit * healAmount);
-        }
-
-    }
-
-    private IEnumerator enumerator(GameObject instantiatedPrefab)
-    {
-        yield return new WaitForSeconds(0.5f);
-
-        Destroy(instantiatedPrefab);
     }
 
     protected override void UpdateProperties()
     {
         if (currentTier < maxTier)
         {
-            pushForce += pushForce * percentageIncrease;
-            healAmount += healAmount * percentageIncrease;
-            duration -= duration * percentageIncrease;
-            cooldown -= cooldown * percentageIncrease;
-            damage += damage * percentageIncrease;
+            var tier = tierVariables[currentTier - 1];
+            damage = tier.damage;
+            pullForce = tier.duration;
+            pulseRadius = tier.varFloat;
+            cooldown = tier.cooldown;
         }
     }
 }

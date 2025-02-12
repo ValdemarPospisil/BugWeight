@@ -20,16 +20,12 @@ MonoBehaviour:
   maxTier: 4
   currentTier: 2
   basePicked: 1
-  tiers:
-  - damage: 0.5
-    duration: 0
-    speed: 1
-  - damage: 0.6
-    duration: 0
-    speed: 1
-  - damage: 0.7
-    duration: 0
-    speed: 1
+  tierVariables:
   - damage: 1
-    duration: 0
-    speed: 2
+    variable: 0.4
+  - damage: 1
+    variable: 0.5
+  - damage: 1
+    variable: 0.6
+  - damage: 1
+    variable: 0.8

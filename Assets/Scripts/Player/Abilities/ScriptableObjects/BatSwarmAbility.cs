@@ -6,7 +6,10 @@ public class BatSwarmAbility : SpecialAbility
 {
 
     
-    [SerializeField] private float BatSpeed = 5f;
+    private float damage;
+    private float duration;
+    private float BatSpeed;
+
 
     private PlayerController playerController;
 
@@ -22,9 +25,11 @@ public class BatSwarmAbility : SpecialAbility
     {
         if (currentTier < maxTier)
         {
-            damage = tierVariables[currentTier].damage;
-            duration = tierVariables[currentTier].duration;
-            BatSpeed = tierVariables[currentTier].varFloat;
+            var tier = tierVariables[currentTier - 1];
+            damage = tier.damage;
+            duration = tier.duration;
+            BatSpeed = tier.varFloat;
+            cooldown = tier.cooldown;
         }
     }
 }

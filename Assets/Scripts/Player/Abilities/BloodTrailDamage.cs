@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BloodTrailDamage : MonoBehaviour
@@ -17,6 +16,11 @@ public class BloodTrailDamage : MonoBehaviour
                 StartCoroutine(ApplyDamageOverTime(damageable));
             }
         }
+    }
+
+    public void SetDamage (float damage) 
+    {
+        damagePerSecond = damage;
     }
 
     private IEnumerator ApplyDamageOverTime(IDamageable damageable)

@@ -5,9 +5,7 @@ using System.Collections.Generic;
 public struct TierVariable
 {
     public float damage;
-    public float duration;
-    public float varFloat; 
-    public int varInt;
+    public float variable;
 }
 
 

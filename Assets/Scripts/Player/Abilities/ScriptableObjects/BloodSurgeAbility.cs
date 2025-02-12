@@ -4,31 +4,32 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Blood Surge", menuName = "SpecialAbilities/Blood Surge")]
 public class BloodSurgeAbility : SpecialAbility
 {
-    [SerializeField] private float dashSpeed = 10f;
-    [SerializeField] private float dashDuration = 0.2f;
-    //[SerializeField] private float damagePerSecond = 10f;
-    [SerializeField] private float damageDuration = 3f;
+    private float dashSpeed = 10f;
+    private float dashDuration = 0.2f;
+    private float mistDamage = 3f;
     [SerializeField] private GameObject bloodTrailPrefab;
     
 
     public override void Activate()
     {
+        UpdateProperties();
         var player = GameObject.FindGameObjectWithTag("Player");
         PlayerController playerController = player.GetComponent<PlayerController>();
         if (player != null)
         {
-            playerController.StartCoroutine(playerController.BloodSurge(dashSpeed, dashDuration, damageDuration, bloodTrailPrefab));
+            playerController.StartCoroutine(playerController.BloodSurge(dashSpeed, dashDuration, mistDamage, bloodTrailPrefab));
         }
     }
     protected override void UpdateProperties()
     {
-        if (currentTier <= maxTier)
+        if (currentTier  <= maxTier)
         {
-            dashSpeed += dashSpeed * percentageIncrease;
-            damageDuration += damageDuration * percentageIncrease;
-            dashDuration -= dashDuration * percentageIncrease;
-            cooldown -= cooldown * percentageIncrease;
-            damage += damage * percentageIncrease;
+            var tier = tierVariables[currentTier - 1];
+            dashSpeed = tier.varFloat;
+            dashDuration = tier.duration;
+            mistDamage = tier.damage;
+            cooldown = tier.cooldown;
+
         }
     }
 }

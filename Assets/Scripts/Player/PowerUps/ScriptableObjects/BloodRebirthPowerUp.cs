@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "PowerUps/Blood Rebirth")]
@@ -22,8 +23,8 @@ public class BloodRebirthPowerUp : PowerUp
         if (currentTier < tierVariables.Count)
         {
             var tier = tierVariables[currentTier - 1];
-            healthPercentage = tier.damage; // Using damage as health percentage
-            extraLives =  tier.varInt; // Using speed as extra lives
+            healthPercentage = tier.variable; // Using damage as health percentage
+            extraLives = Mathf.RoundToInt(tier.damage); // Using speed as extra lives
         }
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");

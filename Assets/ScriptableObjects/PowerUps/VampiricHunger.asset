@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f7a5b233e1d4545936a17c65b3a124, type: 3}
   m_Name: VampiricHunger
   m_EditorClassIdentifier: 
+  group: 0
   icon: {fileID: 3462283292702899348, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
   baseName: Vampiric Hunger
   baseDescription: When you kill an enemy you have a chance to spawn a Blood Orb
@@ -19,19 +20,15 @@ MonoBehaviour:
   maxTier: 4
   currentTier: 2
   basePicked: 1
-  tiers:
-  - damage: 5
-    duration: 0
-    speed: 0.2
-  - damage: 10
-    duration: 0
-    speed: 0.3
-  - damage: 15
-    duration: 0
-    speed: 0.4
+  tierVariables:
   - damage: 20
-    duration: 0
-    speed: 0.7
+    variable: 0.15
+  - damage: 30
+    variable: 0.3
+  - damage: 40
+    variable: 0.5
+  - damage: 55
+    variable: 0.75
   bloodOrbPrefab: {fileID: 9059218826632338071, guid: e51ff71361e392d4b8ba9dc18eaa63de, type: 3}
   spawnChance: 0.3
   healAmount: 10

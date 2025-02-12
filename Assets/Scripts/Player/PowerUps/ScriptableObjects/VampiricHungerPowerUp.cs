@@ -3,9 +3,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "PowerUps/Vampiric Hunger")]
 public class VampiricHungerPowerUp : PowerUp
 {
-    public GameObject bloodOrbPrefab; // The blood orb prefab to spawn
-    public float spawnChance; // Chance to spawn a blood orb on enemy kill
-    public float healAmount; // Amount of health restored by the blood orb
+    public GameObject bloodOrbPrefab;
+    public float spawnChance;
+    public float healAmount;
 
     public override void Activate(GameObject player)
     {
@@ -46,8 +46,8 @@ public class VampiricHungerPowerUp : PowerUp
         if (currentTier < tierVariables.Count)
         {
             var tier = tierVariables[currentTier - 1];
-            spawnChance = tier.varFloat; // Using speed as spawn chance
-            healAmount = tier.damage; // Using damage as heal amount
+            spawnChance = tier.variable;
+            healAmount = tier.damage;
         }
     }
 }

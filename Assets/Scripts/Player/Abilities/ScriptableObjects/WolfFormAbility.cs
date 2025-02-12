@@ -3,13 +3,17 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Wolf Form", menuName = "SpecialAbilities/Wolf Form")]
 public class WolfFormAbility : SpecialAbility
 {
-    [SerializeField] private float hpBoost = 50f; 
+    private float damage;
+    private float duration;
+    private float hpBoost;
+    
     [SerializeField] private GameObject wolfPrefab;     
     [SerializeField] private float freezeRadius = 5; 
-    [SerializeField] private float freezeDuration = 10f;  
+    [SerializeField] private float freezeDuration = 2;
 
     public override void Activate()
     {
+        UpdateProperties();
         var player = GameObject.FindGameObjectWithTag("Player");
         PlayerController playerController = player.GetComponent<PlayerController>();
 
@@ -23,12 +27,11 @@ public class WolfFormAbility : SpecialAbility
     {
         if (currentTier <= maxTier)
         {
-            hpBoost += hpBoost * percentageIncrease;
-            duration += duration * percentageIncrease;
-            cooldown -= cooldown * percentageIncrease;
-            damage += damage * percentageIncrease;
-            freezeDuration += freezeDuration * percentageIncrease;
-            freezeRadius += freezeRadius * percentageIncrease;
+            var tier = tierVariables[currentTier - 1];
+            damage = tier.damage;
+            duration = tier.duration;
+            hpBoost = tier.varFloat;
+            cooldown = tier.cooldown;
         }
     }
 }

@@ -33,25 +33,18 @@ public class Projectile : MonoBehaviour
     public void Launch(Vector3 direction, Action onDeactivateCallback)
     {
         onDeactivate = onDeactivateCallback;
-        StartCoroutine(Move(direction));
-        this.direction = direction;
+        this.direction = direction.normalized; // Ensure direction is normalized
         lifetime = data.lifetime;
         RotateToFaceDirection();
+        StartCoroutine(Move());
     }
 
-    private IEnumerator Move(Vector3 direction)
+    private IEnumerator Move()
     {
         while (gameObject.activeSelf)
         {
-            if (data.isScalable)
-            {
-                transform.position += direction * powerUp.tierVariables[powerUp.currentTier - 1].varFloat * Time.deltaTime;
-            }
-            else
-            {
-                transform.position += direction * data.speed * Time.deltaTime;
-            }
-            
+            float speed = data.isScalable ? powerUp.tierVariables[powerUp.currentTier - 1].variable : data.speed;
+            transform.position += direction * speed * Time.deltaTime;
             yield return null;
         }
     }
@@ -80,7 +73,7 @@ public class Projectile : MonoBehaviour
             {
                 if (data.isScalable)
                 {
-                    damageable.TakeDamage(powerUp.tierVariables[powerUp.currentTier - 1].damage);;
+                    damageable.TakeDamage(powerUp.tierVariables[powerUp.currentTier - 1].damage);
                 }
                 else
                 {
