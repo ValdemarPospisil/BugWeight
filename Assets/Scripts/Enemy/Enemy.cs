@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
     [SerializeField] private GameObject explosionEffect; // Prefab for the explosion effect
     [SerializeField] private float explosionRadius = 2f; // Radius of the explosion
     public static float explosionDamage;
+    private KillCounter killCounter;
 
     private MeleeEnemyData meleeData;
     private RangedEnemyData rangedData;
@@ -227,6 +228,9 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         {
             Explode();
         }
+
+        killCounter = ServiceLocator.GetService<KillCounter>();
+        killCounter.AddKill();
 
         levelManager.AddXP(xpDrop);
         enemySpawner.ReturnEnemy(this, enemyData);

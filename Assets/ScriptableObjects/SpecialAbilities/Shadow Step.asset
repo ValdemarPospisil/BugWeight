@@ -21,7 +21,7 @@ MonoBehaviour:
   - damage: 20
     duration: 1.5
     varFloat: 2
-    cooldown: 2
+    cooldown: 20
   - damage: 30
     duration: 1.25
     varFloat: 3

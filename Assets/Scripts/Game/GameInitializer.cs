@@ -12,6 +12,7 @@ public class GameInitializer : MonoBehaviour
         ServiceLocator.RegisterService(FindFirstObjectByType<EnemySpawner>());
         ServiceLocator.RegisterService(FindFirstObjectByType<PlayerManager>());
         ServiceLocator.RegisterService(FindFirstObjectByType<PlayerController>());
+        ServiceLocator.RegisterService(FindFirstObjectByType<KillCounter>());
 
        // DontDestroyOnLoad(gameObject);
     }

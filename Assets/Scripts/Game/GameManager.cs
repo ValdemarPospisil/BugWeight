@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public EnemySpawner enemySpawner;
     public PlayerManager playerManager;
     public PlayerController playerController;
+    public KillCounter killCounter;
     [SerializeField] private CanvasGroup fadePanel; // Assign the Panel's Canvas Group
     [SerializeField] private float fadeDuration = 1f; // Time for fade
 

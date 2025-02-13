@@ -12,15 +12,9 @@ public class BloodCloneAbility : SpecialAbility
     public override void Activate()
     {
         UpdateProperties();
-        var player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            var playerController = player.GetComponent<PlayerController>();
-            if (playerController != null)
-            {
-                playerController.StartCoroutine(playerController.UseCloneAbility(bloodClonePrefab, duration, damage, cloneHealth));
-            }
-        }
+        PlayerController playerController = ServiceLocator.GetService<PlayerController>();
+        playerController.StartCoroutine(playerController.UseCloneAbility(bloodClonePrefab, duration, damage, cloneHealth));
+        
     }
     protected override void UpdateProperties()
     {

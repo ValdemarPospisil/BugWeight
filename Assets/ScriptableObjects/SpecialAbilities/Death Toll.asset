@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c613407357b15a4409ada72399dda683, type: 3}
+  m_Name: Death Toll
+  m_EditorClassIdentifier: 
+  group: 3
+  abilityName: Death Toll
+  icon: {fileID: -1666131084072351549, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
+  abilityDescription: count the enemies and upon pressing kill the same amount of
+    them
+  tierVariables:
+  - damage: 0
+    duration: 0
+    varFloat: 0
+    cooldown: 8
+  - damage: 0
+    duration: 0
+    varFloat: 0
+    cooldown: 8
+  - damage: 0
+    duration: 0
+    varFloat: 0
+    cooldown: 10
+  - damage: 0
+    duration: 0
+    varFloat: 0
+    cooldown: 12
+  maxTier: 4
+  currentTier: 1
+  basePicked: 0

@@ -20,22 +20,21 @@ MonoBehaviour:
   tierVariables:
   - damage: 15
     duration: 15
-    varFloat: 40
+    varFloat: 50
     cooldown: 2
   - damage: 20
     duration: 20
-    varFloat: 60
+    varFloat: 80
     cooldown: 2
   - damage: 30
     duration: 25
-    varFloat: 80
+    varFloat: 110
     cooldown: 2
   - damage: 50
     duration: 35
-    varFloat: 110
+    varFloat: 150
     cooldown: 2
   maxTier: 4
   currentTier: 1
-  basePicked: 0
+  basePicked: 1
   bloodClonePrefab: {fileID: 930252425609928099, guid: 5aab1559c8bb7c7468395b833085bf88, type: 3}
-  explosionRadius: 3.5

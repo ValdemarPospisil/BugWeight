@@ -70,6 +70,11 @@ public class SpecialAbilityManager : MonoBehaviour
     public void ActivateSpecialAbility(SpecialAbility ability)
     {
         Time.timeScale = 1f;
+        if (ability.abilityName == "Death Toll")
+        {
+            KillCounter killCounter = ServiceLocator.GetService<KillCounter>();
+            killCounter.ActivateDeathToll();
+        }
         if (!activeAbilities.Contains(ability))
         {
             if (activeAbilities.Count < 3)
@@ -82,11 +87,8 @@ public class SpecialAbilityManager : MonoBehaviour
             UpgradeSpecialAbility(ability);
         }
 
-        PlayerController player = FindFirstObjectByType<PlayerController>();
-        if (player != null)
-        {
-            player.SetAbilityIcon();
-        }
+        PlayerController player = ServiceLocator.GetService<PlayerController>();
+        player.SetAbilityIcon();
     }
 
     public void UpgradeSpecialAbility(SpecialAbility ability)
