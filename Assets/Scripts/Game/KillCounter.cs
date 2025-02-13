@@ -25,7 +25,6 @@ public class KillCounter : MonoBehaviour
         isTollActive = true;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (isDeathTollActive)
@@ -33,11 +32,9 @@ public class KillCounter : MonoBehaviour
             if (tollCooldown <= 0 && !isTollActive)
             {
                 isTollActive = true;
-                Debug.Log("Death Toll is now active");
             }
             else
             {
-                Debug.Log("Death Toll is on cooldown" + tollCooldown);
                 tollCooldown -= Time.deltaTime;
             }
         }

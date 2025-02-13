@@ -23,16 +23,16 @@ public class PlayerController : MonoBehaviour
     private bool isWolfForm;
     private float wolfCooldowns;
     [Header("UI Elements")]
-    [SerializeField] private TextMeshProUGUI cooldownSpaceText;
+    [SerializeField] private TextMeshProUGUI cooldownRText;
     [SerializeField] private TextMeshProUGUI cooldownEText;
     [SerializeField] private TextMeshProUGUI cooldownQText;
-    [SerializeField] private Image cooldownSpaceCover;
+    [SerializeField] private Image cooldownRCover;
     [SerializeField] private Image cooldownECover;
     [SerializeField] private Image cooldownQCover;
-    [SerializeField] private Image abilitySpaceIcon;
+    [SerializeField] private Image abilityRIcon;
     [SerializeField] private Image abilityEIcon;
     [SerializeField] private Image abilityQIcon;
-    [SerializeField] private Sprite wolfAbilitySpaceIcon;
+    [SerializeField] private Sprite wolfAbilityRIcon;
     [SerializeField] private Sprite wolfAbilityEIcon;
     [SerializeField] private Sprite wolfAbilityQIcon;
     [SerializeField] private Sprite defaultAbilityIcon;
@@ -58,15 +58,13 @@ public class PlayerController : MonoBehaviour
         batSwarmDamageScript = GetComponentInChildren<BatSwarmDamage>();
         if (batSwarmDamageScript != null) batSwarmDamageScript.gameObject.SetActive(false);
 
-        cooldownTexts["Space"] = cooldownSpaceText;
         cooldownTexts["E"] = cooldownEText;
         cooldownTexts["Q"] = cooldownQText;
+        cooldownTexts["R"] = cooldownRText;
 
-        cooldownCovers["Space"] = cooldownSpaceCover;
         cooldownCovers["E"] = cooldownECover;
         cooldownCovers["Q"] = cooldownQCover;
-
-      
+        cooldownCovers["R"] = cooldownRCover;
     }
 
     private void Start()
@@ -96,18 +94,23 @@ public class PlayerController : MonoBehaviour
     private void UpdateCooldowns()
     {
         List<string> keys = new List<string>(cooldowns.Keys);
-        int index = 0;
-        
 
-        foreach (string key in keys)
+        foreach (var key in keys)
         {
             if (cooldowns[key] > 0)
             {
                 cooldowns[key] -= Time.deltaTime;
-                
+
                 cooldownTexts[key].text = Mathf.Ceil(cooldowns[key]).ToString();
-                cooldownCovers[key].fillAmount = cooldowns[key] / (isWolfForm ? wolfCooldowns : specialManager.activeAbilities[index].cooldown);
-                index++;
+                if (isWolfForm)
+                {
+                    cooldownCovers[key].fillAmount = cooldowns[key] / wolfCooldowns;
+                }
+                else
+                {
+                    int abilityIndex = key == "E" ? 0 : key == "Q" ? 1 : 2;
+                    cooldownCovers[key].fillAmount = cooldowns[key] / specialManager.activeAbilities[abilityIndex].cooldown;
+                }
             }
             else
             {
@@ -115,7 +118,6 @@ public class PlayerController : MonoBehaviour
                 cooldownCovers[key].fillAmount = 0;
             }
         }
-
     }
 
     private void FixedUpdate()
@@ -161,86 +163,84 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = lastDirection * dashSpeed;
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && (!cooldowns.ContainsKey("Space") || cooldowns["Space"] <= 0))
+        if (Input.GetKeyDown(KeyCode.E) && (!cooldowns.ContainsKey("E") || cooldowns["E"] <= 0))
         {  
             if (isWolfForm)
             {
                 animator.SetTrigger("Attack");
-                cooldowns["Space"] = wolfCooldowns / 10;
+                cooldowns["E"] = wolfCooldowns / 10;
             }
-            else if (!cooldowns.ContainsKey("E") || cooldowns["Space"] <= 0)
+            else if (!cooldowns.ContainsKey("E") || cooldowns["E"] <= 0)
             {
                 if (specialManager.activeAbilities.Count > 0)
                 {
                     specialManager.UseSpecialAbility(0);
-                    cooldowns["Space"] = specialManager.activeAbilities[0].cooldown; 
+                    cooldowns["E"] = specialManager.activeAbilities[0].cooldown; 
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.Q) && (!cooldowns.ContainsKey("E") || cooldowns["E"] <= 0))
+        if (Input.GetKeyDown(KeyCode.Q) && (!cooldowns.ContainsKey("Q") || cooldowns["Q"] <= 0))
         {
             if (isWolfForm)
             {
                 animator.SetTrigger("AttackB");
-                cooldowns["E"] = wolfCooldowns / 4;
+                cooldowns["Q"] = wolfCooldowns / 4;
             }
-            else if (!cooldowns.ContainsKey("E") || cooldowns["E"] <= 0)
+            else if (!cooldowns.ContainsKey("Q") || cooldowns["Q"] <= 0)
             {
                 if (specialManager.activeAbilities.Count > 1)
                 {
                     specialManager.UseSpecialAbility(1);
-                    cooldowns["E"] = specialManager.activeAbilities[1].cooldown; 
+                    cooldowns["Q"] = specialManager.activeAbilities[1].cooldown; 
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.R) && (!cooldowns.ContainsKey("Q") || cooldowns["Q"] <= 0))
+        if (Input.GetKeyDown(KeyCode.R) && (!cooldowns.ContainsKey("R") || cooldowns["R"] <= 0))
         {
             if (isWolfForm)
             {
                 animator.SetTrigger("Ability");
-                cooldowns["Q"] = wolfCooldowns / 2;
+                cooldowns["R"] = wolfCooldowns / 2;
             }
-            else if (!cooldowns.ContainsKey("Q") || cooldowns["Q"] <= 0)
+            else if (!cooldowns.ContainsKey("R") || cooldowns["R"] <= 0)
             {
                 if (specialManager.activeAbilities.Count > 2)
                 {
                     specialManager.UseSpecialAbility(2);
-                    cooldowns["Q"] = specialManager.activeAbilities[2].cooldown; 
+                    cooldowns["R"] = specialManager.activeAbilities[2].cooldown; 
                 }
             }
         }
     }
-
-    public void SetAbilityIcon()
+   public void SetAbilityIcon()
     {
         if (!isWolfForm)
         {
             if (specialManager.activeAbilities.Count > 0)
             {
-                abilitySpaceIcon.sprite = specialManager.activeAbilities[0].icon;
-            }
-            else
-            {
-                abilitySpaceIcon.sprite = defaultAbilityIcon;
-            }
-            if (specialManager.activeAbilities.Count > 1)
-            {
-                abilityEIcon.sprite = specialManager.activeAbilities[1].icon;
+                abilityEIcon.sprite = specialManager.activeAbilities[0].icon;
             }
             else
             {
                 abilityEIcon.sprite = defaultAbilityIcon;
             }
-            if (specialManager.activeAbilities.Count > 2)
+            if (specialManager.activeAbilities.Count > 1)
             {
-                abilityQIcon.sprite = specialManager.activeAbilities[2].icon;
+                abilityQIcon.sprite = specialManager.activeAbilities[1].icon;
             }
             else
             {
                 abilityQIcon.sprite = defaultAbilityIcon;
             }
+            if (specialManager.activeAbilities.Count > 2)
+            {
+                abilityRIcon.sprite = specialManager.activeAbilities[2].icon;
+            }
+            else
+            {
+                abilityRIcon.sprite = defaultAbilityIcon;
+            }
         }
-        
     }
 
     public void TransformToHuman()
@@ -395,7 +395,7 @@ public class PlayerController : MonoBehaviour
 
     private void ChangeToWolfIcons()
     {
-        abilitySpaceIcon.sprite = wolfAbilitySpaceIcon;
+        abilityRIcon.sprite = wolfAbilityRIcon;
         abilityEIcon.sprite = wolfAbilityEIcon;
         abilityQIcon.sprite = wolfAbilityQIcon;
     }
