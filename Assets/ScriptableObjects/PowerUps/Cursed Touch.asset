@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb42c10ad40031478bf1dfa455afc19, type: 3}
+  m_Name: Cursed Touch
+  m_EditorClassIdentifier: 
+  group: 3
+  icon: {fileID: 8406211061111681277, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
+  baseName: Cursed Touch
+  baseDescription: when enemies touch you they have a chance to be cursed dealing
+    damage to them periodcally
+  maxTier: 4
+  currentTier: 2
+  basePicked: 1
+  tierVariables:
+  - damage: 15
+    variable: 0.95
+  - damage: 4
+    variable: 0.9
+  - damage: 5
+    variable: 0.4
+  - damage: 7
+    variable: 0.6

@@ -21,12 +21,9 @@ public class CrimsonVengeancePowerUp : PowerUp
         if (currentTier < tierVariables.Count)
         {
             var tier = tierVariables[currentTier - 1];
+            Enemy.explosionChance = tier.variable;
+            Enemy.explosionDamage = tier.damage;
         }
-
-        Enemy.explosionChance = tierVariables[currentTier - 1].variable;
-        Enemy.explosionDamage = tierVariables[currentTier - 1].damage;
-        
-
          if (currentTier == maxTier)
         {
             PlayerManager.Instance.AddExtraLives(1, 0.05f); // Add extra life on tier IV

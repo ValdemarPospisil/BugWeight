@@ -435,4 +435,25 @@ public class PlayerController : MonoBehaviour
         SetAbilityIcon();
     }
 
+    public void EtherealForm(float etherealSpeed, float etherealDuration)
+    {
+        StartCoroutine(EtherealFormCoroutine(etherealSpeed, etherealDuration));
+    }
+
+    private IEnumerator EtherealFormCoroutine(float etherealSpeed, float etherealDuration)
+    {
+        while (true)
+        {
+            SpeedBoost(etherealSpeed);
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            spriteRenderer.color = new Color(1, 1, 1, 0.5f);
+            capsuleCollider2D.enabled = false;
+            yield return new WaitForSeconds(etherealDuration);
+            SpeedBoost(-etherealSpeed);
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            spriteRenderer.color = new Color(1, 1, 1, 1);
+            capsuleCollider2D.enabled = true;
+            yield return new WaitForSeconds(etherealDuration);
+        }
+    }
 }

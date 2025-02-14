@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealthBar: {fileID: 6914388769174138558}
+  cursedHealthBar: {fileID: 21300000, guid: 79681e98cff51af4c8c9c2afafac7463, type: 3}
   deathParticles: {fileID: 7697985001639266104, guid: 2ec6e1ecb2023764fa64aaf67e29a49e, type: 3}
   enemyCoins:
   - {fileID: 6881121629147738108, guid: 5cf7c9b2e35458049885d5c37bb33f04, type: 3}
@@ -164,6 +165,7 @@ MonoBehaviour:
   minAmountOfCoins: 1
   maxAmountOfCoins: 4
   explosionEffect: {fileID: 7958669827260308180, guid: cbacd9e07b3234d4a86b31077ae9c9ed, type: 3}
+  explosionRadius: 2
 --- !u!50 &8964599466342430990
 Rigidbody2D:
   serializedVersion: 5

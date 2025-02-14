@@ -22,6 +22,8 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
     public static event System.Action<Vector3> OnEnemyKilled;
     private CapsuleCollider2D capsuleCollider;
     [SerializeField] private Image enemyHealthBar;
+    [SerializeField] private Sprite cursedHealthBar;
+    private Sprite originalHealthBar;
     private Canvas enemyCanvas;
     [SerializeField] private GameObject deathParticles;
     [SerializeField] private GameObject[] enemyCoins;
@@ -32,6 +34,10 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
     [SerializeField] private GameObject explosionEffect; // Prefab for the explosion effect
     [SerializeField] private float explosionRadius = 2f; // Radius of the explosion
     public static float explosionDamage;
+    public static bool isCursedTouchOn;
+    public static float cursedDamage;
+    public static float curseChance;
+    private bool isCursed = false;
     private KillCounter killCounter;
 
     private MeleeEnemyData meleeData;
@@ -57,6 +63,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         enemyCanvas = GetComponentInChildren<Canvas>();
 
         isDead = false;
+        isCursed = false;
         gameObject.SetActive(true);
         ResetEnemy();
         FindTarget();
@@ -82,6 +89,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
     {
         enemyData = data;
         enemySpawner = spawner;
+        isCursedTouchOn = false;
 
         transform.position = spawnPosition;
         ResetEnemy();
@@ -213,6 +221,8 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 
     private void Die()
     {
+        enemyHealthBar.sprite = originalHealthBar;
+        isCursed = false;
         DisableCollision();
         OnEnemyKilled?.Invoke(transform.position);
 
@@ -252,6 +262,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 
     private void UpdateHealthUI()
     {
+        
         if (enemyCanvas == null) Debug.Log("Enemy Canvas is null");
         enemyCanvas.enabled = true;
         if (enemyHealthBar != null)
@@ -262,18 +273,52 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && this != null && enemyData.behaviorType == EnemyBehaviorType.Melee)
+        if (collision.gameObject.CompareTag("Player") && this != null )
         {
-            if (attackCooldown <= 0)
+            if (isCursedTouchOn && !isCursed)
             {
-                IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
-                if (damageable != null)
+                Debug.Log("Trying to apply Cursed Touch");
+                CursedTouch();
+            }   
+            if (enemyData.behaviorType == EnemyBehaviorType.Melee)
+            {
+                if (attackCooldown <= 0)
                 {
-                    damageable.TakeDamage(attackDamage);
-                    attackCooldown = 1f / enemyData.attackSpeed;
+                    IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
+                    if (damageable != null)
+                    {
+                        damageable.TakeDamage(attackDamage);
+                        attackCooldown = 1f / enemyData.attackSpeed;     
+                    }
                 }
             }
         }
+    }
+
+
+    private void CursedTouch()
+    {
+        if (Random.value <= curseChance)
+        {
+            isCursed = true;
+            originalHealthBar = enemyHealthBar.sprite;
+            enemyHealthBar.sprite = cursedHealthBar;
+            StartCoroutine(ApplyCursedDamage());
+            Debug.Log("The enemy has been cursed");
+        }
+    }
+
+    private IEnumerator ApplyCursedDamage()
+    {
+        while (enemyCurrentHP > 0)
+        {
+            TakeDamage(cursedDamage);
+            Debug.Log("Cursed Touch Damage: " + cursedDamage);
+            UpdateHealthUI();
+            
+            yield return new WaitForSeconds(1f);
+        }
+        
     }
 
     public void DisableCollision()

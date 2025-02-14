@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c95922e913f1f499daf19286e525be, type: 3}
+  m_Name: EtherealForm
+  m_EditorClassIdentifier: 
+  group: 1
+  icon: {fileID: 1196834354378020502, guid: 5610f0ab665c6754ea50b4b5ca3eb6ac, type: 3}
+  baseName: EtherealForm
+  baseDescription: for a short period of time become invincible
+  maxTier: 4
+  currentTier: 3
+  basePicked: 1
+  tierVariables:
+  - damage: 2
+    variable: 5
+  - damage: 5
+    variable: 10
+  - damage: 6
+    variable: 5
+  - damage: 8
+    variable: 2
