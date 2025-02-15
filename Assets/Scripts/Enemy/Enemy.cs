@@ -68,7 +68,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         ResetEnemy();
         FindTarget();
         UpdateHealthUI();
-
+        enemyHealthBar.sprite = originalHealthBar;
     }
 
     private void InitializeEnemyData()
@@ -85,11 +85,16 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         }
     }
 
+    private void Awake()
+    {
+        isCursedTouchOn = false;
+        originalHealthBar = enemyHealthBar.sprite;
+    }
+
     public void Initialize(EnemyTypeData data, Vector3 spawnPosition, EnemySpawner spawner)
     {
         enemyData = data;
         enemySpawner = spawner;
-        isCursedTouchOn = false;
 
         transform.position = spawnPosition;
         ResetEnemy();
@@ -277,7 +282,6 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         {
             if (isCursedTouchOn && !isCursed)
             {
-                Debug.Log("Trying to apply Cursed Touch");
                 CursedTouch();
             }   
             if (enemyData.behaviorType == EnemyBehaviorType.Melee)
@@ -301,10 +305,9 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         if (Random.value <= curseChance)
         {
             isCursed = true;
-            originalHealthBar = enemyHealthBar.sprite;
+            
             enemyHealthBar.sprite = cursedHealthBar;
             StartCoroutine(ApplyCursedDamage());
-            Debug.Log("The enemy has been cursed");
         }
     }
 
@@ -313,7 +316,6 @@ public class Enemy : MonoBehaviour, IDamageable, IFreezable, IKnockable
         while (enemyCurrentHP > 0)
         {
             TakeDamage(cursedDamage);
-            Debug.Log("Cursed Touch Damage: " + cursedDamage);
             UpdateHealthUI();
             
             yield return new WaitForSeconds(1f);
