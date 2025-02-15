@@ -83,9 +83,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
     public void AddExtraLives(int lives, float healthPercentage)
     {
         extraLives += lives;
-        Debug.Log("Health %:" + healthPercentage);
         healthPercentageToRebirth += healthPercentage;
-        Debug.Log("Extra lives: " + extraLives + " " +  healthPercentageToRebirth);
     }
 
     public void UpdateUI()

@@ -7,11 +7,11 @@ public class PowerUpUI : MonoBehaviour
     public Transform cardContainer; // Parent object for UI cards
     public GameObject cardPrefab; // Prefab for individual cards
 
-    private PowerUpManager powerUpManager;
+    private LevelManager levelManager;
 
     private void Start()
     {
-        powerUpManager = ServiceLocator.GetService<PowerUpManager>();
+        levelManager = ServiceLocator.GetService<LevelManager>();
     }
 
     public void DisplayChoices(List<PowerUp> powerUps)
@@ -22,7 +22,7 @@ public class PowerUpUI : MonoBehaviour
         {
             GameObject card = Instantiate(cardPrefab, cardContainer);
             PowerUpCard cardScript = card.GetComponent<PowerUpCard>();
-            cardScript.SetUp(powerUp, powerUpManager);
+            cardScript.SetUp(powerUp, this);
             Button button = card.GetComponent<Button>();
             index++;
             if (index == 2)
@@ -32,6 +32,12 @@ public class PowerUpUI : MonoBehaviour
         }
 
         cardContainer.gameObject.SetActive(true);
+    }
+
+    public void OnPowerUpSelected(PowerUp selectedPowerUp)
+    {
+        // Notify LevelManager
+        levelManager.OnPowerUpSelected(selectedPowerUp);
     }
 
     public void HideChoices()

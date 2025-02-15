@@ -5,11 +5,11 @@ public class SpecialAbilityManager : MonoBehaviour
 {
     public List<SpecialAbility> allAbilities;
     public List<SpecialAbility> activeAbilities = new List<SpecialAbility>();
-    public SpecialAbilityUI specialAbilityUI; // Reference to the UI manager
 
-    public void ShowSpecialAbilityChoices()
+ 
+
+    public List<SpecialAbility> GetSpecialAbilityChoices()
     {
-        Time.timeScale = 0f;
         List<SpecialAbility> availableAbilities = new List<SpecialAbility>();
 
         if (activeAbilities.Count < 3)
@@ -45,7 +45,8 @@ public class SpecialAbilityManager : MonoBehaviour
                 availableAbilities.Remove(randomSpecialAbility);
             }
         }
-        specialAbilityUI.DisplayChoices(randomSpecialAbilities);
+
+        return randomSpecialAbilities;
     }
 
     public void ResetSpecialAbilities()
@@ -56,7 +57,6 @@ public class SpecialAbilityManager : MonoBehaviour
             specialAbility.basePicked = false;
         }
         activeAbilities.Clear();
-        Invoke("ShowSpecialAbilityChoices", 0.75f);
     }
 
     public void UseSpecialAbility(int index)
@@ -69,7 +69,6 @@ public class SpecialAbilityManager : MonoBehaviour
 
     public void ActivateSpecialAbility(SpecialAbility ability)
     {
-        Time.timeScale = 1f;
         if (ability.abilityName == "Death Toll")
         {
             KillCounter killCounter = ServiceLocator.GetService<KillCounter>();
@@ -98,5 +97,4 @@ public class SpecialAbilityManager : MonoBehaviour
             ability.Upgrade();
         }
     }
-
 }

@@ -8,17 +8,17 @@ public class SpecialAbilityCard : MonoBehaviour
     public TextMeshProUGUI nameText; // Name of the special ability
     public TextMeshProUGUI descriptionText; // Description of the special ability
     public Button button; // Button to select the special ability
+
     private int showTier = 1;
-
     private SpecialAbility specialAbility;
-    private SpecialAbilityManager specialAbilityManager;
+    private SpecialAbilityUI specialAbilityUI;
 
-    public void SetUp(SpecialAbility abilityData)
+    public void SetUp(SpecialAbility abilityData, SpecialAbilityUI ui)
     {
         specialAbility = abilityData;
-        specialAbilityManager = ServiceLocator.GetService<SpecialAbilityManager>();
+        specialAbilityUI = ui;
 
-        if(specialAbility.basePicked)
+        if (specialAbility.basePicked)
         {
             showTier = specialAbility.currentTier + 1;
         }
@@ -34,14 +34,12 @@ public class SpecialAbilityCard : MonoBehaviour
     private void UpdateCardUI()
     {
         if (showTier < specialAbility.maxTier)
-        {  
+        {
             icon.sprite = specialAbility.icon;
             nameText.text = $"{specialAbility.name} {GetRomanNumeral(showTier)}";
             descriptionText.text = specialAbility.abilityDescription;
         }
     }
-
-
 
     private string GetRomanNumeral(int number)
     {
@@ -58,7 +56,6 @@ public class SpecialAbilityCard : MonoBehaviour
     private void OnSelected()
     {
         specialAbility.basePicked = true;
-        specialAbilityManager.ActivateSpecialAbility(specialAbility);
-        specialAbilityManager.specialAbilityUI.HideChoices();
+        specialAbilityUI.OnSpecialAbilitySelected(specialAbility); // Notify SpecialAbilityUI of the selection
     }
 }

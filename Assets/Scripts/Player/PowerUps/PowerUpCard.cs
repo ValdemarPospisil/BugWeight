@@ -8,16 +8,17 @@ public class PowerUpCard : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameText; // Name of the power-up
     [SerializeField] private TextMeshProUGUI descriptionText; // Description of the power-up
     [SerializeField] private Button button; // Button to select the power-up
+
     private int showTier = 1;
     private PowerUp powerUp;
-    private PowerUpManager powerUpManager;
+    private PowerUpUI powerUpUI;
 
-    public void SetUp(PowerUp powerUpData, PowerUpManager manager)
+    public void SetUp(PowerUp powerUpData, PowerUpUI ui)
     {
         powerUp = powerUpData;
-        powerUpManager = manager;
-        
-        if(powerUp.basePicked)
+        powerUpUI = ui;
+
+        if (powerUp.basePicked)
         {
             showTier = powerUp.currentTier + 1;
         }
@@ -25,17 +26,15 @@ public class PowerUpCard : MonoBehaviour
         {
             showTier = powerUp.currentTier;
         }
-        
 
         UpdateCardUI();
         button.onClick.AddListener(OnSelected);
-        
     }
 
     private void UpdateCardUI()
     {
         if (showTier - 1 < powerUp.tierVariables.Count)
-        {  
+        {
             var tier = powerUp.tierVariables[showTier - 1];
             icon.sprite = powerUp.icon;
             nameText.text = $"{powerUp.baseName} {GetRomanNumeral(showTier)}";
@@ -47,7 +46,7 @@ public class PowerUpCard : MonoBehaviour
     {
         return $"{powerUp.baseDescription}\n" +
                $"Damage: {tier.damage}\n" +
-               $"Speed: {tier.variable}\n";;
+               $"Speed: {tier.variable}\n";
     }
 
     private string GetRomanNumeral(int number)
@@ -64,9 +63,7 @@ public class PowerUpCard : MonoBehaviour
 
     private void OnSelected()
     {
-        powerUpManager.ActivatePowerUp(powerUp);
         powerUp.basePicked = true;
-        
-        powerUpManager.powerUpUI.HideChoices();
+        powerUpUI.OnPowerUpSelected(powerUp); // Notify PowerUpUI of the selection
     }
 }

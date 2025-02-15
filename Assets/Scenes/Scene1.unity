@@ -10331,6 +10331,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6a108e59d9a64be4a98b93dc382a6205, type: 2}
   - {fileID: 11400000, guid: 812387cdb169a14468b9ea662f7441ab, type: 2}
   - {fileID: 11400000, guid: 71ef09faef786ae43b6d0edac0a109ea, type: 2}
+  - {fileID: 11400000, guid: f776fc701062cca4cb735fac8b22c269, type: 2}
   powerUpUI: {fileID: 51820591066823752}
 --- !u!114 &189689302157567595
 MonoBehaviour:

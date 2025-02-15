@@ -5,22 +5,9 @@ public class PowerUpManager : MonoBehaviour
 {
     private List<PowerUp> activePowerUps = new List<PowerUp>();
     public List<PowerUp> allPowerUps; // List of all available power-ups
-    public PowerUpUI powerUpUI; // Reference to the UI manager
 
-    private void Awake()
+    public List<PowerUp> GetPowerUpChoices()
     {
-        // Ensure this GameObject persists across scenes
-     //   DontDestroyOnLoad(gameObject);
-    }
-
-    private void Start()
-    {
-        // ShowPowerUpChoices();
-    }
-
-    public void ShowPowerUpChoices()
-    {
-        Time.timeScale = 0f;
         List<PowerUp> availablePowerUps = GetAvailablePowerUps();
         List<PowerUp> randomPowerUps = new List<PowerUp>();
 
@@ -37,7 +24,7 @@ public class PowerUpManager : MonoBehaviour
             randomPowerUps.Add(availablePowerUps[i]);
         }
 
-        powerUpUI.DisplayChoices(randomPowerUps);
+        return randomPowerUps;
     }
 
     private List<PowerUp> GetAvailablePowerUps()
@@ -64,7 +51,6 @@ public class PowerUpManager : MonoBehaviour
 
     public void ActivatePowerUp(PowerUp powerUp)
     {
-        Time.timeScale = 1f;
         if (activePowerUps.Contains(powerUp))
         {
             powerUp.Upgrade();
