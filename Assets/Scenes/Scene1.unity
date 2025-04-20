@@ -10332,7 +10332,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 812387cdb169a14468b9ea662f7441ab, type: 2}
   - {fileID: 11400000, guid: 71ef09faef786ae43b6d0edac0a109ea, type: 2}
   - {fileID: 11400000, guid: f776fc701062cca4cb735fac8b22c269, type: 2}
-  powerUpUI: {fileID: 51820591066823752}
 --- !u!114 &189689302157567595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10345,6 +10344,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d7420bf78da6246b89d68fc90a33a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerUpUI: {fileID: 51820591066823752}
+  specialAbilityUI: {fileID: 3381126709965548693}
+  isChoosing: 0
 --- !u!4 &349150751342916641
 Transform:
   m_ObjectHideFlags: 0
@@ -17247,7 +17249,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 382f0df84155713448146863eec9f49a, type: 2}
   - {fileID: 11400000, guid: 104497e2fae4cca43b9d067e1f304278, type: 2}
   activeAbilities: []
-  specialAbilityUI: {fileID: 3381126709965548693}
 --- !u!1 &5522033088195279073
 GameObject:
   m_ObjectHideFlags: 0
