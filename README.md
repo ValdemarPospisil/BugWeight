@@ -10,7 +10,7 @@ The name *BugWeight* is a nod to the **Flyweight** design pattern used extensive
 
 1. Clone the repository:  
 ```bash
-   git clone https://github.com/yourusername/BugWeight.git`
+   git clone https://github.com/ValdemarPospisil/BugWeight.git
 ```
 3. Open the project in Unity (version 6.0.0 or newer).
 4. Build & Run the game from Unity.
